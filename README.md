@@ -7,3 +7,7 @@ Welcome to the RDFox Advanced Reasoning Workshop!
 1. Start RDFox, either using `start.rdfox` script or the `start-rdfox.ipynb` in the `notebooks` folder.
 
 2. Open an exercise notebook and follow the instructions within.
+
+## Useful tips
+
+1. Split your editor between an exercise notebook and the relevant rules file.

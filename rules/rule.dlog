@@ -1,4 +1,0 @@
-prefix : <https://rdfox.com/example#>
-
-[?a, :excellent, ?c] :-
-    [?a, :b, ?c] .
