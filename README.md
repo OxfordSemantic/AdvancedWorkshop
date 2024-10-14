@@ -1,5 +1,9 @@
-# AdvancedWorkshop
+# RDFox Advanced Reasoning Workshop
 
 Welcome to the RDFox Advanced Reasoning Workshop!
 
-## You must have the 
+## How to use the Workshop
+
+1. Start RDFox, either using `start.rdfox` script or the `start-rdfox.ipynb` in the `notebooks` folder.
+
+2. Open an exercise notebook and follow the instructions within.
