@@ -1,0 +1,6 @@
+prefix : <https://rdfox.com/example#>
+
+SELECT *
+WHERE {
+    ?s ?p ?o .
+}

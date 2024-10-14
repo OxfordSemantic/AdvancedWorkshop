@@ -1,0 +1,3 @@
+@prefix : <https://rdfox.com/example#> .
+
+:a :b :c .

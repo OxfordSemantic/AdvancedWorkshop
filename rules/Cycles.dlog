@@ -1,0 +1,5 @@
+prefix : <https://rdfox.com/example#>
+
+[?x, a, :Class] :-
+    [?x, a, ?class] ,
+    NOT [?x, a, :Class] .

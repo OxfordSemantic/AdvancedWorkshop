@@ -1,0 +1,9 @@
+prefix : <https://rdfox.com/example#>
+
+[?s, a, :Class] :-
+    [?s, :hasProp, ?o] ,
+    NOT [?s, :hasProp, "property"] .
+
+[?s, a, :DifferentClass] :-
+    [?s, :hasProp, ?o] ,
+    NOT EXISTS ?o IN ([?s, :hasProp, ?o]) .
