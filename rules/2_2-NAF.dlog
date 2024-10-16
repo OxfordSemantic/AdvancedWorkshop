@@ -1,4 +1,4 @@
-?s, a, :Class] :-
+[?s, a, :Class] :-
     [?s, :hasProp, ?o] ,
     NOT [?s, :hasProp, "property"] .
 

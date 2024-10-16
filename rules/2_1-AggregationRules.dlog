@@ -1,0 +1,7 @@
+[?product, a, :StarProduct],
+[?product, :hasAverageStars, ?averageStars],
+[?product, :hasReviewCount, ?reviewCount] :-
+    # Insert body atoms here 
+    FILTER(?averageStars > 4) ,
+    FILTER(?reviewCount > 5) .
+    

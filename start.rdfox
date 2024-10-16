@@ -1,5 +1,6 @@
 endpoint start
 
 dstore create default
+active default
 
 import ../data/data.ttl
