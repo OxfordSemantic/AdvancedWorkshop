@@ -1,0 +1,4 @@
+[?s, :requiresMaintenance, true] :-
+    [?s, a, :Component],
+    NOT EXISTS ?c IN ([?s, :dependsOn, ?c]),
+    NOT [?s, :passedMaintenanceCheck, true ] .

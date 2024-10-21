@@ -1,0 +1,4632 @@
+@prefix : <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:device001 a :Component ;
+    :dependsOn :switchD,
+        :switchP .
+
+:device002 a :Component ;
+    :dependsOn :switchC,
+        :switchN,
+        :switchZ .
+
+:device003 a :Component ;
+    :dependsOn :switchN,
+        :switchW,
+        :switchX .
+
+:device004 a :Component ;
+    :dependsOn :switchC,
+        :switchR,
+        :switchS,
+        :switchU .
+
+:device005 a :Component ;
+    :dependsOn :switchH,
+        :switchI,
+        :switchJ .
+
+:device006 a :Component ;
+    :dependsOn :switchN,
+        :switchP .
+
+:device007 a :Component ;
+    :dependsOn :switchL .
+
+:device008 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchF .
+
+:device009 a :Component ;
+    :dependsOn :switchN,
+        :switchQ,
+        :switchS .
+
+:device010 a :Component ;
+    :dependsOn :switchJ,
+        :switchO,
+        :switchT,
+        :switchW .
+
+:device011 a :Component ;
+    :dependsOn :switchQ .
+
+:device012 a :Component ;
+    :dependsOn :switchB,
+        :switchC,
+        :switchP,
+        :switchU .
+
+:device013 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchK .
+
+:device014 a :Component ;
+    :dependsOn :switchG .
+
+:device015 a :Component ;
+    :dependsOn :switchF,
+        :switchJ .
+
+:device016 a :Component ;
+    :dependsOn :switchE,
+        :switchJ,
+        :switchL,
+        :switchM .
+
+:device017 a :Component ;
+    :dependsOn :switchY .
+
+:device018 a :Component ;
+    :dependsOn :switchF,
+        :switchI,
+        :switchR .
+
+:device019 a :Component ;
+    :dependsOn :switchJ,
+        :switchR .
+
+:device020 a :Component ;
+    :dependsOn :switchK .
+
+:device021 a :Component ;
+    :dependsOn :switchY .
+
+:device022 a :Component ;
+    :dependsOn :switchJ .
+
+:device023 a :Component ;
+    :dependsOn :switchD,
+        :switchF,
+        :switchM,
+        :switchN .
+
+:device024 a :Component ;
+    :dependsOn :switchA,
+        :switchC,
+        :switchG .
+
+:device025 a :Component ;
+    :dependsOn :switchE,
+        :switchJ,
+        :switchM,
+        :switchV .
+
+:device026 a :Component ;
+    :dependsOn :switchB,
+        :switchG,
+        :switchN,
+        :switchS .
+
+:device027 a :Component ;
+    :dependsOn :switchC,
+        :switchF,
+        :switchU,
+        :switchY .
+
+:device028 a :Component ;
+    :dependsOn :switchE .
+
+:device029 a :Component ;
+    :dependsOn :switchA .
+
+:device030 a :Component ;
+    :dependsOn :switchA,
+        :switchR .
+
+:device031 a :Component ;
+    :dependsOn :switchB,
+        :switchG,
+        :switchO,
+        :switchS .
+
+:device032 a :Component ;
+    :dependsOn :switchD,
+        :switchO,
+        :switchV .
+
+:device033 a :Component ;
+    :dependsOn :switchF,
+        :switchG,
+        :switchU .
+
+:device034 a :Component ;
+    :dependsOn :switchC,
+        :switchN,
+        :switchR .
+
+:device035 a :Component ;
+    :dependsOn :switchG,
+        :switchQ .
+
+:device036 a :Component ;
+    :dependsOn :switchF,
+        :switchH,
+        :switchV,
+        :switchZ .
+
+:device037 a :Component ;
+    :dependsOn :switchC,
+        :switchJ .
+
+:device038 a :Component ;
+    :dependsOn :switchB .
+
+:device039 a :Component ;
+    :dependsOn :switchA,
+        :switchR,
+        :switchY .
+
+:device040 a :Component ;
+    :dependsOn :switchC,
+        :switchR,
+        :switchW .
+
+:device041 a :Component ;
+    :dependsOn :switchI .
+
+:device042 a :Component ;
+    :dependsOn :switchC,
+        :switchJ .
+
+:device043 a :Component ;
+    :dependsOn :switchF .
+
+:device044 a :Component ;
+    :dependsOn :switchN .
+
+:device045 a :Component ;
+    :dependsOn :switchI,
+        :switchL,
+        :switchO,
+        :switchU .
+
+:device046 a :Component ;
+    :dependsOn :switchI .
+
+:device047 a :Component ;
+    :dependsOn :switchC,
+        :switchZ .
+
+:device048 a :Component ;
+    :dependsOn :switchA,
+        :switchJ,
+        :switchN,
+        :switchW .
+
+:device049 a :Component ;
+    :dependsOn :switchQ,
+        :switchU,
+        :switchV .
+
+:device050 a :Component ;
+    :dependsOn :switchQ,
+        :switchU .
+
+:device051 a :Component ;
+    :dependsOn :switchB,
+        :switchK .
+
+:device052 a :Component ;
+    :dependsOn :switchX .
+
+:device053 a :Component ;
+    :dependsOn :switchF .
+
+:device054 a :Component ;
+    :dependsOn :switchC,
+        :switchG,
+        :switchT,
+        :switchW .
+
+:device055 a :Component ;
+    :dependsOn :switchA .
+
+:device056 a :Component ;
+    :dependsOn :switchN,
+        :switchX .
+
+:device057 a :Component ;
+    :dependsOn :switchI,
+        :switchR,
+        :switchV .
+
+:device058 a :Component ;
+    :dependsOn :switchB,
+        :switchC,
+        :switchE,
+        :switchX .
+
+:device059 a :Component ;
+    :dependsOn :switchB,
+        :switchC,
+        :switchM,
+        :switchT .
+
+:device060 a :Component ;
+    :dependsOn :switchQ .
+
+:device061 a :Component ;
+    :dependsOn :switchN .
+
+:device062 a :Component ;
+    :dependsOn :switchB,
+        :switchI,
+        :switchN,
+        :switchO .
+
+:device063 a :Component ;
+    :dependsOn :switchA,
+        :switchH,
+        :switchI,
+        :switchQ .
+
+:device064 a :Component ;
+    :dependsOn :switchF,
+        :switchH,
+        :switchS .
+
+:device065 a :Component ;
+    :dependsOn :switchF,
+        :switchI,
+        :switchT .
+
+:device066 a :Component ;
+    :dependsOn :switchB,
+        :switchN,
+        :switchP .
+
+:device067 a :Component ;
+    :dependsOn :switchR,
+        :switchV,
+        :switchY .
+
+:device068 a :Component ;
+    :dependsOn :switchA,
+        :switchS .
+
+:device069 a :Component ;
+    :dependsOn :switchM .
+
+:device070 a :Component ;
+    :dependsOn :switchF,
+        :switchN,
+        :switchU,
+        :switchY .
+
+:device071 a :Component ;
+    :dependsOn :switchE,
+        :switchF,
+        :switchO .
+
+:device072 a :Component ;
+    :dependsOn :switchU .
+
+:device073 a :Component ;
+    :dependsOn :switchH,
+        :switchI,
+        :switchU,
+        :switchW .
+
+:device074 a :Component ;
+    :dependsOn :switchD,
+        :switchH,
+        :switchR,
+        :switchW .
+
+:device075 a :Component ;
+    :dependsOn :switchE,
+        :switchM,
+        :switchN,
+        :switchY .
+
+:device076 a :Component ;
+    :dependsOn :switchA,
+        :switchI,
+        :switchM .
+
+:device077 a :Component ;
+    :dependsOn :switchH,
+        :switchJ .
+
+:device078 a :Component ;
+    :dependsOn :switchN,
+        :switchW,
+        :switchZ .
+
+:device079 a :Component ;
+    :dependsOn :switchE,
+        :switchO .
+
+:device080 a :Component ;
+    :dependsOn :switchG,
+        :switchN,
+        :switchO,
+        :switchT .
+
+:device081 a :Component ;
+    :dependsOn :switchA,
+        :switchJ .
+
+:device082 a :Component ;
+    :dependsOn :switchA,
+        :switchX .
+
+:device083 a :Component ;
+    :dependsOn :switchQ,
+        :switchX,
+        :switchZ .
+
+:device084 a :Component ;
+    :dependsOn :switchB,
+        :switchC,
+        :switchD,
+        :switchH .
+
+:device085 a :Component ;
+    :dependsOn :switchE,
+        :switchM .
+
+:device086 a :Component ;
+    :dependsOn :switchE,
+        :switchR,
+        :switchS,
+        :switchW .
+
+:device087 a :Component ;
+    :dependsOn :switchD,
+        :switchH .
+
+:device088 a :Component ;
+    :dependsOn :switchD,
+        :switchH,
+        :switchX .
+
+:device089 a :Component ;
+    :dependsOn :switchJ .
+
+:device090 a :Component ;
+    :dependsOn :switchX .
+
+:device091 a :Component ;
+    :dependsOn :switchJ,
+        :switchZ .
+
+:device092 a :Component ;
+    :dependsOn :switchD,
+        :switchG,
+        :switchW .
+
+:device093 a :Component ;
+    :dependsOn :switchB,
+        :switchK,
+        :switchL .
+
+:device094 a :Component ;
+    :dependsOn :switchL,
+        :switchM .
+
+:device095 a :Component ;
+    :dependsOn :switchM,
+        :switchW,
+        :switchZ .
+
+:device096 a :Component ;
+    :dependsOn :switchB,
+        :switchI,
+        :switchN,
+        :switchW .
+
+:device097 a :Component ;
+    :dependsOn :switchD,
+        :switchM,
+        :switchO,
+        :switchS .
+
+:device098 a :Component ;
+    :dependsOn :switchA,
+        :switchH,
+        :switchT,
+        :switchY .
+
+:device099 a :Component ;
+    :dependsOn :switchD,
+        :switchH,
+        :switchN,
+        :switchU .
+
+:device100 a :Component ;
+    :dependsOn :switchA,
+        :switchC,
+        :switchR,
+        :switchS .
+
+:device1000 a :Component ;
+    :dependsOn :switchM,
+        :switchS,
+        :switchW,
+        :switchY .
+
+:device101 a :Component ;
+    :dependsOn :switchA,
+        :switchJ,
+        :switchP .
+
+:device102 a :Component ;
+    :dependsOn :switchA,
+        :switchN,
+        :switchY .
+
+:device103 a :Component ;
+    :dependsOn :switchO,
+        :switchR,
+        :switchV,
+        :switchX .
+
+:device104 a :Component ;
+    :dependsOn :switchE,
+        :switchL,
+        :switchN,
+        :switchQ .
+
+:device105 a :Component ;
+    :dependsOn :switchT,
+        :switchZ .
+
+:device106 a :Component ;
+    :dependsOn :switchD,
+        :switchE,
+        :switchR,
+        :switchX .
+
+:device107 a :Component ;
+    :dependsOn :switchH,
+        :switchP .
+
+:device108 a :Component ;
+    :dependsOn :switchG,
+        :switchN,
+        :switchR .
+
+:device109 a :Component ;
+    :dependsOn :switchA .
+
+:device110 a :Component ;
+    :dependsOn :switchA,
+        :switchC .
+
+:device111 a :Component ;
+    :dependsOn :switchP,
+        :switchQ,
+        :switchR,
+        :switchZ .
+
+:device112 a :Component ;
+    :dependsOn :switchK,
+        :switchO .
+
+:device113 a :Component ;
+    :dependsOn :switchI .
+
+:device114 a :Component ;
+    :dependsOn :switchI,
+        :switchW .
+
+:device115 a :Component ;
+    :dependsOn :switchA,
+        :switchE,
+        :switchO,
+        :switchV .
+
+:device116 a :Component ;
+    :dependsOn :switchE,
+        :switchV .
+
+:device117 a :Component ;
+    :dependsOn :switchP,
+        :switchS,
+        :switchZ .
+
+:device118 a :Component ;
+    :dependsOn :switchH,
+        :switchL,
+        :switchQ .
+
+:device119 a :Component ;
+    :dependsOn :switchA .
+
+:device120 a :Component ;
+    :dependsOn :switchB,
+        :switchE .
+
+:device121 a :Component ;
+    :dependsOn :switchD,
+        :switchF,
+        :switchL,
+        :switchR .
+
+:device122 a :Component ;
+    :dependsOn :switchL .
+
+:device123 a :Component ;
+    :dependsOn :switchA .
+
+:device124 a :Component ;
+    :dependsOn :switchE,
+        :switchP,
+        :switchQ .
+
+:device125 a :Component ;
+    :dependsOn :switchO,
+        :switchP,
+        :switchV .
+
+:device126 a :Component ;
+    :dependsOn :switchO,
+        :switchU .
+
+:device127 a :Component ;
+    :dependsOn :switchJ,
+        :switchR .
+
+:device128 a :Component ;
+    :dependsOn :switchB,
+        :switchS,
+        :switchU,
+        :switchX .
+
+:device129 a :Component ;
+    :dependsOn :switchS .
+
+:device130 a :Component ;
+    :dependsOn :switchN .
+
+:device131 a :Component ;
+    :dependsOn :switchL .
+
+:device132 a :Component ;
+    :dependsOn :switchD,
+        :switchG,
+        :switchN,
+        :switchX .
+
+:device133 a :Component ;
+    :dependsOn :switchM,
+        :switchX .
+
+:device134 a :Component ;
+    :dependsOn :switchC,
+        :switchG,
+        :switchL,
+        :switchZ .
+
+:device135 a :Component ;
+    :dependsOn :switchB .
+
+:device136 a :Component ;
+    :dependsOn :switchV .
+
+:device137 a :Component ;
+    :dependsOn :switchB,
+        :switchF,
+        :switchH,
+        :switchJ .
+
+:device138 a :Component ;
+    :dependsOn :switchG,
+        :switchO,
+        :switchP .
+
+:device139 a :Component ;
+    :dependsOn :switchQ,
+        :switchW .
+
+:device140 a :Component ;
+    :dependsOn :switchS,
+        :switchT .
+
+:device141 a :Component ;
+    :dependsOn :switchH .
+
+:device142 a :Component ;
+    :dependsOn :switchU,
+        :switchW,
+        :switchX .
+
+:device143 a :Component ;
+    :dependsOn :switchI,
+        :switchM,
+        :switchP,
+        :switchU .
+
+:device144 a :Component ;
+    :dependsOn :switchE,
+        :switchM .
+
+:device145 a :Component ;
+    :dependsOn :switchH,
+        :switchT,
+        :switchX .
+
+:device146 a :Component ;
+    :dependsOn :switchB,
+        :switchF .
+
+:device147 a :Component ;
+    :dependsOn :switchE,
+        :switchT,
+        :switchU,
+        :switchY .
+
+:device148 a :Component ;
+    :dependsOn :switchC .
+
+:device149 a :Component ;
+    :dependsOn :switchG,
+        :switchI,
+        :switchS,
+        :switchZ .
+
+:device150 a :Component ;
+    :dependsOn :switchF,
+        :switchP .
+
+:device151 a :Component ;
+    :dependsOn :switchD,
+        :switchH,
+        :switchW .
+
+:device152 a :Component ;
+    :dependsOn :switchF,
+        :switchN,
+        :switchY .
+
+:device153 a :Component ;
+    :dependsOn :switchC,
+        :switchE,
+        :switchF,
+        :switchK .
+
+:device154 a :Component ;
+    :dependsOn :switchG,
+        :switchL,
+        :switchN,
+        :switchR .
+
+:device155 a :Component ;
+    :dependsOn :switchZ .
+
+:device156 a :Component ;
+    :dependsOn :switchB,
+        :switchM,
+        :switchQ,
+        :switchT .
+
+:device157 a :Component ;
+    :dependsOn :switchK,
+        :switchN,
+        :switchU .
+
+:device158 a :Component ;
+    :dependsOn :switchI,
+        :switchJ,
+        :switchK .
+
+:device159 a :Component ;
+    :dependsOn :switchE,
+        :switchM .
+
+:device160 a :Component ;
+    :dependsOn :switchD,
+        :switchJ,
+        :switchR,
+        :switchV .
+
+:device161 a :Component ;
+    :dependsOn :switchG .
+
+:device162 a :Component ;
+    :dependsOn :switchO,
+        :switchY .
+
+:device163 a :Component ;
+    :dependsOn :switchO .
+
+:device164 a :Component ;
+    :dependsOn :switchI,
+        :switchQ,
+        :switchX .
+
+:device165 a :Component ;
+    :dependsOn :switchC,
+        :switchF .
+
+:device166 a :Component ;
+    :dependsOn :switchB,
+        :switchN .
+
+:device167 a :Component ;
+    :dependsOn :switchN,
+        :switchO .
+
+:device168 a :Component ;
+    :dependsOn :switchF,
+        :switchK .
+
+:device169 a :Component ;
+    :dependsOn :switchB,
+        :switchH,
+        :switchZ .
+
+:device170 a :Component ;
+    :dependsOn :switchA,
+        :switchC,
+        :switchF,
+        :switchW .
+
+:device171 a :Component ;
+    :dependsOn :switchS .
+
+:device172 a :Component ;
+    :dependsOn :switchT .
+
+:device173 a :Component ;
+    :dependsOn :switchS,
+        :switchZ .
+
+:device174 a :Component ;
+    :dependsOn :switchK,
+        :switchV,
+        :switchW,
+        :switchZ .
+
+:device175 a :Component ;
+    :dependsOn :switchM .
+
+:device176 a :Component ;
+    :dependsOn :switchB .
+
+:device177 a :Component ;
+    :dependsOn :switchK,
+        :switchQ,
+        :switchS .
+
+:device178 a :Component ;
+    :dependsOn :switchY .
+
+:device179 a :Component ;
+    :dependsOn :switchS .
+
+:device180 a :Component ;
+    :dependsOn :switchD,
+        :switchQ .
+
+:device181 a :Component ;
+    :dependsOn :switchI,
+        :switchU .
+
+:device182 a :Component ;
+    :dependsOn :switchE,
+        :switchO,
+        :switchS .
+
+:device183 a :Component ;
+    :dependsOn :switchC,
+        :switchK,
+        :switchN,
+        :switchV .
+
+:device184 a :Component ;
+    :dependsOn :switchU .
+
+:device185 a :Component ;
+    :dependsOn :switchP .
+
+:device186 a :Component ;
+    :dependsOn :switchF,
+        :switchL .
+
+:device187 a :Component ;
+    :dependsOn :switchC,
+        :switchL,
+        :switchY .
+
+:device188 a :Component ;
+    :dependsOn :switchF .
+
+:device189 a :Component ;
+    :dependsOn :switchM,
+        :switchT .
+
+:device190 a :Component ;
+    :dependsOn :switchP,
+        :switchR .
+
+:device191 a :Component ;
+    :dependsOn :switchS .
+
+:device192 a :Component ;
+    :dependsOn :switchH,
+        :switchN .
+
+:device193 a :Component ;
+    :dependsOn :switchO .
+
+:device194 a :Component ;
+    :dependsOn :switchJ .
+
+:device195 a :Component ;
+    :dependsOn :switchG,
+        :switchI,
+        :switchK,
+        :switchL .
+
+:device196 a :Component ;
+    :dependsOn :switchY .
+
+:device197 a :Component ;
+    :dependsOn :switchC .
+
+:device198 a :Component ;
+    :dependsOn :switchJ,
+        :switchO,
+        :switchR .
+
+:device199 a :Component ;
+    :dependsOn :switchF,
+        :switchG,
+        :switchP,
+        :switchS .
+
+:device200 a :Component ;
+    :dependsOn :switchA,
+        :switchE,
+        :switchM,
+        :switchU .
+
+:device201 a :Component ;
+    :dependsOn :switchH,
+        :switchV,
+        :switchW .
+
+:device202 a :Component ;
+    :dependsOn :switchB,
+        :switchZ .
+
+:device203 a :Component ;
+    :dependsOn :switchF,
+        :switchH,
+        :switchX .
+
+:device204 a :Component ;
+    :dependsOn :switchX .
+
+:device205 a :Component ;
+    :dependsOn :switchR,
+        :switchS,
+        :switchT .
+
+:device206 a :Component ;
+    :dependsOn :switchD .
+
+:device207 a :Component ;
+    :dependsOn :switchZ .
+
+:device208 a :Component ;
+    :dependsOn :switchF,
+        :switchO,
+        :switchV .
+
+:device209 a :Component ;
+    :dependsOn :switchF .
+
+:device210 a :Component ;
+    :dependsOn :switchI,
+        :switchN,
+        :switchV .
+
+:device211 a :Component ;
+    :dependsOn :switchP .
+
+:device212 a :Component ;
+    :dependsOn :switchJ,
+        :switchK,
+        :switchM .
+
+:device213 a :Component ;
+    :dependsOn :switchC,
+        :switchI .
+
+:device214 a :Component ;
+    :dependsOn :switchE,
+        :switchM,
+        :switchX .
+
+:device215 a :Component ;
+    :dependsOn :switchC,
+        :switchE .
+
+:device216 a :Component ;
+    :dependsOn :switchH,
+        :switchR .
+
+:device217 a :Component ;
+    :dependsOn :switchI,
+        :switchJ,
+        :switchO,
+        :switchS .
+
+:device218 a :Component ;
+    :dependsOn :switchB,
+        :switchG,
+        :switchO,
+        :switchS .
+
+:device219 a :Component ;
+    :dependsOn :switchG,
+        :switchS,
+        :switchW,
+        :switchX .
+
+:device220 a :Component ;
+    :dependsOn :switchI,
+        :switchN,
+        :switchR,
+        :switchW .
+
+:device221 a :Component ;
+    :dependsOn :switchQ,
+        :switchY .
+
+:device222 a :Component ;
+    :dependsOn :switchY .
+
+:device223 a :Component ;
+    :dependsOn :switchC,
+        :switchJ,
+        :switchQ .
+
+:device224 a :Component ;
+    :dependsOn :switchL,
+        :switchZ .
+
+:device225 a :Component ;
+    :dependsOn :switchB,
+        :switchH,
+        :switchK,
+        :switchT .
+
+:device226 a :Component ;
+    :dependsOn :switchU,
+        :switchX .
+
+:device227 a :Component ;
+    :dependsOn :switchU .
+
+:device228 a :Component ;
+    :dependsOn :switchC .
+
+:device229 a :Component ;
+    :dependsOn :switchX .
+
+:device230 a :Component ;
+    :dependsOn :switchD,
+        :switchK .
+
+:device231 a :Component ;
+    :dependsOn :switchG,
+        :switchI,
+        :switchV .
+
+:device232 a :Component ;
+    :dependsOn :switchZ .
+
+:device233 a :Component ;
+    :dependsOn :switchC,
+        :switchK,
+        :switchX,
+        :switchZ .
+
+:device234 a :Component ;
+    :dependsOn :switchA,
+        :switchL .
+
+:device235 a :Component ;
+    :dependsOn :switchH,
+        :switchT,
+        :switchV .
+
+:device236 a :Component ;
+    :dependsOn :switchE,
+        :switchG,
+        :switchM .
+
+:device237 a :Component ;
+    :dependsOn :switchD,
+        :switchJ,
+        :switchN .
+
+:device238 a :Component ;
+    :dependsOn :switchA,
+        :switchG,
+        :switchN,
+        :switchY .
+
+:device239 a :Component ;
+    :dependsOn :switchH,
+        :switchW,
+        :switchZ .
+
+:device240 a :Component ;
+    :dependsOn :switchZ .
+
+:device241 a :Component ;
+    :dependsOn :switchO,
+        :switchV,
+        :switchY .
+
+:device242 a :Component ;
+    :dependsOn :switchH .
+
+:device243 a :Component ;
+    :dependsOn :switchF,
+        :switchM .
+
+:device244 a :Component ;
+    :dependsOn :switchO .
+
+:device245 a :Component ;
+    :dependsOn :switchF .
+
+:device246 a :Component ;
+    :dependsOn :switchL,
+        :switchZ .
+
+:device247 a :Component ;
+    :dependsOn :switchN .
+
+:device248 a :Component ;
+    :dependsOn :switchO .
+
+:device249 a :Component ;
+    :dependsOn :switchW .
+
+:device250 a :Component ;
+    :dependsOn :switchA,
+        :switchH,
+        :switchJ,
+        :switchK .
+
+:device251 a :Component ;
+    :dependsOn :switchI,
+        :switchL,
+        :switchZ .
+
+:device252 a :Component ;
+    :dependsOn :switchC,
+        :switchJ,
+        :switchW,
+        :switchX .
+
+:device253 a :Component ;
+    :dependsOn :switchP .
+
+:device254 a :Component ;
+    :dependsOn :switchM,
+        :switchT .
+
+:device255 a :Component ;
+    :dependsOn :switchO .
+
+:device256 a :Component ;
+    :dependsOn :switchL,
+        :switchN,
+        :switchS,
+        :switchT .
+
+:device257 a :Component ;
+    :dependsOn :switchL .
+
+:device258 a :Component ;
+    :dependsOn :switchD,
+        :switchG .
+
+:device259 a :Component ;
+    :dependsOn :switchT .
+
+:device260 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchW,
+        :switchY .
+
+:device261 a :Component ;
+    :dependsOn :switchB,
+        :switchO,
+        :switchX .
+
+:device262 a :Component ;
+    :dependsOn :switchM,
+        :switchN,
+        :switchO,
+        :switchR .
+
+:device263 a :Component ;
+    :dependsOn :switchE .
+
+:device264 a :Component ;
+    :dependsOn :switchA,
+        :switchB,
+        :switchR .
+
+:device265 a :Component ;
+    :dependsOn :switchP,
+        :switchR,
+        :switchT .
+
+:device266 a :Component ;
+    :dependsOn :switchT .
+
+:device267 a :Component ;
+    :dependsOn :switchA,
+        :switchF,
+        :switchG .
+
+:device268 a :Component ;
+    :dependsOn :switchF,
+        :switchU,
+        :switchW .
+
+:device269 a :Component ;
+    :dependsOn :switchA,
+        :switchY,
+        :switchZ .
+
+:device270 a :Component ;
+    :dependsOn :switchI .
+
+:device271 a :Component ;
+    :dependsOn :switchH,
+        :switchI,
+        :switchT .
+
+:device272 a :Component ;
+    :dependsOn :switchJ,
+        :switchO,
+        :switchS .
+
+:device273 a :Component ;
+    :dependsOn :switchS .
+
+:device274 a :Component ;
+    :dependsOn :switchL .
+
+:device275 a :Component ;
+    :dependsOn :switchS,
+        :switchY .
+
+:device276 a :Component ;
+    :dependsOn :switchJ,
+        :switchL,
+        :switchQ,
+        :switchY .
+
+:device277 a :Component ;
+    :dependsOn :switchD,
+        :switchM .
+
+:device278 a :Component ;
+    :dependsOn :switchR .
+
+:device279 a :Component ;
+    :dependsOn :switchA,
+        :switchJ,
+        :switchK,
+        :switchO .
+
+:device280 a :Component ;
+    :dependsOn :switchP .
+
+:device281 a :Component ;
+    :dependsOn :switchB,
+        :switchC .
+
+:device282 a :Component ;
+    :dependsOn :switchG,
+        :switchK .
+
+:device283 a :Component ;
+    :dependsOn :switchL,
+        :switchS,
+        :switchT .
+
+:device284 a :Component ;
+    :dependsOn :switchC,
+        :switchG,
+        :switchJ .
+
+:device285 a :Component ;
+    :dependsOn :switchT .
+
+:device286 a :Component ;
+    :dependsOn :switchN,
+        :switchO,
+        :switchV .
+
+:device287 a :Component ;
+    :dependsOn :switchA,
+        :switchD,
+        :switchG,
+        :switchW .
+
+:device288 a :Component ;
+    :dependsOn :switchV,
+        :switchY .
+
+:device289 a :Component ;
+    :dependsOn :switchQ,
+        :switchT .
+
+:device290 a :Component ;
+    :dependsOn :switchQ,
+        :switchT .
+
+:device291 a :Component ;
+    :dependsOn :switchK,
+        :switchT .
+
+:device292 a :Component ;
+    :dependsOn :switchA,
+        :switchJ,
+        :switchW .
+
+:device293 a :Component ;
+    :dependsOn :switchV .
+
+:device294 a :Component ;
+    :dependsOn :switchH .
+
+:device295 a :Component ;
+    :dependsOn :switchI .
+
+:device296 a :Component ;
+    :dependsOn :switchW,
+        :switchX .
+
+:device297 a :Component ;
+    :dependsOn :switchF,
+        :switchM .
+
+:device298 a :Component ;
+    :dependsOn :switchL,
+        :switchQ .
+
+:device299 a :Component ;
+    :dependsOn :switchG,
+        :switchH,
+        :switchS .
+
+:device300 a :Component ;
+    :dependsOn :switchD,
+        :switchK .
+
+:device301 a :Component ;
+    :dependsOn :switchA,
+        :switchF,
+        :switchP,
+        :switchU .
+
+:device302 a :Component ;
+    :dependsOn :switchD,
+        :switchO,
+        :switchV,
+        :switchZ .
+
+:device303 a :Component ;
+    :dependsOn :switchC,
+        :switchJ,
+        :switchK,
+        :switchV .
+
+:device304 a :Component ;
+    :dependsOn :switchY .
+
+:device305 a :Component ;
+    :dependsOn :switchI,
+        :switchL,
+        :switchR,
+        :switchX .
+
+:device306 a :Component ;
+    :dependsOn :switchG,
+        :switchY .
+
+:device307 a :Component ;
+    :dependsOn :switchW .
+
+:device308 a :Component ;
+    :dependsOn :switchJ .
+
+:device309 a :Component ;
+    :dependsOn :switchF,
+        :switchG .
+
+:device310 a :Component ;
+    :dependsOn :switchD,
+        :switchI,
+        :switchO,
+        :switchP .
+
+:device311 a :Component ;
+    :dependsOn :switchL,
+        :switchW .
+
+:device312 a :Component ;
+    :dependsOn :switchB,
+        :switchP .
+
+:device313 a :Component ;
+    :dependsOn :switchF,
+        :switchM,
+        :switchS .
+
+:device314 a :Component ;
+    :dependsOn :switchM,
+        :switchN,
+        :switchR,
+        :switchU .
+
+:device315 a :Component ;
+    :dependsOn :switchH .
+
+:device316 a :Component ;
+    :dependsOn :switchL .
+
+:device317 a :Component ;
+    :dependsOn :switchF,
+        :switchT,
+        :switchZ .
+
+:device318 a :Component ;
+    :dependsOn :switchD,
+        :switchK,
+        :switchQ .
+
+:device319 a :Component ;
+    :dependsOn :switchK,
+        :switchO,
+        :switchQ,
+        :switchY .
+
+:device320 a :Component ;
+    :dependsOn :switchM,
+        :switchS,
+        :switchV .
+
+:device321 a :Component ;
+    :dependsOn :switchK,
+        :switchQ,
+        :switchW .
+
+:device322 a :Component ;
+    :dependsOn :switchK,
+        :switchU,
+        :switchY .
+
+:device323 a :Component ;
+    :dependsOn :switchQ .
+
+:device324 a :Component ;
+    :dependsOn :switchP,
+        :switchT .
+
+:device325 a :Component ;
+    :dependsOn :switchU .
+
+:device326 a :Component ;
+    :dependsOn :switchC,
+        :switchM .
+
+:device327 a :Component ;
+    :dependsOn :switchH,
+        :switchI,
+        :switchN,
+        :switchX .
+
+:device328 a :Component ;
+    :dependsOn :switchK .
+
+:device329 a :Component ;
+    :dependsOn :switchU,
+        :switchV .
+
+:device330 a :Component ;
+    :dependsOn :switchB,
+        :switchQ .
+
+:device331 a :Component ;
+    :dependsOn :switchQ .
+
+:device332 a :Component ;
+    :dependsOn :switchA,
+        :switchL,
+        :switchN .
+
+:device333 a :Component ;
+    :dependsOn :switchU .
+
+:device334 a :Component ;
+    :dependsOn :switchI,
+        :switchJ,
+        :switchS .
+
+:device335 a :Component ;
+    :dependsOn :switchM,
+        :switchW,
+        :switchY .
+
+:device336 a :Component ;
+    :dependsOn :switchF,
+        :switchO .
+
+:device337 a :Component ;
+    :dependsOn :switchF,
+        :switchI,
+        :switchW .
+
+:device338 a :Component ;
+    :dependsOn :switchL,
+        :switchS,
+        :switchV .
+
+:device339 a :Component ;
+    :dependsOn :switchH,
+        :switchR,
+        :switchS,
+        :switchV .
+
+:device340 a :Component ;
+    :dependsOn :switchI,
+        :switchJ,
+        :switchM,
+        :switchZ .
+
+:device341 a :Component ;
+    :dependsOn :switchC,
+        :switchK,
+        :switchM .
+
+:device342 a :Component ;
+    :dependsOn :switchB,
+        :switchF,
+        :switchU,
+        :switchW .
+
+:device343 a :Component ;
+    :dependsOn :switchG,
+        :switchH,
+        :switchL,
+        :switchY .
+
+:device344 a :Component ;
+    :dependsOn :switchI,
+        :switchR,
+        :switchU .
+
+:device345 a :Component ;
+    :dependsOn :switchH,
+        :switchI,
+        :switchW,
+        :switchY .
+
+:device346 a :Component ;
+    :dependsOn :switchA,
+        :switchO,
+        :switchR,
+        :switchY .
+
+:device347 a :Component ;
+    :dependsOn :switchS,
+        :switchY .
+
+:device348 a :Component ;
+    :dependsOn :switchQ .
+
+:device349 a :Component ;
+    :dependsOn :switchJ,
+        :switchQ .
+
+:device350 a :Component ;
+    :dependsOn :switchT .
+
+:device351 a :Component ;
+    :dependsOn :switchH,
+        :switchQ,
+        :switchU,
+        :switchZ .
+
+:device352 a :Component ;
+    :dependsOn :switchD,
+        :switchJ .
+
+:device353 a :Component ;
+    :dependsOn :switchF,
+        :switchO,
+        :switchR,
+        :switchU .
+
+:device354 a :Component ;
+    :dependsOn :switchC,
+        :switchG,
+        :switchH,
+        :switchX .
+
+:device355 a :Component ;
+    :dependsOn :switchH,
+        :switchO .
+
+:device356 a :Component ;
+    :dependsOn :switchL,
+        :switchO,
+        :switchU .
+
+:device357 a :Component ;
+    :dependsOn :switchD,
+        :switchN,
+        :switchP .
+
+:device358 a :Component ;
+    :dependsOn :switchV .
+
+:device359 a :Component ;
+    :dependsOn :switchS .
+
+:device360 a :Component ;
+    :dependsOn :switchN,
+        :switchZ .
+
+:device361 a :Component ;
+    :dependsOn :switchH,
+        :switchN,
+        :switchU,
+        :switchY .
+
+:device362 a :Component ;
+    :dependsOn :switchU .
+
+:device363 a :Component ;
+    :dependsOn :switchI,
+        :switchL,
+        :switchP .
+
+:device364 a :Component ;
+    :dependsOn :switchG .
+
+:device365 a :Component ;
+    :dependsOn :switchJ,
+        :switchV .
+
+:device366 a :Component ;
+    :dependsOn :switchO,
+        :switchT,
+        :switchZ .
+
+:device367 a :Component ;
+    :dependsOn :switchM,
+        :switchS .
+
+:device368 a :Component ;
+    :dependsOn :switchC,
+        :switchP,
+        :switchR,
+        :switchZ .
+
+:device369 a :Component ;
+    :dependsOn :switchD,
+        :switchQ,
+        :switchS .
+
+:device370 a :Component ;
+    :dependsOn :switchF .
+
+:device371 a :Component ;
+    :dependsOn :switchB,
+        :switchK,
+        :switchP,
+        :switchW .
+
+:device372 a :Component ;
+    :dependsOn :switchW .
+
+:device373 a :Component ;
+    :dependsOn :switchF,
+        :switchQ,
+        :switchS,
+        :switchY .
+
+:device374 a :Component ;
+    :dependsOn :switchG,
+        :switchL,
+        :switchM .
+
+:device375 a :Component ;
+    :dependsOn :switchO,
+        :switchR,
+        :switchY .
+
+:device376 a :Component ;
+    :dependsOn :switchR .
+
+:device377 a :Component ;
+    :dependsOn :switchH,
+        :switchL .
+
+:device378 a :Component ;
+    :dependsOn :switchH .
+
+:device379 a :Component ;
+    :dependsOn :switchW .
+
+:device380 a :Component ;
+    :dependsOn :switchE,
+        :switchF,
+        :switchI,
+        :switchN .
+
+:device381 a :Component ;
+    :dependsOn :switchC,
+        :switchE,
+        :switchL,
+        :switchP .
+
+:device382 a :Component ;
+    :dependsOn :switchC,
+        :switchG,
+        :switchH .
+
+:device383 a :Component ;
+    :dependsOn :switchO,
+        :switchP .
+
+:device384 a :Component ;
+    :dependsOn :switchD,
+        :switchK,
+        :switchT,
+        :switchX .
+
+:device385 a :Component ;
+    :dependsOn :switchB,
+        :switchC,
+        :switchG,
+        :switchU .
+
+:device386 a :Component ;
+    :dependsOn :switchK .
+
+:device387 a :Component ;
+    :dependsOn :switchM,
+        :switchX .
+
+:device388 a :Component ;
+    :dependsOn :switchW .
+
+:device389 a :Component ;
+    :dependsOn :switchM .
+
+:device390 a :Component ;
+    :dependsOn :switchM .
+
+:device391 a :Component ;
+    :dependsOn :switchQ,
+        :switchV .
+
+:device392 a :Component ;
+    :dependsOn :switchS,
+        :switchX .
+
+:device393 a :Component ;
+    :dependsOn :switchJ,
+        :switchP,
+        :switchS .
+
+:device394 a :Component ;
+    :dependsOn :switchI,
+        :switchP .
+
+:device395 a :Component ;
+    :dependsOn :switchO .
+
+:device396 a :Component ;
+    :dependsOn :switchW .
+
+:device397 a :Component ;
+    :dependsOn :switchG,
+        :switchJ,
+        :switchO .
+
+:device398 a :Component ;
+    :dependsOn :switchK,
+        :switchM,
+        :switchX .
+
+:device399 a :Component ;
+    :dependsOn :switchG,
+        :switchW,
+        :switchY .
+
+:device400 a :Component ;
+    :dependsOn :switchE .
+
+:device401 a :Component ;
+    :dependsOn :switchL,
+        :switchS .
+
+:device402 a :Component ;
+    :dependsOn :switchO,
+        :switchQ,
+        :switchS .
+
+:device403 a :Component ;
+    :dependsOn :switchJ,
+        :switchL,
+        :switchO .
+
+:device404 a :Component ;
+    :dependsOn :switchF,
+        :switchI,
+        :switchQ .
+
+:device405 a :Component ;
+    :dependsOn :switchB,
+        :switchD,
+        :switchG .
+
+:device406 a :Component ;
+    :dependsOn :switchW,
+        :switchY .
+
+:device407 a :Component ;
+    :dependsOn :switchC .
+
+:device408 a :Component ;
+    :dependsOn :switchY .
+
+:device409 a :Component ;
+    :dependsOn :switchT .
+
+:device410 a :Component ;
+    :dependsOn :switchL,
+        :switchR .
+
+:device411 a :Component ;
+    :dependsOn :switchG,
+        :switchO,
+        :switchY,
+        :switchZ .
+
+:device412 a :Component ;
+    :dependsOn :switchG .
+
+:device413 a :Component ;
+    :dependsOn :switchL,
+        :switchT,
+        :switchU .
+
+:device414 a :Component ;
+    :dependsOn :switchC,
+        :switchF,
+        :switchR,
+        :switchS .
+
+:device415 a :Component ;
+    :dependsOn :switchK,
+        :switchO,
+        :switchT,
+        :switchZ .
+
+:device416 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchQ .
+
+:device417 a :Component ;
+    :dependsOn :switchA,
+        :switchE .
+
+:device418 a :Component ;
+    :dependsOn :switchQ,
+        :switchY .
+
+:device419 a :Component ;
+    :dependsOn :switchQ,
+        :switchR,
+        :switchV .
+
+:device420 a :Component ;
+    :dependsOn :switchI,
+        :switchO,
+        :switchU .
+
+:device421 a :Component ;
+    :dependsOn :switchG,
+        :switchN .
+
+:device422 a :Component ;
+    :dependsOn :switchD,
+        :switchZ .
+
+:device423 a :Component ;
+    :dependsOn :switchT,
+        :switchV .
+
+:device424 a :Component ;
+    :dependsOn :switchD,
+        :switchG,
+        :switchP,
+        :switchU .
+
+:device425 a :Component ;
+    :dependsOn :switchL,
+        :switchV,
+        :switchZ .
+
+:device426 a :Component ;
+    :dependsOn :switchB,
+        :switchJ,
+        :switchK,
+        :switchY .
+
+:device427 a :Component ;
+    :dependsOn :switchK,
+        :switchQ .
+
+:device428 a :Component ;
+    :dependsOn :switchW .
+
+:device429 a :Component ;
+    :dependsOn :switchD,
+        :switchO,
+        :switchX .
+
+:device430 a :Component ;
+    :dependsOn :switchJ,
+        :switchK,
+        :switchM,
+        :switchS .
+
+:device431 a :Component ;
+    :dependsOn :switchB .
+
+:device432 a :Component ;
+    :dependsOn :switchA,
+        :switchE,
+        :switchF,
+        :switchG .
+
+:device433 a :Component ;
+    :dependsOn :switchA,
+        :switchI,
+        :switchO .
+
+:device434 a :Component ;
+    :dependsOn :switchF,
+        :switchK .
+
+:device435 a :Component ;
+    :dependsOn :switchN .
+
+:device436 a :Component ;
+    :dependsOn :switchE,
+        :switchT .
+
+:device437 a :Component ;
+    :dependsOn :switchH,
+        :switchJ,
+        :switchN,
+        :switchR .
+
+:device438 a :Component ;
+    :dependsOn :switchG,
+        :switchM,
+        :switchY .
+
+:device439 a :Component ;
+    :dependsOn :switchC,
+        :switchE,
+        :switchU,
+        :switchY .
+
+:device440 a :Component ;
+    :dependsOn :switchB .
+
+:device441 a :Component ;
+    :dependsOn :switchD,
+        :switchI,
+        :switchN,
+        :switchS .
+
+:device442 a :Component ;
+    :dependsOn :switchC,
+        :switchJ,
+        :switchT,
+        :switchV .
+
+:device443 a :Component ;
+    :dependsOn :switchA .
+
+:device444 a :Component ;
+    :dependsOn :switchD,
+        :switchU,
+        :switchX .
+
+:device445 a :Component ;
+    :dependsOn :switchH,
+        :switchM,
+        :switchN .
+
+:device446 a :Component ;
+    :dependsOn :switchB,
+        :switchO,
+        :switchT,
+        :switchV .
+
+:device447 a :Component ;
+    :dependsOn :switchN,
+        :switchU .
+
+:device448 a :Component ;
+    :dependsOn :switchN,
+        :switchO,
+        :switchY,
+        :switchZ .
+
+:device449 a :Component ;
+    :dependsOn :switchW,
+        :switchY .
+
+:device450 a :Component ;
+    :dependsOn :switchG,
+        :switchP,
+        :switchQ,
+        :switchW .
+
+:device451 a :Component ;
+    :dependsOn :switchG,
+        :switchH,
+        :switchK .
+
+:device452 a :Component ;
+    :dependsOn :switchM,
+        :switchT .
+
+:device453 a :Component ;
+    :dependsOn :switchP,
+        :switchQ,
+        :switchT,
+        :switchV .
+
+:device454 a :Component ;
+    :dependsOn :switchK,
+        :switchO .
+
+:device455 a :Component ;
+    :dependsOn :switchK,
+        :switchM,
+        :switchO,
+        :switchX .
+
+:device456 a :Component ;
+    :dependsOn :switchG,
+        :switchK,
+        :switchN,
+        :switchO .
+
+:device457 a :Component ;
+    :dependsOn :switchN .
+
+:device458 a :Component ;
+    :dependsOn :switchE,
+        :switchN,
+        :switchX .
+
+:device459 a :Component ;
+    :dependsOn :switchK,
+        :switchQ,
+        :switchV .
+
+:device460 a :Component ;
+    :dependsOn :switchW .
+
+:device461 a :Component ;
+    :dependsOn :switchC,
+        :switchG,
+        :switchJ,
+        :switchZ .
+
+:device462 a :Component ;
+    :dependsOn :switchC,
+        :switchN,
+        :switchS,
+        :switchW .
+
+:device463 a :Component ;
+    :dependsOn :switchO .
+
+:device464 a :Component ;
+    :dependsOn :switchE,
+        :switchH,
+        :switchI,
+        :switchX .
+
+:device465 a :Component ;
+    :dependsOn :switchF,
+        :switchH .
+
+:device466 a :Component ;
+    :dependsOn :switchU,
+        :switchY .
+
+:device467 a :Component ;
+    :dependsOn :switchF,
+        :switchZ .
+
+:device468 a :Component ;
+    :dependsOn :switchF .
+
+:device469 a :Component ;
+    :dependsOn :switchR,
+        :switchS .
+
+:device470 a :Component ;
+    :dependsOn :switchC,
+        :switchP,
+        :switchQ .
+
+:device471 a :Component ;
+    :dependsOn :switchB,
+        :switchM,
+        :switchO,
+        :switchW .
+
+:device472 a :Component ;
+    :dependsOn :switchN,
+        :switchZ .
+
+:device473 a :Component ;
+    :dependsOn :switchA .
+
+:device474 a :Component ;
+    :dependsOn :switchA,
+        :switchJ,
+        :switchK,
+        :switchP .
+
+:device475 a :Component ;
+    :dependsOn :switchA,
+        :switchR,
+        :switchS,
+        :switchX .
+
+:device476 a :Component ;
+    :dependsOn :switchH,
+        :switchR .
+
+:device477 a :Component ;
+    :dependsOn :switchL .
+
+:device478 a :Component ;
+    :dependsOn :switchO,
+        :switchQ .
+
+:device479 a :Component ;
+    :dependsOn :switchA,
+        :switchE,
+        :switchK,
+        :switchM .
+
+:device480 a :Component ;
+    :dependsOn :switchG,
+        :switchH,
+        :switchI,
+        :switchK .
+
+:device481 a :Component ;
+    :dependsOn :switchC,
+        :switchV .
+
+:device482 a :Component ;
+    :dependsOn :switchK,
+        :switchL,
+        :switchN .
+
+:device483 a :Component ;
+    :dependsOn :switchK,
+        :switchL,
+        :switchQ,
+        :switchR .
+
+:device484 a :Component ;
+    :dependsOn :switchX .
+
+:device485 a :Component ;
+    :dependsOn :switchJ,
+        :switchM,
+        :switchO,
+        :switchR .
+
+:device486 a :Component ;
+    :dependsOn :switchJ,
+        :switchP .
+
+:device487 a :Component ;
+    :dependsOn :switchD,
+        :switchI,
+        :switchL,
+        :switchV .
+
+:device488 a :Component ;
+    :dependsOn :switchJ,
+        :switchK,
+        :switchU .
+
+:device489 a :Component ;
+    :dependsOn :switchI,
+        :switchR .
+
+:device490 a :Component ;
+    :dependsOn :switchV .
+
+:device491 a :Component ;
+    :dependsOn :switchC,
+        :switchE,
+        :switchK,
+        :switchZ .
+
+:device492 a :Component ;
+    :dependsOn :switchD,
+        :switchK,
+        :switchN .
+
+:device493 a :Component ;
+    :dependsOn :switchZ .
+
+:device494 a :Component ;
+    :dependsOn :switchG,
+        :switchJ,
+        :switchT .
+
+:device495 a :Component ;
+    :dependsOn :switchC,
+        :switchE,
+        :switchR .
+
+:device496 a :Component ;
+    :dependsOn :switchA,
+        :switchD,
+        :switchM,
+        :switchR .
+
+:device497 a :Component ;
+    :dependsOn :switchF,
+        :switchN,
+        :switchP .
+
+:device498 a :Component ;
+    :dependsOn :switchO,
+        :switchQ,
+        :switchW,
+        :switchX .
+
+:device499 a :Component ;
+    :dependsOn :switchE,
+        :switchH,
+        :switchT,
+        :switchZ .
+
+:device500 a :Component ;
+    :dependsOn :switchU .
+
+:device501 a :Component ;
+    :dependsOn :switchD,
+        :switchN,
+        :switchS,
+        :switchZ .
+
+:device502 a :Component ;
+    :dependsOn :switchH,
+        :switchT,
+        :switchZ .
+
+:device503 a :Component ;
+    :dependsOn :switchA,
+        :switchB,
+        :switchF,
+        :switchR .
+
+:device504 a :Component ;
+    :dependsOn :switchH,
+        :switchW,
+        :switchZ .
+
+:device505 a :Component ;
+    :dependsOn :switchB .
+
+:device506 a :Component ;
+    :dependsOn :switchL,
+        :switchP .
+
+:device507 a :Component ;
+    :dependsOn :switchO,
+        :switchR .
+
+:device508 a :Component ;
+    :dependsOn :switchD,
+        :switchE,
+        :switchN .
+
+:device509 a :Component ;
+    :dependsOn :switchC,
+        :switchE,
+        :switchJ,
+        :switchK .
+
+:device510 a :Component ;
+    :dependsOn :switchD,
+        :switchO,
+        :switchW,
+        :switchX .
+
+:device511 a :Component ;
+    :dependsOn :switchF,
+        :switchQ,
+        :switchX .
+
+:device512 a :Component ;
+    :dependsOn :switchC .
+
+:device513 a :Component ;
+    :dependsOn :switchH,
+        :switchK,
+        :switchS .
+
+:device514 a :Component ;
+    :dependsOn :switchD,
+        :switchJ .
+
+:device515 a :Component ;
+    :dependsOn :switchL,
+        :switchW .
+
+:device516 a :Component ;
+    :dependsOn :switchA,
+        :switchH,
+        :switchL,
+        :switchZ .
+
+:device517 a :Component ;
+    :dependsOn :switchJ,
+        :switchO,
+        :switchP,
+        :switchW .
+
+:device518 a :Component ;
+    :dependsOn :switchF,
+        :switchQ .
+
+:device519 a :Component ;
+    :dependsOn :switchI,
+        :switchS .
+
+:device520 a :Component ;
+    :dependsOn :switchX,
+        :switchZ .
+
+:device521 a :Component ;
+    :dependsOn :switchH .
+
+:device522 a :Component ;
+    :dependsOn :switchG,
+        :switchO,
+        :switchS .
+
+:device523 a :Component ;
+    :dependsOn :switchC,
+        :switchQ .
+
+:device524 a :Component ;
+    :dependsOn :switchC,
+        :switchI,
+        :switchJ,
+        :switchV .
+
+:device525 a :Component ;
+    :dependsOn :switchJ,
+        :switchU,
+        :switchZ .
+
+:device526 a :Component ;
+    :dependsOn :switchC,
+        :switchP,
+        :switchU .
+
+:device527 a :Component ;
+    :dependsOn :switchD,
+        :switchI,
+        :switchP,
+        :switchS .
+
+:device528 a :Component ;
+    :dependsOn :switchC,
+        :switchJ,
+        :switchL,
+        :switchY .
+
+:device529 a :Component ;
+    :dependsOn :switchK .
+
+:device530 a :Component ;
+    :dependsOn :switchD,
+        :switchG,
+        :switchJ .
+
+:device531 a :Component ;
+    :dependsOn :switchE,
+        :switchL,
+        :switchS,
+        :switchT .
+
+:device532 a :Component ;
+    :dependsOn :switchG,
+        :switchO .
+
+:device533 a :Component ;
+    :dependsOn :switchI,
+        :switchU .
+
+:device534 a :Component ;
+    :dependsOn :switchO .
+
+:device535 a :Component ;
+    :dependsOn :switchB .
+
+:device536 a :Component ;
+    :dependsOn :switchL .
+
+:device537 a :Component ;
+    :dependsOn :switchK .
+
+:device538 a :Component ;
+    :dependsOn :switchC .
+
+:device539 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchQ .
+
+:device540 a :Component ;
+    :dependsOn :switchW .
+
+:device541 a :Component ;
+    :dependsOn :switchK,
+        :switchS,
+        :switchU .
+
+:device542 a :Component ;
+    :dependsOn :switchF,
+        :switchG,
+        :switchJ .
+
+:device543 a :Component ;
+    :dependsOn :switchI,
+        :switchL,
+        :switchQ .
+
+:device544 a :Component ;
+    :dependsOn :switchE,
+        :switchT .
+
+:device545 a :Component ;
+    :dependsOn :switchE .
+
+:device546 a :Component ;
+    :dependsOn :switchR .
+
+:device547 a :Component ;
+    :dependsOn :switchM,
+        :switchN,
+        :switchV .
+
+:device548 a :Component ;
+    :dependsOn :switchR,
+        :switchZ .
+
+:device549 a :Component ;
+    :dependsOn :switchD,
+        :switchT .
+
+:device550 a :Component ;
+    :dependsOn :switchP,
+        :switchQ .
+
+:device551 a :Component ;
+    :dependsOn :switchG,
+        :switchI,
+        :switchY .
+
+:device552 a :Component ;
+    :dependsOn :switchP .
+
+:device553 a :Component ;
+    :dependsOn :switchY,
+        :switchZ .
+
+:device554 a :Component ;
+    :dependsOn :switchP .
+
+:device555 a :Component ;
+    :dependsOn :switchC,
+        :switchG,
+        :switchJ,
+        :switchW .
+
+:device556 a :Component ;
+    :dependsOn :switchD,
+        :switchJ .
+
+:device557 a :Component ;
+    :dependsOn :switchA,
+        :switchQ,
+        :switchR,
+        :switchX .
+
+:device558 a :Component ;
+    :dependsOn :switchE,
+        :switchM,
+        :switchY .
+
+:device559 a :Component ;
+    :dependsOn :switchD,
+        :switchJ,
+        :switchR .
+
+:device560 a :Component ;
+    :dependsOn :switchN,
+        :switchO,
+        :switchQ,
+        :switchR .
+
+:device561 a :Component ;
+    :dependsOn :switchD,
+        :switchP,
+        :switchW,
+        :switchX .
+
+:device562 a :Component ;
+    :dependsOn :switchC,
+        :switchN,
+        :switchO .
+
+:device563 a :Component ;
+    :dependsOn :switchA,
+        :switchH .
+
+:device564 a :Component ;
+    :dependsOn :switchA,
+        :switchO,
+        :switchQ .
+
+:device565 a :Component ;
+    :dependsOn :switchG,
+        :switchI .
+
+:device566 a :Component ;
+    :dependsOn :switchO,
+        :switchR,
+        :switchT,
+        :switchU .
+
+:device567 a :Component ;
+    :dependsOn :switchZ .
+
+:device568 a :Component ;
+    :dependsOn :switchJ,
+        :switchT,
+        :switchZ .
+
+:device569 a :Component ;
+    :dependsOn :switchI,
+        :switchU .
+
+:device570 a :Component ;
+    :dependsOn :switchL .
+
+:device571 a :Component ;
+    :dependsOn :switchD .
+
+:device572 a :Component ;
+    :dependsOn :switchA .
+
+:device573 a :Component ;
+    :dependsOn :switchC .
+
+:device574 a :Component ;
+    :dependsOn :switchD,
+        :switchM,
+        :switchR,
+        :switchY .
+
+:device575 a :Component ;
+    :dependsOn :switchA,
+        :switchB,
+        :switchG .
+
+:device576 a :Component ;
+    :dependsOn :switchO,
+        :switchR,
+        :switchZ .
+
+:device577 a :Component ;
+    :dependsOn :switchK,
+        :switchW .
+
+:device578 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchK .
+
+:device579 a :Component ;
+    :dependsOn :switchB,
+        :switchD,
+        :switchN,
+        :switchX .
+
+:device580 a :Component ;
+    :dependsOn :switchT .
+
+:device581 a :Component ;
+    :dependsOn :switchE,
+        :switchI,
+        :switchZ .
+
+:device582 a :Component ;
+    :dependsOn :switchA,
+        :switchB,
+        :switchF,
+        :switchR .
+
+:device583 a :Component ;
+    :dependsOn :switchM,
+        :switchX .
+
+:device584 a :Component ;
+    :dependsOn :switchC,
+        :switchF .
+
+:device585 a :Component ;
+    :dependsOn :switchG,
+        :switchN,
+        :switchT,
+        :switchY .
+
+:device586 a :Component ;
+    :dependsOn :switchP .
+
+:device587 a :Component ;
+    :dependsOn :switchF,
+        :switchJ,
+        :switchK .
+
+:device588 a :Component ;
+    :dependsOn :switchB,
+        :switchI,
+        :switchR,
+        :switchZ .
+
+:device589 a :Component ;
+    :dependsOn :switchZ .
+
+:device590 a :Component ;
+    :dependsOn :switchP .
+
+:device591 a :Component ;
+    :dependsOn :switchB,
+        :switchF .
+
+:device592 a :Component ;
+    :dependsOn :switchB,
+        :switchM,
+        :switchN,
+        :switchX .
+
+:device593 a :Component ;
+    :dependsOn :switchK .
+
+:device594 a :Component ;
+    :dependsOn :switchZ .
+
+:device595 a :Component ;
+    :dependsOn :switchB,
+        :switchR,
+        :switchT,
+        :switchY .
+
+:device596 a :Component ;
+    :dependsOn :switchG,
+        :switchQ,
+        :switchR,
+        :switchW .
+
+:device597 a :Component ;
+    :dependsOn :switchI .
+
+:device598 a :Component ;
+    :dependsOn :switchF,
+        :switchN .
+
+:device599 a :Component ;
+    :dependsOn :switchN,
+        :switchP .
+
+:device600 a :Component ;
+    :dependsOn :switchM,
+        :switchZ .
+
+:device601 a :Component ;
+    :dependsOn :switchL,
+        :switchM .
+
+:device602 a :Component ;
+    :dependsOn :switchB,
+        :switchI,
+        :switchJ,
+        :switchW .
+
+:device603 a :Component ;
+    :dependsOn :switchK,
+        :switchO .
+
+:device604 a :Component ;
+    :dependsOn :switchH,
+        :switchR,
+        :switchX .
+
+:device605 a :Component ;
+    :dependsOn :switchJ,
+        :switchO,
+        :switchR,
+        :switchZ .
+
+:device606 a :Component ;
+    :dependsOn :switchA,
+        :switchJ,
+        :switchY .
+
+:device607 a :Component ;
+    :dependsOn :switchT,
+        :switchX,
+        :switchZ .
+
+:device608 a :Component ;
+    :dependsOn :switchK .
+
+:device609 a :Component ;
+    :dependsOn :switchD,
+        :switchL,
+        :switchT .
+
+:device610 a :Component ;
+    :dependsOn :switchC,
+        :switchT .
+
+:device611 a :Component ;
+    :dependsOn :switchC,
+        :switchG,
+        :switchY .
+
+:device612 a :Component ;
+    :dependsOn :switchE,
+        :switchW .
+
+:device613 a :Component ;
+    :dependsOn :switchS .
+
+:device614 a :Component ;
+    :dependsOn :switchP .
+
+:device615 a :Component ;
+    :dependsOn :switchA,
+        :switchB,
+        :switchJ,
+        :switchT .
+
+:device616 a :Component ;
+    :dependsOn :switchX .
+
+:device617 a :Component ;
+    :dependsOn :switchQ .
+
+:device618 a :Component ;
+    :dependsOn :switchY .
+
+:device619 a :Component ;
+    :dependsOn :switchI,
+        :switchL .
+
+:device620 a :Component ;
+    :dependsOn :switchK .
+
+:device621 a :Component ;
+    :dependsOn :switchD,
+        :switchK,
+        :switchX .
+
+:device622 a :Component ;
+    :dependsOn :switchL .
+
+:device623 a :Component ;
+    :dependsOn :switchC,
+        :switchW .
+
+:device624 a :Component ;
+    :dependsOn :switchC,
+        :switchJ,
+        :switchS,
+        :switchT .
+
+:device625 a :Component ;
+    :dependsOn :switchV .
+
+:device626 a :Component ;
+    :dependsOn :switchA,
+        :switchE,
+        :switchT,
+        :switchZ .
+
+:device627 a :Component ;
+    :dependsOn :switchK,
+        :switchM,
+        :switchP .
+
+:device628 a :Component ;
+    :dependsOn :switchJ,
+        :switchS .
+
+:device629 a :Component ;
+    :dependsOn :switchA,
+        :switchH,
+        :switchL .
+
+:device630 a :Component ;
+    :dependsOn :switchH .
+
+:device631 a :Component ;
+    :dependsOn :switchH,
+        :switchP .
+
+:device632 a :Component ;
+    :dependsOn :switchC .
+
+:device633 a :Component ;
+    :dependsOn :switchA,
+        :switchQ,
+        :switchZ .
+
+:device634 a :Component ;
+    :dependsOn :switchD,
+        :switchJ,
+        :switchL,
+        :switchS .
+
+:device635 a :Component ;
+    :dependsOn :switchU,
+        :switchW .
+
+:device636 a :Component ;
+    :dependsOn :switchD,
+        :switchK,
+        :switchV,
+        :switchY .
+
+:device637 a :Component ;
+    :dependsOn :switchX .
+
+:device638 a :Component ;
+    :dependsOn :switchC,
+        :switchI .
+
+:device639 a :Component ;
+    :dependsOn :switchJ,
+        :switchR .
+
+:device640 a :Component ;
+    :dependsOn :switchB .
+
+:device641 a :Component ;
+    :dependsOn :switchE,
+        :switchK,
+        :switchP,
+        :switchS .
+
+:device642 a :Component ;
+    :dependsOn :switchL,
+        :switchT .
+
+:device643 a :Component ;
+    :dependsOn :switchL,
+        :switchO .
+
+:device644 a :Component ;
+    :dependsOn :switchE,
+        :switchW .
+
+:device645 a :Component ;
+    :dependsOn :switchQ,
+        :switchT,
+        :switchY .
+
+:device646 a :Component ;
+    :dependsOn :switchI,
+        :switchJ,
+        :switchK,
+        :switchV .
+
+:device647 a :Component ;
+    :dependsOn :switchD,
+        :switchE,
+        :switchJ .
+
+:device648 a :Component ;
+    :dependsOn :switchA,
+        :switchW .
+
+:device649 a :Component ;
+    :dependsOn :switchB,
+        :switchN,
+        :switchU,
+        :switchW .
+
+:device650 a :Component ;
+    :dependsOn :switchZ .
+
+:device651 a :Component ;
+    :dependsOn :switchA,
+        :switchK,
+        :switchV,
+        :switchX .
+
+:device652 a :Component ;
+    :dependsOn :switchD,
+        :switchU,
+        :switchZ .
+
+:device653 a :Component ;
+    :dependsOn :switchA .
+
+:device654 a :Component ;
+    :dependsOn :switchA,
+        :switchS .
+
+:device655 a :Component ;
+    :dependsOn :switchK,
+        :switchN,
+        :switchZ .
+
+:device656 a :Component ;
+    :dependsOn :switchL .
+
+:device657 a :Component ;
+    :dependsOn :switchG .
+
+:device658 a :Component ;
+    :dependsOn :switchC,
+        :switchL,
+        :switchP,
+        :switchS .
+
+:device659 a :Component ;
+    :dependsOn :switchC,
+        :switchL,
+        :switchO,
+        :switchW .
+
+:device660 a :Component ;
+    :dependsOn :switchE,
+        :switchH,
+        :switchS,
+        :switchZ .
+
+:device661 a :Component ;
+    :dependsOn :switchF,
+        :switchG,
+        :switchH,
+        :switchQ .
+
+:device662 a :Component ;
+    :dependsOn :switchO,
+        :switchW,
+        :switchZ .
+
+:device663 a :Component ;
+    :dependsOn :switchA,
+        :switchC,
+        :switchF,
+        :switchQ .
+
+:device664 a :Component ;
+    :dependsOn :switchR .
+
+:device665 a :Component ;
+    :dependsOn :switchI,
+        :switchK,
+        :switchV .
+
+:device666 a :Component ;
+    :dependsOn :switchX .
+
+:device667 a :Component ;
+    :dependsOn :switchA,
+        :switchC,
+        :switchH,
+        :switchK .
+
+:device668 a :Component ;
+    :dependsOn :switchL,
+        :switchR .
+
+:device669 a :Component ;
+    :dependsOn :switchI .
+
+:device670 a :Component ;
+    :dependsOn :switchA,
+        :switchJ,
+        :switchM .
+
+:device671 a :Component ;
+    :dependsOn :switchP,
+        :switchQ,
+        :switchX .
+
+:device672 a :Component ;
+    :dependsOn :switchF,
+        :switchG,
+        :switchJ,
+        :switchN .
+
+:device673 a :Component ;
+    :dependsOn :switchM,
+        :switchV .
+
+:device674 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchH,
+        :switchL .
+
+:device675 a :Component ;
+    :dependsOn :switchA .
+
+:device676 a :Component ;
+    :dependsOn :switchA,
+        :switchD .
+
+:device677 a :Component ;
+    :dependsOn :switchL,
+        :switchM,
+        :switchZ .
+
+:device678 a :Component ;
+    :dependsOn :switchB,
+        :switchM,
+        :switchN,
+        :switchQ .
+
+:device679 a :Component ;
+    :dependsOn :switchO .
+
+:device680 a :Component ;
+    :dependsOn :switchK .
+
+:device681 a :Component ;
+    :dependsOn :switchK,
+        :switchQ,
+        :switchY .
+
+:device682 a :Component ;
+    :dependsOn :switchA,
+        :switchF,
+        :switchZ .
+
+:device683 a :Component ;
+    :dependsOn :switchA,
+        :switchE,
+        :switchK,
+        :switchV .
+
+:device684 a :Component ;
+    :dependsOn :switchB,
+        :switchE,
+        :switchJ,
+        :switchT .
+
+:device685 a :Component ;
+    :dependsOn :switchQ,
+        :switchW,
+        :switchY .
+
+:device686 a :Component ;
+    :dependsOn :switchI,
+        :switchN,
+        :switchT .
+
+:device687 a :Component ;
+    :dependsOn :switchO .
+
+:device688 a :Component ;
+    :dependsOn :switchF,
+        :switchJ,
+        :switchT .
+
+:device689 a :Component ;
+    :dependsOn :switchG,
+        :switchI .
+
+:device690 a :Component ;
+    :dependsOn :switchE,
+        :switchK,
+        :switchN,
+        :switchX .
+
+:device691 a :Component ;
+    :dependsOn :switchC,
+        :switchI .
+
+:device692 a :Component ;
+    :dependsOn :switchE,
+        :switchI .
+
+:device693 a :Component ;
+    :dependsOn :switchF,
+        :switchQ,
+        :switchW .
+
+:device694 a :Component ;
+    :dependsOn :switchD,
+        :switchI,
+        :switchK,
+        :switchR .
+
+:device695 a :Component ;
+    :dependsOn :switchA,
+        :switchB,
+        :switchV,
+        :switchY .
+
+:device696 a :Component ;
+    :dependsOn :switchG,
+        :switchR,
+        :switchW,
+        :switchZ .
+
+:device697 a :Component ;
+    :dependsOn :switchE,
+        :switchG,
+        :switchK,
+        :switchO .
+
+:device698 a :Component ;
+    :dependsOn :switchA,
+        :switchC,
+        :switchG,
+        :switchO .
+
+:device699 a :Component ;
+    :dependsOn :switchC,
+        :switchP,
+        :switchU,
+        :switchV .
+
+:device700 a :Component ;
+    :dependsOn :switchA,
+        :switchR .
+
+:device701 a :Component ;
+    :dependsOn :switchK,
+        :switchQ .
+
+:device702 a :Component ;
+    :dependsOn :switchA,
+        :switchH .
+
+:device703 a :Component ;
+    :dependsOn :switchB,
+        :switchM,
+        :switchW .
+
+:device704 a :Component ;
+    :dependsOn :switchP,
+        :switchV .
+
+:device705 a :Component ;
+    :dependsOn :switchE,
+        :switchS,
+        :switchU,
+        :switchX .
+
+:device706 a :Component ;
+    :dependsOn :switchF,
+        :switchL,
+        :switchP,
+        :switchR .
+
+:device707 a :Component ;
+    :dependsOn :switchL,
+        :switchY .
+
+:device708 a :Component ;
+    :dependsOn :switchC,
+        :switchK,
+        :switchQ,
+        :switchT .
+
+:device709 a :Component ;
+    :dependsOn :switchC,
+        :switchF,
+        :switchO,
+        :switchT .
+
+:device710 a :Component ;
+    :dependsOn :switchM .
+
+:device711 a :Component ;
+    :dependsOn :switchK,
+        :switchR,
+        :switchY,
+        :switchZ .
+
+:device712 a :Component ;
+    :dependsOn :switchA,
+        :switchP,
+        :switchR .
+
+:device713 a :Component ;
+    :dependsOn :switchG,
+        :switchN,
+        :switchY .
+
+:device714 a :Component ;
+    :dependsOn :switchB,
+        :switchM,
+        :switchT,
+        :switchW .
+
+:device715 a :Component ;
+    :dependsOn :switchE,
+        :switchG,
+        :switchJ .
+
+:device716 a :Component ;
+    :dependsOn :switchA,
+        :switchM,
+        :switchU .
+
+:device717 a :Component ;
+    :dependsOn :switchT .
+
+:device718 a :Component ;
+    :dependsOn :switchE,
+        :switchP,
+        :switchR,
+        :switchT .
+
+:device719 a :Component ;
+    :dependsOn :switchA,
+        :switchH,
+        :switchR .
+
+:device720 a :Component ;
+    :dependsOn :switchA,
+        :switchD .
+
+:device721 a :Component ;
+    :dependsOn :switchO,
+        :switchV .
+
+:device722 a :Component ;
+    :dependsOn :switchS .
+
+:device723 a :Component ;
+    :dependsOn :switchD,
+        :switchP .
+
+:device724 a :Component ;
+    :dependsOn :switchF .
+
+:device725 a :Component ;
+    :dependsOn :switchK,
+        :switchT .
+
+:device726 a :Component ;
+    :dependsOn :switchD,
+        :switchG,
+        :switchH,
+        :switchL .
+
+:device727 a :Component ;
+    :dependsOn :switchD,
+        :switchJ,
+        :switchV .
+
+:device728 a :Component ;
+    :dependsOn :switchI .
+
+:device729 a :Component ;
+    :dependsOn :switchZ .
+
+:device730 a :Component ;
+    :dependsOn :switchE,
+        :switchH .
+
+:device731 a :Component ;
+    :dependsOn :switchH .
+
+:device732 a :Component ;
+    :dependsOn :switchI,
+        :switchJ,
+        :switchL,
+        :switchN .
+
+:device733 a :Component ;
+    :dependsOn :switchM,
+        :switchY .
+
+:device734 a :Component ;
+    :dependsOn :switchH,
+        :switchI,
+        :switchM,
+        :switchR .
+
+:device735 a :Component ;
+    :dependsOn :switchE,
+        :switchG,
+        :switchL .
+
+:device736 a :Component ;
+    :dependsOn :switchK,
+        :switchQ,
+        :switchW,
+        :switchY .
+
+:device737 a :Component ;
+    :dependsOn :switchD,
+        :switchK,
+        :switchM .
+
+:device738 a :Component ;
+    :dependsOn :switchF .
+
+:device739 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchX .
+
+:device740 a :Component ;
+    :dependsOn :switchN,
+        :switchV .
+
+:device741 a :Component ;
+    :dependsOn :switchQ,
+        :switchU .
+
+:device742 a :Component ;
+    :dependsOn :switchE,
+        :switchY .
+
+:device743 a :Component ;
+    :dependsOn :switchA,
+        :switchC,
+        :switchP,
+        :switchQ .
+
+:device744 a :Component ;
+    :dependsOn :switchC .
+
+:device745 a :Component ;
+    :dependsOn :switchV .
+
+:device746 a :Component ;
+    :dependsOn :switchM .
+
+:device747 a :Component ;
+    :dependsOn :switchI,
+        :switchR,
+        :switchS,
+        :switchZ .
+
+:device748 a :Component ;
+    :dependsOn :switchN,
+        :switchS .
+
+:device749 a :Component ;
+    :dependsOn :switchA,
+        :switchQ,
+        :switchS,
+        :switchV .
+
+:device750 a :Component ;
+    :dependsOn :switchF,
+        :switchH,
+        :switchX .
+
+:device751 a :Component ;
+    :dependsOn :switchF .
+
+:device752 a :Component ;
+    :dependsOn :switchB,
+        :switchI,
+        :switchL,
+        :switchS .
+
+:device753 a :Component ;
+    :dependsOn :switchQ,
+        :switchR .
+
+:device754 a :Component ;
+    :dependsOn :switchB,
+        :switchP,
+        :switchV .
+
+:device755 a :Component ;
+    :dependsOn :switchJ,
+        :switchN,
+        :switchX .
+
+:device756 a :Component ;
+    :dependsOn :switchO,
+        :switchS,
+        :switchZ .
+
+:device757 a :Component ;
+    :dependsOn :switchK,
+        :switchS,
+        :switchV .
+
+:device758 a :Component ;
+    :dependsOn :switchN,
+        :switchQ,
+        :switchV,
+        :switchY .
+
+:device759 a :Component ;
+    :dependsOn :switchB,
+        :switchU .
+
+:device760 a :Component ;
+    :dependsOn :switchZ .
+
+:device761 a :Component ;
+    :dependsOn :switchC,
+        :switchF,
+        :switchK,
+        :switchS .
+
+:device762 a :Component ;
+    :dependsOn :switchI,
+        :switchQ,
+        :switchV .
+
+:device763 a :Component ;
+    :dependsOn :switchE,
+        :switchG,
+        :switchX .
+
+:device764 a :Component ;
+    :dependsOn :switchR .
+
+:device765 a :Component ;
+    :dependsOn :switchB,
+        :switchF,
+        :switchX .
+
+:device766 a :Component ;
+    :dependsOn :switchF,
+        :switchR .
+
+:device767 a :Component ;
+    :dependsOn :switchG,
+        :switchP .
+
+:device768 a :Component ;
+    :dependsOn :switchB,
+        :switchG,
+        :switchH,
+        :switchO .
+
+:device769 a :Component ;
+    :dependsOn :switchJ,
+        :switchW .
+
+:device770 a :Component ;
+    :dependsOn :switchD,
+        :switchQ .
+
+:device771 a :Component ;
+    :dependsOn :switchK,
+        :switchL,
+        :switchR,
+        :switchW .
+
+:device772 a :Component ;
+    :dependsOn :switchC,
+        :switchI,
+        :switchO,
+        :switchP .
+
+:device773 a :Component ;
+    :dependsOn :switchJ .
+
+:device774 a :Component ;
+    :dependsOn :switchE,
+        :switchM,
+        :switchX .
+
+:device775 a :Component ;
+    :dependsOn :switchB,
+        :switchC,
+        :switchG,
+        :switchL .
+
+:device776 a :Component ;
+    :dependsOn :switchG,
+        :switchP,
+        :switchV,
+        :switchY .
+
+:device777 a :Component ;
+    :dependsOn :switchT,
+        :switchY .
+
+:device778 a :Component ;
+    :dependsOn :switchA,
+        :switchX .
+
+:device779 a :Component ;
+    :dependsOn :switchA,
+        :switchX .
+
+:device780 a :Component ;
+    :dependsOn :switchB,
+        :switchH,
+        :switchL .
+
+:device781 a :Component ;
+    :dependsOn :switchB,
+        :switchW .
+
+:device782 a :Component ;
+    :dependsOn :switchC,
+        :switchD .
+
+:device783 a :Component ;
+    :dependsOn :switchL,
+        :switchM,
+        :switchV,
+        :switchX .
+
+:device784 a :Component ;
+    :dependsOn :switchB .
+
+:device785 a :Component ;
+    :dependsOn :switchP,
+        :switchU .
+
+:device786 a :Component ;
+    :dependsOn :switchN .
+
+:device787 a :Component ;
+    :dependsOn :switchG,
+        :switchX,
+        :switchY .
+
+:device788 a :Component ;
+    :dependsOn :switchF .
+
+:device789 a :Component ;
+    :dependsOn :switchO .
+
+:device790 a :Component ;
+    :dependsOn :switchL,
+        :switchY .
+
+:device791 a :Component ;
+    :dependsOn :switchH,
+        :switchS .
+
+:device792 a :Component ;
+    :dependsOn :switchA .
+
+:device793 a :Component ;
+    :dependsOn :switchU,
+        :switchY .
+
+:device794 a :Component ;
+    :dependsOn :switchC,
+        :switchI,
+        :switchK,
+        :switchU .
+
+:device795 a :Component ;
+    :dependsOn :switchU .
+
+:device796 a :Component ;
+    :dependsOn :switchJ .
+
+:device797 a :Component ;
+    :dependsOn :switchJ .
+
+:device798 a :Component ;
+    :dependsOn :switchA,
+        :switchT .
+
+:device799 a :Component ;
+    :dependsOn :switchC,
+        :switchU,
+        :switchW .
+
+:device800 a :Component ;
+    :dependsOn :switchG .
+
+:device801 a :Component ;
+    :dependsOn :switchJ .
+
+:device802 a :Component ;
+    :dependsOn :switchL,
+        :switchN,
+        :switchQ .
+
+:device803 a :Component ;
+    :dependsOn :switchK,
+        :switchN,
+        :switchO .
+
+:device804 a :Component ;
+    :dependsOn :switchB,
+        :switchU .
+
+:device805 a :Component ;
+    :dependsOn :switchF,
+        :switchO,
+        :switchR,
+        :switchS .
+
+:device806 a :Component ;
+    :dependsOn :switchB,
+        :switchH,
+        :switchR,
+        :switchX .
+
+:device807 a :Component ;
+    :dependsOn :switchC,
+        :switchK .
+
+:device808 a :Component ;
+    :dependsOn :switchO .
+
+:device809 a :Component ;
+    :dependsOn :switchC,
+        :switchK,
+        :switchL,
+        :switchX .
+
+:device810 a :Component ;
+    :dependsOn :switchF,
+        :switchH,
+        :switchI,
+        :switchV .
+
+:device811 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchR .
+
+:device812 a :Component ;
+    :dependsOn :switchH,
+        :switchL,
+        :switchN,
+        :switchZ .
+
+:device813 a :Component ;
+    :dependsOn :switchJ .
+
+:device814 a :Component ;
+    :dependsOn :switchN,
+        :switchQ,
+        :switchR,
+        :switchU .
+
+:device815 a :Component ;
+    :dependsOn :switchV .
+
+:device816 a :Component ;
+    :dependsOn :switchI,
+        :switchW .
+
+:device817 a :Component ;
+    :dependsOn :switchE,
+        :switchH,
+        :switchT .
+
+:device818 a :Component ;
+    :dependsOn :switchX .
+
+:device819 a :Component ;
+    :dependsOn :switchI .
+
+:device820 a :Component ;
+    :dependsOn :switchC,
+        :switchE,
+        :switchG,
+        :switchR .
+
+:device821 a :Component ;
+    :dependsOn :switchC,
+        :switchI .
+
+:device822 a :Component ;
+    :dependsOn :switchG .
+
+:device823 a :Component ;
+    :dependsOn :switchC .
+
+:device824 a :Component ;
+    :dependsOn :switchA,
+        :switchT,
+        :switchZ .
+
+:device825 a :Component ;
+    :dependsOn :switchG,
+        :switchQ,
+        :switchV .
+
+:device826 a :Component ;
+    :dependsOn :switchB,
+        :switchD,
+        :switchR .
+
+:device827 a :Component ;
+    :dependsOn :switchC,
+        :switchG .
+
+:device828 a :Component ;
+    :dependsOn :switchK,
+        :switchQ,
+        :switchW,
+        :switchZ .
+
+:device829 a :Component ;
+    :dependsOn :switchI,
+        :switchJ,
+        :switchK,
+        :switchL .
+
+:device830 a :Component ;
+    :dependsOn :switchH,
+        :switchV .
+
+:device831 a :Component ;
+    :dependsOn :switchD,
+        :switchN,
+        :switchO,
+        :switchP .
+
+:device832 a :Component ;
+    :dependsOn :switchH,
+        :switchT,
+        :switchX .
+
+:device833 a :Component ;
+    :dependsOn :switchA .
+
+:device834 a :Component ;
+    :dependsOn :switchF,
+        :switchS,
+        :switchV,
+        :switchZ .
+
+:device835 a :Component ;
+    :dependsOn :switchA,
+        :switchR .
+
+:device836 a :Component ;
+    :dependsOn :switchW .
+
+:device837 a :Component ;
+    :dependsOn :switchH,
+        :switchI,
+        :switchJ,
+        :switchN .
+
+:device838 a :Component ;
+    :dependsOn :switchD,
+        :switchO,
+        :switchW,
+        :switchX .
+
+:device839 a :Component ;
+    :dependsOn :switchC,
+        :switchX,
+        :switchY .
+
+:device840 a :Component ;
+    :dependsOn :switchF,
+        :switchK,
+        :switchV .
+
+:device841 a :Component ;
+    :dependsOn :switchO,
+        :switchP,
+        :switchQ,
+        :switchT .
+
+:device842 a :Component ;
+    :dependsOn :switchW .
+
+:device843 a :Component ;
+    :dependsOn :switchV .
+
+:device844 a :Component ;
+    :dependsOn :switchB,
+        :switchF,
+        :switchX,
+        :switchZ .
+
+:device845 a :Component ;
+    :dependsOn :switchL,
+        :switchP,
+        :switchZ .
+
+:device846 a :Component ;
+    :dependsOn :switchX .
+
+:device847 a :Component ;
+    :dependsOn :switchD,
+        :switchY .
+
+:device848 a :Component ;
+    :dependsOn :switchI .
+
+:device849 a :Component ;
+    :dependsOn :switchS,
+        :switchW .
+
+:device850 a :Component ;
+    :dependsOn :switchB,
+        :switchH,
+        :switchX .
+
+:device851 a :Component ;
+    :dependsOn :switchC,
+        :switchJ .
+
+:device852 a :Component ;
+    :dependsOn :switchH,
+        :switchI,
+        :switchL,
+        :switchM .
+
+:device853 a :Component ;
+    :dependsOn :switchK,
+        :switchO,
+        :switchU,
+        :switchX .
+
+:device854 a :Component ;
+    :dependsOn :switchK,
+        :switchN,
+        :switchP,
+        :switchZ .
+
+:device855 a :Component ;
+    :dependsOn :switchA,
+        :switchB,
+        :switchJ,
+        :switchY .
+
+:device856 a :Component ;
+    :dependsOn :switchQ .
+
+:device857 a :Component ;
+    :dependsOn :switchH,
+        :switchM,
+        :switchN .
+
+:device858 a :Component ;
+    :dependsOn :switchC,
+        :switchK,
+        :switchP .
+
+:device859 a :Component ;
+    :dependsOn :switchC,
+        :switchJ .
+
+:device860 a :Component ;
+    :dependsOn :switchS .
+
+:device861 a :Component ;
+    :dependsOn :switchB,
+        :switchR,
+        :switchY .
+
+:device862 a :Component ;
+    :dependsOn :switchD,
+        :switchN,
+        :switchV,
+        :switchW .
+
+:device863 a :Component ;
+    :dependsOn :switchD,
+        :switchT,
+        :switchZ .
+
+:device864 a :Component ;
+    :dependsOn :switchN,
+        :switchO,
+        :switchX,
+        :switchZ .
+
+:device865 a :Component ;
+    :dependsOn :switchA .
+
+:device866 a :Component ;
+    :dependsOn :switchF,
+        :switchT .
+
+:device867 a :Component ;
+    :dependsOn :switchD,
+        :switchX .
+
+:device868 a :Component ;
+    :dependsOn :switchD,
+        :switchI,
+        :switchK,
+        :switchY .
+
+:device869 a :Component ;
+    :dependsOn :switchE,
+        :switchL,
+        :switchN,
+        :switchW .
+
+:device870 a :Component ;
+    :dependsOn :switchG,
+        :switchY .
+
+:device871 a :Component ;
+    :dependsOn :switchS,
+        :switchW .
+
+:device872 a :Component ;
+    :dependsOn :switchF,
+        :switchK,
+        :switchQ,
+        :switchU .
+
+:device873 a :Component ;
+    :dependsOn :switchH,
+        :switchP,
+        :switchQ .
+
+:device874 a :Component ;
+    :dependsOn :switchG,
+        :switchO,
+        :switchQ,
+        :switchY .
+
+:device875 a :Component ;
+    :dependsOn :switchA,
+        :switchD,
+        :switchJ .
+
+:device876 a :Component ;
+    :dependsOn :switchC,
+        :switchD,
+        :switchP,
+        :switchX .
+
+:device877 a :Component ;
+    :dependsOn :switchA,
+        :switchL,
+        :switchV .
+
+:device878 a :Component ;
+    :dependsOn :switchO .
+
+:device879 a :Component ;
+    :dependsOn :switchI,
+        :switchK,
+        :switchL,
+        :switchT .
+
+:device880 a :Component ;
+    :dependsOn :switchE,
+        :switchN .
+
+:device881 a :Component ;
+    :dependsOn :switchC,
+        :switchY .
+
+:device882 a :Component ;
+    :dependsOn :switchB,
+        :switchM,
+        :switchQ,
+        :switchV .
+
+:device883 a :Component ;
+    :dependsOn :switchB,
+        :switchQ,
+        :switchY .
+
+:device884 a :Component ;
+    :dependsOn :switchO .
+
+:device885 a :Component ;
+    :dependsOn :switchW .
+
+:device886 a :Component ;
+    :dependsOn :switchI,
+        :switchJ .
+
+:device887 a :Component ;
+    :dependsOn :switchN,
+        :switchR,
+        :switchX,
+        :switchY .
+
+:device888 a :Component ;
+    :dependsOn :switchY .
+
+:device889 a :Component ;
+    :dependsOn :switchL .
+
+:device890 a :Component ;
+    :dependsOn :switchT,
+        :switchW,
+        :switchX,
+        :switchY .
+
+:device891 a :Component ;
+    :dependsOn :switchB,
+        :switchE .
+
+:device892 a :Component ;
+    :dependsOn :switchI .
+
+:device893 a :Component ;
+    :dependsOn :switchD,
+        :switchG,
+        :switchK,
+        :switchX .
+
+:device894 a :Component ;
+    :dependsOn :switchE,
+        :switchJ,
+        :switchU,
+        :switchZ .
+
+:device895 a :Component ;
+    :dependsOn :switchJ,
+        :switchW .
+
+:device896 a :Component ;
+    :dependsOn :switchE,
+        :switchQ .
+
+:device897 a :Component ;
+    :dependsOn :switchF,
+        :switchG,
+        :switchH,
+        :switchL .
+
+:device898 a :Component ;
+    :dependsOn :switchJ,
+        :switchS .
+
+:device899 a :Component ;
+    :dependsOn :switchF,
+        :switchI,
+        :switchS,
+        :switchV .
+
+:device900 a :Component ;
+    :dependsOn :switchB,
+        :switchC,
+        :switchJ,
+        :switchO .
+
+:device901 a :Component ;
+    :dependsOn :switchF,
+        :switchJ,
+        :switchM,
+        :switchU .
+
+:device902 a :Component ;
+    :dependsOn :switchE,
+        :switchJ .
+
+:device903 a :Component ;
+    :dependsOn :switchT .
+
+:device904 a :Component ;
+    :dependsOn :switchH,
+        :switchK,
+        :switchL .
+
+:device905 a :Component ;
+    :dependsOn :switchJ .
+
+:device906 a :Component ;
+    :dependsOn :switchF,
+        :switchG,
+        :switchH .
+
+:device907 a :Component ;
+    :dependsOn :switchF,
+        :switchN,
+        :switchQ,
+        :switchR .
+
+:device908 a :Component ;
+    :dependsOn :switchH,
+        :switchP .
+
+:device909 a :Component ;
+    :dependsOn :switchA,
+        :switchH,
+        :switchS,
+        :switchZ .
+
+:device910 a :Component ;
+    :dependsOn :switchL .
+
+:device911 a :Component ;
+    :dependsOn :switchF .
+
+:device912 a :Component ;
+    :dependsOn :switchA,
+        :switchY .
+
+:device913 a :Component ;
+    :dependsOn :switchJ,
+        :switchK,
+        :switchZ .
+
+:device914 a :Component ;
+    :dependsOn :switchL,
+        :switchU .
+
+:device915 a :Component ;
+    :dependsOn :switchE,
+        :switchJ,
+        :switchO .
+
+:device916 a :Component ;
+    :dependsOn :switchI,
+        :switchZ .
+
+:device917 a :Component ;
+    :dependsOn :switchI,
+        :switchR,
+        :switchS,
+        :switchX .
+
+:device918 a :Component ;
+    :dependsOn :switchG .
+
+:device919 a :Component ;
+    :dependsOn :switchL,
+        :switchP .
+
+:device920 a :Component ;
+    :dependsOn :switchG,
+        :switchR .
+
+:device921 a :Component ;
+    :dependsOn :switchF,
+        :switchL,
+        :switchW,
+        :switchX .
+
+:device922 a :Component ;
+    :dependsOn :switchO,
+        :switchV,
+        :switchX .
+
+:device923 a :Component ;
+    :dependsOn :switchF,
+        :switchP,
+        :switchQ,
+        :switchW .
+
+:device924 a :Component ;
+    :dependsOn :switchH,
+        :switchQ,
+        :switchR,
+        :switchY .
+
+:device925 a :Component ;
+    :dependsOn :switchA,
+        :switchH,
+        :switchY,
+        :switchZ .
+
+:device926 a :Component ;
+    :dependsOn :switchD,
+        :switchJ .
+
+:device927 a :Component ;
+    :dependsOn :switchB .
+
+:device928 a :Component ;
+    :dependsOn :switchO,
+        :switchQ,
+        :switchV,
+        :switchZ .
+
+:device929 a :Component ;
+    :dependsOn :switchE,
+        :switchO,
+        :switchR,
+        :switchY .
+
+:device930 a :Component ;
+    :dependsOn :switchH,
+        :switchJ,
+        :switchN,
+        :switchV .
+
+:device931 a :Component ;
+    :dependsOn :switchF,
+        :switchX .
+
+:device932 a :Component ;
+    :dependsOn :switchB,
+        :switchO,
+        :switchP,
+        :switchQ .
+
+:device933 a :Component ;
+    :dependsOn :switchH,
+        :switchS,
+        :switchX .
+
+:device934 a :Component ;
+    :dependsOn :switchM .
+
+:device935 a :Component ;
+    :dependsOn :switchB,
+        :switchC,
+        :switchU .
+
+:device936 a :Component ;
+    :dependsOn :switchD,
+        :switchJ,
+        :switchK .
+
+:device937 a :Component ;
+    :dependsOn :switchM,
+        :switchR,
+        :switchW .
+
+:device938 a :Component ;
+    :dependsOn :switchE,
+        :switchR,
+        :switchV .
+
+:device939 a :Component ;
+    :dependsOn :switchQ,
+        :switchU,
+        :switchV .
+
+:device940 a :Component ;
+    :dependsOn :switchC,
+        :switchF .
+
+:device941 a :Component ;
+    :dependsOn :switchF,
+        :switchU .
+
+:device942 a :Component ;
+    :dependsOn :switchD,
+        :switchF,
+        :switchW .
+
+:device943 a :Component ;
+    :dependsOn :switchB,
+        :switchD,
+        :switchJ,
+        :switchW .
+
+:device944 a :Component ;
+    :dependsOn :switchQ .
+
+:device945 a :Component ;
+    :dependsOn :switchF,
+        :switchL,
+        :switchU,
+        :switchX .
+
+:device946 a :Component ;
+    :dependsOn :switchB,
+        :switchG,
+        :switchM,
+        :switchP .
+
+:device947 a :Component ;
+    :dependsOn :switchG,
+        :switchJ,
+        :switchW .
+
+:device948 a :Component ;
+    :dependsOn :switchC,
+        :switchI,
+        :switchS .
+
+:device949 a :Component ;
+    :dependsOn :switchA,
+        :switchC,
+        :switchN .
+
+:device950 a :Component ;
+    :dependsOn :switchE,
+        :switchZ .
+
+:device951 a :Component ;
+    :dependsOn :switchK,
+        :switchM .
+
+:device952 a :Component ;
+    :dependsOn :switchB,
+        :switchC,
+        :switchD,
+        :switchK .
+
+:device953 a :Component ;
+    :dependsOn :switchA,
+        :switchQ .
+
+:device954 a :Component ;
+    :dependsOn :switchF,
+        :switchJ,
+        :switchL,
+        :switchV .
+
+:device955 a :Component ;
+    :dependsOn :switchJ,
+        :switchQ,
+        :switchW .
+
+:device956 a :Component ;
+    :dependsOn :switchD,
+        :switchN,
+        :switchR .
+
+:device957 a :Component ;
+    :dependsOn :switchN,
+        :switchR .
+
+:device958 a :Component ;
+    :dependsOn :switchT .
+
+:device959 a :Component ;
+    :dependsOn :switchC,
+        :switchK,
+        :switchT .
+
+:device960 a :Component ;
+    :dependsOn :switchV .
+
+:device961 a :Component ;
+    :dependsOn :switchD,
+        :switchJ .
+
+:device962 a :Component ;
+    :dependsOn :switchE,
+        :switchM .
+
+:device963 a :Component ;
+    :dependsOn :switchA,
+        :switchI,
+        :switchK,
+        :switchL .
+
+:device964 a :Component ;
+    :dependsOn :switchG,
+        :switchI,
+        :switchJ,
+        :switchY .
+
+:device965 a :Component ;
+    :dependsOn :switchK,
+        :switchM,
+        :switchZ .
+
+:device966 a :Component ;
+    :dependsOn :switchV .
+
+:device967 a :Component ;
+    :dependsOn :switchA,
+        :switchE,
+        :switchN,
+        :switchP .
+
+:device968 a :Component ;
+    :dependsOn :switchF,
+        :switchU,
+        :switchV .
+
+:device969 a :Component ;
+    :dependsOn :switchI,
+        :switchJ,
+        :switchP,
+        :switchT .
+
+:device970 a :Component ;
+    :dependsOn :switchH,
+        :switchM,
+        :switchQ,
+        :switchX .
+
+:device971 a :Component ;
+    :dependsOn :switchD .
+
+:device972 a :Component ;
+    :dependsOn :switchO,
+        :switchX .
+
+:device973 a :Component ;
+    :dependsOn :switchA,
+        :switchG,
+        :switchH,
+        :switchM .
+
+:device974 a :Component ;
+    :dependsOn :switchI .
+
+:device975 a :Component ;
+    :dependsOn :switchC,
+        :switchO,
+        :switchQ,
+        :switchZ .
+
+:device976 a :Component ;
+    :dependsOn :switchG .
+
+:device977 a :Component ;
+    :dependsOn :switchD,
+        :switchS,
+        :switchU .
+
+:device978 a :Component ;
+    :dependsOn :switchP,
+        :switchW .
+
+:device979 a :Component ;
+    :dependsOn :switchF,
+        :switchH,
+        :switchN .
+
+:device980 a :Component ;
+    :dependsOn :switchB,
+        :switchM,
+        :switchR .
+
+:device981 a :Component ;
+    :dependsOn :switchJ,
+        :switchX,
+        :switchY .
+
+:device982 a :Component ;
+    :dependsOn :switchX .
+
+:device983 a :Component ;
+    :dependsOn :switchP,
+        :switchZ .
+
+:device984 a :Component ;
+    :dependsOn :switchR,
+        :switchV .
+
+:device985 a :Component ;
+    :dependsOn :switchA,
+        :switchJ,
+        :switchY .
+
+:device986 a :Component ;
+    :dependsOn :switchW .
+
+:device987 a :Component ;
+    :dependsOn :switchO,
+        :switchR,
+        :switchT .
+
+:device988 a :Component ;
+    :dependsOn :switchA,
+        :switchE,
+        :switchH,
+        :switchU .
+
+:device989 a :Component ;
+    :dependsOn :switchI,
+        :switchJ,
+        :switchK,
+        :switchS .
+
+:device990 a :Component ;
+    :dependsOn :switchS .
+
+:device991 a :Component ;
+    :dependsOn :switchN,
+        :switchS,
+        :switchU .
+
+:device992 a :Component ;
+    :dependsOn :switchA,
+        :switchO,
+        :switchT .
+
+:device993 a :Component ;
+    :dependsOn :switchL .
+
+:device994 a :Component ;
+    :dependsOn :switchJ .
+
+:device995 a :Component ;
+    :dependsOn :switchH,
+        :switchK,
+        :switchT .
+
+:device996 a :Component ;
+    :dependsOn :switchI,
+        :switchO,
+        :switchP,
+        :switchQ .
+
+:device997 a :Component ;
+    :dependsOn :switchF,
+        :switchI,
+        :switchP,
+        :switchR .
+
+:device998 a :Component ;
+    :dependsOn :switchE,
+        :switchK,
+        :switchM,
+        :switchN .
+
+:device999 a :Component ;
+    :dependsOn :switchK,
+        :switchQ .
+
+:switchE a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchU a :Component ;
+    :hasState :on ;
+    :passedMaintenanceCheck true .
+
+:switchB a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchM a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchP a :Component ;
+    :hasState :on ;
+    :passedMaintenanceCheck true .
+
+:switchT a :Component ;
+    :hasState :on ;
+    :passedMaintenanceCheck true .
+
+:switchV a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchS a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchY a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchX a :Component ;
+    :hasState :off .
+
+:switchD a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchZ a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchG a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchL a :Component ;
+    :hasState :on ;
+    :passedMaintenanceCheck true .
+
+:switchA a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchH a :Component ;
+    :hasState :on ;
+    :passedMaintenanceCheck false .
+
+:switchW a :Component ;
+    :hasState :on ;
+    :passedMaintenanceCheck true .
+
+:switchF a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck false .
+
+:switchI a :Component ;
+    :hasState :off .
+
+:switchQ a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchR a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchN a :Component ;
+    :hasState :on ;
+    :passedMaintenanceCheck true .
+
+:switchO a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck false .
+
+:switchC a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck true .
+
+:switchK a :Component ;
+    :hasState :off ;
+    :passedMaintenanceCheck false .
+
+:switchJ a :Component ;
+    :hasState :on ;
+    :passedMaintenanceCheck true .
+

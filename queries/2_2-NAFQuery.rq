@@ -1,0 +1,14 @@
+SELECT ?device ?atLeastOnDependencyOn ?noDependenciesOff
+WHERE {
+    ?device a :Component .
+    OPTIONAL {SELECT ?device ?atLeastOnDependencyOn
+              WHERE {
+                  ?device :atLeastOnDependencyOn ?atLeastOnDependencyOn .
+              }
+    }
+    OPTIONAL {SELECT ?device ?noDependenciesOff
+              WHERE {
+                  ?device :noDependenciesOff ?noDependenciesOff .
+              }
+    }
+} ORDER BY ASC(?device)
