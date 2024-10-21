@@ -1,0 +1,7 @@
+[?personnel, :inBreachOfRegulation, true] :PersonnelInfo,
+[?trade, a, :BeachOfRegulation] :-
+    [?personnel, a, :Trader] :PersonnelInfo ,
+    [?personnel, :hasMaxTradeRestriction, ?restrictionValue] :PersonnelInfo ,
+    [?trade, :executedBy, ?personnel] ,
+    [?trade, :hasValue, ?tradeValue] ,
+    FILTER(?tradeValue > ?restrictionValue) .

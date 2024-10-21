@@ -1,0 +1,4 @@
+[?personnel, :inBreachOfRegulation, true] :PersonnelInfo,
+[?trade, a, :BeachOfRegulation] :-
+    # Insert body atoms here
+    FILTER(?tradeValue > ?restrictionValue) .
