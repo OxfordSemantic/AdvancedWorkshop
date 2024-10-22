@@ -1,3 +1,3 @@
-[?s, :requiresMaintenance, true] :-
-    [?s, a, :Component],
+[?switch, :requiresMaintenance, true] :-
+    [?switch, a, :Component],
     # Insert negation functions here

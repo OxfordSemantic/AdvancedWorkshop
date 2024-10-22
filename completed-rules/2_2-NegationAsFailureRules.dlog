@@ -1,4 +1,4 @@
-[?s, :requiresMaintenance, true] :-
-    [?s, a, :Component],
-    NOT EXISTS ?c IN ([?s, :dependsOn, ?c]),
-    NOT [?s, :passedMaintenanceCheck, true ] .
+[?switch, :requiresMaintenance, true] :-
+    [?switch, a, :Component],
+    NOT EXISTS ?component IN ([?switch, :dependsOn, ?component]),
+    NOT [?switch, :passedMaintenanceCheck, true ] .
