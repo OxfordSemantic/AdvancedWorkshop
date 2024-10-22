@@ -1,0 +1,4 @@
+SELECT ?product ?percentage
+WHERE {
+    ?product :hasPercentageOfFiveStars ?percentage .
+} ORDER BY DESC(?percentage)
