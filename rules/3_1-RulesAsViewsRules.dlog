@@ -1,0 +1,9 @@
+[?productCategory, :hasAverageUnitsSold, ?averageCategoryUnitsSold]
+:-
+    [?product, a, :Product],
+    AGGREGATE (
+        [?product, a, ?productCategory],
+        [?product, :unitsSold, ?units]
+        ON ?productCategory
+        BIND AVG(?units) AS ?averageCategoryUnitsSold
+    ).

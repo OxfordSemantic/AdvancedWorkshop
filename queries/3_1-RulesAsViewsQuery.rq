@@ -1,7 +1,6 @@
-SELECT ?product ?totalProfit ?margin ?units
+SELECT ?product ?totalProfit ?units
 WHERE {
     ?product a :highPerformingProduct ;
-        :hasMargin ?margin ;
-        :hasUnitsSold ?units ;
+        :unitsSold ?units ;
         :hasTotalProfit ?totalProfit .
 } ORDER BY DESC(?totalProfit)
