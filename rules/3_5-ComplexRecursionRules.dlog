@@ -1,0 +1,43 @@
+[?compound, a, :TopLevelCompound] :-
+    # Insert body atoms here
+
+[?compound, :hasFirstThing, ?onlyThing],
+[?compound, :hasLastThing, ?onlyThing] :-
+    # Insert body atoms here
+
+[?thing1, :hasDownstreamThing, ?thing2] :-
+    [?compound, a, :Compound],
+    [?compound, :contains, ?thing1],
+    [?compound, :contains, ?thing2],
+    FILTER (?thing2 > ?thing1).
+
+[?thing1, :hasNextThing, ?thing2] :-
+    [?thing1, :hasDownstreamThing, ?thing2],
+    NOT EXISTS ?thing3 IN ( 
+        [?thing1, :hasDownstreamThing, ?thing3], 
+        [?thing3, :hasDownstreamThing, ?thing2]
+    ).
+
+[?compound, :hasFirstThing, ?firstThing] :-
+    [?compound, a, :Compound],
+    [?compound, :contains, ?firstThing],
+    NOT EXISTS ?something IN ([?something, :hasDownstreamThing, ?firstThing]).
+
+[?compound, :hasLastThing, ?lastThing] :-
+    [?compound, a, :Compound],
+    [?compound, :contains, ?lastThing],
+    NOT EXISTS ?something IN ([?lastThing, :hasDownstreamThing, ?something]).
+
+[?firstThing, :hasRunningTotal, ?cost] :-
+    [?compound, :hasFirstThing, ?firstThing],
+    [?firstThing, :hasCost, ?cost].
+
+[?thing2, :hasRunningTotal, ?runningTotal] :-
+    [?thing1, :hasNextThing, ?thing2],
+    [?thing1, :hasRunningTotal, ?oldRunningTotal],
+    [?thing2, :hasCost, ?cost],
+    BIND (?oldRunningTotal + ?cost AS ?runningTotal).
+
+[?compound, :hasCost, ?compoundTotal] :-
+    [?compound, :hasLastThing, ?lastThing],
+    [?lastThing, :hasRunningTotal, ?compoundTotal].

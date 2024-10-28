@@ -6,3 +6,7 @@ endpoint start
 
 # Create a data store called 'default' - this will be the default graph.
 dstore create default
+
+# Activate the reasoning profiler and display the reasoning plans
+set reason.monitor profile
+set reason.profile.log-plans true

@@ -1,0 +1,5 @@
+[?asset1, :hasPrimaryDependency, ?asset2] :-
+   # Insert body atoms here
+
+[?asset1, :hasPrimaryDependency, ?asset3] :-
+    # Insert body atoms here

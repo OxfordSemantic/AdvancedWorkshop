@@ -1,0 +1,4 @@
+SELECT ?upstreamAsset ?downstreamAsset
+WHERE {
+    ?upstreamAsset :dependsViaClosure ?downstreamAsset
+} ORDER BY DESC(?upstreamAsset) ASC(?downstreamAsset)

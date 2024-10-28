@@ -1,0 +1,277 @@
+@prefix : <https://rdfox.com/example#> .
+
+:compound001 a :Compound ;
+        :contains :compound002,
+            :compound003,
+            :compound004,
+            :part1,
+            :part2 .
+
+:compound002 a :Compound ;
+        :contains :compound005,
+                :compound006,
+                :part3 ,
+                :part4 .
+
+:compound003 a :Compound ;
+        :contains :compound007,
+                :part5,
+                :part6 .
+
+:compound004 a :Compound ;
+        :contains :part7 .
+
+:compound005 a :Compound ;
+        :contains :compound008,
+            :part8,
+            :part9 .
+
+:compound006 a :Compound ;
+        :contains :part10 .
+
+:compound007 a :Compound ;
+        :contains :part11,
+            :part12 .
+
+:compound008 a :Compound ;
+        :contains :part13,
+            :part14,
+            :part15 .
+
+:compound009 a :Compound ;
+        :contains :compound010,
+            :compound011,
+            :part16,
+            :part17,
+            :part18 .
+
+:compound010 a :Compound ;
+        :contains :compound012,
+                :compound013,
+                :compound014,
+                :part19 .
+
+:compound011 a :Compound ;
+        :contains :compound015,
+                :part20,
+                :part21 .
+
+:compound012 a :Compound ;
+        :contains :part22 .
+
+:compound013 a :Compound ;
+        :contains :part23,
+            :part24 .
+
+:compound014 a :Compound ;
+        :contains :compound016,
+            :part25 .
+
+:compound015 a :Compound ;
+        :contains :part26,
+            :part27 .
+
+:compound016 a :Compound ;
+        :contains :part28,
+            :part29,
+            :part30 .
+
+:compound017 a :Compound ;
+        :contains :part31,
+            :part32,
+            :part33 .
+
+:compound017 a :Compound ;
+        :contains :compound018,
+            :part34,
+            :part35 .
+
+:compound018 a :Compound ;
+        :contains :compound019,
+            :part36 .
+
+:compound019 a :Compound ;
+        :contains :part37 .
+
+:compound020 a :Compound ;
+        :contains :compound021,
+            :compound022,
+            :part38.
+
+:compound021 a :Compound ;
+        :contains :compound023,
+            :compound024,
+            :part39.
+
+:compound022 a :Compound ;
+        :contains :compound025,
+            :compound026,
+            :part40.
+
+:compound023 a :Compound ;
+        :contains :part41,
+            :part42.
+
+:compound024 a :Compound ;
+        :contains :part43,
+            :part44,
+            :part45.
+
+:compound025 a :Compound ;
+        :contains :part46.
+
+:compound026 a :Compound ;
+        :contains :part47,
+            :part48,
+            :part49,
+            :part50.
+
+:part1 a :Part;
+    :hasCost 2 .
+
+:part2 a :Part;
+    :hasCost 4 .
+
+:part3 a :Part;
+    :hasCost 9 .
+
+:part4 a :Part;
+    :hasCost 2 .
+
+:part5 a :Part;
+    :hasCost 1 .
+
+:part6 a :Part;
+    :hasCost 6 .
+
+:part7 a :Part;
+    :hasCost 2 .
+
+:part8 a :Part;
+    :hasCost 3 .
+
+:part9 a :Part;
+    :hasCost 8 .
+
+:part10 a :Part;
+    :hasCost 4 .
+
+:part11 a :Part;
+    :hasCost 7 .
+
+:part12 a :Part;
+    :hasCost 6 .
+
+:part13 a :Part;
+    :hasCost 3 .
+
+:part14 a :Part;
+    :hasCost 4 .
+
+:part15 a :Part;
+    :hasCost 9 .
+
+:part16 a :Part;
+    :hasCost 8 .
+
+:part17 a :Part;
+    :hasCost 4 .
+
+:part18 a :Part;
+    :hasCost 9 .
+
+:part19 a :Part;
+    :hasCost 2 .
+
+:part20 a :Part;
+    :hasCost 8 .
+
+:part21 a :Part;
+    :hasCost 3 .
+
+:part22 a :Part;
+    :hasCost 2 .
+
+:part23 a :Part;
+    :hasCost 7 .
+
+:part24 a :Part;
+    :hasCost 6 .
+
+:part25 a :Part;
+    :hasCost 7 .
+
+:part26 a :Part;
+    :hasCost 5 .
+
+:part27 a :Part;
+    :hasCost 3 .
+
+:part28 a :Part;
+    :hasCost 1 .
+
+:part29 a :Part;
+    :hasCost 8 .
+
+:part30 a :Part;
+    :hasCost 1 .
+
+:part31 a :Part;
+    :hasCost 7 .
+
+:part32 a :Part;
+    :hasCost 2 .
+
+:part33 a :Part;
+    :hasCost 6 .
+
+:part34 a :Part;
+    :hasCost 5 .
+
+:part35 a :Part;
+    :hasCost 4 .
+
+:part36 a :Part;
+    :hasCost 9 .
+
+:part37 a :Part;
+    :hasCost 2 .
+
+:part38 a :Part;
+    :hasCost 8 .
+
+:part39 a :Part;
+    :hasCost 3 .
+
+:part40 a :Part;
+    :hasCost 8 .
+
+:part41 a :Part;
+    :hasCost 6 .
+
+:part42 a :Part;
+    :hasCost 2 .
+
+:part43 a :Part;
+    :hasCost 5 .
+
+:part44 a :Part;
+    :hasCost 2 .
+
+:part45 a :Part;
+    :hasCost 1 .
+
+:part46 a :Part;
+    :hasCost 9 .
+
+:part47 a :Part;
+    :hasCost 8 .
+
+:part48 a :Part;
+    :hasCost 3 .
+
+:part49 a :Part;
+    :hasCost 1 .
+
+:part50 a :Part;
+    :hasCost 8 .
