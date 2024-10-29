@@ -1,3 +1,6 @@
+# RDFox will stop upon encountering an error, unless the error was caused by attempting to create an existing resource
+set on-error continue-if-exists
+
 # Output RDFox's response to the terminal.
 set output out
 

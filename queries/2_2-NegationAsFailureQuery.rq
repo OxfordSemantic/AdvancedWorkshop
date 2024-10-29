@@ -1,9 +1,9 @@
-SELECT ?device ?atLeastOnDependencyOn ?noDependenciesOff
+SELECT ?device ?atLeastOneDependencyOn ?noDependenciesOff
 WHERE {
     ?device a :Component .
-    OPTIONAL {SELECT ?device ?atLeastOnDependencyOn
+    OPTIONAL {SELECT ?device ?atLeastOneDependencyOn
               WHERE {
-                  ?device :atLeastOnDependencyOn ?atLeastOnDependencyOn .
+                  ?device :atLeastOneDependencyOn ?atLeastOneDependencyOn .
               }
     }
     OPTIONAL {SELECT ?device ?noDependenciesOff
