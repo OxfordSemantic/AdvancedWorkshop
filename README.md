@@ -9,7 +9,9 @@ In this workshop you will learn how to:
 
 There are 3 main sections:
 
-1. Foundations and setup
+0. Setup & help
+
+1. Foundations
 
 2. Rule keywords and functions
 

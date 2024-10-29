@@ -1,4 +1,4 @@
-SELECT ?person
+SELECT ?person ?networkMember
 WHERE {
-    ?person a :MemberOfAlicesNetwork .
+    ?person a ?networkMember .
 }
