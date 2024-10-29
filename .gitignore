@@ -1,4 +1,6 @@
 venv
+.DS_Store
 .ipynb_checkpoints
+RDFox Advanced Reasoning Workshop.pptx
 generators
 ~$*

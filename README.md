@@ -7,6 +7,14 @@ In this workshop you will learn how to:
 - manipulate sets of rule to take advantage of the most advanced functionality of reasoning,
 - tips and tricks to improve your ability and understanding of reasoning with RDFox.
 
+There are 3 main sections:
+
+1. Foundations and setup
+
+2. Rule keywords and functions
+
+3. Advanced use of rules
+
 Contained within each notebook is:
 - a simple example of a complex concept with details explanations of each part,
 - a challenging rule-writing exercise,
@@ -26,7 +34,6 @@ Contained within each notebook is:
 | Windows | cmd | `venv\Scripts\activate` |
 | Windows | PowerShell | `venv\Scripts\Activate` |
 
-
 4. Install the relevant dependencies by running `pip install -r requirements.txt`.
 
 ## How to use the workshop material
@@ -37,11 +44,13 @@ Contained within each notebook is:
 
 3. Open an exercise notebook and follow the instructions within.
 
-4. IMPORTANT: Run every cell in order within a given notebook
+4. IMPORTANT: When asked, select the `venv` kernel to run the notebooks.
+
+5. IMPORTANT: Run every cell in order within a given notebook.
 
 - They depend heavily on one another.
 
-5. If, when you run a cell it does not stop, refer to `0-2_Help.ipynb`.
+6. If, when you run a cell it does not stop, refer to `0-2_Help.ipynb`.
 
 ## Useful tips & tricks
 
