@@ -1,4 +1,4 @@
-SELECT ?product ?percentage
+SELECT ?catalogue ?countOfFiveStarProducts
 WHERE {
-    ?product :hasPercentageOfFiveStars ?percentage .
-} ORDER BY DESC(?percentage)
+    ?catalogue :hasNumberOfFiveStars ?countOfFiveStarProducts .
+}
