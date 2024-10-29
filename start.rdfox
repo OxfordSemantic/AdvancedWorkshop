@@ -9,4 +9,5 @@ dstore create default
 
 # Activate the reasoning profiler and display the reasoning plans
 set reason.monitor profile
-set reason.profile.log-plans true
+set reason.profiler.log-plans true
+set log-frequency 10

@@ -1,5 +1,0 @@
-@prefix : <https://rdfox.com/example#> .
-
-:a :b :c .
-
-:x :hasVal 1.

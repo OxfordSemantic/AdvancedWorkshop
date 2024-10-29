@@ -28,4 +28,6 @@ Contained within each notebook is:
 
 1. [Download the latest version of RDFox here](https://www.oxfordsemantic.tech/download) and [request a free trial here.](https://www.oxfordsemantic.tech/free-trial)
 
-2. When completing an exercise, split your editors viewport between the notebook and the relevant rule file.
+2. Get the [RDFox VS Code Extension](https://marketplace.visualstudio.com/items?itemName=rdfox.rdfox-rdf) for syntax highlighting and in-IDE features.
+
+3. When completing an exercise, split your editors viewport between the notebook and the relevant rule file.

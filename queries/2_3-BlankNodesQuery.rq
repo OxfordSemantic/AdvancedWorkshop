@@ -1,6 +1,6 @@
-SELECT ?time ?temperatureEstimate ?bathReading
+SELECT ?bathReadingEncoded ?time ?temperatureEstimate 
 WHERE {
-    ?bathReading a :BathSummary ;
+    ?bathReadingEncoded a :BathSummary ;
         :hasTimeStamp ?time ;
         :hasTemperatureEstimate ?temperatureEstimate .
 } ORDER BY ASC(?time)
