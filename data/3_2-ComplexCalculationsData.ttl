@@ -1,0 +1,7576 @@
+@prefix : <https://rdfox.com/example#> .
+
+:blogA :containsArticle :article001,
+        :article002,
+        :article003,
+        :article004,
+        :article005,
+        :article006,
+        :article007,
+        :article008,
+        :article009,
+        :article010,
+        :article011,
+        :article012,
+        :article013,
+        :article014,
+        :article015,
+        :article016,
+        :article017,
+        :article018,
+        :article019,
+        :article020,
+        :article021,
+        :article022,
+        :article023,
+        :article024,
+        :article025,
+        :article026,
+        :article027,
+        :article028,
+        :article029,
+        :article030,
+        :article031,
+        :article032,
+        :article033,
+        :article034,
+        :article035,
+        :article036,
+        :article037,
+        :article038,
+        :article039,
+        :article040,
+        :article041,
+        :article042,
+        :article043,
+        :article044,
+        :article045,
+        :article046,
+        :article047,
+        :article048,
+        :article049,
+        :article050,
+        :article051,
+        :article052,
+        :article053,
+        :article054,
+        :article055,
+        :article056,
+        :article057,
+        :article058,
+        :article059,
+        :article060,
+        :article061,
+        :article062,
+        :article063,
+        :article064,
+        :article065,
+        :article066,
+        :article067,
+        :article068,
+        :article069,
+        :article070,
+        :article071,
+        :article072,
+        :article073,
+        :article074,
+        :article075,
+        :article076,
+        :article077,
+        :article078,
+        :article079,
+        :article080,
+        :article081,
+        :article082,
+        :article083,
+        :article084,
+        :article085,
+        :article086,
+        :article087,
+        :article088,
+        :article089,
+        :article090,
+        :article091,
+        :article092,
+        :article093,
+        :article094,
+        :article095,
+        :article096,
+        :article097,
+        :article098,
+        :article099,
+        :article100,
+        :article1000,
+        :article101,
+        :article102,
+        :article103,
+        :article104,
+        :article105,
+        :article106,
+        :article107,
+        :article108,
+        :article109,
+        :article110,
+        :article111,
+        :article112,
+        :article113,
+        :article114,
+        :article115,
+        :article116,
+        :article117,
+        :article118,
+        :article119,
+        :article120,
+        :article121,
+        :article122,
+        :article123,
+        :article124,
+        :article125,
+        :article126,
+        :article127,
+        :article128,
+        :article129,
+        :article130,
+        :article131,
+        :article132,
+        :article133,
+        :article134,
+        :article135,
+        :article136,
+        :article137,
+        :article138,
+        :article139,
+        :article140,
+        :article141,
+        :article142,
+        :article143,
+        :article144,
+        :article145,
+        :article146,
+        :article147,
+        :article148,
+        :article149,
+        :article150,
+        :article151,
+        :article152,
+        :article153,
+        :article154,
+        :article155,
+        :article156,
+        :article157,
+        :article158,
+        :article159,
+        :article160,
+        :article161,
+        :article162,
+        :article163,
+        :article164,
+        :article165,
+        :article166,
+        :article167,
+        :article168,
+        :article169,
+        :article170,
+        :article171,
+        :article172,
+        :article173,
+        :article174,
+        :article175,
+        :article176,
+        :article177,
+        :article178,
+        :article179,
+        :article180,
+        :article181,
+        :article182,
+        :article183,
+        :article184,
+        :article185,
+        :article186,
+        :article187,
+        :article188,
+        :article189,
+        :article190,
+        :article191,
+        :article192,
+        :article193,
+        :article194,
+        :article195,
+        :article196,
+        :article197,
+        :article198,
+        :article199,
+        :article200,
+        :article201,
+        :article202,
+        :article203,
+        :article204,
+        :article205,
+        :article206,
+        :article207,
+        :article208,
+        :article209,
+        :article210,
+        :article211,
+        :article212,
+        :article213,
+        :article214,
+        :article215,
+        :article216,
+        :article217,
+        :article218,
+        :article219,
+        :article220,
+        :article221,
+        :article222,
+        :article223,
+        :article224,
+        :article225,
+        :article226,
+        :article227,
+        :article228,
+        :article229,
+        :article230,
+        :article231,
+        :article232,
+        :article233,
+        :article234,
+        :article235,
+        :article236,
+        :article237,
+        :article238,
+        :article239,
+        :article240,
+        :article241,
+        :article242,
+        :article243,
+        :article244,
+        :article245,
+        :article246,
+        :article247,
+        :article248,
+        :article249,
+        :article250,
+        :article251,
+        :article252,
+        :article253,
+        :article254,
+        :article255,
+        :article256,
+        :article257,
+        :article258,
+        :article259,
+        :article260,
+        :article261,
+        :article262,
+        :article263,
+        :article264,
+        :article265,
+        :article266,
+        :article267,
+        :article268,
+        :article269,
+        :article270,
+        :article271,
+        :article272,
+        :article273,
+        :article274,
+        :article275,
+        :article276,
+        :article277,
+        :article278,
+        :article279,
+        :article280,
+        :article281,
+        :article282,
+        :article283,
+        :article284,
+        :article285,
+        :article286,
+        :article287,
+        :article288,
+        :article289,
+        :article290,
+        :article291,
+        :article292,
+        :article293,
+        :article294,
+        :article295,
+        :article296,
+        :article297,
+        :article298,
+        :article299,
+        :article300,
+        :article301,
+        :article302,
+        :article303,
+        :article304,
+        :article305,
+        :article306,
+        :article307,
+        :article308,
+        :article309,
+        :article310,
+        :article311,
+        :article312,
+        :article313,
+        :article314,
+        :article315,
+        :article316,
+        :article317,
+        :article318,
+        :article319,
+        :article320,
+        :article321,
+        :article322,
+        :article323,
+        :article324,
+        :article325,
+        :article326,
+        :article327,
+        :article328,
+        :article329,
+        :article330,
+        :article331,
+        :article332,
+        :article333,
+        :article334,
+        :article335,
+        :article336,
+        :article337,
+        :article338,
+        :article339,
+        :article340,
+        :article341,
+        :article342,
+        :article343,
+        :article344,
+        :article345,
+        :article346,
+        :article347,
+        :article348,
+        :article349,
+        :article350,
+        :article351,
+        :article352,
+        :article353,
+        :article354,
+        :article355,
+        :article356,
+        :article357,
+        :article358,
+        :article359,
+        :article360,
+        :article361,
+        :article362,
+        :article363,
+        :article364,
+        :article365,
+        :article366,
+        :article367,
+        :article368,
+        :article369,
+        :article370,
+        :article371,
+        :article372,
+        :article373,
+        :article374,
+        :article375,
+        :article376,
+        :article377,
+        :article378,
+        :article379,
+        :article380,
+        :article381,
+        :article382,
+        :article383,
+        :article384,
+        :article385,
+        :article386,
+        :article387,
+        :article388,
+        :article389,
+        :article390,
+        :article391,
+        :article392,
+        :article393,
+        :article394,
+        :article395,
+        :article396,
+        :article397,
+        :article398,
+        :article399,
+        :article400,
+        :article401,
+        :article402,
+        :article403,
+        :article404,
+        :article405,
+        :article406,
+        :article407,
+        :article408,
+        :article409,
+        :article410,
+        :article411,
+        :article412,
+        :article413,
+        :article414,
+        :article415,
+        :article416,
+        :article417,
+        :article418,
+        :article419,
+        :article420,
+        :article421,
+        :article422,
+        :article423,
+        :article424,
+        :article425,
+        :article426,
+        :article427,
+        :article428,
+        :article429,
+        :article430,
+        :article431,
+        :article432,
+        :article433,
+        :article434,
+        :article435,
+        :article436,
+        :article437,
+        :article438,
+        :article439,
+        :article440,
+        :article441,
+        :article442,
+        :article443,
+        :article444,
+        :article445,
+        :article446,
+        :article447,
+        :article448,
+        :article449,
+        :article450,
+        :article451,
+        :article452,
+        :article453,
+        :article454,
+        :article455,
+        :article456,
+        :article457,
+        :article458,
+        :article459,
+        :article460,
+        :article461,
+        :article462,
+        :article463,
+        :article464,
+        :article465,
+        :article466,
+        :article467,
+        :article468,
+        :article469,
+        :article470,
+        :article471,
+        :article472,
+        :article473,
+        :article474,
+        :article475,
+        :article476,
+        :article477,
+        :article478,
+        :article479,
+        :article480,
+        :article481,
+        :article482,
+        :article483,
+        :article484,
+        :article485,
+        :article486,
+        :article487,
+        :article488,
+        :article489,
+        :article490,
+        :article491,
+        :article492,
+        :article493,
+        :article494,
+        :article495,
+        :article496,
+        :article497,
+        :article498,
+        :article499,
+        :article500,
+        :article501,
+        :article502,
+        :article503,
+        :article504,
+        :article505,
+        :article506,
+        :article507,
+        :article508,
+        :article509,
+        :article510,
+        :article511,
+        :article512,
+        :article513,
+        :article514,
+        :article515,
+        :article516,
+        :article517,
+        :article518,
+        :article519,
+        :article520,
+        :article521,
+        :article522,
+        :article523,
+        :article524,
+        :article525,
+        :article526,
+        :article527,
+        :article528,
+        :article529,
+        :article530,
+        :article531,
+        :article532,
+        :article533,
+        :article534,
+        :article535,
+        :article536,
+        :article537,
+        :article538,
+        :article539,
+        :article540,
+        :article541,
+        :article542,
+        :article543,
+        :article544,
+        :article545,
+        :article546,
+        :article547,
+        :article548,
+        :article549,
+        :article550,
+        :article551,
+        :article552,
+        :article553,
+        :article554,
+        :article555,
+        :article556,
+        :article557,
+        :article558,
+        :article559,
+        :article560,
+        :article561,
+        :article562,
+        :article563,
+        :article564,
+        :article565,
+        :article566,
+        :article567,
+        :article568,
+        :article569,
+        :article570,
+        :article571,
+        :article572,
+        :article573,
+        :article574,
+        :article575,
+        :article576,
+        :article577,
+        :article578,
+        :article579,
+        :article580,
+        :article581,
+        :article582,
+        :article583,
+        :article584,
+        :article585,
+        :article586,
+        :article587,
+        :article588,
+        :article589,
+        :article590,
+        :article591,
+        :article592,
+        :article593,
+        :article594,
+        :article595,
+        :article596,
+        :article597,
+        :article598,
+        :article599,
+        :article600,
+        :article601,
+        :article602,
+        :article603,
+        :article604,
+        :article605,
+        :article606,
+        :article607,
+        :article608,
+        :article609,
+        :article610,
+        :article611,
+        :article612,
+        :article613,
+        :article614,
+        :article615,
+        :article616,
+        :article617,
+        :article618,
+        :article619,
+        :article620,
+        :article621,
+        :article622,
+        :article623,
+        :article624,
+        :article625,
+        :article626,
+        :article627,
+        :article628,
+        :article629,
+        :article630,
+        :article631,
+        :article632,
+        :article633,
+        :article634,
+        :article635,
+        :article636,
+        :article637,
+        :article638,
+        :article639,
+        :article640,
+        :article641,
+        :article642,
+        :article643,
+        :article644,
+        :article645,
+        :article646,
+        :article647,
+        :article648,
+        :article649,
+        :article650,
+        :article651,
+        :article652,
+        :article653,
+        :article654,
+        :article655,
+        :article656,
+        :article657,
+        :article658,
+        :article659,
+        :article660,
+        :article661,
+        :article662,
+        :article663,
+        :article664,
+        :article665,
+        :article666,
+        :article667,
+        :article668,
+        :article669,
+        :article670,
+        :article671,
+        :article672,
+        :article673,
+        :article674,
+        :article675,
+        :article676,
+        :article677,
+        :article678,
+        :article679,
+        :article680,
+        :article681,
+        :article682,
+        :article683,
+        :article684,
+        :article685,
+        :article686,
+        :article687,
+        :article688,
+        :article689,
+        :article690,
+        :article691,
+        :article692,
+        :article693,
+        :article694,
+        :article695,
+        :article696,
+        :article697,
+        :article698,
+        :article699,
+        :article700,
+        :article701,
+        :article702,
+        :article703,
+        :article704,
+        :article705,
+        :article706,
+        :article707,
+        :article708,
+        :article709,
+        :article710,
+        :article711,
+        :article712,
+        :article713,
+        :article714,
+        :article715,
+        :article716,
+        :article717,
+        :article718,
+        :article719,
+        :article720,
+        :article721,
+        :article722,
+        :article723,
+        :article724,
+        :article725,
+        :article726,
+        :article727,
+        :article728,
+        :article729,
+        :article730,
+        :article731,
+        :article732,
+        :article733,
+        :article734,
+        :article735,
+        :article736,
+        :article737,
+        :article738,
+        :article739,
+        :article740,
+        :article741,
+        :article742,
+        :article743,
+        :article744,
+        :article745,
+        :article746,
+        :article747,
+        :article748,
+        :article749,
+        :article750,
+        :article751,
+        :article752,
+        :article753,
+        :article754,
+        :article755,
+        :article756,
+        :article757,
+        :article758,
+        :article759,
+        :article760,
+        :article761,
+        :article762,
+        :article763,
+        :article764,
+        :article765,
+        :article766,
+        :article767,
+        :article768,
+        :article769,
+        :article770,
+        :article771,
+        :article772,
+        :article773,
+        :article774,
+        :article775,
+        :article776,
+        :article777,
+        :article778,
+        :article779,
+        :article780,
+        :article781,
+        :article782,
+        :article783,
+        :article784,
+        :article785,
+        :article786,
+        :article787,
+        :article788,
+        :article789,
+        :article790,
+        :article791,
+        :article792,
+        :article793,
+        :article794,
+        :article795,
+        :article796,
+        :article797,
+        :article798,
+        :article799,
+        :article800,
+        :article801,
+        :article802,
+        :article803,
+        :article804,
+        :article805,
+        :article806,
+        :article807,
+        :article808,
+        :article809,
+        :article810,
+        :article811,
+        :article812,
+        :article813,
+        :article814,
+        :article815,
+        :article816,
+        :article817,
+        :article818,
+        :article819,
+        :article820,
+        :article821,
+        :article822,
+        :article823,
+        :article824,
+        :article825,
+        :article826,
+        :article827,
+        :article828,
+        :article829,
+        :article830,
+        :article831,
+        :article832,
+        :article833,
+        :article834,
+        :article835,
+        :article836,
+        :article837,
+        :article838,
+        :article839,
+        :article840,
+        :article841,
+        :article842,
+        :article843,
+        :article844,
+        :article845,
+        :article846,
+        :article847,
+        :article848,
+        :article849,
+        :article850,
+        :article851,
+        :article852,
+        :article853,
+        :article854,
+        :article855,
+        :article856,
+        :article857,
+        :article858,
+        :article859,
+        :article860,
+        :article861,
+        :article862,
+        :article863,
+        :article864,
+        :article865,
+        :article866,
+        :article867,
+        :article868,
+        :article869,
+        :article870,
+        :article871,
+        :article872,
+        :article873,
+        :article874,
+        :article875,
+        :article876,
+        :article877,
+        :article878,
+        :article879,
+        :article880,
+        :article881,
+        :article882,
+        :article883,
+        :article884,
+        :article885,
+        :article886,
+        :article887,
+        :article888,
+        :article889,
+        :article890,
+        :article891,
+        :article892,
+        :article893,
+        :article894,
+        :article895,
+        :article896,
+        :article897,
+        :article898,
+        :article899,
+        :article900,
+        :article901,
+        :article902,
+        :article903,
+        :article904,
+        :article905,
+        :article906,
+        :article907,
+        :article908,
+        :article909,
+        :article910,
+        :article911,
+        :article912,
+        :article913,
+        :article914,
+        :article915,
+        :article916,
+        :article917,
+        :article918,
+        :article919,
+        :article920,
+        :article921,
+        :article922,
+        :article923,
+        :article924,
+        :article925,
+        :article926,
+        :article927,
+        :article928,
+        :article929,
+        :article930,
+        :article931,
+        :article932,
+        :article933,
+        :article934,
+        :article935,
+        :article936,
+        :article937,
+        :article938,
+        :article939,
+        :article940,
+        :article941,
+        :article942,
+        :article943,
+        :article944,
+        :article945,
+        :article946,
+        :article947,
+        :article948,
+        :article949,
+        :article950,
+        :article951,
+        :article952,
+        :article953,
+        :article954,
+        :article955,
+        :article956,
+        :article957,
+        :article958,
+        :article959,
+        :article960,
+        :article961,
+        :article962,
+        :article963,
+        :article964,
+        :article965,
+        :article966,
+        :article967,
+        :article968,
+        :article969,
+        :article970,
+        :article971,
+        :article972,
+        :article973,
+        :article974,
+        :article975,
+        :article976,
+        :article977,
+        :article978,
+        :article979,
+        :article980,
+        :article981,
+        :article982,
+        :article983,
+        :article984,
+        :article985,
+        :article986,
+        :article987,
+        :article988,
+        :article989,
+        :article990,
+        :article991,
+        :article992,
+        :article993,
+        :article994,
+        :article995,
+        :article996,
+        :article997,
+        :article998,
+        :article999 .
+
+:article001 a :Article ;
+    :hasTag :AI,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NLP,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article002 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :OWL,
+        :SemanticReasoning,
+        :Technology .
+
+:article003 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :Ontologies,
+        :SemanticReasoning,
+        :Technology .
+
+:article004 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article005 a :Article ;
+    :hasTag :Datalog .
+
+:article006 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :ResearchandDevelopment,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article007 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article008 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article009 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article010 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :EducationTechnology,
+        :RDFox,
+        :RetailandE-commerce,
+        :Technology .
+
+:article011 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article012 a :Article ;
+    :hasTag :Explainability,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article013 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article014 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :SemanticReasoning,
+        :Technology .
+
+:article015 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article016 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning .
+
+:article017 a :Article ;
+    :hasTag :Datalog,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article018 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :RDFox .
+
+:article019 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SPARQL .
+
+:article020 a :Article ;
+    :hasTag :DeepLearning,
+        :LLMs,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning .
+
+:article021 a :Article ;
+    :hasTag :AI,
+        :DeepLearning,
+        :LLMs,
+        :ObjectDetection,
+        :SemanticReasoning,
+        :Technology .
+
+:article022 a :Article ;
+    :hasTag :EducationTechnology,
+        :RDFox,
+        :Technology .
+
+:article023 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :DeepLearning,
+        :EducationTechnology,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article024 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article025 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article026 a :Article ;
+    :hasTag :DeepLearning,
+        :LLMs,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article027 a :Article ;
+    :hasTag :Datalog,
+        :DeepLearning,
+        :FinanceandBankingAI,
+        :NeuralNetworks,
+        :RetailandE-commerce,
+        :SemanticReasoning .
+
+:article028 a :Article ;
+    :hasTag :DeepLearning,
+        :KnowledgeGraphs,
+        :LLMs,
+        :SemanticReasoning .
+
+:article029 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs .
+
+:article030 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :SemanticReasoning,
+        :Technology .
+
+:article031 a :Article ;
+    :hasTag :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning .
+
+:article032 a :Article ;
+    :hasTag :AIEthics,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article033 a :Article ;
+    :hasTag :AI,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article034 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article035 a :Article ;
+    :hasTag :Explainability,
+        :Interoperability,
+        :KnowledgeGraphs,
+        :SemanticReasoning,
+        :Technology .
+
+:article036 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article037 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article038 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article039 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NLP,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article040 a :Article ;
+    :hasTag :Explainability,
+        :LLMs,
+        :SemanticReasoning .
+
+:article041 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article042 a :Article ;
+    :hasTag :RDFox,
+        :SPARQL .
+
+:article043 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :MachineLearning,
+        :SemanticReasoning .
+
+:article044 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article045 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :Technology .
+
+:article046 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :MachineLearning,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article047 a :Article ;
+    :hasTag :AI,
+        :OWL,
+        :SemanticNetworks,
+        :Technology .
+
+:article048 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article049 a :Article ;
+    :hasTag :Datalog,
+        :RDFox,
+        :SemanticReasoning .
+
+:article050 a :Article ;
+    :hasTag :AI,
+        :EducationTechnology,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article051 a :Article ;
+    :hasTag :ComputerVision,
+        :Technology .
+
+:article052 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :RDFox .
+
+:article053 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article054 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :NeuralNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article055 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Technology .
+
+:article056 a :Article ;
+    :hasTag :LLMs,
+        :Technology .
+
+:article057 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article058 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article059 a :Article ;
+    :hasTag :Datalog,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article060 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :Technology .
+
+:article061 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :OWL,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article062 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :SemanticReasoning,
+        :Technology .
+
+:article063 a :Article ;
+    :hasTag :AI,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SWRL,
+        :SemanticReasoning .
+
+:article064 a :Article ;
+    :hasTag :AI,
+        :Datalog .
+
+:article065 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article066 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :LLMs,
+        :MachineLearning,
+        :RDFox,
+        :SHACL,
+        :Technology .
+
+:article067 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article068 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RetailandE-commerce,
+        :Technology .
+
+:article069 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article070 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article071 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation .
+
+:article072 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article073 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :Technology .
+
+:article074 a :Article ;
+    :hasTag :MachineLearning,
+        :RDFox,
+        :SemanticReasoning .
+
+:article075 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SWRL,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article076 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article077 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article078 a :Article ;
+    :hasTag :AI,
+        :MachineLearning,
+        :Technology .
+
+:article079 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :SemanticReasoning .
+
+:article080 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :ObjectDetection,
+        :Technology .
+
+:article081 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning .
+
+:article082 a :Article ;
+    :hasTag :Datalog,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning .
+
+:article083 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SPARQL,
+        :SemanticReasoning .
+
+:article084 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :NeuralNetworks,
+        :Technology .
+
+:article085 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article086 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article087 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Interoperability,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article088 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article089 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article090 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article091 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article092 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article093 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article094 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SHACL,
+        :SemanticReasoning .
+
+:article095 a :Article ;
+    :hasTag :ResponsibleAI,
+        :SPARQL .
+
+:article096 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article097 a :Article ;
+    :hasTag :AI,
+        :Explainability,
+        :Technology .
+
+:article098 a :Article ;
+    :hasTag :AI,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :SemanticReasoning,
+        :Technology .
+
+:article099 a :Article ;
+    :hasTag :Datalog,
+        :Ontologies,
+        :SemanticReasoning,
+        :Technology .
+
+:article100 a :Article ;
+    :hasTag :SemanticReasoning .
+
+:article1000 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article101 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article102 a :Article ;
+    :hasTag :AI,
+        :RDFox,
+        :SemanticReasoning .
+
+:article103 a :Article ;
+    :hasTag :MachineLearning,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning .
+
+:article104 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :Technology .
+
+:article105 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article106 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning,
+        :Technology .
+
+:article107 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :NeuralNetworks,
+        :Ontologies,
+        :RDFox,
+        :SemanticReasoning .
+
+:article108 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :Technology .
+
+:article109 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article110 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article111 a :Article ;
+    :hasTag :DeepLearning,
+        :LLMs,
+        :RDFox,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article112 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article113 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article114 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :NeuralNetworks,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article115 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :RetailandE-commerce,
+        :Technology .
+
+:article116 a :Article ;
+    :hasTag :SemanticNetworks,
+        :Technology .
+
+:article117 a :Article ;
+    :hasTag :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article118 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article119 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :LLMs,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article120 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article121 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article122 a :Article ;
+    :hasTag :ComputerVision,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article123 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article124 a :Article ;
+    :hasTag :SemanticReasoning .
+
+:article125 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Explainability,
+        :RetailandE-commerce .
+
+:article126 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article127 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article128 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :Ontologies,
+        :RDFox,
+        :Technology .
+
+:article129 a :Article ;
+    :hasTag :AI,
+        :LLMs,
+        :RDFox .
+
+:article130 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :ResearchandDevelopment .
+
+:article131 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning .
+
+:article132 a :Article ;
+    :hasTag :ObjectDetection,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article133 a :Article ;
+    :hasTag :LLMs,
+        :ObjectDetection,
+        :SemanticReasoning,
+        :Technology .
+
+:article134 a :Article ;
+    :hasTag :NLP,
+        :Technology .
+
+:article135 a :Article ;
+    :hasTag :HealthcareAI,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article136 a :Article ;
+    :hasTag :HealthcareAI,
+        :KnowledgeRepresentation .
+
+:article137 a :Article ;
+    :hasTag :SentimentAnalysis,
+        :Technology .
+
+:article138 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article139 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article140 a :Article ;
+    :hasTag :HealthcareAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article141 a :Article ;
+    :hasTag :Technology .
+
+:article142 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :NLP,
+        :Ontologies,
+        :SemanticReasoning .
+
+:article143 a :Article ;
+    :hasTag :AI,
+        :RDFox,
+        :SemanticReasoning .
+
+:article144 a :Article ;
+    :hasTag :Datalog,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article145 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article146 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article147 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :NLP,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article148 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :Explainability,
+        :KnowledgeRepresentation .
+
+:article149 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article150 a :Article ;
+    :hasTag :GenerativeAI,
+        :LLMs,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article151 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article152 a :Article ;
+    :hasTag :AI,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article153 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article154 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :SemanticReasoning .
+
+:article155 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article156 a :Article ;
+    :hasTag :Interoperability,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article157 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article158 a :Article ;
+    :hasTag :AI,
+        :KnowledgeGraphs,
+        :SemanticReasoning .
+
+:article159 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article160 a :Article ;
+    :hasTag :Datalog,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article161 a :Article ;
+    :hasTag :HealthcareAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article162 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article163 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GenerativeAI,
+        :KnowledgeGraphs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article164 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs .
+
+:article165 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article166 a :Article ;
+    :hasTag :RDFox,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article167 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :SemanticReasoning,
+        :Technology .
+
+:article168 a :Article ;
+    :hasTag :Datalog,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article169 a :Article ;
+    :hasTag :DeepLearning,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article170 a :Article ;
+    :hasTag :Interoperability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SHACL,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article171 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article172 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning,
+        :Technology .
+
+:article173 a :Article ;
+    :hasTag :ObjectDetection,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article174 a :Article ;
+    :hasTag :Explainability,
+        :KnowledgeRepresentation,
+        :NLP,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article175 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :NLP,
+        :SemanticReasoning .
+
+:article176 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article177 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article178 a :Article ;
+    :hasTag :Datalog,
+        :Technology .
+
+:article179 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article180 a :Article ;
+    :hasTag :KnowledgeGraphs,
+        :SemanticReasoning,
+        :Technology .
+
+:article181 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :NLP,
+        :ObjectDetection,
+        :Ontologies,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article182 a :Article ;
+    :hasTag :GenerativeAI,
+        :SemanticReasoning .
+
+:article183 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article184 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article185 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article186 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :Ontologies,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article187 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article188 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :RDFox,
+        :ResponsibleAI,
+        :Technology .
+
+:article189 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article190 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :Technology .
+
+:article191 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article192 a :Article ;
+    :hasTag :AI,
+        :LLMs,
+        :NeuralNetworks,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article193 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article194 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :LLMs .
+
+:article195 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article196 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article197 a :Article ;
+    :hasTag :OWL,
+        :RDFox,
+        :SHACL,
+        :Technology .
+
+:article198 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :ObjectDetection,
+        :Technology .
+
+:article199 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :RetailandE-commerce,
+        :SemanticReasoning .
+
+:article200 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article201 a :Article ;
+    :hasTag :AIEthics,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article202 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :ObjectDetection,
+        :Technology .
+
+:article203 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :OWL,
+        :SemanticReasoning,
+        :Technology .
+
+:article204 a :Article ;
+    :hasTag :MachineLearning,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article205 a :Article ;
+    :hasTag :DeepLearning,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article206 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :SemanticReasoning .
+
+:article207 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article208 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article209 a :Article ;
+    :hasTag :Explainability,
+        :RDFox,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article210 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article211 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :LLMs,
+        :Technology .
+
+:article212 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article213 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation .
+
+:article214 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :Datalog,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article215 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NLP,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article216 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Interoperability,
+        :RDFox,
+        :SemanticReasoning .
+
+:article217 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :OWL,
+        :SemanticReasoning,
+        :Technology .
+
+:article218 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :NLP,
+        :SemanticReasoning .
+
+:article219 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article220 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :RetailandE-commerce,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article221 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :Datalog,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article222 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article223 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article224 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :ResponsibleAI,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article225 a :Article ;
+    :hasTag :AI,
+        :Technology .
+
+:article226 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article227 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning .
+
+:article228 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :SemanticReasoning .
+
+:article229 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article230 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article231 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article232 a :Article ;
+    :hasTag :Datalog,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article233 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :SHACL .
+
+:article234 a :Article ;
+    :hasTag :ComputerVision,
+        :EnvironmentalandClimateScience,
+        :LLMs,
+        :NeuralNetworks,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article235 a :Article ;
+    :hasTag :AI,
+        :EducationTechnology,
+        :GenerativeAI,
+        :RDFox,
+        :SemanticNetworks,
+        :Technology .
+
+:article236 a :Article ;
+    :hasTag :RDFox,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article237 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article238 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :SemanticReasoning .
+
+:article239 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :FinanceandBankingAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article240 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article241 a :Article ;
+    :hasTag :AI,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article242 a :Article ;
+    :hasTag :AIEthics,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article243 a :Article ;
+    :hasTag :Explainability,
+        :FinanceandBankingAI,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article244 a :Article ;
+    :hasTag :Datalog,
+        :DeepLearning,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning .
+
+:article245 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :NLP,
+        :SemanticReasoning,
+        :Technology .
+
+:article246 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :KnowledgeGraphs,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article247 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article248 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article249 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article250 a :Article ;
+    :hasTag :GenerativeAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :MachineLearning,
+        :SemanticReasoning,
+        :Technology .
+
+:article251 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :Datalog,
+        :LLMs,
+        :Technology .
+
+:article252 a :Article ;
+    :hasTag :Datalog,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article253 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :Ontologies,
+        :SemanticReasoning .
+
+:article254 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :NeuralNetworks,
+        :SemanticReasoning .
+
+:article255 a :Article ;
+    :hasTag :AIEthics,
+        :LLMs,
+        :Technology .
+
+:article256 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :ResponsibleAI,
+        :SHACL,
+        :SemanticReasoning .
+
+:article257 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article258 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GenerativeAI,
+        :KnowledgeRepresentation .
+
+:article259 a :Article ;
+    :hasTag :Datalog,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article260 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :KnowledgeGraphs,
+        :SemanticReasoning,
+        :Technology .
+
+:article261 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article262 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article263 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :ObjectDetection,
+        :RDFox,
+        :RetailandE-commerce,
+        :Technology .
+
+:article264 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :NLP,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article265 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article266 a :Article ;
+    :hasTag :DeepLearning,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article267 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article268 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :Technology .
+
+:article269 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EducationTechnology,
+        :HealthcareAI,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article270 a :Article ;
+    :hasTag :AI,
+        :Ontologies,
+        :SemanticReasoning,
+        :Technology .
+
+:article271 a :Article ;
+    :hasTag :Datalog,
+        :GovernmentandPublicSector,
+        :NLP,
+        :RDFox,
+        :SWRL,
+        :SemanticNetworks,
+        :Technology .
+
+:article272 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :SemanticReasoning .
+
+:article273 a :Article ;
+    :hasTag :AI,
+        :DeepLearning,
+        :EnvironmentalandClimateScience,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article274 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :SemanticReasoning .
+
+:article275 a :Article ;
+    :hasTag :OWL,
+        :SemanticReasoning,
+        :Technology .
+
+:article276 a :Article ;
+    :hasTag :Datalog,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article277 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article278 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticReasoning .
+
+:article279 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article280 a :Article ;
+    :hasTag :AIEthics,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :RDFox,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article281 a :Article ;
+    :hasTag :AI,
+        :EducationTechnology,
+        :SemanticReasoning .
+
+:article282 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article283 a :Article ;
+    :hasTag :EducationTechnology,
+        :GovernmentandPublicSector,
+        :LLMs,
+        :SemanticReasoning .
+
+:article284 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article285 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox .
+
+:article286 a :Article ;
+    :hasTag :LLMs,
+        :ObjectDetection,
+        :RDFox,
+        :RetailandE-commerce .
+
+:article287 a :Article ;
+    :hasTag :AI,
+        :Ontologies,
+        :SemanticReasoning .
+
+:article288 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SPARQL,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article289 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :SWRL .
+
+:article290 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :ObjectDetection,
+        :SHACL,
+        :SemanticReasoning .
+
+:article291 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :ObjectDetection,
+        :RDFox,
+        :Technology .
+
+:article292 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article293 a :Article ;
+    :hasTag :AI,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SHACL,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article294 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article295 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :Technology .
+
+:article296 a :Article ;
+    :hasTag :AI,
+        :DeepLearning,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :NLP,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article297 a :Article ;
+    :hasTag :ObjectDetection,
+        :SemanticReasoning,
+        :Technology .
+
+:article298 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article299 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article300 a :Article ;
+    :hasTag :AIEthics,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SentimentAnalysis,
+        :Technology .
+
+:article301 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :OWL,
+        :SemanticReasoning,
+        :Technology .
+
+:article302 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation .
+
+:article303 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Technology .
+
+:article304 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :NeuralNetworks,
+        :OWL,
+        :RDFox,
+        :Technology .
+
+:article305 a :Article ;
+    :hasTag :EducationTechnology,
+        :SemanticReasoning,
+        :Technology .
+
+:article306 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :LLMs,
+        :NeuralNetworks,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article307 a :Article ;
+    :hasTag :AI,
+        :Explainability,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article308 a :Article ;
+    :hasTag :DeepLearning,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article309 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :Technology .
+
+:article310 a :Article ;
+    :hasTag :RDFox,
+        :Technology .
+
+:article311 a :Article ;
+    :hasTag :AIEthics,
+        :RDFox,
+        :Technology .
+
+:article312 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Explainability,
+        :SHACL,
+        :Technology .
+
+:article313 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :Technology .
+
+:article314 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article315 a :Article ;
+    :hasTag :AI,
+        :GovernmentandPublicSector,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article316 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :RDFox,
+        :SemanticReasoning .
+
+:article317 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SWRL,
+        :SemanticReasoning .
+
+:article318 a :Article ;
+    :hasTag :HealthcareAI,
+        :LLMs,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article319 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :GenerativeAI,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article320 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :LLMs .
+
+:article321 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article322 a :Article ;
+    :hasTag :Datalog,
+        :HealthcareAI,
+        :RDFox,
+        :ResearchandDevelopment,
+        :SPARQL,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article323 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :OWL,
+        :Ontologies,
+        :SemanticReasoning .
+
+:article324 a :Article ;
+    :hasTag :Datalog,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning .
+
+:article325 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article326 a :Article ;
+    :hasTag :RDFox,
+        :Technology .
+
+:article327 a :Article ;
+    :hasTag :Datalog,
+        :Explainability,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article328 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article329 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article330 a :Article ;
+    :hasTag :LLMs,
+        :SemanticReasoning .
+
+:article331 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article332 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :LLMs,
+        :MachineLearning,
+        :RDFox,
+        :SemanticReasoning .
+
+:article333 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article334 a :Article ;
+    :hasTag :DeepLearning,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article335 a :Article ;
+    :hasTag :EducationTechnology,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article336 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning,
+        :Technology .
+
+:article337 a :Article ;
+    :hasTag :ResearchandDevelopment,
+        :SemanticNetworks .
+
+:article338 a :Article ;
+    :hasTag :AIEthics,
+        :EducationTechnology,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :NeuralNetworks,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article339 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning .
+
+:article340 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article341 a :Article ;
+    :hasTag :AIEthics,
+        :SemanticReasoning,
+        :Technology .
+
+:article342 a :Article ;
+    :hasTag :AIEthics,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article343 a :Article ;
+    :hasTag :AI,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article344 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article345 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :Ontologies,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article346 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :OWL,
+        :RDFox,
+        :SPARQL,
+        :SemanticReasoning .
+
+:article347 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article348 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article349 a :Article ;
+    :hasTag :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article350 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Interoperability,
+        :SemanticReasoning .
+
+:article351 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :MachineLearning,
+        :SemanticReasoning,
+        :Technology .
+
+:article352 a :Article ;
+    :hasTag :EducationTechnology,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :Ontologies,
+        :SHACL,
+        :SemanticReasoning .
+
+:article353 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article354 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article355 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning .
+
+:article356 a :Article ;
+    :hasTag :AI,
+        :Technology .
+
+:article357 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :FinanceandBankingAI,
+        :HealthcareAI,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article358 a :Article ;
+    :hasTag :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article359 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article360 a :Article ;
+    :hasTag :ComputerVision,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article361 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article362 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article363 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox .
+
+:article364 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article365 a :Article ;
+    :hasTag :Datalog,
+        :MachineLearning,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article366 a :Article ;
+    :hasTag :GenerativeAI,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article367 a :Article ;
+    :hasTag :AI,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article368 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GovernmentandPublicSector,
+        :RDFox,
+        :Technology .
+
+:article369 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :SWRL,
+        :SemanticReasoning .
+
+:article370 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :SemanticReasoning .
+
+:article371 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :Technology .
+
+:article372 a :Article ;
+    :hasTag :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :NeuralNetworks,
+        :RetailandE-commerce,
+        :SemanticReasoning .
+
+:article373 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article374 a :Article ;
+    :hasTag :LLMs,
+        :Technology .
+
+:article375 a :Article ;
+    :hasTag :AI,
+        :EnvironmentalandClimateScience,
+        :Technology .
+
+:article376 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :Datalog,
+        :LLMs,
+        :RDFox .
+
+:article377 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox .
+
+:article378 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :LLMs,
+        :MachineLearning,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article379 a :Article ;
+    :hasTag :AI,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article380 a :Article ;
+    :hasTag :Interoperability,
+        :KnowledgeRepresentation,
+        :RetailandE-commerce,
+        :Technology .
+
+:article381 a :Article ;
+    :hasTag :DeepLearning,
+        :EducationTechnology,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SHACL,
+        :SemanticReasoning .
+
+:article382 a :Article ;
+    :hasTag :AI,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article383 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article384 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article385 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article386 a :Article ;
+    :hasTag :LLMs,
+        :SemanticReasoning .
+
+:article387 a :Article ;
+    :hasTag :Datalog,
+        :GenerativeAI,
+        :KnowledgeRepresentation .
+
+:article388 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :SemanticReasoning .
+
+:article389 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :OWL,
+        :SemanticReasoning,
+        :Technology .
+
+:article390 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article391 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation .
+
+:article392 a :Article ;
+    :hasTag :AIEthics,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article393 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article394 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :TransportationandAutonomousVehicles .
+
+:article395 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article396 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article397 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article398 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning .
+
+:article399 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation .
+
+:article400 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :Ontologies,
+        :RDFox,
+        :SemanticReasoning .
+
+:article401 a :Article ;
+    :hasTag :NeuralNetworks,
+        :ResponsibleAI,
+        :Technology .
+
+:article402 a :Article ;
+    :hasTag :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article403 a :Article ;
+    :hasTag :Datalog,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article404 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning .
+
+:article405 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article406 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article407 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning .
+
+:article408 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article409 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article410 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article411 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :Technology .
+
+:article412 a :Article ;
+    :hasTag :AIEthics,
+        :ComputerVision,
+        :KnowledgeRepresentation,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article413 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SHACL,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article414 a :Article ;
+    :hasTag :Datalog,
+        :DeepLearning,
+        :SemanticReasoning .
+
+:article415 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :RDFox .
+
+:article416 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :OWL,
+        :ObjectDetection,
+        :RDFox,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article417 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SentimentAnalysis,
+        :Technology .
+
+:article418 a :Article ;
+    :hasTag :ComputerVision,
+        :EnvironmentalandClimateScience,
+        :Explainability,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article419 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article420 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article421 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article422 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning .
+
+:article423 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article424 a :Article ;
+    :hasTag :RDFox .
+
+:article425 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article426 a :Article ;
+    :hasTag :AI,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article427 a :Article ;
+    :hasTag :HealthcareAI,
+        :RDFox .
+
+:article428 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article429 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article430 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :MachineLearning,
+        :TransportationandAutonomousVehicles .
+
+:article431 a :Article ;
+    :hasTag :AI,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article432 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article433 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article434 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning,
+        :Technology .
+
+:article435 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SHACL,
+        :SemanticReasoning .
+
+:article436 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article437 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article438 a :Article ;
+    :hasTag :HealthcareAI,
+        :MachineLearning,
+        :OWL,
+        :Technology .
+
+:article439 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article440 a :Article ;
+    :hasTag :Explainability,
+        :RDFox,
+        :SemanticReasoning .
+
+:article441 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article442 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article443 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :MachineLearning,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article444 a :Article ;
+    :hasTag :Datalog,
+        :RDFox,
+        :TransportationandAutonomousVehicles .
+
+:article445 a :Article ;
+    :hasTag :AI,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :MachineLearning,
+        :OWL,
+        :ObjectDetection,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article446 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :Technology .
+
+:article447 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :SemanticReasoning,
+        :Technology .
+
+:article448 a :Article ;
+    :hasTag :Datalog,
+        :SWRL,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article449 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article450 a :Article ;
+    :hasTag :AI,
+        :EducationTechnology,
+        :LLMs,
+        :ObjectDetection,
+        :RDFox .
+
+:article451 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article452 a :Article ;
+    :hasTag :Explainability,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticNetworks,
+        :TransportationandAutonomousVehicles .
+
+:article453 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :LLMs,
+        :RDFox,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article454 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :Technology .
+
+:article455 a :Article ;
+    :hasTag :Datalog,
+        :ObjectDetection .
+
+:article456 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article457 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :Technology .
+
+:article458 a :Article ;
+    :hasTag :AI,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article459 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article460 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article461 a :Article ;
+    :hasTag :AIEthics,
+        :Explainability,
+        :RDFox,
+        :SemanticReasoning .
+
+:article462 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article463 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article464 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article465 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :Explainability,
+        :LLMs,
+        :ObjectDetection,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article466 a :Article ;
+    :hasTag :LLMs,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article467 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article468 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article469 a :Article ;
+    :hasTag :DeepLearning,
+        :SemanticReasoning .
+
+:article470 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :LLMs,
+        :NLP,
+        :SemanticReasoning,
+        :Technology .
+
+:article471 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning,
+        :Technology .
+
+:article472 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NeuralNetworks,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article473 a :Article ;
+    :hasTag :LLMs,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article474 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article475 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article476 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SPARQL,
+        :SWRL,
+        :Technology .
+
+:article477 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article478 a :Article ;
+    :hasTag :EducationTechnology,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article479 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article480 a :Article ;
+    :hasTag :AI,
+        :FinanceandBankingAI,
+        :LLMs,
+        :SemanticReasoning .
+
+:article481 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning .
+
+:article482 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article483 a :Article ;
+    :hasTag :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article484 a :Article ;
+    :hasTag :Explainability,
+        :LLMs,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article485 a :Article ;
+    :hasTag :HealthcareAI,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article486 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article487 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SPARQL,
+        :SemanticReasoning .
+
+:article488 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article489 a :Article ;
+    :hasTag :Datalog,
+        :NeuralNetworks,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article490 a :Article ;
+    :hasTag :OWL,
+        :Ontologies,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article491 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :LLMs,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article492 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article493 a :Article ;
+    :hasTag :GenerativeAI,
+        :RDFox .
+
+:article494 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :SemanticNetworks,
+        :Technology .
+
+:article495 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :SWRL,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article496 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeGraphs .
+
+:article497 a :Article ;
+    :hasTag :ComputerVision,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article498 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article499 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :Ontologies,
+        :RDFox,
+        :Technology .
+
+:article500 a :Article ;
+    :hasTag :AI,
+        :Datalog .
+
+:article501 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article502 a :Article ;
+    :hasTag :AI,
+        :ObjectDetection,
+        :RDFox,
+        :SPARQL .
+
+:article503 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article504 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article505 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article506 a :Article ;
+    :hasTag :Explainability,
+        :FinanceandBankingAI,
+        :ObjectDetection .
+
+:article507 a :Article ;
+    :hasTag :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NeuralNetworks,
+        :SemanticReasoning .
+
+:article508 a :Article ;
+    :hasTag :EducationTechnology,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article509 a :Article ;
+    :hasTag :Interoperability,
+        :KnowledgeRepresentation,
+        :RetailandE-commerce,
+        :Technology .
+
+:article510 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article511 a :Article ;
+    :hasTag :LLMs,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article512 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NeuralNetworks,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article513 a :Article ;
+    :hasTag :Datalog,
+        :DeepLearning,
+        :Explainability,
+        :LLMs,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article514 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article515 a :Article ;
+    :hasTag :Datalog,
+        :ResponsibleAI .
+
+:article516 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :FinanceandBankingAI,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article517 a :Article ;
+    :hasTag :AI,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article518 a :Article ;
+    :hasTag :GenerativeAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article519 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article520 a :Article ;
+    :hasTag :HealthcareAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article521 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :GenerativeAI,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article522 a :Article ;
+    :hasTag :EducationTechnology,
+        :RDFox,
+        :SemanticReasoning .
+
+:article523 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article524 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article525 a :Article ;
+    :hasTag :Datalog,
+        :MachineLearning,
+        :RDFox,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article526 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article527 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article528 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article529 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :SemanticReasoning .
+
+:article530 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :Technology .
+
+:article531 a :Article ;
+    :hasTag :ObjectDetection,
+        :RDFox,
+        :SHACL,
+        :Technology .
+
+:article532 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article533 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article534 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article535 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :NeuralNetworks,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article536 a :Article ;
+    :hasTag :Datalog,
+        :Ontologies,
+        :SemanticReasoning,
+        :Technology .
+
+:article537 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article538 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article539 a :Article ;
+    :hasTag :AI,
+        :Explainability,
+        :FinanceandBankingAI,
+        :LLMs,
+        :Ontologies,
+        :ResponsibleAI,
+        :SemanticReasoning .
+
+:article540 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article541 a :Article ;
+    :hasTag :ComputerVision,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article542 a :Article ;
+    :hasTag :LLMs,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article543 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning .
+
+:article544 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :NLP .
+
+:article545 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article546 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article547 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article548 a :Article ;
+    :hasTag :ResponsibleAI,
+        :SemanticReasoning .
+
+:article549 a :Article ;
+    :hasTag :Datalog,
+        :NeuralNetworks,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article550 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation .
+
+:article551 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article552 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :RDFox,
+        :Technology .
+
+:article553 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article554 a :Article ;
+    :hasTag :ComputerVision,
+        :LLMs,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article555 a :Article ;
+    :hasTag :Technology .
+
+:article556 a :Article ;
+    :hasTag :AI,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :ResponsibleAI,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article557 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Explainability,
+        :HealthcareAI,
+        :LLMs,
+        :Technology .
+
+:article558 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NeuralNetworks,
+        :Technology .
+
+:article559 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article560 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation .
+
+:article561 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :RDFox,
+        :SemanticReasoning .
+
+:article562 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :GovernmentandPublicSector,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article563 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NLP,
+        :SemanticReasoning,
+        :Technology .
+
+:article564 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article565 a :Article ;
+    :hasTag :EducationTechnology,
+        :GovernmentandPublicSector,
+        :ResearchandDevelopment,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article566 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article567 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article568 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :OWL,
+        :RDFox,
+        :Technology .
+
+:article569 a :Article ;
+    :hasTag :AI,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article570 a :Article ;
+    :hasTag :AI,
+        :LLMs,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article571 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :RDFox,
+        :SHACL,
+        :Technology .
+
+:article572 a :Article ;
+    :hasTag :AI,
+        :LLMs,
+        :SWRL,
+        :SemanticReasoning .
+
+:article573 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :ObjectDetection,
+        :RDFox .
+
+:article574 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :Technology .
+
+:article575 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article576 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article577 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article578 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article579 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :Technology .
+
+:article580 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article581 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :SemanticReasoning,
+        :Technology .
+
+:article582 a :Article ;
+    :hasTag :EducationTechnology,
+        :KnowledgeRepresentation,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticReasoning .
+
+:article583 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article584 a :Article ;
+    :hasTag :KnowledgeGraphs,
+        :RDFox .
+
+:article585 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :LLMs .
+
+:article586 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article587 a :Article ;
+    :hasTag :DeepLearning,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article588 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :ObjectDetection,
+        :RDFox,
+        :SHACL,
+        :Technology .
+
+:article589 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article590 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article591 a :Article ;
+    :hasTag :AI,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article592 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article593 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article594 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article595 a :Article ;
+    :hasTag :AI,
+        :DeepLearning,
+        :Interoperability,
+        :SemanticReasoning,
+        :Technology .
+
+:article596 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :RetailandE-commerce,
+        :Technology .
+
+:article597 a :Article ;
+    :hasTag :Explainability,
+        :SemanticReasoning .
+
+:article598 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :LLMs,
+        :ObjectDetection,
+        :SemanticReasoning .
+
+:article599 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article600 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article601 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article602 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :ObjectDetection,
+        :SemanticReasoning,
+        :Technology .
+
+:article603 a :Article ;
+    :hasTag :LLMs,
+        :ResponsibleAI .
+
+:article604 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning .
+
+:article605 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article606 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article607 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article608 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article609 a :Article ;
+    :hasTag :Datalog,
+        :GovernmentandPublicSector,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article610 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :ObjectDetection,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article611 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article612 a :Article ;
+    :hasTag :SemanticNetworks,
+        :SemanticReasoning .
+
+:article613 a :Article ;
+    :hasTag :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article614 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article615 a :Article ;
+    :hasTag :AI,
+        :LLMs,
+        :RDFox .
+
+:article616 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article617 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article618 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article619 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :NLP,
+        :SWRL .
+
+:article620 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NeuralNetworks,
+        :RetailandE-commerce,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article621 a :Article ;
+    :hasTag :AI,
+        :LLMs,
+        :NLP,
+        :SemanticReasoning .
+
+:article622 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article623 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning .
+
+:article624 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :LLMs,
+        :OWL,
+        :SemanticReasoning,
+        :Technology .
+
+:article625 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article626 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article627 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :RDFox .
+
+:article628 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeGraphs,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article629 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article630 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article631 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article632 a :Article ;
+    :hasTag :Datalog,
+        :RDFox,
+        :ResearchandDevelopment .
+
+:article633 a :Article ;
+    :hasTag :AIEthics,
+        :ComputerVision,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article634 a :Article ;
+    :hasTag :HealthcareAI,
+        :Interoperability,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article635 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :OWL,
+        :RDFox,
+        :ResponsibleAI,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article636 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article637 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article638 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :DeepLearning,
+        :HealthcareAI,
+        :LLMs,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article639 a :Article ;
+    :hasTag :Technology .
+
+:article640 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :GovernmentandPublicSector,
+        :LLMs,
+        :Ontologies,
+        :SemanticReasoning .
+
+:article641 a :Article ;
+    :hasTag :Ontologies,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article642 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :LLMs,
+        :SemanticReasoning .
+
+:article643 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article644 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article645 a :Article ;
+    :hasTag :EducationTechnology,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article646 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EducationTechnology,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article647 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GovernmentandPublicSector,
+        :RDFox,
+        :Technology .
+
+:article648 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :SentimentAnalysis .
+
+:article649 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article650 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :ObjectDetection,
+        :ResearchandDevelopment,
+        :Technology .
+
+:article651 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article652 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article653 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning,
+        :Technology .
+
+:article654 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox .
+
+:article655 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SentimentAnalysis .
+
+:article656 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :SemanticReasoning .
+
+:article657 a :Article ;
+    :hasTag :DeepLearning,
+        :LLMs,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning .
+
+:article658 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article659 a :Article ;
+    :hasTag :LLMs,
+        :Technology .
+
+:article660 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :SemanticReasoning .
+
+:article661 a :Article ;
+    :hasTag :Explainability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article662 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :Ontologies,
+        :RDFox,
+        :SemanticReasoning .
+
+:article663 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article664 a :Article ;
+    :hasTag :Explainability,
+        :Technology .
+
+:article665 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article666 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article667 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GenerativeAI,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article668 a :Article ;
+    :hasTag :Datalog,
+        :GenerativeAI,
+        :Technology .
+
+:article669 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article670 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article671 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning,
+        :Technology .
+
+:article672 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticNetworks,
+        :Technology .
+
+:article673 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article674 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :RDFox,
+        :Technology .
+
+:article675 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :SemanticReasoning .
+
+:article676 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning .
+
+:article677 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article678 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article679 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SWRL .
+
+:article680 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :Technology .
+
+:article681 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article682 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning .
+
+:article683 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article684 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article685 a :Article ;
+    :hasTag :Datalog,
+        :OWL,
+        :RetailandE-commerce,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article686 a :Article ;
+    :hasTag :HealthcareAI,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article687 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :FinanceandBankingAI,
+        :HealthcareAI,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article688 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :NLP,
+        :RDFox,
+        :SWRL,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article689 a :Article ;
+    :hasTag :AI,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article690 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :OWL,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article691 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning .
+
+:article692 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :Technology .
+
+:article693 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article694 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article695 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article696 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning .
+
+:article697 a :Article ;
+    :hasTag :Datalog,
+        :MachineLearning,
+        :NeuralNetworks,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article698 a :Article ;
+    :hasTag :Datalog,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article699 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Explainability,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article700 a :Article ;
+    :hasTag :AI,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article701 a :Article ;
+    :hasTag :HealthcareAI,
+        :KnowledgeRepresentation .
+
+:article702 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article703 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article704 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeRepresentation .
+
+:article705 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article706 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :Technology .
+
+:article707 a :Article ;
+    :hasTag :AI,
+        :DeepLearning,
+        :EducationTechnology,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article708 a :Article ;
+    :hasTag :Datalog,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article709 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation .
+
+:article710 a :Article ;
+    :hasTag :AI,
+        :KnowledgeGraphs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article711 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article712 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article713 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :OWL,
+        :SemanticReasoning .
+
+:article714 a :Article ;
+    :hasTag :Datalog,
+        :DeepLearning,
+        :MachineLearning,
+        :SemanticReasoning .
+
+:article715 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article716 a :Article ;
+    :hasTag :Datalog,
+        :GenerativeAI,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article717 a :Article ;
+    :hasTag :Interoperability,
+        :RDFox,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article718 a :Article ;
+    :hasTag :AI,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article719 a :Article ;
+    :hasTag :ComputerVision,
+        :LLMs .
+
+:article720 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :OWL,
+        :RDFox,
+        :Technology .
+
+:article721 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article722 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SHACL,
+        :SemanticReasoning .
+
+:article723 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :SemanticReasoning,
+        :Technology .
+
+:article724 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article725 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :LLMs,
+        :ObjectDetection,
+        :SemanticReasoning .
+
+:article726 a :Article ;
+    :hasTag :SWRL,
+        :Technology .
+
+:article727 a :Article ;
+    :hasTag :HealthcareAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article728 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :Technology .
+
+:article729 a :Article ;
+    :hasTag :Interoperability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NLP,
+        :RDFox,
+        :Technology .
+
+:article730 a :Article ;
+    :hasTag :Explainability,
+        :KnowledgeRepresentation,
+        :SHACL,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article731 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article732 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article733 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :Datalog,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article734 a :Article ;
+    :hasTag :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article735 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article736 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs .
+
+:article737 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SHACL,
+        :SemanticReasoning .
+
+:article738 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article739 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation .
+
+:article740 a :Article ;
+    :hasTag :SemanticReasoning .
+
+:article741 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article742 a :Article ;
+    :hasTag :GenerativeAI,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article743 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article744 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article745 a :Article ;
+    :hasTag :EducationTechnology,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article746 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article747 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article748 a :Article ;
+    :hasTag :AI,
+        :Explainability,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article749 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GovernmentandPublicSector,
+        :LLMs,
+        :Ontologies,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article750 a :Article ;
+    :hasTag :LLMs,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article751 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article752 a :Article ;
+    :hasTag :Datalog,
+        :GenerativeAI,
+        :NLP,
+        :SemanticReasoning .
+
+:article753 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article754 a :Article ;
+    :hasTag :AI,
+        :EnvironmentalandClimateScience,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article755 a :Article ;
+    :hasTag :Datalog,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article756 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :SemanticReasoning,
+        :Technology .
+
+:article757 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning,
+        :Technology .
+
+:article758 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :OWL .
+
+:article759 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article760 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article761 a :Article ;
+    :hasTag :ObjectDetection,
+        :RDFox,
+        :Technology .
+
+:article762 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article763 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :NLP,
+        :SemanticReasoning,
+        :Technology .
+
+:article764 a :Article ;
+    :hasTag :AI,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article765 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :Technology .
+
+:article766 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning,
+        :Technology .
+
+:article767 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :RetailandE-commerce,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article768 a :Article ;
+    :hasTag :AIEthics,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article769 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :Technology .
+
+:article770 a :Article ;
+    :hasTag :AI,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article771 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article772 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :SemanticReasoning,
+        :Technology .
+
+:article773 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article774 a :Article ;
+    :hasTag :SemanticReasoning .
+
+:article775 a :Article ;
+    :hasTag :GenerativeAI,
+        :KnowledgeRepresentation,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article776 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article777 a :Article ;
+    :hasTag :Datalog,
+        :Ontologies,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article778 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article779 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :Ontologies,
+        :SemanticReasoning .
+
+:article780 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning .
+
+:article781 a :Article ;
+    :hasTag :AI,
+        :EducationTechnology,
+        :RDFox,
+        :Technology .
+
+:article782 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article783 a :Article ;
+    :hasTag :DeepLearning,
+        :LLMs,
+        :NeuralNetworks,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article784 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :MachineLearning,
+        :RDFox,
+        :ResearchandDevelopment,
+        :Technology .
+
+:article785 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article786 a :Article ;
+    :hasTag :LLMs,
+        :Technology .
+
+:article787 a :Article ;
+    :hasTag :Datalog,
+        :GenerativeAI,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article788 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :RDFox,
+        :SemanticReasoning .
+
+:article789 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article790 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article791 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article792 a :Article ;
+    :hasTag :AI,
+        :Ontologies,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article793 a :Article ;
+    :hasTag :ComputerVision,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article794 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article795 a :Article ;
+    :hasTag :LLMs,
+        :Ontologies,
+        :SemanticReasoning,
+        :Technology .
+
+:article796 a :Article ;
+    :hasTag :DeepLearning,
+        :Interoperability,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :ResponsibleAI,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article797 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article798 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :SWRL,
+        :Technology .
+
+:article799 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article800 a :Article ;
+    :hasTag :Interoperability,
+        :KnowledgeRepresentation,
+        :RDFox .
+
+:article801 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article802 a :Article ;
+    :hasTag :AIEthics,
+        :EducationTechnology,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article803 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article804 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article805 a :Article ;
+    :hasTag :AI,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article806 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article807 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :TransportationandAutonomousVehicles .
+
+:article808 a :Article ;
+    :hasTag :LLMs,
+        :SemanticReasoning .
+
+:article809 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :ObjectDetection,
+        :RDFox,
+        :SemanticReasoning .
+
+:article810 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article811 a :Article ;
+    :hasTag :ComputerVision,
+        :ResearchandDevelopment .
+
+:article812 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :ObjectDetection,
+        :SemanticReasoning .
+
+:article813 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SWRL,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article814 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning .
+
+:article815 a :Article ;
+    :hasTag :AI,
+        :DeepLearning,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article816 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :Technology .
+
+:article817 a :Article ;
+    :hasTag :ComputerVision,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article818 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning .
+
+:article819 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :RDFox,
+        :SemanticReasoning .
+
+:article820 a :Article ;
+    :hasTag :Datalog,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article821 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article822 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :RetailandE-commerce,
+        :Technology .
+
+:article823 a :Article ;
+    :hasTag :AI,
+        :TransportationandAutonomousVehicles .
+
+:article824 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article825 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning,
+        :Technology .
+
+:article826 a :Article ;
+    :hasTag :AIEthics,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article827 a :Article ;
+    :hasTag :RetailandE-commerce,
+        :Technology .
+
+:article828 a :Article ;
+    :hasTag :ComputerVision,
+        :Datalog,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article829 a :Article ;
+    :hasTag :Datalog,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NeuralNetworks,
+        :RDFox,
+        :Technology .
+
+:article830 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article831 a :Article ;
+    :hasTag :Interoperability,
+        :LLMs,
+        :OWL,
+        :SWRL,
+        :Technology .
+
+:article832 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Interoperability,
+        :LLMs,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article833 a :Article ;
+    :hasTag :Datalog,
+        :RDFox .
+
+:article834 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :KnowledgeRepresentation,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article835 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :OWL,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article836 a :Article ;
+    :hasTag :Datalog,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article837 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article838 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article839 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning,
+        :Technology .
+
+:article840 a :Article ;
+    :hasTag :Datalog,
+        :LLMs .
+
+:article841 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :OWL,
+        :RDFox,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article842 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article843 a :Article ;
+    :hasTag :AI,
+        :RDFox,
+        :SemanticReasoning .
+
+:article844 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article845 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article846 a :Article ;
+    :hasTag :HealthcareAI,
+        :KnowledgeRepresentation,
+        :SWRL,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article847 a :Article ;
+    :hasTag :AI,
+        :RDFox,
+        :SemanticReasoning .
+
+:article848 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :MachineLearning,
+        :RDFox,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article849 a :Article ;
+    :hasTag :GovernmentandPublicSector,
+        :MachineLearning,
+        :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article850 a :Article ;
+    :hasTag :DeepLearning,
+        :Explainability,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :OWL,
+        :RDFox,
+        :Technology .
+
+:article851 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article852 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox .
+
+:article853 a :Article ;
+    :hasTag :ResearchandDevelopment,
+        :SemanticReasoning,
+        :Technology .
+
+:article854 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article855 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :GenerativeAI,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article856 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article857 a :Article ;
+    :hasTag :DeepLearning,
+        :HealthcareAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article858 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :FinanceandBankingAI,
+        :LLMs,
+        :NLP,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article859 a :Article ;
+    :hasTag :AIEthics,
+        :ComputerVision,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article860 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article861 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :ResponsibleAI,
+        :Technology .
+
+:article862 a :Article ;
+    :hasTag :LLMs,
+        :Technology .
+
+:article863 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :MachineLearning,
+        :ResponsibleAI,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article864 a :Article ;
+    :hasTag :AI,
+        :RDFox,
+        :Technology .
+
+:article865 a :Article ;
+    :hasTag :AI,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article866 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article867 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning .
+
+:article868 a :Article ;
+    :hasTag :Datalog,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article869 a :Article ;
+    :hasTag :AI,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article870 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :Explainability,
+        :KnowledgeGraphs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article871 a :Article ;
+    :hasTag :Technology .
+
+:article872 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article873 a :Article ;
+    :hasTag :Datalog,
+        :GenerativeAI,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article874 a :Article ;
+    :hasTag :AI,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article875 a :Article ;
+    :hasTag :AI,
+        :GenerativeAI,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :Technology .
+
+:article876 a :Article ;
+    :hasTag :ObjectDetection,
+        :SemanticReasoning,
+        :Technology .
+
+:article877 a :Article ;
+    :hasTag :DeepLearning,
+        :KnowledgeRepresentation .
+
+:article878 a :Article ;
+    :hasTag :Datalog,
+        :Technology .
+
+:article879 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :SemanticReasoning,
+        :Technology .
+
+:article880 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :ObjectDetection,
+        :SemanticReasoning,
+        :Technology .
+
+:article881 a :Article ;
+    :hasTag :EducationTechnology,
+        :Explainability,
+        :FinanceandBankingAI,
+        :LLMs,
+        :OWL,
+        :RDFox,
+        :SemanticReasoning .
+
+:article882 a :Article ;
+    :hasTag :Datalog,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article883 a :Article ;
+    :hasTag :EnvironmentalandClimateScience,
+        :RDFox .
+
+:article884 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :NLP,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticNetworks,
+        :SemanticReasoning,
+        :Technology .
+
+:article885 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article886 a :Article ;
+    :hasTag :GenerativeAI,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article887 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article888 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article889 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article890 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :MachineLearning,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article891 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :LLMs,
+        :OWL,
+        :Ontologies,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article892 a :Article ;
+    :hasTag :DeepLearning,
+        :Interoperability,
+        :SemanticReasoning,
+        :Technology .
+
+:article893 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article894 a :Article ;
+    :hasTag :AI,
+        :ComputerVision,
+        :Datalog,
+        :LLMs,
+        :RDFox,
+        :ResearchandDevelopment,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article895 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :LLMs,
+        :MachineLearning,
+        :SPARQL,
+        :SemanticReasoning .
+
+:article896 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SHACL,
+        :SemanticReasoning .
+
+:article897 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :FinanceandBankingAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article898 a :Article ;
+    :hasTag :AI,
+        :FinanceandBankingAI,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :NeuralNetworks,
+        :RetailandE-commerce,
+        :SHACL,
+        :SemanticReasoning .
+
+:article899 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :EducationTechnology,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article900 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article901 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeRepresentation .
+
+:article902 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article903 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning .
+
+:article904 a :Article ;
+    :hasTag :RDFox .
+
+:article905 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :MachineLearning,
+        :RDFox,
+        :SemanticReasoning .
+
+:article906 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article907 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article908 a :Article ;
+    :hasTag :ComputerVision,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :Technology .
+
+:article909 a :Article ;
+    :hasTag :Datalog,
+        :LLMs .
+
+:article910 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :Technology .
+
+:article911 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article912 a :Article ;
+    :hasTag :AIEthics,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :OWL,
+        :RetailandE-commerce .
+
+:article913 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :Technology .
+
+:article914 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article915 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :DeepLearning,
+        :KnowledgeRepresentation,
+        :SemanticReasoning .
+
+:article916 a :Article ;
+    :hasTag :AI,
+        :GenerativeAI,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article917 a :Article ;
+    :hasTag :Datalog,
+        :FinanceandBankingAI,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResearchandDevelopment,
+        :Technology .
+
+:article918 a :Article ;
+    :hasTag :AI,
+        :HealthcareAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article919 a :Article ;
+    :hasTag :AI,
+        :Interoperability,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article920 a :Article ;
+    :hasTag :Datalog,
+        :RDFox .
+
+:article921 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article922 a :Article ;
+    :hasTag :ComputerVision,
+        :Explainability,
+        :SemanticReasoning,
+        :Technology .
+
+:article923 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :DeepLearning,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :SemanticReasoning,
+        :Technology .
+
+:article924 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article925 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :LLMs,
+        :SemanticNetworks,
+        :SentimentAnalysis,
+        :Technology .
+
+:article926 a :Article ;
+    :hasTag :FinanceandBankingAI,
+        :KnowledgeGraphs,
+        :KnowledgeRepresentation,
+        :NLP,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article927 a :Article ;
+    :hasTag :AI,
+        :RDFox .
+
+:article928 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article929 a :Article ;
+    :hasTag :Datalog,
+        :DeepLearning,
+        :Explainability,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article930 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :RDFox,
+        :Technology .
+
+:article931 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :OWL,
+        :SemanticReasoning .
+
+:article932 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :GenerativeAI,
+        :Interoperability,
+        :LLMs,
+        :ResearchandDevelopment,
+        :SemanticReasoning .
+
+:article933 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article934 a :Article ;
+    :hasTag :Ontologies,
+        :SemanticReasoning,
+        :Technology .
+
+:article935 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :OWL,
+        :SWRL .
+
+:article936 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article937 a :Article ;
+    :hasTag :Datalog,
+        :EducationTechnology,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox .
+
+:article938 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :SemanticReasoning .
+
+:article939 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :Technology .
+
+:article940 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :Technology .
+
+:article941 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :RetailandE-commerce,
+        :SentimentAnalysis,
+        :Technology .
+
+:article942 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article943 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EnvironmentalandClimateScience,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article944 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :ResponsibleAI,
+        :SemanticReasoning .
+
+:article945 a :Article ;
+    :hasTag :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article946 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article947 a :Article ;
+    :hasTag :ComputerVision,
+        :HealthcareAI,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article948 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article949 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article950 a :Article ;
+    :hasTag :AIEthics,
+        :Datalog,
+        :DeepLearning,
+        :LLMs,
+        :RDFox,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article951 a :Article ;
+    :hasTag :GenerativeAI,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article952 a :Article ;
+    :hasTag :LLMs,
+        :OWL,
+        :SemanticReasoning .
+
+:article953 a :Article ;
+    :hasTag :AI,
+        :SemanticReasoning .
+
+:article954 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Technology .
+
+:article955 a :Article ;
+    :hasTag :AI,
+        :RDFox,
+        :SHACL,
+        :SPARQL,
+        :SemanticReasoning .
+
+:article956 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :LLMs,
+        :SWRL,
+        :SemanticReasoning,
+        :Technology .
+
+:article957 a :Article ;
+    :hasTag :HealthcareAI,
+        :KnowledgeRepresentation,
+        :OWL,
+        :SPARQL .
+
+:article958 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :LLMs,
+        :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article959 a :Article ;
+    :hasTag :LLMs,
+        :Ontologies,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article960 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article961 a :Article ;
+    :hasTag :Datalog,
+        :GenerativeAI,
+        :LLMs,
+        :NLP,
+        :Technology .
+
+:article962 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :Technology .
+
+:article963 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article964 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :LLMs .
+
+:article965 a :Article ;
+    :hasTag :LLMs,
+        :RDFox,
+        :SemanticReasoning .
+
+:article966 a :Article ;
+    :hasTag :AI,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article967 a :Article ;
+    :hasTag :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article968 a :Article ;
+    :hasTag :RDFox,
+        :ResponsibleAI,
+        :SemanticReasoning,
+        :Technology .
+
+:article969 a :Article ;
+    :hasTag :AI,
+        :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article970 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :RDFox .
+
+:article971 a :Article ;
+    :hasTag :LLMs,
+        :SemanticReasoning,
+        :Technology .
+
+:article972 a :Article ;
+    :hasTag :Datalog,
+        :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article973 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :Technology .
+
+:article974 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :MachineLearning,
+        :SemanticReasoning,
+        :SentimentAnalysis .
+
+:article975 a :Article ;
+    :hasTag :Datalog,
+        :GovernmentandPublicSector,
+        :KnowledgeRepresentation,
+        :LLMs,
+        :Technology .
+
+:article976 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :MachineLearning .
+
+:article977 a :Article ;
+    :hasTag :SemanticReasoning,
+        :Technology .
+
+:article978 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :KnowledgeRepresentation,
+        :MachineLearning,
+        :SemanticReasoning,
+        :Technology .
+
+:article979 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :Technology .
+
+:article980 a :Article ;
+    :hasTag :Datalog,
+        :EnvironmentalandClimateScience,
+        :RDFox,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article981 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article982 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :NeuralNetworks,
+        :RDFox,
+        :RetailandE-commerce,
+        :SemanticReasoning,
+        :SentimentAnalysis,
+        :Technology .
+
+:article983 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :RDFox,
+        :SemanticReasoning,
+        :TransportationandAutonomousVehicles .
+
+:article984 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :Explainability,
+        :GenerativeAI,
+        :KnowledgeRepresentation,
+        :ResponsibleAI,
+        :Technology .
+
+:article985 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SemanticReasoning .
+
+:article986 a :Article ;
+    :hasTag :Datalog,
+        :LLMs,
+        :NeuralNetworks,
+        :RDFox,
+        :SPARQL,
+        :SemanticReasoning,
+        :Technology .
+
+:article987 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article988 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article989 a :Article ;
+    :hasTag :EducationTechnology,
+        :SemanticNetworks,
+        :SemanticReasoning .
+
+:article990 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :EducationTechnology,
+        :SemanticReasoning .
+
+:article991 a :Article ;
+    :hasTag :AI,
+        :Datalog,
+        :KnowledgeRepresentation,
+        :SHACL,
+        :Technology .
+
+:article992 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :RDFox,
+        :ResponsibleAI,
+        :SHACL,
+        :SemanticReasoning .
+
+:article993 a :Article ;
+    :hasTag :AI,
+        :AIEthics,
+        :GovernmentandPublicSector,
+        :Technology .
+
+:article994 a :Article ;
+    :hasTag :KnowledgeRepresentation,
+        :RDFox,
+        :SHACL,
+        :SemanticReasoning,
+        :Technology .
+
+:article995 a :Article ;
+    :hasTag :AIEthics,
+        :KnowledgeRepresentation,
+        :SemanticReasoning,
+        :Technology .
+
+:article996 a :Article ;
+    :hasTag :Datalog,
+        :KnowledgeRepresentation,
+        :Ontologies,
+        :Technology,
+        :TransportationandAutonomousVehicles .
+
+:article997 a :Article ;
+    :hasTag :RDFox,
+        :SemanticReasoning,
+        :Technology .
+
+:article998 a :Article ;
+    :hasTag :Explainability,
+        :KnowledgeRepresentation,
+        :Technology .
+
+:article999 a :Article ;
+    :hasTag :ComputerVision,
+        :Interoperability,
+        :LLMs,
+        :Technology .
+

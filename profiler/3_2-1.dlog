@@ -1,0 +1,4 @@
+[?a, :hasNewProp, "new prop"],
+[?x, a, :newClass] :-
+    [?a, :hasProp, "prop" ],
+    [?x, a, :Class ].

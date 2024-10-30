@@ -1,0 +1,6 @@
+[?x, :dependsTransitively, ?y] :-
+    [?x, :dependsOn, ?y] .
+
+[?x, :dependsTransitively, ?z] :-
+    [?x, :dependsTransitively, ?y],
+    [?y, :dependsOn, ?z] .

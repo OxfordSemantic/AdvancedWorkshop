@@ -1,0 +1,8 @@
+[?blog, :hasArticleCount, ?totalArticles] :-
+    # Insert body atoms here
+
+[?tag, :hasMentionCount, ?articlesPerTag] :-
+    # Insert body atoms here
+
+[?tag, :mentionedInPercentageOfArticles, ?percentage] :-
+    # Insert body atoms here
