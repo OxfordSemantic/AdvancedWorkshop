@@ -1,5 +1,5 @@
 [?personnel, :inBreachOfRegulation, true] :PersonnelInfo,
-[?trade, a, :BeachOfRegulation] :-
+[?trade, a, :BreachOfRegulation] :-
     [?personnel, a, :Trader] :PersonnelInfo ,
     [?personnel, :hasMaxTradeRestriction, ?restrictionValue] :PersonnelInfo ,
     [?trade, :executedBy, ?personnel] ,

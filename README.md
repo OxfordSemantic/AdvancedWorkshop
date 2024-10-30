@@ -46,7 +46,7 @@ Contained within each notebook is:
 
 3. Open an exercise notebook and follow the instructions within.
 
-4. IMPORTANT: When asked, select the `venv` kernel to run the notebooks.
+4. IMPORTANT: When asked, select the `venv` kernel to run the notebooks - or select 'Install/Enable suggested extensions'.
 
 5. IMPORTANT: Run every cell in order within a given notebook.
 

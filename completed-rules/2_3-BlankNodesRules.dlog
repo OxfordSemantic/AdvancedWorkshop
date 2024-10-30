@@ -4,13 +4,12 @@
 [?bathReading, :hasTemperatureEstimate, ?tempEstimate] :-
     [?sensorA, :locatedIn, ?bath],
     [?sensorB, :locatedIn, ?bath],
-    [?reading2, :fromSensor, ?sensorB],
     [?reading1, :fromSensor, ?sensorA],
+    [?reading2, :fromSensor, ?sensorB],
     [?reading1, :hasTemperature, ?temp1],
     [?reading2, :hasTemperature, ?temp2],
     [?reading1, :hasTimeStamp, ?time],
     [?reading2, :hasTimeStamp, ?time],
     FILTER(?sensorA > ?sensorB),
-    FILTER(?reading1 > ?reading2),
     BIND((?temp1 + ?temp2)/2 AS ?tempEstimate),
     SKOLEM("SensorGroup", ?bath, ?time, ?bathReading) .

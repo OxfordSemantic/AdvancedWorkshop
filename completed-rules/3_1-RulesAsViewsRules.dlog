@@ -1,6 +1,6 @@
 [?productCategory, :hasAverageUnitsSold, ?averageCategoryUnitsSold] :-
-    [?product, a, :Product],
     AGGREGATE (
+        [?product, a, :Product],
         [?product, a, ?productCategory],
         [?product, :unitsSold, ?units]
         ON ?productCategory

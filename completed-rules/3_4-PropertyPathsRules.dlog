@@ -15,12 +15,9 @@
 # Recursive rules to identify the path to those people
 [?pathNode, :pathTo, ?endPerson],
 [?pathNode, :pathIncludes, ?endPerson],
-[?pathNode, :pathIncludes, ?person2],
 [?pathNode, :hasPathLength, ?hopsAwayFromAlice] :-
     [?endPerson, a, :MemberOfAlicesNetwork],
     [?endPerson, :hopsAwayFromAlice, ?hopsAwayFromAlice],
-    [?person2, :knows, ?endPerson],
-    [?person2, a, :MemberOfAlicesNetwork],
     SKOLEM("Path to person",?endPerson,?hopsAwayFromAlice,?pathNode).
 
 [?pathNode, :pathIncludes, ?person1] :-
