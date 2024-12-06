@@ -2,4 +2,14 @@
 [?bathReading, :locatedIn, ?bath],
 [?bathReading, :hasTimeStamp, ?time],
 [?bathReading, :hasTemperatureEstimate, ?tempEstimate] :-
-    # Insert body atoms here.
+    [?sensorA, :locatedIn, ?bath],
+    [?sensorB, :locatedIn, ?bath],
+    [?reading1, :fromSensor, ?sensorA],
+    [?reading2, :fromSensor, ?sensorB],
+    [?reading1, :hasTemperature, ?temp1],
+    [?reading2, :hasTemperature, ?temp2],
+    [?reading1, :hasTimeStamp, ?time],
+    [?reading2, :hasTimeStamp, ?time],
+    FILTER(?sensorA > ?sensorB),
+    BIND( ___ AS ?tempEstimate), # Write an expression to calculate the average temperature
+    SKOLEM("SensorGroup", ___, ___, ___) . # Fill in the variables to create an appropriately unique node ID
