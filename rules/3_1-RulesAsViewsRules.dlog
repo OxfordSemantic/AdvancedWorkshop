@@ -1,2 +1,8 @@
 [?productCategory, :hasAverageUnitsSold, ?averageCategoryUnitsSold] :-
-    # Insert body atoms here.
+    AGGREGATE (
+        [?product, a, :Product],
+        [?product, a, ?productCategory],
+        [?product, :unitsSold, ?units]
+        ___ # Declare an appropriate variable to aggregate on
+        BIND ___ AS ?averageCategoryUnitsSold # Use an appropriate in-built RDFox function
+    ).

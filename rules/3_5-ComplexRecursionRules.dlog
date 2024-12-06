@@ -1,10 +1,9 @@
+# Rule to define top level components
 [?compound, a, :TopLevelCompound] :-
-    # Insert body atoms here
+    [?compound, a, :Compound],
+    NOT EXISTS ?someCompound IN ([?someCompound, :contains, ?compound]).
 
-[?compound, :hasFirstThing, ?onlyThing],
-[?compound, :hasLastThing, ?onlyThing] :-
-    # Insert body atoms here
-
+# Rules to define ordering of child components
 [?thing1, :hasDownstreamThing, ?thing2] :-
     [?compound, a, :Compound],
     [?compound, :contains, ?thing1],
@@ -28,6 +27,18 @@
     [?compound, :contains, ?lastThing],
     NOT EXISTS ?something IN ([?lastThing, :hasDownstreamThing, ?something]).
 
+# Rule to find only children
+[?compound, :hasFirstThing, ?onlyThing],
+[?compound, :hasLastThing, ?onlyThing] :-
+    [?compound, :contains, ?onlyThing],
+    NOT EXISTS ?someThing IN ( 
+        [?onlyThing, :hasNextThing, ?someThing]
+    ),
+    NOT EXISTS ?someThing IN ( 
+        [?someThing, :hasNextThing, ?onlyThing]
+    ).
+
+# Rules to calculate running total
 [?firstThing, :hasRunningTotal, ?cost] :-
     [?compound, :hasFirstThing, ?firstThing],
     [?firstThing, :hasCost, ?cost].

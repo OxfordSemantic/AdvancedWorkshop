@@ -16,8 +16,12 @@
 [?pathNode, :pathTo, ?endPerson],
 [?pathNode, :pathIncludes, ?endPerson],
 [?pathNode, :hasPathLength, ?hopsAwayFromAlice] :-
-    # Insert body atoms here
-    SKOLEM("Path to person",?endPerson,?hopsAwayFromAlice,?pathNode).
+    [?endPerson, a, ___],  # Fill in the class restriction required for members of the chain
+    [?endPerson, :hopsAwayFromAlice, ?hopsAwayFromAlice],
+    SKOLEM("Path to person", ?endPerson, ?hopsAwayFromAlice, ?pathNode).
 
 [?pathNode, :pathIncludes, ?person1] :-
-    # Insert body atoms here
+    [?pathNode, :pathTo, ?endPerson],
+    [?pathNode, :pathIncludes, ?person2],
+    [?person1, ___, ?person2], # Fill in the predicate that directly links sequential members of this chain
+    [?person1, a, ___].  # Fill in the class restriction required for members of the chain

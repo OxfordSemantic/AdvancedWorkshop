@@ -18,7 +18,7 @@
 [?pathNode, :hasPathLength, ?hopsAwayFromAlice] :-
     [?endPerson, a, :MemberOfAlicesNetwork],
     [?endPerson, :hopsAwayFromAlice, ?hopsAwayFromAlice],
-    SKOLEM("Path to person",?endPerson,?hopsAwayFromAlice,?pathNode).
+    SKOLEM("Path to person", ?endPerson, ?hopsAwayFromAlice, ?pathNode).
 
 [?pathNode, :pathIncludes, ?person1] :-
     [?pathNode, :pathTo, ?endPerson],

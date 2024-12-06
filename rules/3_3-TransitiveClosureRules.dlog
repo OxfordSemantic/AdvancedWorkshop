@@ -1,5 +1,8 @@
 [?asset1, :hasPrimaryDependency, ?asset2] :-
-   # Insert body atoms here
+   [?asset1, :dependsOn, ?asset2] ,
+   [?asset2, :backupPriority, 0] .
 
 [?asset1, :hasPrimaryDependency, ?asset3] :-
-    # Insert body atoms here
+   [?asset1, :hasPrimaryDependency, ?asset2],
+   [?asset2, :dependsOn, ?asset3],
+   [?asset3, :backupPriority, 0].

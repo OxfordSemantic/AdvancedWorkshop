@@ -1,7 +1,17 @@
 [?product, a, :StarProduct],
 [?product, :hasAverageStars, ?averageStars],
 [?product, :hasReviewCount, ?reviewCount] :-
-    # Insert body atoms here 
+    AGGREGATE(
+        [?product, :hasReview, ?review],
+        [?review, :hasStars, ?stars]
+        ON ?product
+        BIND AVG(?stars) AS ?averageStars
+    ),
+    AGGREGATE(
+        [?product, :hasReview, ?review]
+        ON ?product
+        BIND COUNT(?review) AS ?reviewCount
+    ),
     FILTER(?averageStars > 4) ,
     FILTER(?reviewCount > 5) .
     
