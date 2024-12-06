@@ -5,12 +5,8 @@
         [?product, :hasReview, ?review],
         [?review, :hasStars, ?stars]
         ON ?product
-        BIND AVG(?stars) AS ?averageStars
-    ),
-    AGGREGATE(
-        [?product, :hasReview, ?review]
-        ON ?product
         BIND COUNT(?review) AS ?reviewCount
+        BIND AVG(?stars) AS ?averageStars
     ),
     FILTER(?averageStars > 4) ,
     FILTER(?reviewCount > 5) .

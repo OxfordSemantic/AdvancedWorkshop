@@ -2,16 +2,12 @@
 [?product, :hasAverageStars, ?averageStars],
 [?product, :hasReviewCount, ?reviewCount] :-
     AGGREGATE(
-        [?product, :hasReview, ?review],
-        [?review, :hasStars, ?stars]
-        ON ?product
-        BIND AVG(?stars) AS ?averageStars
-    ),
-    AGGREGATE(
-        [?product, :hasReview, ?review]
+        [___], # Complete the graph pattern to retrieve the required data
+        [___]
         ON ?product
         BIND COUNT(?review) AS ?reviewCount
+        BIND AVG(?stars) AS ?averageStars
     ),
-    FILTER(?averageStars > 4) ,
-    FILTER(?reviewCount > 5) .
+    FILTER(___) , # Complete the filters to include only products with higher than 4 stars on average and more than 5 reviews.
+    FILTER(?___) .
     

@@ -1,4 +1,4 @@
-SELECT ?catalogue ?countOfFiveStarProducts
+SELECT ?product ?countOfFiveStarRatings
 WHERE {
-    ?catalogue :hasNumberOfFiveStars ?countOfFiveStarProducts .
+    ?product :hasNumberOfFiveStars ?countOfFiveStarRatings .
 }
