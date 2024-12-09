@@ -1,8 +1,8 @@
 [?asset1, :hasPrimaryDependency, ?asset2] :-
    [?asset1, :dependsOn, ?asset2] ,
-   [?asset2, :backupPriority, 0] .
+   [?asset2, :backupPriority, "Primary"] .
 
 [?asset1, :hasPrimaryDependency, ?asset3] :-
    [?asset1, :hasPrimaryDependency, ?asset2] ,
    [?asset2, :dependsOn, ?asset3] ,
-   [?asset3, :backupPriority, 0] .
+   [?asset3, :backupPriority, "Primary"] .

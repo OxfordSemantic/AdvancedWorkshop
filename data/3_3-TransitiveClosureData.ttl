@@ -1,115 +1,115 @@
 @prefix : <https://rdfox.com/example/> .
 
 :onlineStoreSystem a :ITSystem;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :webServerService,
         :onlineStoreApplicationService,
         :onlineStoreDatabaseService,
         :paymentProcessingService .
 
 :webServerService a :ITService;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :webServer1, :webServer2, :webServer3, :webServer4 .
 
 :onlineStoreApplicationService a :ITService;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :onlineStoreApplicationServer1,
         :onlineStoreApplicationServer2,
         :onlineStoreApplicationServer3,
         :onlineStoreApplicationServer4 .
 
 :onlineStoreDatabaseService a :ITService;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :onlineStoreDataBase1, :onlineStoreDataBase2 .
 
 :paymentProcessingService a :ExternalITService;
     :backupPriority 0.
 
 :webServer1 a :WebServer;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :machine1 ;
     :hasBackup :webServer2 .
 
 :webServer2 a :WebServer;
-    :backupPriority 1;
+    :backupPriority "Secondary";
     :dependsOn :machine2 ;
     :hasBackup :webServer3 .
 
 :webServer3 a :WebServer;
-    :backupPriority 2;
+    :backupPriority "Secondary";
     :dependsOn :machine3 ;
     :hasBackup :webServer4 .
 
 :webServer4 a :WebServer;
-    :backupPriority 3;
+    :backupPriority "Secondary";
     :dependsOn :machine4 .
 
 :onlineStoreApplicationServer1 a :ApplicationServer;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :machine5 ;
     :hasBackup :onlineStoreApplicationServer2 .
 
 :onlineStoreApplicationServer2 a :ApplicationServer;
-    :backupPriority 1;
+    :backupPriority "Secondary";
     :dependsOn :machine6 ;
     :hasBackup :onlineStoreApplicationServer3.
 
 :onlineStoreApplicationServer3 a :ApplicationServer;
-    :backupPriority 2;
+    :backupPriority "Secondary";
     :dependsOn :machine7 ;
     :hasBackup :onlineStoreApplicationServer4.
 
 :onlineStoreApplicationServer4 a :ApplicationServer;
-    :backupPriority 3;
+    :backupPriority "Secondary";
     :dependsOn :machine8 .
 
 :onlineStoreDataBase1 a :DataBase;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :machine9 ;
     :hasBackup :onlineStoreDataBase2.
 
 :onlineStoreDataBase2 a :DataBase;
-    :backupPriority 1;
+    :backupPriority "Secondary";
     :dependsOn :machine10.
 
 :machine1 a :ServerMachine;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :network1, :powerSupply1 .
 
 :machine2 a :ServerMachine;
-    :backupPriority 1;
+    :backupPriority "Secondary";
     :dependsOn :network2, :powerSupply2 .
 
 :machine3 a :ServerMachine;
-    :backupPriority 2;
+    :backupPriority "Secondary";
     :dependsOn :network3, :powerSupply3 .
 
 :machine4 a :ServerMachine;
-    :backupPriority 3;
+    :backupPriority "Secondary";
     :dependsOn :network4, :powerSupply4 .
 
 :machine5 a :ServerMachine;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :network5, :powerSupply5 .
 
 :machine6 a :ServerMachine;
-    :backupPriority 1;
+    :backupPriority "Secondary";
     :dependsOn :network6, :powerSupply6 .
 
 :machine7 a :ServerMachine;
-    :backupPriority 2;
+    :backupPriority "Secondary";
     :dependsOn :network7, :powerSupply7 .
 
 :machine8 a :ServerMachine;
-    :backupPriority 3;
+    :backupPriority "Secondary";
     :dependsOn :network8, :powerSupply8 .
 
 :machine9 a :StorageMachine;
-    :backupPriority 0;
+    :backupPriority "Primary";
     :dependsOn :network9, :powerSupply9 .
 
 :machine10 a :StorageMachine;
-    :backupPriority 1;
+    :backupPriority "Secondary";
     :dependsOn :network10, :powerSupply10 .
 
 :network1 a :Network ;
