@@ -1,0 +1,6 @@
+# 3.3 Transitive Closure
+
+SELECT ?upstreamAsset ?downstreamAsset
+WHERE {
+    ?upstreamAsset :dependsTransitively ?downstreamAsset
+} ORDER BY DESC(?upstreamAsset) ASC(?downstreamAsset)

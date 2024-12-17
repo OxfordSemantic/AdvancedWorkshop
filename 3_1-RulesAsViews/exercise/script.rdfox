@@ -1,0 +1,23 @@
+# 3.1 Rules As Views
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 3_1-RulesAsViews/exercise/data.ttl
+
+# Import our rules
+import 3_1-RulesAsViews/incompleteRules.dlog
+
+# Add some visual padding
+echo 
+echo ============= Traders in Trouble =============
+echo
+
+# Run our query
+evaluate 3_1-RulesAsViews/exercise/query.rq
+
+# Add some visual padding
+echo 
+echo =====================================================
+echo

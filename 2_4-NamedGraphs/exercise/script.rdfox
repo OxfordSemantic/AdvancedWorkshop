@@ -1,0 +1,23 @@
+# 2.4 Named Graphs
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 2_4-NamedGraphs/exercise/data.trig
+
+# Import our rules
+import 2_4-NamedGraphs/incompleteRules.dlog
+
+# Add some visual padding
+echo 
+echo ============= Traders in Trouble =============
+echo
+
+# Run our query
+evaluate 2_4-NamedGraphs/exercise/query.rq
+
+# Add some visual padding
+echo 
+echo =====================================================
+echo

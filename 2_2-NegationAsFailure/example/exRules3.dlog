@@ -1,0 +1,5 @@
+# 2.2 Negation As Failure
+
+[?x, a, :Class] :-
+    [?x, a, ?c] ,
+    NOT [?x, a, :Class] .

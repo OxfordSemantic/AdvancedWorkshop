@@ -1,0 +1,15 @@
+# 3.2 Complex Calculations
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 3_2-ComplexCalculations/example/exData2.ttl
+
+# Activate the reasoning profiler and disable the reasoning plans, setting the frequency to every 10 seconds
+set reason.monitor profile
+set reason.profiler.log-plans false
+set log-frequency 10
+
+# Import our rules
+import 3_2-ComplexCalculations/example/exRules2.dlog

@@ -1,0 +1,9 @@
+# 3.3 Transitive Closure
+
+SELECT ?cyclicAsset ?downstreamAsset
+WHERE {
+    ?cyclicAsset a :CyclicAsset ;
+        :dependsOn ?downstreamAsset .
+    
+    ?downstreamAsset a :CyclicAsset .
+} ORDER BY ASC(?cyclicAsset)

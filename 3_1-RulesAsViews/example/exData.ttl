@@ -1,0 +1,18 @@
+# 3.1 Rules As Views
+
+@prefix : <https://rdfox.com/example#> .
+
+:productA a :Product ;
+    :unitsSold 5000 ;
+    :hasCost 9 ;
+    :hasSalePrice 10 .
+
+:productB a :Product ;
+    :unitsSold 2000 ;
+    :hasCost 80 ;
+    :hasSalePrice 100 .
+
+:productC a :Product ;
+    :unitsSold 10 ;
+    :hasCost 30 ;
+    :hasSalePrice 50 .

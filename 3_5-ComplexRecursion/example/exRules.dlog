@@ -1,0 +1,7 @@
+[?compound, :hasCost, ?totalCost] :-
+    AGGREGATE(
+        [?compound, :contains, ?thing],
+        [?thing, :hasCost, ?cost]
+        ON ?compound
+        BIND SUM(?cost) AS ?totalCost
+    ).

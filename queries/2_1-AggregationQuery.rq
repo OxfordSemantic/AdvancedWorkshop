@@ -1,4 +1,0 @@
-SELECT ?product ?countOfFiveStarRatings
-WHERE {
-    ?product :hasNumberOfFiveStars ?countOfFiveStarRatings .
-}

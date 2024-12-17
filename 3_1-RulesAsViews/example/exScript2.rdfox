@@ -1,0 +1,17 @@
+# 3.1 Rules As Views
+
+# Import our data
+import +p 3_1-RulesAsViews/example/exData2.ttl
+
+# Add some visual padding
+echo 
+echo ========= High Performing Products =========
+echo
+
+# Run our query
+evaluate 3_1-RulesAsViews/example/exQuery.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo

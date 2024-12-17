@@ -1,0 +1,19 @@
+# 2.2 Negation As Failure
+
+@prefix : <https://rdfox.com/example#> .
+
+:switchA :hasState :on .
+
+:switchB :hasState :off .
+
+:device01 a :Component ;
+    :dependsOn :switchA .
+
+:device02 a :Component ;
+    :dependsOn :switchB .
+
+:device03 a :Component ;
+    :dependsOn :switchA ;
+    :dependsOn :switchB .
+
+:device04 a :Component.

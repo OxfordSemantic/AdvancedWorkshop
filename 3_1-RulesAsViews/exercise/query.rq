@@ -1,0 +1,6 @@
+# 3.1 Rules As Views
+
+SELECT ?productCategory ?averageCategoryUnitsSold
+WHERE {
+    ?productCategory :hasAverageUnitsSold ?averageCategoryUnitsSold .
+} ORDER BY DESC (?averageCategoryUnitsSold)

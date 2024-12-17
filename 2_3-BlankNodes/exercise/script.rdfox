@@ -1,0 +1,23 @@
+# 2.3 Blank Nodes
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 2_3-BlankNodes/exercise/data.ttl
+
+# Import our rules
+import 2_3-BlankNodes/incompleteRules.dlog
+
+# Add some visual padding
+echo 
+echo ============= Bath temperature over time =============
+echo
+
+# Run our query
+evaluate 2_3-BlankNodes/exercise/query.rq
+
+# Add some visual padding
+echo 
+echo =====================================================
+echo

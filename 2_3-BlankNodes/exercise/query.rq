@@ -1,0 +1,9 @@
+# 2.3 Blank Nodes
+
+SELECT ?bath ?time ?temperatureEstimate
+WHERE {
+    ?bathReading a :BathSummary ;
+        :locatedIn ?bath ;
+        :hasTimeStamp ?time ;
+        :hasTemperatureEstimate ?temperatureEstimate .
+} ORDER BY ASC(?bath) ASC(?time)

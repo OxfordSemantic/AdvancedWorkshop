@@ -1,0 +1,6 @@
+# 3.2 Complex Calculations
+
+[?a, :hasNewProp, "new prop"],
+[?x, a, :newClass] :-
+    [?a, :hasProp, "prop" ],
+    [?x, a, :Class ].

@@ -1,0 +1,6 @@
+# 2.3 Blank Nodes
+
+SELECT ?SKOLEMNode ?originalComponent
+WHERE {
+    ?originalComponent :derivedFrom ?SKOLEMNode .
+}

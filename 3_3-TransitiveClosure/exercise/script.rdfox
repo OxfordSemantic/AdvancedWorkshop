@@ -1,0 +1,23 @@
+# 3.3 Transitive Closure
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 3_3-TransitiveClosure/exercise/data.ttl
+
+# Import our rules
+import 3_3-TransitiveClosure/incompleteRules.dlog
+
+# Add some visual padding
+echo 
+echo ============= Traders in Trouble =============
+echo
+
+# Run our query
+evaluate 3_3-TransitiveClosure/exercise/query.rq
+
+# Add some visual padding
+echo 
+echo =====================================================
+echo

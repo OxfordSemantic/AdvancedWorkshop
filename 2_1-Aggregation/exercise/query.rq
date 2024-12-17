@@ -1,0 +1,8 @@
+# 2.1 Aggregation
+
+SELECT ?starProduct ?averageStars ?reviewCount
+WHERE {
+    ?starProduct a :StarProduct ;
+    :hasAverageStars ?averageStars ;
+    :hasReviewCount ?reviewCount .
+} ORDER BY DESC(?averageStars)

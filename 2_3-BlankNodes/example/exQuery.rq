@@ -1,0 +1,7 @@
+# 2.3 Blank Nodes
+
+SELECT ?bathReadingEncoded ?temperatureEstimate 
+WHERE {
+    ?bathReadingEncoded a :BathSummary ;
+        :hasTemperatureEstimate ?temperatureEstimate .
+}

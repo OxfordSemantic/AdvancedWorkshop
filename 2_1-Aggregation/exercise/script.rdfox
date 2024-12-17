@@ -1,0 +1,23 @@
+# 2.1 Aggregation
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 2_1-Aggregation/exercise/data.ttl
+
+# Import our rules
+import 2_1-Aggregation/incompleteRules.dlog
+
+# Add some visual padding
+echo 
+echo ========= Our Star Products =========
+echo
+
+# Run our query
+evaluate 2_1-Aggregation/exercise/query.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo

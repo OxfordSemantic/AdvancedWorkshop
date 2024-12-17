@@ -1,0 +1,20 @@
+# 2.3 Blank Nodes
+
+# Import our data
+import +p 2_3-BlankNodes/example/exData2.ttl
+
+# Import our rules
+import 2_3-BlankNodes/example/exRules2.dlog
+
+# Add some visual padding
+echo 
+echo ========= SKOLEM reversed =========
+echo
+
+# Run our query
+evaluate 2_3-BlankNodes/example/exQuery2.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo

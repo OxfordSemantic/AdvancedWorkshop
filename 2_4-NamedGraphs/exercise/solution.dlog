@@ -1,0 +1,9 @@
+# 2.4 Named Graphs
+
+[?personnel, :inBreachOfRegulation, true] :PersonnelInfo,
+[?trade, a, :BreachOfRegulation] :-
+    [?personnel, a, :Trader] :PersonnelInfo ,
+    [?personnel, :hasMaxTradeRestriction, ?restrictionValue] :PersonnelInfo ,
+    [?trade, :executedBy, ?personnel] ,
+    [?trade, :hasValue, ?tradeValue] ,
+    FILTER(?tradeValue > ?restrictionValue) .

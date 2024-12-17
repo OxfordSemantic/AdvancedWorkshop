@@ -1,0 +1,13 @@
+[?firstThing, :hasRunningTotal, ?cost] :-
+    [?compound, :hasFirstThing, ?firstThing],
+    [?firstThing, :hasCost, ?cost].
+
+[?thing2, :hasRunningTotal, ?runningTotal] :-
+    [?thing1, :hasNextThing, ?thing2],
+    [?thing1, :hasRunningTotal, ?oldRunningTotal],
+    [?thing2, :hasCost, ?cost],
+    BIND (?oldRunningTotal + ?cost AS ?runningTotal).
+
+[?compound, :hasCost, ?compoundTotal] :-
+    [?compound, :hasLastThing, ?lastThing],
+    [?lastThing, :hasRunningTotal, ?compoundTotal].

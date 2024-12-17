@@ -1,0 +1,17 @@
+# 2.3 Blank Nodes
+
+[?bathReading, a, :BathSummary],
+[?bathReading, :locatedIn, ?bath],
+[?bathReading, :hasTimeStamp, ?time],
+[?bathReading, :hasTemperatureEstimate, ?tempEstimate] :-
+    [?sensorA, :locatedIn, ?bath],
+    [?sensorB, :locatedIn, ?bath],
+    [?reading1, :fromSensor, ?sensorA],
+    [?reading2, :fromSensor, ?sensorB],
+    [?reading1, :hasTemperature, ?temp1],
+    [?reading2, :hasTemperature, ?temp2],
+    [?reading1, :hasTimeStamp, ?time],
+    [?reading2, :hasTimeStamp, ?time],
+    FILTER(?sensorA > ?sensorB),
+    BIND((?temp1 + ?temp2)/2 AS ?tempEstimate),
+    SKOLEM("SensorGroup", ?bath, ?time, ?bathReading) .

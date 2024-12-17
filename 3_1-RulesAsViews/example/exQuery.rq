@@ -1,0 +1,8 @@
+# 3.1 Rules As Views
+
+SELECT ?product ?totalProfit ?units
+WHERE {
+    ?product a :highPerformingProduct ;
+        :unitsSold ?units ;
+        :hasTotalProfit ?totalProfit .
+} ORDER BY DESC(?totalProfit)

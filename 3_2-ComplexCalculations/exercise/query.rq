@@ -1,0 +1,7 @@
+# 3.2 Complex Calculations
+
+SELECT ?percentage ?tag
+WHERE {
+    ?tag :mentionedInPercentageOfArticles ?percentage .
+    FILTER (?percentage > 1)
+} ORDER BY DESC (?percentage)

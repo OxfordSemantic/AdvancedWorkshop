@@ -1,0 +1,18 @@
+# 2.2 Negation As Failure
+
+# Import our new data
+import +p 2_2-NegationAsFailure/example/exData2.ttl
+
+# Add some visual padding
+echo 
+echo ========================== New Results ==========================
+echo === Device | At least one dependency on | No dependencies off ===
+echo
+
+# Run our query
+evaluate 2_2-NegationAsFailure/example/exQuery.rq
+
+# Add some visual padding
+echo 
+echo ====================================
+echo

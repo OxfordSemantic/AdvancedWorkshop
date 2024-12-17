@@ -1,0 +1,11 @@
+# 2.3 Blank Nodes
+
+@prefix : <https://rdfox.com/example#> .
+
+:readingA a :SensorReading ;
+    :fromSensor :sensorA ;
+    :hasTemperature 19 .
+
+:readingB a :SensorReading ;
+    :fromSensor :sensorB ;
+    :hasTemperature 21 .

@@ -1,0 +1,23 @@
+# 2.1 Aggregation
+
+@prefix : <https://rdfox.com/example#> .
+
+:productA a :Product ;
+    :hasReview :reviewA1 ;
+    :hasReview :reviewA2 .
+
+:productB a :Product ;
+    :hasReview :reviewB1 ;
+    :hasReview :reviewB2 .
+
+:reviewA1 a :Review ;
+    :hasStars 5 .
+
+:reviewA2 a :Review ;
+    :hasStars 5 .
+
+:reviewB1 a :Review ;
+    :hasStars 5 .
+
+:reviewB2 a :Review ;
+    :hasStars 4 .

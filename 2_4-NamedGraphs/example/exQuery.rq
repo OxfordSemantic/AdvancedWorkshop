@@ -1,0 +1,13 @@
+# 2.4 Named Graphs
+
+SELECT ?personnel ?roll
+WHERE {
+    GRAPH :PersonnelInfo {?personnel a :StaffMember} .
+    OPTIONAL { SELECT ?personnel ?activeTrader
+        WHERE {
+            VALUES ?activeTrader {:Trader}
+            GRAPH :PersonnelInfo {?personnel a ?activeTrader} .
+        }
+    }
+    BIND(COALESCE(?activeTrader, :StaffMember) AS ?roll)
+}

@@ -1,0 +1,16 @@
+# 2.2 Negation As Failure
+
+SELECT ?device ?atLeastOneDependencyOn ?noDependenciesOff
+WHERE {
+    ?device a :Component .
+    OPTIONAL {SELECT ?device ?atLeastOneDependencyOn
+              WHERE {
+                  ?device :atLeastOneDependencyOn ?atLeastOneDependencyOn .
+              }
+    }
+    OPTIONAL {SELECT ?device ?noDependenciesOff
+              WHERE {
+                  ?device :noDependenciesOff ?noDependenciesOff .
+              }
+    }
+} ORDER BY ASC(?device)

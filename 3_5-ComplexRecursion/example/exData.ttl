@@ -1,0 +1,14 @@
+@prefix : <https://rdfox.com/example#> .
+
+:compoundA :contains :compoundB,
+                :part1 .
+
+:part1 :hasCost 10 .
+
+:compoundB :contains :part2,
+                :part3 ,
+                :part4 .
+
+:part2 :hasCost 1 .
+:part3 :hasCost 1 .
+:part4 :hasCost 1 .

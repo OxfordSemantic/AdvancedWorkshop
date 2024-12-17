@@ -1,0 +1,10 @@
+# 2.3 Blank Nodes
+
+[?bathReading, a, :BathSummary],
+[?bathReading, :hasTemperatureEstimate, ?tempEstimate] :-
+    [?reading1, :fromSensor, :sensorA],
+    [?reading2, :fromSensor, :sensorB],
+    [?reading1, :hasTemperature, ?temp1],
+    [?reading2, :hasTemperature, ?temp2],
+    BIND((?temp1 + ?temp2)/2 AS ?tempEstimate),
+    SKOLEM("Bath Summary", ?tempEstimate, ?bathReading) .

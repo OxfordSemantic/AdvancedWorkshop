@@ -1,0 +1,9 @@
+# 2.1 Aggregation
+
+[?product, :hasNumberOfFiveStars, ?countOfFiveStarRatings] :-
+    AGGREGATE (
+        [?product, :hasReview, ?review],
+        [?review, :hasStars, 5]
+        ON ?product
+        BIND COUNT(?review) AS ?countOfFiveStarRatings
+    ).

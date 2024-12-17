@@ -1,0 +1,13 @@
+# 2.4 Named Graphs
+
+SELECT ?personnel ?limit ?trade ?tradeValue
+WHERE {
+    GRAPH :PersonnelInfo {
+        ?personnel :inBreachOfRegulation true ;
+            :hasMaxTradeRestriction ?limit.
+    } .
+
+    ?trade :executedBy ?personnel ;
+        :hasValue ?tradeValue ;
+        a :BreachOfRegulation .
+}

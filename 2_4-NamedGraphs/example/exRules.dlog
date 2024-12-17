@@ -1,0 +1,5 @@
+# 2.4 Named Graphs
+
+[?personnel, a, :Trader] :PersonnelInfo :-
+    [?personnel, a, :StaffMember] :PersonnelInfo,
+    [?trade, :executedBy, ?personnel] .

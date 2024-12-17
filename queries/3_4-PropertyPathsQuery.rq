@@ -1,4 +1,0 @@
-SELECT ?person ?networkMember
-WHERE {
-    ?person a ?networkMember .
-}

@@ -1,0 +1,6 @@
+# 2.1 Aggregation
+
+SELECT ?product ?countOfFiveStarRatings
+WHERE {
+    ?product :hasNumberOfFiveStars ?countOfFiveStarRatings .
+}

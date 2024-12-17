@@ -1,0 +1,23 @@
+# 3.1 Rules As Views
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 3_1-RulesAsViews/example/exData.ttl
+
+# Import our rules
+import 3_1-RulesAsViews/example/exRules.dlog
+
+# Add some visual padding
+echo 
+echo ========= High Performing Products =========
+echo
+
+# Run our query
+evaluate 3_1-RulesAsViews/example/exQuery.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo

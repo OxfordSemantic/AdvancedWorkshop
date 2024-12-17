@@ -1,8 +1,0 @@
-[?asset1, :hasPrimaryDependency, ?asset2] :-
-   [?asset1, :dependsOn, ?asset2] ,
-   [?asset2, :backupPriority, "Primary"] .
-
-[?asset1, :hasPrimaryDependency, ?asset3] :-
-   [___] , # Fill in the graph pattern to complete the recursive system
-   [___] ,
-   [?asset3, :backupPriority, "Primary"] .

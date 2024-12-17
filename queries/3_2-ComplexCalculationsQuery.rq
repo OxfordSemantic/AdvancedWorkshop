@@ -1,7 +1,0 @@
-SELECT ?article1 ?article2 ?similarityScore
-WHERE {
-    ?recommendationNode :hasRecommendedArticle ?article1 ;
-        :hasRecommendedArticle ?article2 ;
-        :pairHasSimilarityScore ?similarityScore .
-    FILTER(?article1 < ?article2)
-} ORDER BY ASC(?article1) DESC(?similarityScore)

@@ -6,8 +6,3 @@ endpoint start
 
 # Create a data store called 'default' - this will be the default graph.
 dstore create default
-
-# Activate the reasoning profiler and display the reasoning plans, setting the frequency to every 10 seconds
-set reason.monitor profile
-set reason.profiler.log-plans true
-set log-frequency 10

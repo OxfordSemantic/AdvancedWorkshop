@@ -1,6 +1,0 @@
-SELECT ?product ?totalProfit ?units
-WHERE {
-    ?product a :highPerformingProduct ;
-        :unitsSold ?units ;
-        :hasTotalProfit ?totalProfit .
-} ORDER BY DESC(?totalProfit)

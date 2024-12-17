@@ -1,0 +1,11 @@
+[?thing1, :hasGreaterThing, ?thing2] :-
+    [?compound, :contains, ?thing1],
+    [?compound, :contains, ?thing2],
+    FILTER (?thing2 > ?thing1).
+
+[?thing1, :hasNextThing, ?thing2] :-
+    [?thing1, :hasGreaterThing, ?thing2],
+    NOT EXISTS ?thing3 IN ( 
+        [?thing1, :hasGreaterThing, ?thing3], 
+        [?thing3, :hasGreaterThing, ?thing2]
+    ).

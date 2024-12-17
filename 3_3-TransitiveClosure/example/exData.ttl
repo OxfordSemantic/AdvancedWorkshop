@@ -1,0 +1,14 @@
+# 3.3 Transitive Closure
+
+@prefix : <https://rdfox.com/example#> .
+
+:webServer a :WebServer ;
+    :dependsOn :machine .
+
+:machine a :StorageMachine ;
+    :dependsOn :network ,
+        :powerSupply .
+
+:network a :Network .
+
+:powerSupply a :PowerSupply .

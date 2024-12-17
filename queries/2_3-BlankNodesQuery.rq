@@ -1,5 +1,0 @@
-SELECT ?bathReadingEncoded ?temperatureEstimate 
-WHERE {
-    ?bathReadingEncoded a :BathSummary ;
-        :hasTemperatureEstimate ?temperatureEstimate .
-}

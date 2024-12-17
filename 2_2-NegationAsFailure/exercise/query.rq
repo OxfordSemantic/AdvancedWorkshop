@@ -1,0 +1,8 @@
+# 2.2 Negation As Failure
+
+SELECT ?device
+WHERE {
+
+    ?device :hasIncompleteTwin true .
+
+} ORDER BY ASC(?device)

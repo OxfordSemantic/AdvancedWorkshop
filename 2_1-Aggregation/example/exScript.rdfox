@@ -1,0 +1,23 @@
+# 2.1 Aggregation
+
+# Clear the datastore to ensure we are starting with a blank slate
+clear force
+
+# Import our data
+import +p 2_1-Aggregation/example/exData.ttl
+
+# Import our rules
+import 2_1-Aggregation/example/exRules.dlog
+
+# Add some visual padding
+echo 
+echo === Number of 5 star ratings per product ===
+echo
+
+# Run our query
+evaluate 2_1-Aggregation/example/exQuery.rq
+
+# Add some visual padding
+echo 
+echo ====================================
+echo

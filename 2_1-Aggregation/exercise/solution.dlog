@@ -1,0 +1,15 @@
+# 2.1 Aggregation
+
+[?product, a, :StarProduct],
+[?product, :hasAverageStars, ?averageStars],
+[?product, :hasReviewCount, ?reviewCount] :-
+    AGGREGATE(
+        [?product, :hasReview, ?review],
+        [?review, :hasStars, ?stars]
+        ON ?product
+        BIND COUNT(?review) AS ?reviewCount
+        BIND AVG(?stars) AS ?averageStars
+    ),
+    FILTER(?averageStars > 4) ,
+    FILTER(?reviewCount > 5) .
+    

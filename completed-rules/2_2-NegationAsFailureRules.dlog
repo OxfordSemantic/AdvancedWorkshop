@@ -1,6 +1,0 @@
-[?device, :hasIncompleteTwin, true] :-
-    [?device, a, :Component] ,
-    NOT EXISTS ?switch IN (
-        [?device, :dependsOn, ?switch]
-    ) ,
-    NOT [?device, :isDecommissioned, true ] .

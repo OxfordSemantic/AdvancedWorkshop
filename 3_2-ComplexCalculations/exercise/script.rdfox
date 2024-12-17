@@ -1,0 +1,23 @@
+# 3.2 Complex Calculations
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 3_2-ComplexCalculations/exercise/data.ttl
+
+# Import our rules
+import 3_2-ComplexCalculations/incompleteRules.dlog
+
+# Add some visual padding
+echo 
+echo ============= Traders in Trouble =============
+echo
+
+# Run our query
+evaluate 3_2-ComplexCalculations/exercise/query.rq
+
+# Add some visual padding
+echo 
+echo =====================================================
+echo

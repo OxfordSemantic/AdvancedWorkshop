@@ -1,0 +1,13 @@
+# 2.4 Named Graphs
+
+@prefix : <https://rdfox.com/example#> .
+
+# Personnel Info Named Graph
+:PersonnelInfo {
+    :p-001 a :StaffMember .
+    :p-002 a :StaffMember .
+}
+
+# Default Graph
+:t-001001 a :Transaction ;
+    :executedBy :p-001 .

@@ -1,0 +1,10 @@
+# 3.1 Rules As Views
+
+[?productCategory, :hasAverageUnitsSold, ?averageCategoryUnitsSold] :-
+    AGGREGATE (
+        [?product, a, :Product],
+        [?product, a, ?productCategory],
+        [?product, :unitsSold, ?units]
+        ON ?productCategory
+        BIND AVG(?units) AS ?averageCategoryUnitsSold
+    ).

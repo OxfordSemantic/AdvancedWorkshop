@@ -1,0 +1,81 @@
+# 3.4 Property Paths
+
+@prefix : <https://rdfox.com/example#> .
+
+:Alice a :Person ;
+    :knows :Jacqueline,
+        :Melissa,
+        :Troy .
+
+:Angela a :Person .
+
+:Bobby a :Person .
+
+:Brittany a :Person .
+
+:Bryce a :Person .
+
+:Clifford a :Person .
+
+:Desiree a :Person .
+
+:Donald a :Person .
+
+:Eric a :Person .
+
+:Susan a :Person ;
+    :knows :Clifford,
+        :Eric,
+        :Glen .
+
+:Jacqueline a :Person ;
+    :knows :Karen,
+        :Mark,
+        :Sheri .
+
+:James a :Person ;
+    :knows :Amanda,
+        :Brittany,
+        :Bryce,
+        :Susan .
+
+:Jessica a :Person .
+
+:Julie a :Person .
+
+:Karen a :Person .
+
+:Mario a :Person .
+
+:Mark a :Person .
+
+:Melanie a :Person .
+
+:Melissa a :Person ;
+    :knows :Donald,
+        :James,
+        :Melanie,
+        :Tony .
+
+:Robert a :Person .
+
+:Sheri a :Person .
+
+:Susan a :Person .
+
+:Terri a :Person ;
+    :knows :Bobby,
+        :Jessica,
+        :Julie,
+        :Robert,
+        :Timothy .
+
+:Tony a :Person .
+
+:Troy a :Person ;
+    :knows :Jacob,
+        :Angela,
+        :Desiree,
+        :Mario,
+        :Terri .
+

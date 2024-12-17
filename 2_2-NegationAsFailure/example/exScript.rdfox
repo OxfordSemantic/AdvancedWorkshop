@@ -1,0 +1,23 @@
+# 2.2 Negation As Failure
+
+# Clear the datastore to ensure we are starting with a blank slate
+clear force
+
+# Import our data
+import +p 2_2-NegationAsFailure/example/exData.ttl
+
+# Import our rules
+import 2_2-NegationAsFailure/example/exRules.dlog
+
+# Add some visual padding
+echo 
+echo === Device | At least one dependency on | No dependencies off ===
+echo
+
+# Run our query
+evaluate 2_2-NegationAsFailure/example/exQuery.rq
+
+# Add some visual padding
+echo 
+echo ====================================
+echo

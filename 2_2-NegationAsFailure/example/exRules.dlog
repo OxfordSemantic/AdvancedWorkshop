@@ -1,0 +1,15 @@
+# 2.2 Negation As Failure
+
+[?device, :atLeastOneDependencyOn, true] :-
+    [?device, a, :Component],
+    [?device, :dependsOn, ?switch],
+    NOT (
+        [?switch, :hasState, :off] 
+    ) .
+
+[?device, :noDependenciesOff, true] :-
+    [?device, a, :Component],
+    NOT EXISTS ?switch IN (
+        [?device, :dependsOn, ?switch],
+        [?switch, :hasState, :off] 
+    ) .

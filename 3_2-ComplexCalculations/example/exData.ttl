@@ -1,0 +1,17 @@
+# 3.2 Complex Calculations
+
+@prefix : <https://rdfox.com/example#> .
+
+:article1 a :Article ;
+        :hasTag :AI ,
+                :semanticReasoning .
+
+:article2 a :Article ;
+        :hasTag :semanticReasoning .
+
+:article3 a :Article ;
+        :hasTag :AI .
+
+:article4 a :Article ;
+        :hasTag :AI .
+    

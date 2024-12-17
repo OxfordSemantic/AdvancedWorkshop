@@ -1,0 +1,22 @@
+# 3.2 Complex Calculations
+
+[?tag, :hasLogFrequency, ?termLogFrequency] :-
+    AGGREGATE (
+        [?article, :hasTag, ?tag]
+        ON ?tag
+        BIND COUNT(?article) AS ?totalTagMentions
+    ),
+    BIND (LOG(1/?totalTagMentions) AS ?termLogFrequency) .
+
+[?recommendationNode, :hasRecommendedArticle, ?article1],
+[?recommendationNode, :hasRecommendedArticle, ?article2],
+[?recommendationNode, :pairHasSimilarityScore, ?similarityScore] :-
+    AGGREGATE(
+        [?article1, :hasTag, ?tag],
+        [?article2, :hasTag, ?tag],
+        [?tag, :hasLogFrequency, ?termLogFrequency]
+        ON ?article1 ?article2
+        BIND SUM(-1/?termLogFrequency) AS ?similarityScore
+    ),
+    SKOLEM(?article1,?article2,?recommendationNode),
+    FILTER (?article1 > ?article2) .

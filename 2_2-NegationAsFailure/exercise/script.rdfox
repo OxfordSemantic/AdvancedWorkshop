@@ -1,0 +1,23 @@
+# 2.2 Negation As Failure
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 2_2-NegationAsFailure/exercise/data.ttl
+
+# Import our rules
+import 2_2-NegationAsFailure/incompleteRules.dlog
+
+# Add some visual padding
+echo 
+echo ========= Our Star Products =========
+echo
+
+# Run our query
+evaluate 2_2-NegationAsFailure/exercise/query.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo

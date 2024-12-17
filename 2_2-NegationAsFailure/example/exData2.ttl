@@ -1,0 +1,7 @@
+# 2.2 Negation As Failure
+
+@prefix : <https://rdfox.com/example#> .
+
+:device04 a :Component;
+    :dependsOn :switchA ;
+    :dependsOn :switchB .

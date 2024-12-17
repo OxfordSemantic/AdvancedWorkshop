@@ -1,0 +1,15 @@
+# 2.5 Reasoning Profiler
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 2_5-ReasoningProfiler/exercise/data.ttl
+
+# Activate the reasoning profiler and display the reasoning plans, setting the frequency to every 10 seconds
+set reason.monitor profile
+set reason.profiler.log-plans true
+set log-frequency 10
+
+# Import our rules
+import 2_5-ReasoningProfiler/exercise/rules.dlog

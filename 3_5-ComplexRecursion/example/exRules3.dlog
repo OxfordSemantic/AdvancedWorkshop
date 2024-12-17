@@ -1,0 +1,7 @@
+[?compound, :hasFirstThing, ?firstThing] :-
+    [?compound, :contains, ?firstThing],
+    NOT EXISTS ?something IN ([?something, :hasGreaterThing, ?firstThing]).
+
+[?compound, :hasLastThing, ?lastThing] :-
+    [?compound, :contains, ?lastThing],
+    NOT EXISTS ?something IN ([?lastThing, :hasGreaterThing, ?something]).

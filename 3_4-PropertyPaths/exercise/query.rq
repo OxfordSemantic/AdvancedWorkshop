@@ -1,0 +1,13 @@
+# 3.4 Property Paths
+
+SELECT ?endPerson ?hopsAwayFromAlice ?person
+WHERE {
+
+    ?pathNode :pathTo ?endPerson;
+            :hasPathLength ?pathLength;
+            :pathIncludes ?person .
+
+    ?person :hopsAwayFromAlice ?hopsAwayFromAlice.
+
+} ORDER BY DESC(?pathLength) ASC(?endPerson) ASC(?hopsAwayFromAlice)
+LIMIT 15

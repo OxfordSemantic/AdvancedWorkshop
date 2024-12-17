@@ -1,0 +1,23 @@
+# 2.4 Named Graphs
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 2_4-NamedGraphs/example/exData.ttl
+
+# Import our rules
+import 2_4-NamedGraphs/example/exRules.dlog
+
+# Add some visual padding
+echo 
+echo ========= Personnel Rolls =========
+echo
+
+# Run our query
+evaluate 2_4-NamedGraphs/example/exQuery.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo
