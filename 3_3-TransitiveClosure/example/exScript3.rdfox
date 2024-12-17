@@ -8,7 +8,7 @@ import 3_3-TransitiveClosure/example/exRules3.dlog
 
 # Add some visual padding
 echo 
-echo ========= Top Level Assets =========
+echo ========= Cycles =========
 echo
 
 # Run our query

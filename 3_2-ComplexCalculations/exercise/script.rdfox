@@ -11,7 +11,7 @@ import 3_2-ComplexCalculations/incompleteRules.dlog
 
 # Add some visual padding
 echo 
-echo ============= Traders in Trouble =============
+echo ============= Percentage of articles mentioning tags =============
 echo
 
 # Run our query

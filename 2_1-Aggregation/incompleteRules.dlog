@@ -11,5 +11,5 @@
         BIND AVG(?stars) AS ?averageStars
     ),
     FILTER(___) , # Complete the filters to include only products with higher than 4 stars on average and more than 5 reviews.
-    FILTER(?___) .
+    FILTER(___) .
     

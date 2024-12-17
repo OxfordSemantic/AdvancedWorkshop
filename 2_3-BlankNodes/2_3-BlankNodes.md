@@ -20,13 +20,13 @@ SKOLEM("literalOr", ?variable, ..., ?result)
 
 The last argument given to SKOLEM is the variable that will be bound to the generated value. All preceding arguments contribute to its generation.
 
-Arguments can be either a variable or string.
+Arguments can be either a variable or literal.
 
 ## Example
 
 This example examines sensor readings of a liquid bath that is being monitored by two sensors in a manufacturing process.
 
-We'll create a blank node with SKOLEM that represents a summary of the bath's temperature.
+We'll create a blank node with SKOLEM that represents a summary of the baths' temperature.
 
 Here are the two sensors and their readings:
 
@@ -63,10 +63,6 @@ Run `2_3-BlankNodes/example/exScript.rdfox` to see the results of this rule.
 |?bathReadingEncoded|	?temperatureEstimate|
 |----------------------------------------------|----|
 |_:_.05QmF0aCBTdW1tYXJ5AA.16FAAAAAAAAAAAAAAAAAAAAA|	20.0|
-
-### Visualise the results
-
-Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FbathReadingEncoded%20%3Ftime%20%3FtemperatureEstimate%20%0AWHERE%20%7B%0A%20%20%20%20%3FbathReadingEncoded%20a%20%3ABathSummary%20%3B%0A%20%20%20%20%20%20%20%20%3AhasTimeStamp%20%3Ftime%20%3B%0A%20%20%20%20%20%20%20%20%3AhasTemperatureEstimate%20%3FtemperatureEstimate%20.%0A%7D%20ORDER%20BY%20ASC%28%3Ftime%29).
 
 ## Reversing SKOLEM
 
@@ -125,7 +121,7 @@ As such, they can be used in almost any application, including:
 
 To generate objects that capture sprawling details such as in fraud chains, suspicious activity, or regulation breaches etc.
 
-### Iot & On-device
+### IoT & On-device
 
 To structure event data, surface high level system properties, catalog time-series events, etc.
 
@@ -159,6 +155,12 @@ Here is a representative sample of the data in `2_3-BlankNodes/exercise/data.ttl
     :fromSensor :sensorB ;
     :hasTemperature 20 ;
     :hasTimeStamp "2024-12-25T12:00:00"^^xsd:dateTime .
+
+:bathAlpha a :Bath .
+
+:sensorA a :Sensor ;
+    :locatedIn :bathAlpha .
+
 ```
 
 ### Hits & helpful resources

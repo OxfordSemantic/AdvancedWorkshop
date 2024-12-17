@@ -12,7 +12,7 @@ Without specifying a named graph RDFox will reference the default graph.
 
 Using a variable graph will **not** include the default graph as data stored there are triples, not quads.
 
-Setting the [default-graph-name](https://docs.oxfordsemantic.tech/data-stores.html#default-graph-name-parameter) on data store creation changes this behaviour.
+Setting the [default-graph-name](https://docs.oxfordsemantic.tech/data-stores.html#default-graph-name-parameter) parameter on data store creation changes this behaviour.
 
 ## Named Graphs syntax
 
@@ -143,7 +143,7 @@ There are actually 3 types of tuple tables:
 
 2. Built-in tuple tables
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The cannot be modified and contain useful information or functional benefits. They include **SKOLEM**, **SHACL**, and **rule dependencies**, each of which we will cover in these exercises (if you've completed 2.3 you will have used the SKOLEM table already).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These cannot be modified and contain useful information or functional benefits. They include **SKOLEM**, **SHACL**, and **rule dependencies**, each of which we will cover in these exercises (if you've completed 2.3 you will have used the SKOLEM table already).
 
 3. Data source tuple tables
 

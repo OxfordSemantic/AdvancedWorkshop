@@ -11,7 +11,7 @@ import 3_1-RulesAsViews/incompleteRules.dlog
 
 # Add some visual padding
 echo 
-echo ============= Traders in Trouble =============
+echo ============= Product Category Average Profit =============
 echo
 
 # Run our query
