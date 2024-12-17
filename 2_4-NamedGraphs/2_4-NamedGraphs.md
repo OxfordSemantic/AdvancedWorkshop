@@ -50,6 +50,21 @@ The rules infers information about the staff who are active traders:
     [?trade, :executedBy, ?personnel] .
 ```
 
+We'll query for the results with the following:
+```
+SELECT ?personnel ?roll
+WHERE {
+    GRAPH :PersonnelInfo {?personnel a :StaffMember} .
+    OPTIONAL { SELECT ?personnel ?activeTrader
+        WHERE {
+            VALUES ?activeTrader {:Trader}
+            GRAPH :PersonnelInfo {?personnel a ?activeTrader} .
+        }
+    }
+    BIND(COALESCE(?activeTrader, :StaffMember) AS ?roll)
+}
+```
+
 ## Run the script
 
 Run `2_4-NamedGraphs/example/exScript.rdfox` to see the results of this rule.

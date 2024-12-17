@@ -54,6 +54,14 @@ And here is the rule that performs the count of 5 star reviews for each product:
     ).
 ```
 
+We'll find these results using the following query:
+```
+SELECT ?product ?countOfFiveStarRatings
+WHERE {
+    ?product :hasNumberOfFiveStars ?countOfFiveStarRatings .
+}
+```
+
 ## Run the script
 
 Run `2_1-Aggregation/example/exScript.rdfox` to see the results of this rule.

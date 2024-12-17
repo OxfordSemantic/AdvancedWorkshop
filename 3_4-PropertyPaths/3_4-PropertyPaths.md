@@ -31,6 +31,15 @@ The rules below will recursively identify all of the people in Alice's extended 
     [?person1, a, :MemberOfAlicesNetwork].
 ```
 
+We'll query for the results with the following:
+
+```
+SELECT ?person ?networkMember
+WHERE {
+    ?person a ?networkMember .
+}
+```
+
 ## Run the script
 
 Run `3_4-PropertyPaths/example/exScript.rdfox` to see the results of this rule.

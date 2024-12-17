@@ -40,6 +40,16 @@ And the rule that will create our view:
     FILTER (?units > 1000).
 ```
 
+We'll query for the results with the following:
+```
+SELECT ?product ?totalProfit ?units
+WHERE {
+    ?product a :highPerformingProduct ;
+        :unitsSold ?units ;
+        :hasTotalProfit ?totalProfit .
+} ORDER BY DESC(?totalProfit)
+```
+
 ## Run the script
 
 Run `3_1-RulesAsViews/example/exScript.rdfox` to see the results of this rule.

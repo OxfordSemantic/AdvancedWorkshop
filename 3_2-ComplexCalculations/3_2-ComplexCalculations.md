@@ -58,6 +58,17 @@ A node is created between two articles, calculating a similarity score based on 
     FILTER (?article1 > ?article2) .
 ```
 
+We'll query for the results with the following:
+```
+SELECT ?article1 ?article2 ?similarityScore
+WHERE {
+    ?recommendationNode :hasRecommendedArticle ?article1 ;
+        :hasRecommendedArticle ?article2 ;
+        :pairHasSimilarityScore ?similarityScore .
+    FILTER(?article1 < ?article2)
+} ORDER BY ASC(?article1) DESC(?similarityScore)
+```
+
 ## Run the script
 
 Run `3_2-ComplexCalculations/example/exScript.rdfox` to see the results of this rule.

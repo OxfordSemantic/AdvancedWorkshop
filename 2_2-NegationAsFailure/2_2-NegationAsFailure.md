@@ -75,6 +75,25 @@ In the case that the pattern is matched, this ensures that at least one variable
 
 RDFox will return an error when this is not the case.
 
+Here, we'll search for the inferred results with the following query:
+
+```
+SELECT ?device ?atLeastOneDependencyOn ?noDependenciesOff
+WHERE {
+    ?device a :Component .
+    OPTIONAL {SELECT ?device ?atLeastOneDependencyOn
+              WHERE {
+                  ?device :atLeastOneDependencyOn ?atLeastOneDependencyOn .
+              }
+    }
+    OPTIONAL {SELECT ?device ?noDependenciesOff
+              WHERE {
+                  ?device :noDependenciesOff ?noDependenciesOff .
+              }
+    }
+} ORDER BY ASC(?device)
+```
+
 ## Run the script
 
 Run `2_2-NegationAsFailure/example/exScript.rdfox` to see the results of this rule.

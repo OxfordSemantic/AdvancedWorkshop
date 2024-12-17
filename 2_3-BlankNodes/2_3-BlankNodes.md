@@ -53,6 +53,16 @@ And the rule that will create a SKOLEM node to represent them:
     SKOLEM("Bath Summary", ?tempEstimate, ?bathReading) .
 ```
 
+We'll use the following query to return the results:
+
+```
+SELECT ?bathReadingEncoded ?temperatureEstimate 
+WHERE {
+    ?bathReadingEncoded a :BathSummary ;
+        :hasTemperatureEstimate ?temperatureEstimate .
+}
+```
+
 ## Run the script
 
 Run `2_3-BlankNodes/example/exScript.rdfox` to see the results of this rule.

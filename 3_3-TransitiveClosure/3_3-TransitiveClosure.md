@@ -43,6 +43,15 @@ The second is the recursive rules. It provides conditions for continual looping 
 
 While not every application uses this setups, it is common for recursive rule sets to contain an anchor as it restricts inferences to just those that are determined necessary. Recursion has the potential to rapidly expand the size of the dataset if not properly contained.
 
+Here, we'll query for the results with the following:
+
+```
+SELECT ?upstreamAsset ?downstreamAsset
+WHERE {
+    ?upstreamAsset :dependsTransitively ?downstreamAsset
+} ORDER BY DESC(?upstreamAsset) ASC(?downstreamAsset)
+```
+
 ## Run the script
 
 Run `3_3-TransitiveClosure/example/exScript.rdfox` to see the results of these rules.
@@ -74,6 +83,15 @@ Below is a rule that identifies the web server as a top level asset:
     NOT EXISTS ?asset0 IN ( [?asset0, :dependsOn, ?asset1] ) .
 ```
 
+And query for it with the following:
+
+```
+SELECT ?topLevelAsset
+WHERE {
+    ?topLevelAsset a :TopLevelAsset
+}
+```
+
 ## Run the script
 
 Ensuring you have run the first script...
@@ -83,7 +101,7 @@ now run `3_3-TransitiveClosure/example/exScript2.rdfox` to see the results of th
 ### You should see...
 
 === Top Level Assets ===
-|?upstreamAsset|
+|?topLevelAsset|
 |---|
 |:webServer|
 
