@@ -8,9 +8,9 @@ RDFox employs the Closed World Assumption - that is to say, anything that cannot
 
 Negation As Failure implements this assumption as missing data is treated the same as false data.
 
-There are two critical components to understand when using NAF with Datalog rules, **NOT** and **NOT EXISTS**.
-
 ## NOT vs NOT EXISTS
+
+There are two critical components to understand when using NAF with Datalog rules, **NOT** and **NOT EXISTS**.
 
 Semantically, these two functions are remarkably similar but both uniquely powerful depending on the circumstance.
 

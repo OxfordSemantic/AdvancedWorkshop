@@ -50,7 +50,7 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 
 ## Exercise
 
-Complete the rule `3_4-PropertyPaths/exercise/incompleteRules.dlog` so that the query below can be used to directly find all the paths to people in Alice's network and the path required get there:
+Complete the rule `3_4-PropertyPaths/incompleteRules.dlog` so that the query below can be used to directly find all the paths to people in Alice's network and the path required get there:
 
 ```
 SELECT ?endPerson ?hopsAwayFromAlice ?person
