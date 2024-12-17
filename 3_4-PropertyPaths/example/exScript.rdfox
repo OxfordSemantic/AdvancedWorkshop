@@ -11,7 +11,7 @@ import 3_4-PropertyPaths/example/exRules.dlog
 
 # Add some visual padding
 echo 
-echo === Members of Alice's wider Network ===
+echo === Members of Alices wider Network ===
 echo
 
 # Run our query
