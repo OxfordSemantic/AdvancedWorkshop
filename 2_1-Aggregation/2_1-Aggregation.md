@@ -12,7 +12,7 @@ To use aggregation in a rule, you must declare an aggregate atom in the rule bod
 
 The parenthesis `()` of the aggregate atom must contain all the relevant triple atoms.
 
-You must also indicate which variable(s) the you're aggregating on with `ON` (known as group variables), and bind the result to a new variable with `BIND`.
+You must also indicate which variable(s) you're aggregating on with `ON` (known as group variables), and bind the result to a new variable with `BIND`.
 
 ## Example
 

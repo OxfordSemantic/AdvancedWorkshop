@@ -48,8 +48,4 @@ WARNING: The RDFox endpoint is running with no transport layer security (TLS). T
 
 A new data store 'default' was created and initialized.
 
-reason.monitor = "profile"\
-reason.profiler.log-plans = true\
-log-frequency = 10
-
 ----------------------------------------
