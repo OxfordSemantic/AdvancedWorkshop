@@ -158,7 +158,7 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 
 There is more than one way to write recursive rules that achieve the same result.
 
-As we have above, we can either use an anchor to create a new relationship and then use that to infer the same new recursive relationships:
+As we have above, we can either anchor the recursive rule with an existing relationship:
 
 ```
    [?x, :dependsTransitively, ?y] :-
@@ -169,15 +169,18 @@ As we have above, we can either use an anchor to create a new relationship and t
       [?y, :dependsOn, ?z] .
 ```
 
-Or, we can use one rule that uses the existing relationships and infers more of them:
+Or, as is often instinctive, just create a purely transitive property that relies only on itself:
 
 ```
-   [?x, :dependsOn, ?z] :-
-      [?x, :dependsOn, ?y] ,
-      [?y, :dependsOn, ?z] .
+[?x, :dependsTransitively, ?y] :-
+    [?x, :dependsOn, ?y] .
+
+[?x, :dependsTransitively, ?z] :-
+    [?x, :dependsTransitively, ?y],
+    [?y, :dependsTransitively, ?z] .
 ```
 
-This rule will end up considering many more facts than the previous one, making it significantly less efficient.
+These rule will end up considering many more facts than the previous one, making it significantly less efficient.
 
 We'll use this simple data to show how the rule sets perform differently:
 
