@@ -40,7 +40,7 @@ Contained within each notebook is:
 
 1. Get the [RDFox VS Code Extension](https://marketplace.visualstudio.com/items?itemName=rdfox.rdfox-rdf) for syntax highlighting and in-IDE features.
 
-2. When completing an exercise, split your editors viewport between the notebook and the relevant rule file.
+2. When completing an exercise, split your editors viewport between the explanation and the relevant rule file.
 
 ## Helpful Resources
 
