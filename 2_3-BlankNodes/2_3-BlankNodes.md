@@ -76,9 +76,9 @@ Here is a rule that unpicks the SKOLEM node we just created:
 
 ```
 [?sting, :derivedFrom, ?bathReading],
-[?time, :derivedFrom, ?bathReading] :-
+[?tempEstimate, :derivedFrom, ?bathReading] :-
     [?bathReading, a, :BathSummary],
-    SKOLEM(?sting, ?time, ?bathReading) .
+    SKOLEM(?sting, ?tempEstimate, ?bathReading) .
 ```
 
 And a query that returns the derived components:
