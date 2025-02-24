@@ -4,6 +4,8 @@ Named Graphs offer a way to partition your data and are commonly used to group s
 
 Data in named graphs is stored as quads, with the fourth entry representing the named graph.
 
+
+
 ## The default graph
 
 The default graph is unlike named graphs in that it has no name and stores triples rather than quads.
