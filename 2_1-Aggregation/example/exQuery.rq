@@ -1,6 +1,6 @@
 # 2.1 Aggregation
 
-SELECT ?product ?countOfFiveStarRatings
+SELECT ?product ?reviewCount
 WHERE {
-    ?product :hasNumberOfFiveStars ?countOfFiveStarRatings .
+    ?product :hasReviewCount ?reviewCount .
 }

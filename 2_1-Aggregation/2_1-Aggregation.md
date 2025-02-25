@@ -1,22 +1,66 @@
 # 2.1 Aggregation
 
-Aggregate functions are used to calculate expressions over a set of values.
+<br>
 
-RDFox offers several, including common functions like SUM(V) and COUNT(V), and more specialized functions like COUNT_MAX(V) and MAX_ARGMIN(A,V).
+## 🔥 &nbsp; Why is Aggregation helpful?
 
-See the [full list shown here](https://docs.oxfordsemantic.tech/querying.html#aggregate-functions) (excluding non-deterministic functions).
+Want to calculate the sum total or a property or count the number of objects in a class?
 
-## Using aggregates
+Aggregation is the key!
 
-To use aggregation in a rule, you must declare an aggregate atom in the rule body with `AGGREGATE()`.
+<br>
+<br>
 
-The parenthesis `()` of the aggregate atom must contain all the relevant triple atoms.
+## 📖 &nbsp; What is Aggregation?
 
-You must also indicate which variable(s) you're aggregating on with `ON` (known as group variables), and bind the result to a new variable with `BIND`.
+Aggregate functions such as SUM and COUNT take a sample of data and use it to perform a calculation.
 
-## Example
+The aggregate can be (and often are) performed for each member of a group, resulting in the SUM or COUNT per member.
 
-Below is an example of COUNT, used to find the number of 5-star reviews each product has.
+As well as these widely applicable aggregates, RDFox also offers more specialized functions like COUNT_MAX(V) and MAX_ARGMIN(A,V).
+
+See the [full list shown here](https://docs.oxfordsemantic.tech/querying.html#aggregate-functions).
+
+<br>
+<br>
+
+## ⚡ &nbsp; Real world applications
+
+COUNT and SUM are so versatile that they can be used in almost any application, with other functions supporting increasingly targeted and powerful goals.
+
+<br>
+
+### Retail
+
+To quantify and analyze user behavior, quantify and rank product sentiment, etc.
+
+<br>
+
+### Finance
+
+To sum transactional amounts, isolate extreme values and outliers, validate complex regulation compliance, etc.
+
+<br>
+
+### Construction & Manufacturing
+
+To surface and compare high-level compound properties, create a bill of materials, etc.
+
+<br>
+<br>
+
+## 🔬 &nbsp; Example
+
+The following rule performs a count of reviews per product, adding the result to the graph.
+
+```
+[?product, :hasReviewCount, ?reviewCount] :-
+    AGGREGATE (
+        [?product, :hasReview, ?review]
+        ON ?product
+        BIND COUNT(?review) AS ?reviewCount
+    ).
+```
 
 Here is the data we'll be using to show this:
 
@@ -27,95 +71,49 @@ Here is the data we'll be using to show this:
 
 :productB a :Product ;
     :hasReview :reviewB1 ;
-    :hasReview :reviewB2 .
-
-:reviewA1 a :Review ;
-    :hasStars 5 .
-
-:reviewA2 a :Review ;
-    :hasStars 5 .
-
-:reviewB1 a :Review ;
-    :hasStars 5 .
-
-:reviewB2 a :Review ;
-    :hasStars 4 .
-    
 ```
-And here is the rule that performs the count of 5 star reviews for each product:
+<br>
+<br>
 
-```
-[?product, :hasNumberOfFiveStars, ?countOfFiveStarRatings] :-
-    AGGREGATE (
-        [?product, :hasReview, ?review],
-        [?review, :hasStars, 5]
-        ON ?product
-        BIND COUNT(?review) AS ?countOfFiveStarRatings
-    ).
-```
+## ℹ️ &nbsp; Syntax helper
 
-We'll find these results using the following query:
-```
-SELECT ?product ?countOfFiveStarRatings
-WHERE {
-    ?product :hasNumberOfFiveStars ?countOfFiveStarRatings .
-}
-```
+To use aggregation in a rule, you must declare an aggregate atom in the rule body with `AGGREGATE()`.
 
-## Run the script
+The parenthesis `()` of the aggregate atom must contain all the relevant triple atoms.
+
+When grouping the aggregate into sub-sets, you must also indicate which variable(s) you're aggregating on with `ON` (known as group variables), and bind the result to a new variable with `BIND`.
+
+<br>
+<br>
+
+## ✅ &nbsp; Check the results
 
 Run `2_1-Aggregation/example/exScript.rdfox` to see the results of this rule.
 
+<br>
+
 ### You should see...
 
-|=== Number of 5 star ratings per product ===||
+|=== Number of reviews per product ===||
 |-----------|-------------|
 |:productA| 2| 
 |:productB| 1| 
 
+<br>
+<br>
 
-## Variable scope
+## 🔍 &nbsp; Variable scope
 
 Variables in aggregate atoms are local to the atom unless they unless they are group variables (in the `ON` statement).
 
 Therefore, two aggregates can use a variable with the same name so long as it is not a mentioned group variable.
 
+<br>
+<br>
 
-## Where is aggregation relevant?
-
-An incredibly powerful tool, there are unlimited uses of aggregation in production.
-
-COUNT and SUM are so versatile that they can be used in almost any application, with other functions supporting increasingly targeted and powerful niches.
-
-### Retail
-
-To quantify and analyze user behavior, quantify and rank product sentiment, etc.
-
-### Finance
-
-To sum transactional amounts, isolate extreme values and outliers, validate complex regulation compliance, etc.
-
-### Construction & Manufacturing
-
-To surface and compare high-level compound properties, create a bill of materials, etc.
-
-The list goes on...
-
-## Exercise
+## 🚀 &nbsp; Exercise
 
 Complete the rule `2_1-Aggregation/incompleteRules.dlog` so that the query below can be used to directly find 'Star Products' - that is, products with a **higher than 4 star average** rating AND **more than 5 total reviews**.
-
-```
-SELECT ?starProduct ?averageStars ?reviewCount
-WHERE {
-
-    ?starProduct a :StarProduct ;
-        :hasAverageStars ?averageStars ;
-        :hasReviewCount ?reviewCount .
-
-} ORDER BY DESC(?averageStars)
-
-```
 
 Here is a representative sample of the data in `2_1-Aggregation/exercise/data.ttl`.
 
@@ -126,15 +124,23 @@ Here is a representative sample of the data in `2_1-Aggregation/exercise/data.tt
 :review11 :hasStars 5 .
 ```
 
-### Hits & helpful resources
+<br>
+<br>
+
+## 📌 &nbsp; Hints & helpful resources
 
 [Aggregate functions in RDFox](https://docs.oxfordsemantic.tech/querying.html#aggregate-functions)
 
-## Check your work
+<br>
+<br>
+
+## ✅ &nbsp; Check your answers
 
 Run the script below to verify the results.
 
 `2_1-Aggregation/exercise/script.rdfox`
+
+<br>
 
 ### You should see...
 
@@ -152,6 +158,17 @@ Run the script below to verify the results.
 |:product0137|	4.142857142857142857|	7|
 |:product0326|	4.125|	8|
 
+<br>
+
 ### Visualise the results
 
 Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FstarProduct%20%3FaverageStars%20%3FreviewCount%0AWHERE%20%7B%0A%20%20%20%20%3FstarProduct%20a%20%3AStarProduct%20%3B%0A%20%20%20%20%3AhasAverageStars%20%3FaverageStars%20%3B%0A%20%20%20%20%3AhasReviewCount%20%3FreviewCount%20.%0A%7D%20ORDER%20BY%20DESC%28%3FaverageStars%29).
+
+<br>
+<br>
+
+## 👏 &nbsp; Bonus exercise
+
+Write a new rule that uses `MAX(V)` and `COUNT_MAX(V)` to find the highest rated review for each product, and return the number of reviews that share that rating.
+
+Write a query [in the console](http://localhost:12110/console/datastores/sparql?datastore=default) to validate you work.

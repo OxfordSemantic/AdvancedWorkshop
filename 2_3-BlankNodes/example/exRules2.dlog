@@ -1,6 +1,0 @@
-# 2.3 Blank Nodes
-
-[?sting, :derivedFrom, ?bathReading],
-[?time, :derivedFrom, ?bathReading] :-
-    [?bathReading, a, :BathSummary],
-    SKOLEM(?sting, ?time, ?bathReading) .

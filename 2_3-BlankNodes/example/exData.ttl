@@ -2,10 +2,6 @@
 
 @prefix : <https://rdfox.com/example#> .
 
-:readingA a :SensorReading ;
-    :fromSensor :sensorA ;
-    :hasTemperature 19 .
+:sensorA :hasTemperature 19 .
 
-:readingB a :SensorReading ;
-    :fromSensor :sensorB ;
-    :hasTemperature 21 .
+:sensorB :hasTemperature 21 .

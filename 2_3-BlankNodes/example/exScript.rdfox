@@ -11,7 +11,7 @@ import 2_3-BlankNodes/example/exRules.dlog
 
 # Add some visual padding
 echo 
-echo ========= Average Bath Temperature Estimate Over Time =========
+echo ========= Average Bath Temperature =========
 echo
 
 # Run our query

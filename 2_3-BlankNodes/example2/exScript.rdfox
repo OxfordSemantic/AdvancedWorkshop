@@ -1,10 +1,7 @@
 # 2.3 Blank Nodes
 
-# Import our data
-import +p 2_3-BlankNodes/example/exData2.ttl
-
 # Import our rules
-import 2_3-BlankNodes/example/exRules2.dlog
+import 2_3-BlankNodes/example2/exRules.dlog
 
 # Add some visual padding
 echo 
@@ -12,7 +9,7 @@ echo ========= SKOLEM reversed =========
 echo
 
 # Run our query
-evaluate 2_3-BlankNodes/example/exQuery2.rq
+evaluate 2_3-BlankNodes/example2/exQuery.rq
 
 # Add some visual padding
 echo 

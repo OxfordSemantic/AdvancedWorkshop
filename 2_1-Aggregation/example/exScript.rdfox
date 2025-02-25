@@ -11,7 +11,7 @@ import 2_1-Aggregation/example/exRules.dlog
 
 # Add some visual padding
 echo 
-echo === Number of 5 star ratings per product ===
+echo === Number of reviews per product ===
 echo
 
 # Run our query
