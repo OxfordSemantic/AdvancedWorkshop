@@ -2,8 +2,8 @@
 
 [?personnel, :inBreachOfRegulation, true] :PersonnelInfo,
 [?trade, a, :BreachOfRegulation] :-
-    [?personnel, a, :Trader] ___ , # Fill in the named graph
-    [?personnel, :hasMaxTradeRestriction, ?restrictionValue] ___ , # Fill in the named graph
+    [?personnel, a, :Trader] ___ , # Specify the named graph
+    [?personnel, :hasMaxTradeRestriction, ?restrictionValue] ___ , # Specify the named graph
     [?trade, :executedBy, ?personnel] ,
-    [?trade, :hasValue, ?tradeValue] ,
-    FILTER( ___ ) . # Complete the filter to ensure the value of the flagged trades exceeds the allowed value of the trader 
+    [___] , # Extract the value of the trade in the default graph
+    FILTER( ?tradeValue > ?restrictionValue ) . 

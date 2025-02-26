@@ -9,5 +9,4 @@
 }
 
 # Default Graph
-:t-001001 a :Transaction ;
-    :executedBy :p-001 .
+:transaction-001 :executedBy :p-001 .
