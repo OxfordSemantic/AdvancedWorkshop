@@ -2,5 +2,5 @@
 
 SELECT ?SKOLEMNode ?originalComponent
 WHERE {
-    ?originalComponent :derivedFrom ?SKOLEMNode .
+    ?SKOLEMNode :derivedFrom ?originalComponent .
 }

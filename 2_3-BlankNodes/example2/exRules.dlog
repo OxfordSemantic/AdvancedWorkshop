@@ -1,6 +1,6 @@
 # 2.3 Blank Nodes
 
-[?originalSting, :derivedFrom, ?bathSummaryNode],
-[?originalTempReading, :derivedFrom, ?bathSummaryNode] :-
+[?bathSummaryNode, :derivedFrom, ?originalSting],
+[?bathSummaryNode, :derivedFrom, ?originalTempReading] :-
     [?bathSummaryNode, :hasAvgTemp, ?avgTemp],
     SKOLEM(?originalSting, ?originalTempReading, ?bathSummaryNode) .
