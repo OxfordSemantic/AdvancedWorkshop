@@ -2,9 +2,8 @@
 
 [?product, a, :highPerformingProduct],
 [?product, :hasTotalProfit, ?totalProfit] :-
-    [?product, a, :Product],
     [?product, :unitsSold, ?units],
     [?product, :hasCost, ?cost],
     [?product, :hasSalePrice, ?price],
     BIND ( (?price - ?cost) * ?units AS ?totalProfit ),
-    FILTER (?units > 1000).
+    FILTER (?units > 10000).

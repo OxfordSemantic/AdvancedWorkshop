@@ -2,16 +2,12 @@
 
 @prefix : <https://rdfox.com/example#> .
 
-:article1 a :Article ;
-        :hasTag :AI ,
+:article1 :hasTag :AI ,
                 :semanticReasoning .
 
-:article2 a :Article ;
-        :hasTag :semanticReasoning .
+:article2 :hasTag :semanticReasoning .
 
-:article3 a :Article ;
-        :hasTag :AI .
+:article3 :hasTag :AI .
 
-:article4 a :Article ;
-        :hasTag :AI .
+:article4 :hasTag :AI .
     

@@ -100,13 +100,13 @@ We have imported two rules above, so the total rules is 2.
 
 Both are non-recursive (see 3.3 for recursion) which is also reflected in the table.
 
-Since one rule depends on the other, we end up with 2 components (layers, or strata)
+Since one rule depends on the other, we end up with 2 components (also called layers, or strata)
 
 This can be a great launching point for debugging rules, particularly if the values shown are not what you expect.
 
 Find out more about the `info` command in the docs [here](https://docs.oxfordsemantic.tech/rdfox-shell.html#info).
 
-## Overly complex rules
+## Unnecessarily complex rules
 
 It can be tempting to write huge rules that match sprawling patterns and infer many heads at once, but this can be deeply inefficient.
 

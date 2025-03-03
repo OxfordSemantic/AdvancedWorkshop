@@ -2,7 +2,6 @@
 
 @prefix : <https://rdfox.com/example#> .
 
-:productD a :Product ;
-    :unitsSold 10000 ;
+:productX :unitsSold 100000 ;
     :hasCost 10 ;
     :hasSalePrice 110 .

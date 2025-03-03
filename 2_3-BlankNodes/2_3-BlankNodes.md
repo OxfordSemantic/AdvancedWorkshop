@@ -62,6 +62,8 @@ This means the new node retains a referenceable, reversible, meaningful IRI that
 
 ## 🔬 &nbsp; Example - SKOLEMizing a node
 
+![alt text](../images/blankNodes.png)
+
 The following rule creates a node from two sensor readings, representing the bath that they are measuring.
 
 ```

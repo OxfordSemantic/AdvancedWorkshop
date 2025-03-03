@@ -1,6 +1,6 @@
 # 3.1 Rules As Views
 
-SELECT ?product ?totalProfit ?units
+SELECT ?product ?units ?totalProfit
 WHERE {
     ?product a :highPerformingProduct ;
         :unitsSold ?units ;

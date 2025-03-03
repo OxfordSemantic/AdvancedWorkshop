@@ -4,7 +4,7 @@
 
 ## 🔥 &nbsp; Why is Aggregation helpful?
 
-Want to calculate the sum total or a property or count the number of objects in a class?
+Want to calculate the sum total of a property or count the number of objects in a class?
 
 Aggregation is the key!
 
@@ -50,6 +50,8 @@ To surface and compare high-level compound properties, create a bill of material
 <br>
 
 ## 🔬 &nbsp; Example
+
+![alt text](../images/aggregation.png)
 
 The following rule performs a count of reviews per product, adding the result to the graph.
 

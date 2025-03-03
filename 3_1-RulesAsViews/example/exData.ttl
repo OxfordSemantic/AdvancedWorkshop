@@ -2,17 +2,14 @@
 
 @prefix : <https://rdfox.com/example#> .
 
-:productA a :Product ;
-    :unitsSold 5000 ;
+:productA :unitsSold 500000 ;
     :hasCost 9 ;
     :hasSalePrice 10 .
 
-:productB a :Product ;
-    :unitsSold 2000 ;
+:productB :unitsSold 11000 ;
     :hasCost 80 ;
     :hasSalePrice 100 .
 
-:productC a :Product ;
-    :unitsSold 10 ;
+:productC :unitsSold 100 ;
     :hasCost 30 ;
     :hasSalePrice 50 .
