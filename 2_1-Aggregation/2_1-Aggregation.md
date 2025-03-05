@@ -71,12 +71,10 @@ The following rule performs a count of reviews per product, adding the result to
 Here is the data we'll be using to show this:
 
 ```
-:productA a :Product ;
-    :hasReview :reviewA1 ;
+:productA :hasReview :reviewA1 ;
     :hasReview :reviewA2 .
 
-:productB a :Product ;
-    :hasReview :reviewB1 ;
+:productB :hasReview :reviewB1 ;
 ```
 <br>
 <br>

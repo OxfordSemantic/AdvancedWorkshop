@@ -3,4 +3,4 @@
 SELECT ?product ?reviewCount
 WHERE {
     ?product :hasReviewCount ?reviewCount .
-}
+} ORDER BY ASC(?product)
