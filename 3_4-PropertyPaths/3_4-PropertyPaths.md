@@ -1,4 +1,15 @@
-# 3.4 Property Paths
+# 4.4 Property Paths
+
+<br>
+
+## 🔥 &nbsp; Why are Property Paths helpful?
+
+This is why.
+
+<br>
+<br>
+
+## 📖 &nbsp; What are Property Paths?
 
 Property paths in SPARQL represent chains of the same relationship.
 
@@ -6,11 +17,48 @@ They can be very helpful in practice as they enable queries for paths of arbitra
 
 The same information can be encoded using recursive rules (see 3.3) which we can then be queried for efficiently.
 
-## Example
+<br>
+<br>
 
-The following example shows how a property path chain can be found between two nodes that aren't directly related.
+## ⚡ &nbsp; Real world applications
 
-Below is a social network, showing direct personal connections between people:
+These are some applications examples.
+
+<br>
+
+### Social Networks
+
+To find indirectly connected members of an extended social network, to identify chains of people of a particular seniority of company, etc.
+
+<br>
+
+### Construction
+
+To identify flaws or weaknesses in designs, to create a bill of materials, to isolate material components, etc.
+
+<br>
+
+### Retail
+
+To monitor and stress-test supply chains, to analyse customer buying patterns and improve recommendations, etc.
+
+<br>
+<br>
+
+## 🔬 &nbsp; Example
+
+The following rules recursively detect members of Alice's network - including people she both directly and indirectly knows.
+
+```
+[?person, a, :MemberOfAlicesNetwork] :-
+    [:Alice, :knows, ?person].
+
+[?person2, a, :MemberOfAlicesNetwork] :-
+    [?person1, :knows, ?person2],
+    [?person1, a, :MemberOfAlicesNetwork].
+```
+
+Here is the data we'll be using to show this:
 
 ```
 :Alice :knows :Bob .
@@ -21,28 +69,15 @@ Below is a social network, showing direct personal connections between people:
 
 :Walter :knows :Wendy .
 ```
-The rules below will recursively identify all of the people in Alice's extended network, that is to say, all of the people who indirectly know Alice:
-```
-[?person, a, :MemberOfAlicesNetwork] :-
-    [:Alice, :knows, ?person].
 
-[?person2, a, :MemberOfAlicesNetwork] :-
-    [?person1, :knows, ?person2],
-    [?person1, a, :MemberOfAlicesNetwork].
-```
+<br>
+<br>
 
-We'll query for the results with the following:
-
-```
-SELECT ?person ?networkMember
-WHERE {
-    ?person a ?networkMember .
-}
-```
-
-## Run the script
+## ✅ &nbsp; Check the results
 
 Run `3_4-PropertyPaths/example/exScript.rdfox` to see the results of this rule.
+
+<br>
 
 ### You should see...
 
@@ -53,28 +88,19 @@ Run `3_4-PropertyPaths/example/exScript.rdfox` to see the results of this rule.
 |:Carlos|	:MemberOfAlicesNetwork|
 |:Bob|	:MemberOfAlicesNetwork|
 
+<br>
+
 ### Visualise the results
 
 Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3Fperson%20%3FnetworkMember%0AWHERE%20%7B%0A%20%20%20%20%3Fperson%20a%20%3FnetworkMember%20.%0A%7D).
 
-## Exercise
+<br>
+<br>
 
-Complete the rule `3_4-PropertyPaths/incompleteRules.dlog` so that the query below can be used to directly find all the paths to people in Alice's network and the path required get there:
 
-```
-SELECT ?endPerson ?hopsAwayFromAlice ?person
-WHERE {
+## 🚀 &nbsp; Exercise
 
-    ?pathNode :pathTo ?endPerson;
-            :hasPathLength ?pathLength;
-            :pathIncludes ?person .
-
-    ?person :hopsAwayFromAlice ?hopsAwayFromAlice.
-
-} ORDER BY DESC(?pathLength) ASC(?endPerson) ASC(?hopsAwayFromAlice)
-LIMIT 15
-```
-Alice is very popular, so we've limited the results to 15!
+Complete the rule `3_4-PropertyPaths/incompleteRules.dlog` to find all the paths to people in Alice's network and the path required get there.
 
 Here is a representative sample of the data in `3_4-PropertyPaths/exercise/data.ttl`.
 ```
@@ -84,17 +110,23 @@ Here is a representative sample of the data in `3_4-PropertyPaths/exercise/data.
         :Troy .
 ```
 
-### Hits & helpful resources
+<br>
+<br>
+
+## 📌 &nbsp; Hints & helpful resources
 
 In this file there are 2 sets of recursive rules, the first set iterates forward along the property path to find all network members, the second must iterate backwards to find all the people who created that specific chain.
 
-### Check your work
+<br>
+<br>
 
-Run the script below to verify the results.
+## ✅ &nbsp; Check your answers
 
-`3_4-PropertyPaths/exercise/script.rdfox`
+Run `3_4-PropertyPaths/exercise/script.rdfox` to see the results of this rule.
 
-## You should see...
+<br>
+
+### You should see...
 
 === How to Reach Alice's Network Members ===
 |?endPerson|?hopsAwayFromAlice|?person|
@@ -115,8 +147,12 @@ Run the script below to verify the results.
 |:Glen	|3|	:Susan|
 |:Glen	|4|	:Glen|
 
+<br>
+
 ### Visualise the results
 
-The power in these results is much clearer when visualised.
+Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FendPerson%20%3Fperson%0AWHERE%20%7B%0A%0A%20%20%20%20%3FpathNode%20%3ApathTo%20%3FendPerson%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3AhasPathLength%20%3FpathLength%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3ApathIncludes%20%3Fperson%20.%0A%0A%20%20%20%20%3Fperson%20%3AhopsAwayFromAlice%20%3FhopsAwayFromAlice.%0A%0A%7D%20ORDER%20BY%20DESC%28%3FpathLength%29%20ASC%28%3FendPerson%29%20ASC%28%3FhopsAwayFromAlice%29) and **change the layout to Breadth First**.
 
-Open them in the RDFox Explorer [here](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FendPerson%20%3Fperson%0AWHERE%20%7B%0A%0A%20%20%20%20%3FpathNode%20%3ApathTo%20%3FendPerson%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3AhasPathLength%20%3FpathLength%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3ApathIncludes%20%3Fperson%20.%0A%0A%20%20%20%20%3Fperson%20%3AhopsAwayFromAlice%20%3FhopsAwayFromAlice.%0A%0A%7D%20ORDER%20BY%20DESC%28%3FpathLength%29%20ASC%28%3FendPerson%29%20ASC%28%3FhopsAwayFromAlice%29) and **change the layout to Breadth First**.
+
+<br>
+<br>
