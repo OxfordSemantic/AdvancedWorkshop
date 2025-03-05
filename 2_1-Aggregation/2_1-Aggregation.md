@@ -6,12 +6,16 @@
 
 Want to calculate the sum total of a property or count the number of objects in a class?
 
+For example, you may use an aggregation statement to count all people who work for a each company in your data.
+
 Aggregation is the key!
 
 <br>
 <br>
 
 ## 📖 &nbsp; What is Aggregation?
+
+Aggregates calculate sums, averages and other functions over a set of results. 
 
 Aggregate functions such as SUM and COUNT take a sample of data and use it to perform a calculation.
 
@@ -115,7 +119,7 @@ Therefore, two aggregates can use a variable with the same name so long as it is
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule `2_1-Aggregation/incompleteRules.dlog` so that the query below can be used to directly find 'Star Products' - that is, products with a **higher than 4 star average** rating AND **more than 5 total reviews**.
+Complete the rule `2_1-Aggregation/incompleteRules.dlog` to create 'Star Products' - that is, products with a **higher than 4 star average** rating AND **more than 5 total reviews**.
 
 Here is a representative sample of the data in `2_1-Aggregation/exercise/data.ttl`.
 

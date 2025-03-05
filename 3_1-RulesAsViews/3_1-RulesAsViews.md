@@ -1,100 +1,148 @@
 # 3.1 Rules as Views
 
-One way to see rules is to think of them as creating views.
+<br>
 
-All rules can be thought of in this way but some can be used to create more traditional views.
+## 🔥 &nbsp; Why are Views helpful?
+
+Ever wanted to use part of a query again and again or optimise a taxing calculation?
+
+Views are the answer!
+
+<br>
+<br>
+
+## 📖 &nbsp; What are Views?
+
+Views transform existing data into simpler or more accessible information, often turning important complex patterns into a single relationship or applying filters to narrow down the result set based on a condition.
 
 Views simplify SPARQL, reduce repetition in code, and accelerate query performance - they are incredible useful.
 
-## Example
+<br>
+<br>
 
-With the rule below, we create a view of the profit from our best selling products - that is, the products that have sold over 1000 units.
+## ⚡ &nbsp; Real world applications
 
-Here is our product data:
+Views are universally applicable as a fundamental application of rules.
 
-```
-:productA a :Product ;
-    :unitsSold 5000 ;
-    :hasCost 9 ;
-    :hasSalePrice 10 .
+<br>
 
-:productB a :Product ;
-    :unitsSold 2000 ;
-    :hasCost 80 ;
-    :hasSalePrice 100 .
+### Retail
 
-:productC a :Product ;
-    :unitsSold 10 ;
-    :hasCost 30 ;
-    :hasSalePrice 50 .
-```
-And the rule that will create our view:
+To create a sales dashboard with critical stats and figures, to calculate important product-based metrics, to highlight high performing products etc.
+
+<br>
+
+### IoT
+
+To track key system properties and device metrics, to plan and predict maintenance, to simplify complex analysis into a single value, etc.
+
+<br>
+
+### Finance
+
+To surface critical information about clients and transactions, to flag security or regulation breaches, etc.
+
+<br>
+<br>
+
+## 🔬 &nbsp; Example
+
+The following rule provides information for a view of the profit from our best selling products - that is, the products that have sold over 10,000 units.
+
 ```
 [?product, a, :highPerformingProduct],
 [?product, :hasTotalProfit, ?totalProfit] :-
-    [?product, a, :Product],
     [?product, :unitsSold, ?units],
     [?product, :hasCost, ?cost],
     [?product, :hasSalePrice, ?price],
     BIND ( (?price - ?cost) * ?units AS ?totalProfit ),
-    FILTER (?units > 1000).
+    FILTER (?units > 10000).
 ```
 
-We'll query for the results with the following:
+Here is the data we'll be using to show this:
+
 ```
-SELECT ?product ?totalProfit ?units
-WHERE {
-    ?product a :highPerformingProduct ;
-        :unitsSold ?units ;
-        :hasTotalProfit ?totalProfit .
-} ORDER BY DESC(?totalProfit)
+:productA :unitsSold 500000 ;
+    :hasCost 9 ;
+    :hasSalePrice 10 .
+
+:productB :unitsSold 11000 ;
+    :hasCost 80 ;
+    :hasSalePrice 100 .
+
+:productC :unitsSold 100 ;
+    :hasCost 30 ;
+    :hasSalePrice 50 .
 ```
 
-## Run the script
+<br>
+<br>
+
+## ✅ &nbsp; Check the results
 
 Run `3_1-RulesAsViews/example/exScript.rdfox` to see the results of this rule.
+
+<br>
 
 ### You should see...
 
 === High Performing Products ===
-|?product|	?totalProfit|	?units|
+|?product|	?units| ?totalProfit|
 |---|---|---|
-|<https://rdfox.com/example#productB>|	40000|	2000|
-|<https://rdfox.com/example#productA>|	5000|	5000|
+|<https://rdfox.com/example#productA>|	500000|	500000|
+|<https://rdfox.com/example#productB>|	11000|	220000|
 
+<br>
 
 ### Visualise the results
 
 Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3Fproduct%20%3FtotalProfit%20%3Funits%0AWHERE%20%7B%0A%20%20%20%20%3Fproduct%20a%20%3AhighPerformingProduct%20%3B%0A%20%20%20%20%20%20%20%20%3AunitsSold%20%3Funits%20%3B%0A%20%20%20%20%20%20%20%20%3AhasTotalProfit%20%3FtotalProfit%20.%0A%7D%20ORDER%20BY%20DESC%28%3FtotalProfit%29).
 
-## Incremental Reasoning
+<br>
+<br>
 
-Adding to this, reasoning updates incrementally meaning as new data comes in or as old is removed, the view is always kept consistent with changes to the data store in real-time. This is a very efficient process which considers the smallest necessary part of the graph to compute the change.
+## 🔍 &nbsp; Incremental Reasoning
 
-## Run the script
+As new data is added or old is removed, reasoning updates incrementally meaning the view is always kept consistent with changes in real-time.
+
+This is a very efficient process which considers the smallest necessary part of the graph to compute the change.
+
+<br>
+
+## ✅ &nbsp; Check the results
 
 Ensuring that you have run the first script...
 
 now run `3_1-RulesAsViews/example/exScript2.rdfox` to add this new product data and re-run the query.
 
 ```
-:productD a :Product ;
-    :unitsSold 10000 ;
+:productX :unitsSold 100000 ;
     :hasCost 10 ;
     :hasSalePrice 110 .
 ```
-=== High Performing Products ===
-|?product|	?totalProfit|	?units|
-|---|---|---|
-|<https://rdfox.com/example#productD>|	1000000|	10000|
-|<https://rdfox.com/example#productB>|	40000|	2000|
-|<https://rdfox.com/example#productA>|	5000|	5000|
 
-## Explainable results
+<br>
+
+### You should see...
+
+=== High Performing Products ===
+|?product|	?units| ?totalProfit|
+|---|---|---|
+|<https://rdfox.com/example#productX>|	100000|	10000000|
+|<https://rdfox.com/example#productA>|	500000|	500000|
+|<https://rdfox.com/example#productB>|	11000|	220000|
+
+
+<br>
+<br>
+
+## 🔍 &nbsp; Explainable results
 
 RDFox keeps track of the inferences it makes, storing the chain of rules that support each facts existence.
 
 This means all inferred results can be explained in proof trees of the facts and rules that lead to them.
+
+<br>
 
 ### Exploring explanations
 
@@ -102,16 +150,12 @@ Head to the **Explain** tab of the RDFox console to start visualising an explana
 
 [Here is a link](http://localhost:12110/console/datastores/explain?datastore=default&fact=%5B%3Chttps%3A%2F%2Frdfox.com%2Fexample%23productA%3E%2C%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23type%3E%2C%20%3Chttps%3A%2F%2Frdfox.com%2Fexample%23highPerformingProduct%3E%5D) to the explanation of `productA a :highPerformingProduct`.
 
-## Exercise
+<br>
+<br>
 
-Complete the rule `3_1-RulesAsViews/incompleteRules.dlog` so that the query below will return a list of product categories and the **average** units sold for all products in that category.
+## 🚀 &nbsp; Exercise
 
-```
-SELECT ?productCategory ?averageCategoryUnitsSold
-WHERE {
-    ?productCategory :hasAverageUnitsSold ?averageCategoryUnitsSold .
-} ORDER BY DESC (?averageCategoryUnitsSold)
-```
+Complete the rule `3_1-RulesAsViews/incompleteRules.dlog` to create a view of product categories and the **average** units sold over all products in that category.
 
 Here is a representative sample of the data in `3_1-RulesAsViews/exercise/data.ttl`.
 
@@ -129,27 +173,44 @@ Here is a representative sample of the data in `3_1-RulesAsViews/exercise/data.t
     :hasSalePrice 300 .
 ```
 
-### Hits & helpful resources
+<br>
+<br>
 
-Averages are a form of aggregates.
+## 📌 &nbsp; Hints & helpful resources
 
-### Check your work
+[Averages](https://docs.oxfordsemantic.tech/querying.html#aggregate-functions) are a form of aggregates.
 
-Run the script below to verify the results.
+<br>
+<br>
 
-`3_1-RulesAsViews/exercise/script.rdfox`
+## ✅ &nbsp; Check your answers
 
-## You should see...
+Run `3_1-RulesAsViews/exercise/script.rdfox` to see the results of this rule.
+
+<br>
+
+### You should see...
 
 === Product Category Average Profit ===
 |?productCategory|?averageCategoryUnitsSold|
 |-----------|-------------|
-|<https://rdfox.com/example/Chair>|	9943.57894736842105|
-|<https://rdfox.com/example/Product>|	4939.885|
-|<https://rdfox.com/example/Sofa>|	4879.032|
-|<https://rdfox.com/example/Stool>|	2531.395061728395062|
-|<https://rdfox.com/example/Beanbag>|	2495.9|
+|<https://rdfox.com/example/Chair>|	10263.0|
+|<https://rdfox.com/example/Product>|	5065.0|
+|<https://rdfox.com/example/Sofa>|	4922.0|
+|<https://rdfox.com/example/Stool>|	2491.0|
+|<https://rdfox.com/example/Beanbag>|	2423.0|
+
+<br>
 
 ### Visualise the results
 
 Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FproductCategory%20%3FaverageCategoryUnitsSold%0AWHERE%20%7B%0A%20%20%20%20%3FproductCategory%20%3AhasAverageUnitsSold%20%3FaverageCategoryUnitsSold%20.%0A%7D%20ORDER%20BY%20DESC%20%28%3FaverageCategoryUnitsSold%29).
+
+<br>
+<br>
+
+## 👏 &nbsp; Bonus exercise
+
+Write a rule that creates a view to identify pre-sale products (missing :unitsSold data) and adds them to a 'PreSale' named graph.
+
+Write a query [in the console](http://localhost:12110/console/datastores/sparql?datastore=default) to validate you work.

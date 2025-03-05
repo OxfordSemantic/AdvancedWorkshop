@@ -1,10 +1,11 @@
 # 3.1 Rules As Views
 
-[?productCategory, :hasAverageUnitsSold, ?averageCategoryUnitsSold] :-
+[?productCategory, :hasAverageUnitsSold, ?averageCategoryUnitsSoldRounded] :-
     AGGREGATE (
         [?product, a, :Product],
         [?product, a, ?productCategory],
         [?product, :unitsSold, ?units]
         ON ?productCategory
         BIND AVG(?units) AS ?averageCategoryUnitsSold
-    ).
+    ),
+    BIND ( ROUND(?averageCategoryUnitsSold) AS ?averageCategoryUnitsSoldRounded ).
