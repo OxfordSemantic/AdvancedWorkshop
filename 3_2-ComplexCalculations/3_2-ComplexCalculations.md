@@ -1,77 +1,103 @@
 # 3.2 Complex Calculations
 
-Reasoning can be used to perform complex calculations and analysis as `BIND` offers the flexibility to describing mathematical expressions using variables and in-build functions.
+<br>
 
-Complex calculations often require complex patterns, so layering rules can helpful - referring to patterns in one rule that were created by others.
+## 🔥 &nbsp; Why are Complex Calculations helpful?
 
-This is very common in practice, not just in calculations, to construct intricate patterns over several rules - breaking the problem down into bit sized chunks.
+Need to perform calculations or any complexity in your application?
+
+RDFox has you covered!
+
+<br>
+<br>
+
+## 📖 &nbsp; What Complex Calculations?
+
+Binds calculate an expression and store result in a variable.
+
+This can be done with inbuilt RDFox functions or hand written mathematical expressions.
+
+In practice it's very common to construct complex results using several rules - breaking the problem down into bite sized chunks.
 
 This can also greatly benefit the efficiency of reasoning - some common examples are explored throughout the workshop.
 
-## Example
+<br>
+<br>
 
-Below is an example of how multiple rules can work together in order to calculate a result - in this case to perform Term Frequency analysis for articles with specific content tags in order to recommend similar articles.
+## ⚡ &nbsp; Real world applications
 
-Here is our article data:
+Calculations are relevant in almost every use case, whenever data needs to be transformed or analysed.
+
+<br>
+
+### Finance
+
+To recognize fraud in real-time based on complex triggers, to apply regulation restrictions to transactions, etc.
+
+<br>
+
+### Data Analysis
+
+To compute complex mathematical functions over large and changing data, to surface valuable insights, etc.
+
+<br>
+
+### Manufacturing
+
+To calculate complex product compatibility, to model configuration viability, to simulate failure modes and maintenance, etc.
+
+<br>
+<br>
+
+## 🔬 &nbsp; Example
+
+The following rules perform Term Frequency Analysis for articles tagged by their content types, in order to recommend similar articles.
 
 ```
-:article1 a :Article ;
-        :hasTag :AI ,
-                :semanticReasoning .
-
-:article2 a :Article ;
-        :hasTag :semanticReasoning .
-
-:article3 a :Article ;
-        :hasTag :AI .
-
-:article4 a :Article ;
-        :hasTag :AI .
-```
-
-Our Term Frequency analysis rules assign common terms a lower weighting than rare terms that receive a much higher weighting.
-
-When used to generate a recommendation, this is used to ensure common terms contribute less than specific terms that have a larger impact.
-
-A node is created between two articles, calculating a similarity score based on shared weighted tags:
-
-```
-[?tag, :hasLogFrequency, ?termLogFrequency] :-
+[?tag, :hasFrequency, ?termFrequency] :-
     AGGREGATE (
         [?article, :hasTag, ?tag]
         ON ?tag
         BIND COUNT(?article) AS ?totalTagMentions
     ),
-    BIND (LOG(1/?totalTagMentions) AS ?termLogFrequency) .
-
+    BIND (LOG(1/?totalTagMentions) AS ?termFrequency) .
+```
+```
 [?recommendationNode, :hasRecommendedArticle, ?article1],
 [?recommendationNode, :hasRecommendedArticle, ?article2],
 [?recommendationNode, :pairHasSimilarityScore, ?similarityScore] :-
     AGGREGATE(
         [?article1, :hasTag, ?tag],
         [?article2, :hasTag, ?tag],
-        [?tag, :hasLogFrequency, ?termLogFrequency]
+        [?tag, :hasFrequency, ?termFrequency]
         ON ?article1 ?article2
-        BIND SUM(-1/?termLogFrequency) AS ?similarityScore
+        BIND SUM( -1 / ?termFrequency ) AS ?similarityScore
     ),
-    SKOLEM(?article1,?article2,?recommendationNode),
-    FILTER (?article1 > ?article2) .
+    SKOLEM(?article1, ?article2, ?recommendationNode),
+    FILTER(?article1 > ?article2) .
 ```
 
-We'll query for the results with the following:
+Here is the data we'll be using to show this:
+
 ```
-SELECT ?article1 ?article2 ?similarityScore
-WHERE {
-    ?recommendationNode :hasRecommendedArticle ?article1 ;
-        :hasRecommendedArticle ?article2 ;
-        :pairHasSimilarityScore ?similarityScore .
-    FILTER(?article1 < ?article2)
-} ORDER BY ASC(?article1) DESC(?similarityScore)
+:article1 :hasTag :AI ,
+                :semanticReasoning .
+
+:article2 :hasTag :semanticReasoning .
+
+:article3 :hasTag :AI .
+
+:article4 :hasTag :AI .
 ```
 
-## Run the script
+<br>
+<br>
+
+## ✅ &nbsp; Check the results
 
 Run `3_2-ComplexCalculations/example/exScript.rdfox` to see the results of this rule.
+
+<br>
 
 ### You should see...
 
@@ -83,11 +109,29 @@ Run `3_2-ComplexCalculations/example/exScript.rdfox` to see the results of this 
 |:article1|	:article3|	9.1023922662683732e-1|
 |:article3|	:article4|	9.1023922662683732e-1|
 
-## info rulestats
+<br>
+
+### Visualise the results
+
+Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FrecommendationNode%20%3Farticle1%20%3Farticle2%20%3FsimilarityScore%20%3Ftag%0AWHERE%20%7B%0A%20%20%20%20%3FrecommendationNode%20%3AhasRecommendedArticle%20%3Farticle1%20%3B%0A%20%20%20%20%20%20%20%20%3AhasRecommendedArticle%20%3Farticle2%20%3B%0A%20%20%20%20%20%20%20%20%3ApairHasSimilarityScore%20%3FsimilarityScore%20.%0A%20%20%20%20%3Farticle1%20%3AhasTag%20%3Ftag%0A%20%20%20%20FILTER%28%3Farticle1%20%3C%20%3Farticle2%29%0A%7D%20ORDER%20BY%20ASC%28%3Farticle1%29%20DESC%28%3FsimilarityScore%29).
+
+<br>
+<br>
+
+## ℹ️ &nbsp; Syntax helper
+
+These Term Frequency Analysis rules assign common terms a lower weighting than rarer terms.
+
+A node is created between two articles that share at least one tag, calculating a similarity score based on shared weighted tags.
+
+<br>
+<br>
+
+## 👀 &nbsp; info rulestats
 
 Run `info rulestats` in the RDFox shell to show information about the rules in your data store.
 
-For this example, so far, you will see:
+So far, for this example you will see:
 
 =================== RULES STATISTICS =====================
 |Component|    Nonrecursive rules|    Recursive rules|    Total rules|
@@ -106,7 +150,10 @@ This can be a great launching point for debugging rules, particularly if the val
 
 Find out more about the `info` command in the docs [here](https://docs.oxfordsemantic.tech/rdfox-shell.html#info).
 
-## Unnecessarily complex rules
+<br>
+<br>
+
+## 🔍 &nbsp; Unnecessarily complex rules
 
 It can be tempting to write huge rules that match sprawling patterns and infer many heads at once, but this can be deeply inefficient.
 
@@ -141,9 +188,13 @@ We'll use this simple data to show how the rule sets perform differently:
 :x a :Class .
 ```
 
-## Run the script
+<br>
 
-Run `3_2-ComplexCalculations/example/exScript2.rdfox` to see the performance of the combined rule...
+## 👀 &nbsp; Run the profiler
+
+Firstly, run `3_2-ComplexCalculations/example/exScript2.rdfox` to see the performance of the combined rule...
+
+<br>
 
 ### You should see...
 
@@ -155,9 +206,14 @@ Rule Info
 
 Notice that the reasoning profiles undergoes 6 iterator operations. This is because the combo rule creates a cross product of patterns that it must check to infer each head atom, despite being unrelated.
 
-## Run the script
+<br>
+<br>
 
-Now run `3_2-ComplexCalculations/example/exScript3.rdfox` to see the performance of the two separate rules.
+## 👀 &nbsp; Run the profiler
+
+Secondly, run `3_2-ComplexCalculations/example/exScript3.rdfox` to see the performance of the two separate rules.
+
+<br>
 
 ### You should see...
 
@@ -181,40 +237,27 @@ This time, notice that even though there are more rules imported, the rules only
 
 While 6 iterations rather than 4 is almost invisible, this problem scales poorly with the number of triples and complexity of the rule and can cause drastic rules slowdowns.
 
-## Exercise
+## 🚀 &nbsp; Exercise
 
-Complete the rule `3_2-ComplexCalculations/incompleteRules.dlog` so that the query below will return the percentage of articles each tag appears in, rounded to the nearest percentage point:
+Complete the rule `3_2-ComplexCalculations/incompleteRules.dlog` to calculate the percentage of articles that each tag appears in, rounded to the nearest percentage point:
 
-```
-SELECT ?percentage ?tag
-WHERE {
-    ?tag :mentionedInPercentageOfArticles ?percentage .
-    FILTER (?percentage > 1)
-} ORDER BY DESC (?percentage)
-```
+<br>
+<br>
 
-Here is a representative sample of the data in `3_2-ComplexCalculations/exercise/data.ttl`:
-
-```
-:blogA :containsArticle :article001,
-                :article002 .
-
-:article001 a :Article ;
-        :hasTag :AI ,
-                :semanticReasoning .
-```
-
-### Hits & helpful resources
+## 📌 &nbsp; Hints & helpful resources
 
 [Mathematical functions in RDFox](https://docs.oxfordsemantic.tech/querying.html#mathematical-functions)
 
-### Check your work
+<br>
+<br>
 
-Run the script below to verify the results.
+## ✅ &nbsp; Check your answers
 
-`3_2-ComplexCalculations/exercise/script.rdfox`
+Run `3_2-ComplexCalculations/exercise/script.rdfox` to see the results of this rule.
 
-## You should see...
+<br>
+
+### You should see...
 
 === Percentage of articles mentioning tags ===
 |?percentage|?tag|
@@ -227,19 +270,11 @@ Run the script below to verify the results.
 |7.0|	:LLMs|
 |7.0|	:AI|
 
-## BONUS: Transactions
+<br>
+<br>
 
-A transaction is the window in which RDFox performs one or several read and/or write operations, ending when the operations are totally complete and the data store is self-consistent.
+## 👏 &nbsp; Bonus exercise
 
-Without specifying otherwise, a transaction will be created when any command is executed and will automatically close when its function has been achieved.
+Write some rules that calculate the 
 
-However, transactions can be manually opened with `begin` and closed with `commit` or `rollback` depending on whether the results of the transaction should be committed or discarded.
-
-Multiple rule files can be imported in one transaction. This can be much more efficient if the rules interact with one another as RDFox computes an optimized order in which to import the rules.
-
-Eg.
-
-`begin`\
-`import rule1.dlog`\
-`import rule2.dlog`\
-`commit`
+Write a query [in the console](http://localhost:12110/console/datastores/sparql?datastore=default) to validate you work.
