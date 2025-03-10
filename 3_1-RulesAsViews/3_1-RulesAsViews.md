@@ -47,6 +47,8 @@ To surface critical information about clients and transactions, to flag security
 
 ## 🔬 &nbsp; Example
 
+![Rules As Views](../images/rulesAsViews.png)
+
 The following rule provides information for a view of the profit from our best selling products - that is, the products that have sold over 10,000 units.
 
 ```
@@ -66,13 +68,9 @@ Here is the data we'll be using to show this:
     :hasCost 9 ;
     :hasSalePrice 10 .
 
-:productB :unitsSold 11000 ;
-    :hasCost 80 ;
+:productB :unitsSold 100 ;
+    :hasCost 10 ;
     :hasSalePrice 100 .
-
-:productC :unitsSold 100 ;
-    :hasCost 30 ;
-    :hasSalePrice 50 .
 ```
 
 <br>
@@ -90,7 +88,6 @@ Run `3_1-RulesAsViews/example/exScript.rdfox` to see the results of this rule.
 |?product|	?units| ?totalProfit|
 |---|---|---|
 |<https://rdfox.com/example#productA>|	500000|	500000|
-|<https://rdfox.com/example#productB>|	11000|	220000|
 
 <br>
 
@@ -106,6 +103,33 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 As new data is added or old is removed, reasoning updates incrementally meaning the view is always kept consistent with changes in real-time.
 
 This is a very efficient process which considers the smallest necessary part of the graph to compute the change.
+
+To show this, we'll add a new product to our database:
+
+```
+:productX :unitsSold 100000 ;
+    :hasCost 10 ;
+    :hasSalePrice 110 .
+```
+<br>
+
+## ✅ &nbsp; Check the results
+
+Ensuring that you have run the first script...
+
+now run `3_1-RulesAsViews/example/exScript2.rdfox` to add this new product data and re-run the query.
+
+<br>
+
+### You should see...
+
+=== High Performing Products ===
+|?product|	?units| ?totalProfit|
+|---|---|---|
+|<https://rdfox.com/example#productX>|	100000|	10000000|
+|<https://rdfox.com/example#productA>|	500000|	500000|
+
+<br>
 
 ### Transactions
 
@@ -124,32 +148,6 @@ import - old-rule.dlog
 import new-rule.dlog
 commit
 ```
-
-<br>
-
-## ✅ &nbsp; Check the results
-
-Ensuring that you have run the first script...
-
-now run `3_1-RulesAsViews/example/exScript2.rdfox` to add this new product data and re-run the query.
-
-```
-:productX :unitsSold 100000 ;
-    :hasCost 10 ;
-    :hasSalePrice 110 .
-```
-
-<br>
-
-### You should see...
-
-=== High Performing Products ===
-|?product|	?units| ?totalProfit|
-|---|---|---|
-|<https://rdfox.com/example#productX>|	100000|	10000000|
-|<https://rdfox.com/example#productA>|	500000|	500000|
-|<https://rdfox.com/example#productB>|	11000|	220000|
-
 
 <br>
 <br>

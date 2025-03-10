@@ -6,10 +6,6 @@
     :hasCost 9 ;
     :hasSalePrice 10 .
 
-:productB :unitsSold 11000 ;
-    :hasCost 80 ;
+:productB :unitsSold 100 ;
+    :hasCost 10 ;
     :hasSalePrice 100 .
-
-:productC :unitsSold 100 ;
-    :hasCost 30 ;
-    :hasSalePrice 50 .

@@ -49,6 +49,8 @@ To model dependencies and availability, to test failure modes and plan maintenan
 
 ## 🔬 &nbsp; Example
 
+![Transitive Closure](../images/transitiveClosure.png)
+
 The following rules recursively traverse a network of IT assets to determine each of their direct and indirect dependencies.
 
 ```

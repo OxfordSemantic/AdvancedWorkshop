@@ -51,6 +51,8 @@ To calculate complex product compatibility, to model configuration viability, to
 
 ## 🔬 &nbsp; Example
 
+![Complex Calculations](../images/complexCalculations.png)
+
 The following rules perform Term Frequency Analysis for articles tagged by their content types, in order to recommend similar articles.
 
 ```

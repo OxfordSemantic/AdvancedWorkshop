@@ -47,6 +47,8 @@ To monitor and stress-test supply chains, to analyse customer buying patterns an
 
 ## 🔬 &nbsp; Example
 
+![Property Paths](../images/propertyPaths.png)
+
 The following rules recursively detect members of Alice's network - including people she both directly and indirectly knows.
 
 ```

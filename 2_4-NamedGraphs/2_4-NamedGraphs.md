@@ -57,6 +57,10 @@ Without specifying a named graph RDFox will reference the default graph.
 
 ## 🔬 &nbsp; Example
 
+![Named Graphs](../images/namedGraphsA.png)
+
+![Named Graphs](../images/namedGraphsB.png)
+
 The following rule shows how how to access data in the Default Graph and a Named Graph, pulling personal information from the `:personnelInfo` graph and transaction data from the `default` graph.
 
 This allows us to classify any of our staff members who have executed a transaction as a `:Trader`.
