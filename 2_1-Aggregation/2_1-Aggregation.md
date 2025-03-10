@@ -55,7 +55,7 @@ To surface and compare high-level compound properties, create a bill of material
 
 ## 🔬 &nbsp; Example
 
-![alt text](../images/aggregation.png)
+![Aggregation](../images/aggregation.png)
 
 The following rule performs a count of reviews per product, adding the result to the graph.
 
