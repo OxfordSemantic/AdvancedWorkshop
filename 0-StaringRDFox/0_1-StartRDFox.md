@@ -8,6 +8,7 @@ To run RDFox:
 
 `<rdfox_filepath> sandbox . start`
 
+If you're not sure how, [follow the video guide here.](https://youtu.be/g3WdA8AE0OI?si=rPNgn8uR4IeyCWLJ)
 
 ### MacOS & Linux
 
