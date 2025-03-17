@@ -1,0 +1,7 @@
+# 2.2 Negation As Failure
+
+[?vehicle, :hasState, "Warning - No State Available"] :-
+    [?vehicle, a, :Vehicle] ,
+    NOT EXISTS ?state IN (
+        [?vehicle, :hasState, ?state] 
+    ).

@@ -1,8 +1,13 @@
 # 2.2 Negation As Failure
 
-[?device, :hasIncompleteTwin, true] :-
-    [?device, a, :Component] ,
-    NOT EXISTS ?switch IN (
-        [?device, :dependsOn, ?switch]
-    ) ,
-    NOT [?device, :isDecommissioned, true ] .
+[?vehicleState, :canSafely, ?availableManeuver] :-
+    [?vehicleState, a, :VehicleState] ,
+    [?vehicleState, :hasSensorReading, ?reading] ,
+    [?reading, :fromSensor, ?sensor] ,
+    [?sensor, :supportsManeuver, ?availableManeuver] ,
+    NOT (
+        [?sensor, a, :PrimaryCamera] 
+    ),
+    NOT EXISTS ?hazard IN (
+        [?reading, :detectsHazard, ?hazard]
+    ).

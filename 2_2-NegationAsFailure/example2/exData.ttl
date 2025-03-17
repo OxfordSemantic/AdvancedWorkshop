@@ -3,9 +3,9 @@
 @prefix : <https://rdfox.com/example#> .
 
 :vehicle1 a :Vehicle ;
-    :detectsLight :red .
+    :detectsHazard :pedestrian .
 
 :vehicle2 a :Vehicle ;
-    :detectsLight :green .
+    :detectsHazard :stoppedCar .
 
 :vehicle3 a :Vehicle .

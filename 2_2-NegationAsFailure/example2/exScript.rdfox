@@ -4,10 +4,10 @@
 clear force
 
 # Import our data
-import +p 2_2-NegationAsFailure/example/exData.ttl
+import +p 2_2-NegationAsFailure/example2/exData.ttl
 
 # Import our rules
-import 2_2-NegationAsFailure/example/exRules.dlog
+import 2_2-NegationAsFailure/example2/exRules.dlog
 
 # Add some visual padding
 echo 
@@ -15,7 +15,7 @@ echo === Vehicles that may continue to move ===
 echo
 
 # Run our query
-evaluate 2_2-NegationAsFailure/example/exQuery.rq
+evaluate 2_2-NegationAsFailure/example2/exQuery.rq
 
 # Add some visual padding
 echo 

@@ -1,0 +1,17 @@
+# 2.2 Negation As Failure
+
+# Import our data
+import +p 2_2-NegationAsFailure/example3/exData.ttl
+
+# Add some visual padding
+echo 
+echo === Vehicles that may continue to move ===
+echo
+
+# Run our query
+evaluate 2_2-NegationAsFailure/example3/exQuery.rq
+
+# Add some visual padding
+echo 
+echo ====================================
+echo

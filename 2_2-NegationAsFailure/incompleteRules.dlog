@@ -1,8 +1,13 @@
 # 2.2 Negation As Failure
 
-[?device, :hasIncompleteTwin, true] :-
-    [?device, a, :Component] ,
-    NOT EXISTS ___ IN ( # Fill in the gap with a variable new to NOT EXISTS
-        [___] # Fill in the gap with the graph pattern that should not exist
-    ) ,
-    NOT [___] . # Fill in the graph pattern that we do not want to consider
+[?vehicleState, :canSafely, ?availableManeuver] :-
+    [?vehicleState, a, :VehicleState] ,
+    [?vehicleState, :hasSensorReading, ?reading] ,
+    [?reading, :fromSensor, ?sensor] ,
+    [?sensor, :supportsManeuver, ?availableManeuver] ,
+    ___ ( # Provide a negation function
+        [?sensor, a, :PrimaryCamera] 
+    ),
+    ___ ( # Provide a negation function
+        [?reading, :detectsHazard, ?hazard]
+    ).

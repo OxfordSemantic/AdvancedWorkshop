@@ -1,8 +1,10 @@
 # 2.2 Negation As Failure
 
-SELECT ?device
+SELECT ?timestamp ?maneuver
 WHERE {
 
-    ?device :hasIncompleteTwin true .
+    ?vehicleState a :VehicleState ;
+        :hasTimeStamp ?timestamp ;
+        :canSafely ?maneuver .
 
-} ORDER BY ASC(?device)
+} ORDER BY ASC(?timestamp) LIMIT 10

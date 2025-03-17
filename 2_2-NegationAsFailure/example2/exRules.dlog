@@ -2,6 +2,6 @@
 
 [?vehicle, :mustStop, false] :-
     [?vehicle, a, :Vehicle] ,
-    NOT ( 
-        [?vehicle, :detectsLight, :red]
+    NOT EXISTS ?hazard IN (
+        [?vehicle, :detectsHazard, ?hazard ]
     ) .

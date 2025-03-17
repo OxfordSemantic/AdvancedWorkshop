@@ -1,205 +1,275 @@
 # 2.2 Negation as Failure
 
-Negation as Failure (NAF) searches for an absence of data - inferring new facts where a pattern is missing.
+## 🔥 &nbsp; Why is Negation as Failure helpful?
 
-### The Closed World Assumption
+Have you ever needed to act on information that was false or missing?
 
-RDFox employs the Closed World Assumption - that is to say, anything that cannot be proven to be true is considered false.
+Negation is the solution!
 
-Negation As Failure implements this assumption as missing data is treated the same as false data.
+For example, you may want your rule to apply only to people who don’t have children.
 
-## NOT vs NOT EXISTS
+<br>
+<br>
 
-There are two critical components to understand when using NAF with Datalog rules, **NOT** and **NOT EXISTS**.
+## 📖 &nbsp; What is Negation as Failure?
 
-Semantically, these two functions are remarkably similar but both uniquely powerful depending on the circumstance.
+Negation as Failure (NAF) filters results based on the absence of some particular information from the data - inferring new facts where a pattern is false or missing.
 
-**NOT** and **NOT EXISTS** are both used to ensure a pattern does not exist within the data store.
+Treating missing information as false is known as the Closed World Assumption.
 
-All variables used in **NOT** must be bound elsewhere in the rule body, allowing specific patterns relating to specific variables to be considered.
+<br>
+<br>
 
-On the other hand, **NOT EXISTS** introduces a new variable, or variables, that are not bound in the wider rule body, allowing more general patterns to be considered.
+## ⚡ &nbsp; Real world applications
 
-### Variable scope
+Negation as failure is a particularly powerful tool as the absence of data is a common concept in real-world applications.
 
-Variables introduced by **NOT EXISTS** remain unbound when the rule-body infers new facts as the patterns don't exist.
+<br>
 
-Therefore, the scope of these variables must be local to the negation atom. They can share the names of a variables in the wider body without sharing a binding.
+### On-device
 
-# Example
+<br>
 
-The following example highlights the different implications of **NOT** vs **NOT EXISTS** in the context of a network of IT assets that depend on one another.
+To encode real-world decision-making rules, map dependencies, repair data, etc.
 
-The data represents devices that depend on a number of switches, giving us two options to model their dependency:
+<br>
+
+### Publishing
+
+To generate advanced recommendations, offer detailed search, control user access, etc.
+
+<br>
+
+### Construction and Manufacturing
+
+To determine complex compatibilities, comply with schematics and regulations, simulate failure conditions, etc.
+
+<br>
+<br>
+
+## 🔬 &nbsp; Example
+
+![Negation as Failure](../images/negationAsFailureA.png)
+
+The following rule checks to see whether a vehicle's onboard sensors have detected a red light and, if not, allows the vehicle to continue moving.
 
 ```
-:switchA :hasState :on .
-
-:switchB :hasState :off .
-
-:device01 a :Component ;
-    :dependsOn :switchA .
-
-:device02 a :Component ;
-    :dependsOn :switchB .
-
-:device03 a :Component ;
-    :dependsOn :switchA ;
-    :dependsOn :switchB .
-
-:device04 a :Component.
-```
-
-The rules use both **NOT** and **NOT EXISTS** to create those two dependency models:
-```
-[?device, :atLeastOneDependencyOn, true] :-
-    [?device, a, :Component],
-    [?device, :dependsOn, ?switch],
-    NOT (
-        [?switch, :hasState, :off] 
-    ) .
-
-[?device, :noDependenciesOff, true] :-
-    [?device, a, :Component],
-    NOT EXISTS ?switch IN (
-        [?device, :dependsOn, ?switch],
-        [?switch, :hasState, :off] 
+[?vehicle, :mustStop, false] :-
+    [?vehicle, a, :Vehicle] ,
+    NOT ( 
+        [?vehicle, :detectsLight, :red]
     ) .
 ```
 
-### Writing rules with Negation
+Here is the data we'll be using to show this:
+
+```
+:vehicle1 a :Vehicle ;
+    :detectsLight :red .
+
+:vehicle2 a :Vehicle ;
+    :detectsLight :green .
+
+:vehicle3 a :Vehicle .
+```
+
+<br>
+<br>
+
+## ✅ &nbsp; Check the results
+
+Run `2_2-NegationAsFailure/example/exScript.rdfox` to see the results of this rule.
+
+<br>
+
+### You should see...
+
+=== Vehicles that may continue to move ===
+
+:vehicle2
+:vehicle3
+
+<br>
+<br>
+
+## ℹ️ &nbsp; Syntax helper
+
+Notice that vehicle 3 is allows to continue due to the closed world assumption.
 
 Negation atoms must be accompanied by at least one non-negation atom directly in the rule body (excluding atoms within the negation atom itself), as is shown above.
 
 In the case that the pattern is matched, this ensures that at least one variable is bound.
 
-RDFox will return an error when this is not the case.
+<br>
+<br>
 
-Here, we'll search for the inferred results with the following query:
+## 🔍 &nbsp; NOT EXISTS
+
+**NOT** is often used in combination **EXISTS** as it allows us to introduce a new variable, or variables, that are not bound in the wider rule body.
+
+This opens up the possibility for more general negation patterns to be included.
+
+## 🔬 &nbsp; Example
+
+![Negation as Failure](../images/negationAsFailureB.png)
+
+The following rule checks to see whether a vehicle's onboard sensors have detected **any hazard** and, if not, allows the vehicle to continue moving.
 
 ```
-SELECT ?device ?atLeastOneDependencyOn ?noDependenciesOff
-WHERE {
-    ?device a :Component .
-    OPTIONAL {SELECT ?device ?atLeastOneDependencyOn
-              WHERE {
-                  ?device :atLeastOneDependencyOn ?atLeastOneDependencyOn .
-              }
-    }
-    OPTIONAL {SELECT ?device ?noDependenciesOff
-              WHERE {
-                  ?device :noDependenciesOff ?noDependenciesOff .
-              }
-    }
-} ORDER BY ASC(?device)
+[?vehicle, :mustStop, false] :-
+    [?vehicle, a, :Vehicle] ,
+    NOT EXISTS ?hazard IN (
+        [?vehicle, :detectsHazard, ?hazard ]
+    ) .
 ```
 
-## Run the script
+Here is the data we'll be using to show this:
 
-Run `2_2-NegationAsFailure/example/exScript.rdfox` to see the results of this rule.
+```
+:vehicle1 a :Vehicle ;
+    :detectsHazard :pedestrian .
+
+:vehicle2 a :Vehicle ;
+    :detectsHazard :stoppedCar .
+
+:vehicle3 a :Vehicle .
+```
+
+<br>
+<br>
+
+## ✅ &nbsp; Check the results
+
+Run `2_2-NegationAsFailure/example2/exScript.rdfox` to see the results of this rule.
+
+<br>
 
 ### You should see...
 
-|Device | At least one dependency on | No dependencies off|
-|-----------|-------------|-------------|
-|:device1| true | true |
-|:device2| UNDEF | UNDEF |
-|:device3| true | UNDEF |
-|:device4| UNDEF | true |
+=== Vehicles that may continue to move ===
 
-### Visualise the results
+:vehicle3
 
-Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3Fdevice%20%3FatLeastOneDependencyOn%20%3FnoDependenciesOff%0AWHERE%20%7B%0A%20%20%20%20%3Fdevice%20a%20%3AComponent%20.%0A%20%20%20%20OPTIONAL%20%7BSELECT%20%3Fdevice%20%3FatLeastOneDependencyOn%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fdevice%20%3AatLeastOneDependencyOn%20%3FatLeastOneDependencyOn%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20OPTIONAL%20%7BSELECT%20%3Fdevice%20%3FnoDependenciesOff%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fdevice%20%3AnoDependenciesOff%20%3FnoDependenciesOff%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%7D%20ORDER%20BY%20ASC%28%3Fdevice%29).
+<br>
+<br>
 
-## Incremental retraction
+## 🔍 &nbsp; Variable scope
 
-NAF is an incredibly powerful tool and raises an potentially thorny question when combined with the Incremental Reasoning of RDFox.
+Variables introduced by NOT EXISTS remain unbound when the rule-body infers new facts as the patterns don't exist.
 
-What happens when new data is added that fills the gap of an absent triple, whose absence was leading to the inference of another fact?
+Therefore, the scope of these variables must be local to the negation atom. They can share the names of a variables in the wider body without sharing a binding.
 
-The previously inferred fact will have to be retracted.
+<br>
+<br>
 
-Try importing some new data that contains something from the **NOT EXISTS** atom and see what happens.
+## ℹ️ &nbsp; Incremental Retraction
 
-Here, we'll introduce new dependencies for **device04** - now depending on **both switchA and switchB**:
+Negation remains consistent even when new data means old facts are no longer true.
+
+For example, if vehicle3 detects a hazard, the fact `:vehicle3 :mustStop false` will be retracted.
+
+Add the following data to show this in action.
 
 ```
-:device04 a :Component;
-    :dependsOn :switchA ;
-    :dependsOn :switchB .
+:vehicle3 :detectsHazard :stoppedCar .
 ```
 
-## Run the script
+<br>
+<br>
 
-Ensuring you have run the first script...
+## ✅ &nbsp; Check the results
 
-Now run `2_2-NegationAsFailure/example/exScript2.rdfox` to add the new data and run the same query again.
+Ensuring that you have run the scripts above...
+
+now run `2_2-NegationAsFailure/example3/exScript.rdfox` to add the new data and run the same query.
+
+<br>
 
 ### You should see...
 
-|Device | At least one dependency on | No dependencies off|
-|-----------|-------------|-------------|
-|:device1| true | true |
-|:device2| UNDEF | UNDEF |
-|:device3| true | UNDEF |
-|:device4| true | UNDEF |
+=== Vehicles that may continue to move ===
 
-## Stratification and Cycles in rules
+*0 results*
 
-A rule, or set of rules, cannot be imported if they create cyclic logic that involves negation or aggregation.
+This is because `:vehicle3 :mustStop false` has now been retracted - it no longer exists in our store.
 
-Some types of cycles are allowed and are in fact incredibly useful (see 3.2), but when negation or aggregation is involves, it can create a situation where the inferred triple no longer holds, and must be changed, only for that change to then re-infer the triple, which would then mean it no longer holds and so on.
+<br>
+<br>
+
+## 🔍 &nbsp; Stratification and reasoning cycles
+
+With Negation and Aggregation, it is possible to create infinite reasoning cycles.
+
+While some types of cycles are allowed and are in fact incredibly useful (see 3.2), rules sets cannot be imported if the cycles they create involve Negation or Aggregation as they lead to inferred facts being updated with every iteration. 
 
 Take the following rule as an example.
 
-If a subject node is not a member of **Class**, it is inferred to be a be a member of **Class**, at which point, because it is now a member of **Class**, the rule will no longer hold and the fact that is is a member of **Class** will be retracted, re-entering the initial state and starting the process again.
-
 ```
-[?x, a, :Class] :-
-    [?x, a, ?c] ,
-    NOT [?x, a, :Class] .
+[?vehicle, :hasState, "Warning - No State Available"] :-
+    [?vehicle, a, :Vehicle] ,
+    NOT EXISTS ?state IN (
+        [?vehicle, :hasState, ?state] 
+    ).
 ```
 
-## Run the script
+1. If a vehicle **has no state**, a **new state is inferred**, showing 'Warning - No State Available'.
+2. However, now this vehicle **does have a state** ('Warning - No State Available'), so it's **no longer true that is has no state**, meaning 'Warning - No State Available' will be **retracted**.
+3. But now, as it has no state, the rule matches again and infers 'Warning - No State Available' and so on...
 
-Run `2_2-NegationAsFailure/example/exScript3.rdfox` to see the stratification error created by this rule.
+RDFox will reject any rule that behaves like this.
+
+<br>
+<br>
+
+## 🚫 &nbsp; Check the error
+
+Run `2_2-NegationAsFailure/example4/exScript.rdfox` to see the stratification error created by this rule.
+
+<br>
 
 ### You should see...
+
 ```
 An error occurred while executing the command:
     The program is not stratified because these components of the dependency graph contain cycles through negation and/or aggregation:
     ======== COMPONENT 1 ========
-        <https://rdfox.com/example#Class>[?x] :- rdf:type[?x, ?c], NOT <https://rdfox.com/example#Class>[?x] .
-    -------- Rules in other components whose body atoms contribute to the cycles --------
-        <https://rdfox.com/example#atLeastOneDependencyOn>[?device, true] :- <https://rdfox.com/example#Component>[?device], <https://rdfox.com/example#dependsOn>[?device, ?switch], NOT <https://rdfox.com/example#hasState>[?switch, <https://rdfox.com/example#off>] .
-        <https://rdfox.com/example#noDependenciesOff>[?device, true] :- <https://rdfox.com/example#Component>[?device], NOT EXISTS ?switch IN (<https://rdfox.com/example#dependsOn>[?device, ?switch], <https://rdfox.com/example#hasState>[?switch, <https://rdfox.com/example#off>]) .
+        <https://rdfox.com/example#hasState>[?vehicle, "Warning - No State Available"] :- <https://rdfox.com/example#Vehicle>[?vehicle], NOT EXISTS ?state IN <https://rdfox.com/example#hasState>[?vehicle, ?state] .
     ========================================================================================================================
 ```
 
-### Stratification Error
+## ℹ️ &nbsp; Stratification Conditions
 
 This is known as a **stratification error**.
 
-**Strata**, also called **components**, can be thought of as 'layers' that depend on one another.
+**Strata**, also called **components**, can be thought of as the 'layers' of logic that support an inferred fact.
 
-When these layers form a loops, and the loop causes previously inferred facts to update with each loop (as with our NOT :Class example above), the rule set is not stratified **stratified** and RDFox will not accept it.
+An error occurs when the strata don't create stable facts (facts that don't change unless other data is changed).
 
-Loops in strata by themselves are not a problem, so long as it does not create changing facts. RDFox will notice when no new facts are inferred and stop the cycle.
+This can only happen when a set of rules contains either negation or aggregation.
 
-### Allowed rule examples
+In the example above, the rule creates a fact, then removed it on the next 'cycle', so the rule **cannot** be stratified.
 
-```
-[?y, :hasRelation, ?x] :-
-    [?x, :hasRelation, ?y] .
-```
-While the logic is cyclic, facts will not be changed in each iteration.
+When cycles don't change facts, like the examples below, they **can** be stratified:
 
-```
-[?x, :hasCount, ?newCount] :-
-    [?x, :hasCount, ?count],
-    BIND (?count + 1 AS ?newCount) .
-```
-While this rule creates an infinite loop, it does not cause old facts to be updated - just new to be added.
+1. While the logic is cyclic, facts will not be changed in each iteration.
+
+    ```
+    [?y, :hasRelative, ?x] :-
+        [?x, :hasRelative, ?y] .
+    ```
+    ![Stratification](../images/stratificationA.png)
+
+2. While this rule creates an infinite loop, it doesn't update facts as it goes, instead it adds a new fact each iteration with a progressively higher count, leaving a trail of all the counts up until that point.
+
+    ```
+    [?x, :hasCount, ?newCount] :-
+        [?x, :hasCount, ?count],
+        BIND (?count + 1 AS ?newCount) .
+    ```
+    ![Stratification](../images/stratificationB.png)
+    \* This is a fabricated view representing the steps taken by the reasoning engine but cannot actually be visualised as the reasoning must first terminal, which an infinite rule would not do.
+
+<br>
 
 ### What to do when encountering a stratification error?
 
@@ -211,122 +281,106 @@ This rule will include either:
 
 2. An aggregate atom in the body
 
-3. An atom in the head that is used in another rules negation atom
+One of these 'special relationships' will be creating a cycle that you must remove.
 
-4. An atom in the head that is used in another rules aggregate atom
+Sometimes, the self-referential behavior is required, so we must use a workaround - separating the special relationship from the cyclic part.
 
-Atoms that depend on aggregation or negation are said to have a 'special dependency'.
-
-One of these will be creating a cycle that you must remove.
-
-If you still want to perform this special aggregate or negation on the existing data, without inferring new triples that will impact the special dependency, there is a way.
-
-A parent relationship can be created to separate the loop from the special dependency. Consider the following:
+Let's complicate our example above to demonstrate this clearly. These rules cannot be stratified:
 
 ```
-[?x, :existingPredicate, ?y] :-
-    [?x, :countPredicate, ?y].
+[?vehicle, :hasState, "Warning"]  :-
+    [?vehicle, :hasWarning, "No State Available"] .
 
-[?x, :countPredicate, ?z] :-
-    AGGREGATE(
-    [?x, :existingPredicate, ?y]
-    ON ?x
-    BIND COUNT(?y) AS ?z).
+[?vehicle, :hasWarning, "No State Available"] :-
+    [?vehicle, a, :Vehicle] ,
+    NOT EXISTS ?state IN (
+        [?vehicle, :hasState, ?state] 
+    ).
 ```
 
-The rules above cannot be stratified as they form a loop that involves an aggregate.
+To stratify these rules and achieve the desired output, we simply need to remove the special relationship from the cycle.
 
-However, the loop can be extracted by introducing a parent relationship for `:existingPredicate`.
-
-In the rules below, we have removed `:existingPredicate` from the loop, therefore making the rules stratify.
+We do this by introducing a new proxy-relationship as follows:
 
 ```
-[?x, :newPredicate, ?y] :-
-    [?x, :existingPredicate, ?y] .
- 
-[?x, :newPredicate, ?y] :-
-    [?x, :countPredicate, ?y].
+[?vehicle, :hasProxyState, ?state]  :-
+    [?vehicle, :hasState, ?state] .
 
-[?x, :countPredicate, ?z] :-
-    AGGREGATE(
-    [?x, :existingPredicate, ?y]
-    ON ?x
-    BIND COUNT(?y) AS ?z).
+[?vehicle, :hasProxyState, "Warning"]  :-
+    [?vehicle, :hasWarning, "No State Available"] .
+
+[?vehicle, :hasWarning, "No State Available"] :-
+    [?vehicle, a, :Vehicle] ,
+    NOT EXISTS ?state IN (
+        [?vehicle, :hasState, ?state] 
+    ).
 ```
 
-## Where is NAF relevant?
+<br>
+<br>
 
-Negation as failure is a particularly powerful tool as the absence of data is a common concept in real-world applications.
+## 🚀 &nbsp; Exercise
 
-### On-device
-
-To encode real-world decision-making rules, map dependencies, repair data, etc.
-
-### Publishing
-
-To generate advanced recommendations, offer detailed search, control user access, etc.
-
-### Construction and Manufacturing
-
-To determine complex compatibilities, comply with schematics and regulations, simulate failure conditions, etc.
-
-## Exercise
-
-Complete the rule `2_2-NegationAsFailure/incompleteRules.dlog` so that the query below can be used to directly locate **devices** with an incomplete digital twin - **devices** that have no registered dependent switches and have not been decommissioned.
-
-```
-SELECT ?device
-WHERE {
-
-    ?device :hasIncompleteTwin true .
-
-} ORDER BY ASC(?device)
-```
+Complete the rule set `2_2-NegationAsFailure/incompleteRules.dlog` to 
 
 Here is a representative sample of the data in `2_2-NegationAsFailure/exercise/data.ttl`.
 
 ```
-:device001 a :Component ;
-    :dependsOn :switchA .
+:sensorF a :PrimaryCamera ;
+    :supportsManeuver :moveForward .
 
-:device002 a :Component ;
-    :isDecommissioned true .
+:vehicle a :Vehicle ;
+    :hasState :vehicleState1.
 
-:switchA a :Switch ;
-    :hasState :on .
+:vehicleState1 a :VehicleState ;
+    :hasTimeStamp "2025-01-01T12:00:01"^^xsd:dateTime ;
+    :hasSensorReading :reading1-1.
+
+:reading1-1 a :SensorReading ;
+    :fromSensor :sensorF ;
+    :detectsHazard :pedestrian.
 ```
-### Hits & helpful resources
 
-[Negation syntax forms](https://docs.oxfordsemantic.tech/reasoning.html#negation-as-failure)
+<br>
+<br>
 
-### Check your work
+## 📌 &nbsp; Hints & helpful resources
+
+See the [Negation](https://docs.oxfordsemantic.tech/reasoning.html#negation-syntax) page in the docs for help.
+
+<br>
+<br>
+
+## ✅ &nbsp; Check your answers
 
 Run the script below to verify the results.
 
-`2_2-NegationAsFailure/exercise/script.rdfox`
+`2_2-NegationAsFailure/exercise/Script.rdfox`
 
-## You should see...
+<br>
 
-=== Devices Requiring Attention ===
-|?device|
-|-----------|
-|:device175|
-|:device290|
-|:device354|
-|:device456|
-|:device585|
-|:device590|
-|:device656|
-|:device684|
-|:device727|
-|:device770|
-|:device860|
-|:device874|
-|:device903|
-|:device910|
-|:device930|
-|:device969|
+### You should see...
 
-### Visualise the results
+================== Safe Maneuvers =================
 
-Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3Fswitch%20%3FpassedMaintenanceCheck%0AWHERE%20%7B%0A%20%20%20%20%3Fswitch%20%3ArequiresMaintenance%20true%20.%0A%20%20%20%20%0A%20%20%20%20OPTIONAL%20%7BSELECT%20%3Fswitch%20%3FpassedMaintenanceCheck%0A%20%20%20%20%20%20%20%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Fswitch%20%3ApassedMaintenanceCheck%20%3FpassedMaintenanceCheck%20.%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%7D%20ORDER%20BY%20DESC%28%3FpassedMaintenanceCheck%29%20%3Fswitch).
+|?timeStamp|?safeManeuver|
+|-----------|-------------|
+|"2025-01-01T12:00:01"^^xsd:dateTime | :leftTurn |
+|"2025-01-01T12:00:02"^^xsd:dateTime | :stop |
+|"2025-01-01T12:00:03"^^xsd:dateTime | :rightTurn |
+|"2025-01-01T12:00:04"^^xsd:dateTime | :rightTurn |
+|"2025-01-01T12:00:05"^^xsd:dateTime | :stop |
+|"2025-01-01T12:00:06"^^xsd:dateTime | :rightTurn |
+|"2025-01-01T12:00:07"^^xsd:dateTime | :rightTurn |
+|"2025-01-01T12:00:08"^^xsd:dateTime | :rightTurn |
+|"2025-01-01T12:00:09"^^xsd:dateTime | :rightTurn |
+|"2025-01-01T12:00:10"^^xsd:dateTime | :leftTurn |
+
+<br>
+<br>
+
+## 👏 &nbsp; Bonus exercise
+
+Write a new rule that, when combined with the previous rule, infers a triple to indicate the vehicle my emergency stop when no safe maneuvers are possible.
+
+Write a query [in the console](http://localhost:12110/console/datastores/sparql?datastore=default) to validate you work.

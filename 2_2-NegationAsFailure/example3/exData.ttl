@@ -1,0 +1,5 @@
+# 2.2 Negation As Failure
+
+@prefix : <https://rdfox.com/example#> .
+
+:vehicle3 :detectsHazard :stoppedCar .
