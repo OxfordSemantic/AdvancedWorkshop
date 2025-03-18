@@ -1,0 +1,9 @@
+[?alice, :hasFriend, ?person], 
+[?person, :hasFriend, ?alice] :-
+    [?alice, :knows, ?person] .
+
+[?alice, :has, :loadsOfFriends]:-
+    [?alice, :knows, ?person1] ,
+    [?alice, :knows, ?person2] ,
+    [?alice, :knows, ?person3] ,
+    [?alice, :knows, ?person4] .

@@ -1,3 +1,4 @@
 @prefix : <https://rdfox.com/example/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-:thing a :Class .
+:something a :Class .

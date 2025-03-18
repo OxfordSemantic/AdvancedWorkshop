@@ -1,2 +1,2 @@
-[?thing, :hasProp, "Property"] :-
-    [?thing, a, :Class] .
+[?x, :hasNewProp, "new property"] :-
+    [?x, a, :Class] .

@@ -1,119 +1,227 @@
-# 2.5 Debugging Rules with the Reasoning Profiler
+# 2.4 Debugging Rules with the Reasoning Profiler
 
-The primary tool in debugging slow rules is the Reasoning Profiler.
+<br>
+
+## 🔥 &nbsp; Why is the Reasoning Profiler helpful?
+
+Ever written code that didn't quite do what you expected? 
+
+As far as rules are concerned, the Reasoning Profiler is the place to start!
+
+<br>
+<br>
+
+## 📖 &nbsp; What is the Reasoning Profiler?
+
+The primary tool in debugging rules and their performance is the Reasoning Profiler.
 
 It prints information about the progress of the reasoning algorithms to the RDFox shell.
 
-The Reasoning Profiler provides clues as to what is going on - the information it provides must be interpreted in the context of your rules.
+The Reasoning Profiler provides clues as to what is going on rather than providing precise solutions - the information it provides must be interpreted in the context of your rules.
 
-It  does not provide one-size-fits-all solutions, instead providing an excellent place to start when debugging.
+<br>
+<br>
 
-## Starting the Profiler
+## 🔬 &nbsp; Using the profiler
 
-To use it, you must first to enable it by running `set reason.monitor profile` in the RDFox shell.
+The following example turns on the Reasoning Profiler before importing a tiny data- and rules-set.
 
-Once the reasoning is complete, either from importing rules or data, a table detailing the computation involved will be shown.
-
-### Printing more details
-
-The rule plans can be printed alongside the profiler information with `set reason.profiler.log-plans true`, providing a greater level of detail for when it's needed.
-
-### Changing the log-frequency
-
-By default, the information is printed after the reasoning has completed however, this can be unhelpful as it is possible to write rules that are very long running or even infinite, in which case it is much more helpful to know the progress of the reasoner.
-
-A log of the profiles can be printed at set intervals with `set log-frequency 10` - setting the print frequency to every 10 seconds.
-
-This is helpful in the majority of cases.
-
-Learn more about the [Reasoning Profiler settings here](https://docs.oxfordsemantic.tech/reasoning.html#the-reasoning-profiler).
-
-## Exercise
-
-Below are a series of exercises that show how to use the profiler and telltale signs that can indicate certain issues.
-
-You must run these commands in the RDFox shell to see the output of the profiler.
-
-### Reading the output
-
-The info that the reasoning profiler outputs can be confusing, so it's important to cover it step by step.
-
-Running the script `2_5-ReasoningProfiler/exercise/script.rdfox` to start the profiler and see the results of importing a rule.
-
-It first adds this simple piece of data:
+Here is the data:
 
 ```
-:thing a :Class .
-```
-Then it starts the profiler and imports this simple rule.
-
-```
-[?thing, :hasProp, "Property"] :-
-    [?thing, a, :Class] .
+:something a :Class .
 ```
 
-The Reasoning Profiler will print a log of what happens. 
+And the rule:
 
-The output can be very difficult to read, so it is recommended to copy and paste it into a blank `.dlog` file in order to get the syntax highlighting.
+```
+[?x, :hasNewProp, "new property"] :-
+    [?x, a, :Class] .
+```
 
-## Using Rule Info and Plan Info in practice
+<br>
+<br>
 
-Having imported our data and rule, we will see the following tables printed in the shell.
+## 👀 &nbsp; Check the results
 
-Together, **Rule Info** and **Plan Info** provide information about the work RDFox is doing when performing the inference, broken down by **each rule atom**.
+Run `2_5-ReasoningProfiler/exercise/script.rdfox` to see how RDFox computes this rule.
 
-There is a huge amount of detail with each part providing specific information however, in practice, we focus on just a few values.
+<br>
 
-For a detailed explanation and the number shown explained with context, see the bonus sections below.
-
-### The Profiler printed in the shell
+### You should see...
 
 Rule Info
 |   #  |    Reasoning Phase   |   Sample Count  |  Rule Body Match Attempts |   Iterator Operations  |  Rule Body Matches  |    Fresh Facts Produced    |Rule of Head Atom|                               
 |------|----------------------|-----------------|---------------------------|------------------------|---------------------|-------------------|------------------------------|
-|   1|    RuleAdd|      0|             1|             2|           1|            1|          (0) :hasProp[?thing, "Property"] :- :Class[?thing] .|
+|   1|    RuleAdd|      0|             1|             2|           1|            1|          (0) :hasNewProp[?x, "new property"] :- :Class[?x] .|
 
 Plan Info
 |  Sample Count  |  Iterator Open |   Iterator Advance  |  Plan Node  |                                  
 |----------------|----------------|---------------------|-------------|
-|   0            |    1           |             1       |             [?thing, rdf:type, :Class]    {    -->    ?thing }    TripleTableIterator|
+|   0            |    1           |             1       |             [?x, rdf:type, :Class]    {    -->    ?x }    TripleTableIterator|
 
-### Resource intensive rules
+There is a huge amount of detail with each part providing specific information however, in practice, we focus on just a few values - we'll break them down below.
 
-The first thing to look at is the **Iterator Operations** (or **sample count** - a legacy metric use as a proxy for Iterator Operations).
+<br>
+<br>
 
-This tells you how many steps have been performed to compute the inferences of the rule.
+## ℹ️ &nbsp; Syntax helper
 
-In other words, this is how much work RDFox has done for this rule - the higher the number, the more taxing a rule, or part of a rule, is.
+This output can be difficult to read, so we recommend to copy it into a blank `.dlog` file - while this is of course not valid Datalog, it allows us to make use of the syntax highlighting provided by the RDFox VS Code Extension.
 
-When this value is very high, or higher than you might expect, the rule is worth digging into.
+Here, we have done this for you in `2_5-ReasoningProfiler/exercise/reasoningProfilerOutput.dlog`.
 
-### Finding the problem
+## 🔍 &nbsp; Reading this table in practice
 
-The next thing to look at is the **Rule Body Match Attempts** and **Fresh Facts Produced** - together they show you how many facts have been created for the work that has been done.
+Detailed explanations of all of these columns are given at the end of the chapter but in practice, the relative size of a few key figures is often all we need.
 
-**Rule Body Match Attempts** shows the number of times the rule's body shape appears in the data and **Fresh Facts Produced** shows the number of facts that were actually produced from these matches.
+<br>
 
-Either or both of these values can be smaller or larger than expected, indicating your rule is doing something you didn't intent - often either considering too much data or adding too many new facts, in which case you should adjust your rule accordingly.
+### Finding slow rule atoms with Iterator Operations
 
-If **Fresh Facts Produced** is significantly smaller than **Rule Body Match Attempts**, your rule is attempting to infer many repeated facts, causing RDFox to perform unnecessary work - a more restrictive body is often the solution.
+Iterator Operations tells you how many steps have been performed to compute the inferences of the rule.
 
-We will see this in action in later exercises but you're encouraged check the profiler output as we go.
+In other words, this is how much work RDFox has done for this rule - the higher the number, the more taxing a rule or rule atom.
 
-## BONUS: Rule Info in detail
+If this value is unexpectedly high the rule needs examining carefully.
+
+In this case the rule took 2 operations, one to match the only available fact, and one to confirm there were no more.
+
+<br>
+
+### Finding the problem with Rule Body Match Attempts and Fresh Facts Produced
+
+Rule Body Match Attempts Fresh Facts Produced show you how many facts have been created for the work that has been done.
+
+**Rule Body Match Attempts** shows the number of times the rule's body shape appears in the data.
+
+**Fresh Facts Produced** shows the number of facts that were actually produced from these matches.
+
+If these values are greatly misaligned, it may means one following:
+
+1. the rule is considering too broad a pattern
+2. the rule is creating redundant new facts
+3. the rule is attempting to infer repeated facts
+
+In this case both had a value of 1 as the rule matched 1 pattern (our only fact), and added only one new fact.
+
+<br>
+<br>
+
+## 🔍 &nbsp; How to use the Profiler
+
+The following RDFox commands were executed by the `2_5-ReasoningProfiler/exercise/script.rdfox`, but in normal operation you will need to enter these yourself.
+
+### Starting the Profiler
+
+To turn on the profiler, you must run `set reason.monitor profile` in the RDFox shell.
+
+### Greater detail
+
+Further details about the rule plans can be printed with `set reason.profiler.log-plans true`.
+
+### Changing the log-frequency
+
+By default, the information is printed after the reasoning has completed however, it can be more helpful to print out the progress at set intervals.
+
+The length of the intervals can be changed with `set log-frequency 10` - setting the print frequency to every 10 seconds.
+
+Learn more about the [Reasoning Profiler settings here](https://docs.oxfordsemantic.tech/reasoning.html#the-reasoning-profiler).
+
+<br>
+<br>
+
+## 🚀 &nbsp; Exercise
+
+The following rule and dataset aim to highlight Alice's social success.
+
+Here is our entire dataset:
+
+```
+:Alice :knows :Bob ,
+    :Carlos ,
+    :Danielle ,
+    :Erin ,
+    :Frank .
+```
+
+And here are the rules that we'll use. Using the profiler, try to identify the problematic rule.
+
+```
+[?alice, :hasFriend, ?person], 
+[?person, :hasFriend, ?alice] :-
+    [?alice, :knows, ?person] .
+
+[?alice, :has, :loadsOfFriends]:-
+    [?alice, :knows, ?person1] ,
+    [?alice, :knows, ?person2] ,
+    [?alice, :knows, ?person3] ,
+    [?alice, :knows, ?person4] .
+```
+
+<br>
+<br>
+
+## 👀 &nbsp; Check the results
+
+Run `2_5-ReasoningProfiler/exercise2/script.rdfox` to see how RDFox computes these rules.
+
+Copy the output into `2_5-ReasoningProfiler/exercise2/reasoningProfilerOutput.dlog` for a cleaner view.
+
+<br>
+
+### Reasoning Profile breakdown
+
+One of our rules has a relative number of Iterator Options and similar number (2x) of Rule Body Matches and Fresh Facts Produced (all of which we would expect from this kind of rule) - nothing wrong here.
+
+Our other rule has 1.5k Iterator Options despite our data size of 5 facts, and 600 time more Rule Body Matches than Fresh Facts Produced - this is where our issue is.
+
+When we look at our problematic rule, this becomes clear.
+
+```
+[?alice, :has, :loadsOfFriends]:-
+    [?alice, :knows, ?person1] ,
+    [?alice, :knows, ?person2] ,
+    [?alice, :knows, ?person3] ,
+    [?alice, :knows, ?person4] .
+```
+
+As written, this rule considers every possible combination of the people Alice knows in order to find every single permutation of 4 (not even distinct) people, and with every match, repeatedly infers the same fact: `:Alice  :has :loadsOfFriends`.
+
+We'll see several other, more realistic examples throughout the following chapters.
+
+<br>
+<br>
+
+## 📌 &nbsp; Hints & helpful resources
+
+[More about RDFox's Reasoning Profiler](https://docs.oxfordsemantic.tech/reasoning.html#using-reasoning-monitors-in-rdfox)
+
+<br>
+<br>
+
+## 👏 &nbsp; BONUS: Rule Info in detail
+
+These bonus details explore the first rule in this exercise that can be imported with `2_5-ReasoningProfiler/exercise/script.rdfox`.
 
 Having imported our data and rule, we will see the **Rule Info** table below printed in the shell, just above the **Plan Info** (we'll come to that in a moment).
 
 Rule Info
 |   #  |    Reasoning Phase   |   Sample Count  |  Rule Body Match Attempts |   Iterator Operations  |  Rule Body Matches  |    Fresh Facts Produced    |Rule of Head Atom|                               
 |------|----------------------|-----------------|---------------------------|------------------------|---------------------|-------------------|------------------------------|
-|   1|    RuleAdd|      0|             1|             2|           1|            1|          (0) :hasProp[?thing, "Property"] :- :Class[?thing] .|
+|   1|    RuleAdd|      0|             1|             2|           1|            1|          (0) :hasNewProp[?x, "new property"] :- :Class[?x] .|
+
+<br>
 
 ### Rule Info table columns explained
+
+<br>
 
 **#**
 
 There are often many rules, so the number represents (#) it's position in a list of approximately most to least costly at the time of the report.
+
+<br>
 
 **Reasoning Phase** 
 
@@ -121,23 +229,31 @@ Reasoning Phase denotes the algorithm being used for this part of the reasoning 
 
 - Here, RDFox used the **Rule Add** algorithm, as there was data already in the store and we only imported a simple rule.
 
+<br>
+
 **Sample Count**
 
 Sample Count gives the number of times, when checked at regular intervals, compute was working on this part of the rule - providing an estimate of the compute cost. There will often be several sample counts for different parts of the rule, the proportion of the total count observed at each part is as important as the magnitude of the number itself as this tells us exactly which atom(s) is problematic.
 
 - Here, the rule was so fast that RDFox didn't have time to sample it before it completed. 
 
+<br>
+
 **Rule Body Match Attempts**
 
 Rule Body Match Attempts shows the number of unique times RDFox attempted to match the body atoms with data.
 
-- Here there was 1 match attempt as we only have one fact to match - `:thing a :Class .` in the data we imported.
+- Here there was 1 match attempt as we only have one fact to match - `:something a :Class .` in the data we imported.
+
+<br>
 
 **Iterator Operations**
 
 Iterator Operations is the number of individual steps the reasoning algorithm when through when importing the rules and adding the inferences. This is a very important stat as it is a key indicator of the efficiency of the rule. It serves a similar purpose to **Sample Count** but provides even greater detail.
 
 - Here, the Iterator progressed 2 times during this completion, once to find a fact that matches the body atom and once look for a next fact that matches (in this case there is no next). 2 iterations from a total of 2 were spent on this body atom, meaning 100% of the compute for importing this rule was spent on the atom shown - no surprise as the rule only has 1 atom.
+
+<br>
 
 **Rule Body Matches**
 
@@ -147,6 +263,8 @@ Rule Body Matches is the actual number of times a body atoms matched, leading to
 
 - When compared to the **Iterator Operations**, if they are vastly different (orders of magnitude) it can be a sign that something is wrong as lots of data is being considered for relatively few complete patterns - although not necessarily, it is for you to determine. It may indicate you need to be more specific with your body atoms.
 
+<br>
+
 **Fresh Facts Produced** 
 
 Fresh Facts Produced is the total number of new facts produced.
@@ -155,11 +273,15 @@ Fresh Facts Produced is the total number of new facts produced.
 
 - If this is vastly smaller than the **Rule Body Matches** it may indicate that the rule is inefficient as it is checking lots of facts to produce very few, or it may be producing lots of repeated facts.
 
+<br>
+
 **Rule of Head Atom**
 
 Rule of Head Atom is simply the relevant rule head atom that is being for this step in the reasoning process.
 
 - Here, our rule only has one head atom so we see just that.
+
+<br>
 
 ### RDFox Algorithms
 
@@ -181,7 +303,12 @@ On the other hand, **Incremental Addition** is used when data already exists in 
 
 Depending on the contents of the datastore, one can be vastly more efficient than the other and can make a huge difference to your load times.
 
-## BONUS: Plan Info in detail
+<br>
+<br>
+
+## 👏 &nbsp; BONUS: Plan Info in detail
+
+These bonus details explore the first rule in this exercise that can be imported with `2_5-ReasoningProfiler/exercise/script.rdfox`.
 
 As we `set reason.profiler.log-plans true`, the rule plans are printed alongside the Rule Info.
 
@@ -191,9 +318,13 @@ Below the **Rule Info** table, you should see the **Plan Info** table.
 
 |  Sample Count  |  Iterator Open |   Iterator Advance  |  Plan Node  |                                  
 |----------------|----------------|---------------------|-------------|
-|   0            |    1           |             1       |             [?thing, rdf:type, :Class]    {    -->    ?thing }    TripleTableIterator|
+|   0            |    1           |             1       |             [?x, rdf:type, :Class]    {    -->    ?x }    TripleTableIterator|
+
+<br>
 
 ### Table columns explained
+
+<br>
 
 **Sample Count**
 
@@ -201,11 +332,15 @@ As in the **Rule Info** table, sample count gives an estimate for the computatio
 
 - Here, the rule was so fast that RDFox didn't have time to sample it before it completed.
 
+<br>
+
 **Iterator Open**
 
 This is the number of times the specific iterator attempted to find anything that matched the atom.
 
 - Here, it was just opened 1 time as there is at least 1 fact in the store that matches the atom.
+
+<br>
 
 **Iterator Advance**
 
@@ -213,8 +348,10 @@ This is the number of times the specific iterator tried to find another triple, 
 
 - Here, it was just advanced successfully 1 time as the there is only 1 fact in the store, so there was nothing next.
 
+<br>
+
 **Plan Node**
 
 Plan node shows specifically which atom was considered during this step, and the bindings that were affected. The braces **{ --> }** show which variables were bound as the iterator was opened, and which were bound when it advanced. The type of iterator is also shown but this is not helpful in practice most of the time.
 
-- Here, no variables were bound as the iterator was opened because this was the first step in the reasoning process and nothing had happened yet. Once the iterator had the fact, the variable `?thing` was bound to a value.
+- Here, no variables were bound as the iterator was opened because this was the first step in the reasoning process and nothing had happened yet. Once the iterator had the fact, the variable `?x` was bound to a value.

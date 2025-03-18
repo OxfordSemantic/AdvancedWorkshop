@@ -1,0 +1,7 @@
+@prefix : <https://rdfox.com/example/> .
+
+:Alice :knows :Bob ,
+    :Carlos ,
+    :Danielle ,
+    :Erin ,
+    :Frank .
