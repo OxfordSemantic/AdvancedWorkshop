@@ -1,0 +1,5 @@
+# 3.3 Property Paths
+
+[?person, a, :EndPoint] :-
+    [?person, a, :MemberOfAlicesNetwork] ,
+    NOT EXISTS ?person2 IN ( [?person, :knows, ?person2] ) .

@@ -1,0 +1,7 @@
+# 3.4 Transitive Closure
+
+SELECT ?upstreamAsset ?transitiveRelationship ?downstreamAsset
+WHERE {
+    VALUES ?transitiveRelationship {:hasTransitiveDependency}
+    ?upstreamAsset ?transitiveRelationship ?downstreamAsset
+} ORDER BY DESC(?upstreamAsset) ASC(?downstreamAsset)

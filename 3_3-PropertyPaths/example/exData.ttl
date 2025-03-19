@@ -1,0 +1,11 @@
+# 3.3 Property Paths
+
+@prefix : <https://rdfox.com/example#> .
+
+:Alice :knows :Bob .
+
+:Bob :knows :Carlos .
+
+:Carlos :knows :Diana .
+
+:Walter :knows :Wendy .

@@ -1,0 +1,5 @@
+# 3.4 Transitive Closure
+
+@prefix : <https://rdfox.com/example#> .
+
+:network :dependsOn :webServer .

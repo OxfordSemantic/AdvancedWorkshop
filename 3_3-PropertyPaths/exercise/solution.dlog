@@ -1,0 +1,14 @@
+# 3.3 Property Paths
+
+# Setting Alice as a starting point, with her immediate network all 1 step away from her
+[?person, a, :MemberOfAlicesNetwork],
+[?person, :hopsAwayFromAlice, 1] :-
+    [:Alice, :knows, ?person].
+
+# Recursively finding the network and their hops away from Alice
+[?person2, a, :MemberOfAlicesNetwork],
+[?person2, :hopsAwayFromAlice, ?newNumberOfHops] :-
+    [?person1, a, :MemberOfAlicesNetwork],
+    [?person1, :knows, ?person2],
+    [?person1, :hopsAwayFromAlice, ?previousNumberOfHops],
+    BIND (?previousNumberOfHops + 1 AS ?newNumberOfHops).

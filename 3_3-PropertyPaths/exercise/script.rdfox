@@ -1,0 +1,23 @@
+# 3.3 Property Paths
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 3_3-PropertyPaths/exercise/data.ttl
+
+# Import our rules
+import 3_3-PropertyPaths/incompleteRules.dlog
+
+# Add some visual padding
+echo 
+echo ============= How to Reach Alices Network Members =============
+echo
+
+# Run our query
+evaluate 3_3-PropertyPaths/exercise/query.rq
+
+# Add some visual padding
+echo 
+echo =====================================================
+echo

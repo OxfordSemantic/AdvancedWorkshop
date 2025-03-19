@@ -1,0 +1,8 @@
+# 3.4 Transitive Closure
+
+[?asset1, :hasTransitiveDependency, ?asset2] :-
+   [?asset1, :dependsOn, ?asset2] .
+
+[?asset1, :hasTransitiveDependency, ?asset3] :-
+   [?asset1, :hasTransitiveDependency, ?asset2],
+   [?asset2, :dependsOn, ?asset3] .

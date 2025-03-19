@@ -1,0 +1,20 @@
+# 3.4 Transitive Closure
+
+# Import our data
+import 3_4-TransitiveClosure/example/exData3.ttl
+
+# Import our rules
+import 3_4-TransitiveClosure/example/exRules3.dlog
+
+# Add some visual padding
+echo 
+echo ========= Cycles =========
+echo
+
+# Run our query
+evaluate 3_4-TransitiveClosure/example/exQuery3.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo

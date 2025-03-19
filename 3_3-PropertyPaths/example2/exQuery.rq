@@ -1,0 +1,6 @@
+# 3.3 Property Paths
+
+SELECT ?person
+WHERE {
+    ?person a :EndPoint .
+}

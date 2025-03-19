@@ -1,0 +1,6 @@
+# 3.3 Property Paths
+
+SELECT ?person ?networkMember
+WHERE {
+    ?person a ?networkMember .
+}

@@ -1,0 +1,16 @@
+# 3.4 Transitive Closure
+
+SELECT ?upstreamAsset ?noOfPrimaryDependencies ?downstreamAsset
+WHERE {
+    ?upstreamAsset :hasPrimaryDependency ?downstreamAsset
+
+    # Here we count the number of dependencies to return an ordered hierarchical list
+    {
+        SELECT ?upstreamAsset (COUNT(?downstreamAsset) AS ?noOfPrimaryDependencies)
+        WHERE{
+            ?upstreamAsset :hasPrimaryDependency ?downstreamAsset 
+        } GROUP BY ?upstreamAsset
+    }
+    
+} 
+ORDER BY DESC(?noOfPrimaryDependencies) DESC(?upstreamAsset) ASC(?downstreamAsset)

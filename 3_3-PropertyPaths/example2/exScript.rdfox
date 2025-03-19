@@ -1,0 +1,17 @@
+# 3.3 Property Paths
+
+# Import our rules
+import 3_3-PropertyPaths/example2/exRules.dlog
+
+# Add some visual padding
+echo 
+echo === End Points of Alices Network ===
+echo
+
+# Run our query
+evaluate 3_3-PropertyPaths/example2/exQuery.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo

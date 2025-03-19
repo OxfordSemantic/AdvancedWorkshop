@@ -1,0 +1,10 @@
+# 3.3 Property Paths
+
+SELECT ?hopsAwayFromAlice ?person
+WHERE {
+
+    ?person a :MemberOfAlicesNetwork ;
+        :hopsAwayFromAlice ?hopsAwayFromAlice .
+
+} ORDER BY ASC(?hopsAwayFromAlice)
+LIMIT 20

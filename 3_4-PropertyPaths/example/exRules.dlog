@@ -1,8 +1,0 @@
-# 3.4 Property Paths
-
-[?person, a, :MemberOfAlicesNetwork] :-
-    [:Alice, :knows, ?person].
-
-[?person2, a, :MemberOfAlicesNetwork] :-
-    [?person1, :knows, ?person2],
-    [?person1, a, :MemberOfAlicesNetwork].

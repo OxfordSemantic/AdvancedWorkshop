@@ -1,0 +1,4 @@
+# 3.4 Transitive Closure
+
+[?asset, a, :CyclicAsset] :-
+    [?asset, :hasTransitiveDependency, ?asset].
