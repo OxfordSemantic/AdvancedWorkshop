@@ -16,6 +16,6 @@
     ).
 
 [?tag, :mentionedInPercentageOfArticles, ?percentage] :-
-    [?blog, ___ , ?totalArticles], # Fill in the appropriate predicate
-    [?tag, ___ , ?articlesPerTag], # Fill in the appropriate predicate
-    BIND (ROUND(___) AS ?percentage ). # Complete the expression to calculate the percentage of articles that mention the tag
+    [?blog, :hasArticleCount, ?totalArticles],
+    [?tag, :hasMentionCount, ?articlesPerTag],
+    BIND (ROUND((?articlesPerTag/?totalArticles)*100) AS ?percentage ).

@@ -131,7 +131,7 @@ A node is created between two articles that share at least one tag, calculating 
 
 ## 👀 &nbsp; info rulestats
 
-Run `info rulestats` in the RDFox shell to show information about the rules in your data store.
+Run the command `info rulestats` in the RDFox shell to show information about the rules in your data store.
 
 So far, for this example you will see:
 
@@ -237,11 +237,23 @@ This time, notice that even though there are more rules imported, the rules only
 
 ### A problem of scale
 
-While 6 iterations rather than 4 is almost invisible, this problem scales poorly with the number of triples and complexity of the rule and can cause drastic rules slowdowns.
+While 6 iterations instead of 4 is almost invisible, this problem scales dangerously with the number of triples and complexity of the rule, causing drastic slowdowns.
 
 ## 🚀 &nbsp; Exercise
 
 Complete the rule `3_2-ComplexCalculations/incompleteRules.dlog` to calculate the percentage of articles that each tag appears in, rounded to the nearest percentage point:
+
+Here is a representative sample of the data in `3_2-ComplexCalculations/exercise/data.ttl`.
+
+```
+:blog :containsArticle :article001 ,
+                        :article002 .
+
+:article001 a :Article ;
+    :hasTag :AI ,
+        :SemanticReasoning ,
+        :Technology .
+```
 
 <br>
 <br>
@@ -277,6 +289,6 @@ Run `3_2-ComplexCalculations/exercise/script.rdfox` to see the results of this r
 
 ## 👏 &nbsp; Bonus exercise
 
-Write some rules that calculate the 
+Write some rules that use `EXP` to rank the exponential popularity of tags, normalising the distribution around the most popular tag.
 
 Write a query [in the console](http://localhost:12110/console/datastores/sparql?datastore=default) to validate you work.

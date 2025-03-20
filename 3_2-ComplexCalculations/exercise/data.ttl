@@ -2,7 +2,7 @@
 
 @prefix : <https://rdfox.com/example#> .
 
-:blogA :containsArticle :article001,
+:blog :containsArticle :article001,
         :article002,
         :article003,
         :article004,

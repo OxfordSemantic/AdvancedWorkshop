@@ -67,6 +67,8 @@ To demonstrate that, below is a rule that might naively be written to solve this
 
 When trying to import this rule with `import 3_5-ComplexRecursion/example/exRules.dlog`, RDFox will throw a stratification error.
 
+<br>
+
 ### You should see...
 
 Adding data in file '3_5-ComplexRecursion/example/exRules.dlog'.
@@ -76,12 +78,17 @@ An error occurred while executing the command:
         <https://rdfox.com/example#hasCost>[?compound, ?totalCost] :- AGGREGATE(<https://rdfox.com/example#contains>[?compound, ?thing], <https://rdfox.com/example#hasCost>[?thing, ?cost] ON ?compound BIND SUM(?cost) AS ?totalCost) .
     ========================================================================================================================
 
+<br>
+<br>
+
 ## 🔥 &nbsp; Solving the Bill of Materials
 
 To get around this, we must perform the aggregates in a deterministic, stratified way - we must state the order in which it will occur.
 
 One way to do this is to create an order for the parts and components, and use `BIND` to sum the running total from one part to the next. This way no recursive rules incorporate an aggregate.
 
+<br>
+<br>
 
 ## 🔬 &nbsp; Ordering entities for an arbitrary compound node
 
@@ -108,11 +115,12 @@ To order arbitrary nodes, we first have to find each node's relative position to
 
 Run `import 3_5-ComplexRecursion/example/exRules2.dlog` to see the results of these rules.
 
-### Progress so far...
-
 [View the results of these rules here](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FS%20%3FP%20%3FO%0AWHERE%20%7B%0A%20%20%20%20%3FS%20%3FP%20%3FO%0A%7D) and **change the layout to Breadth first**.
 
 **Use the bulb to highlight the facts that have been inferred.**
+
+<br>
+<br>
 
 ## 🔬 &nbsp; Finding the first and last members of the chain
 
@@ -140,6 +148,9 @@ Run `import 3_5-ComplexRecursion/example/exRules3.dlog` to see the results of th
 [View the results of these rules here](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FS%20%3FP%20%3FO%0AWHERE%20%7B%0A%20%20%20%20%3FS%20%3FP%20%3FO%0A%7D) and **change the layout to Breadth first**.
 
 Use the bulb to highlight the facts that have been inferred.
+
+<br>
+<br>
 
 ## 🔬 &nbsp; Calculating a running total
 
@@ -174,9 +185,15 @@ Run `import 3_5-ComplexRecursion/example/exRules4.dlog` to see the results of th
 
 Use the bulb to highlight the facts that have been inferred.
 
+<br>
+<br>
+
 ## 👏 &nbsp; Congratulations!
 
 You've solved the bill of materials - not a simple task!
+
+<br>
+<br>
 
 ## 🚀 &nbsp; Bonus: Explainability
 

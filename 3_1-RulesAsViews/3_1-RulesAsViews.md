@@ -169,6 +169,19 @@ Head to the **Explain** tab of the RDFox console to start visualising an explana
 <br>
 <br>
 
+## 🔍 &nbsp; RAG (Retrieval Augmented Generation) and LLMs
+
+Views have become increasingly relevant as the world has adopted LLMs for commercial use.
+
+LLMs hallucinate, making them a poor enterprise technology alone, but this can be combated by combining them with a database using a method called RAG.
+
+However, while using a standard database reduces hallucinations, it also drastically restricts the questions that the LLM can answer.
+
+Fortunately, rules and reasoning can be used to supercharge this setup, enabling the LLM to answer vastly more complex questions such as those involving counts, filters, negation, and all the other functionality in this workshop.
+
+<br>
+<br>
+
 ## 🚀 &nbsp; Exercise
 
 Complete the rule `3_1-RulesAsViews/incompleteRules.dlog` to create a view of product categories and the **average** units sold over all products in that category.
