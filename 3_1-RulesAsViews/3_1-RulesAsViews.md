@@ -117,7 +117,7 @@ To show this, we'll add a new product to our database:
 
 Ensuring that you have run the first script...
 
-now run `3_1-RulesAsViews/example/exScript2.rdfox` to add this new product data and re-run the query.
+now run `3_1-RulesAsViews/example2/exScript.rdfox` to add this new product data and re-run the query.
 
 <br>
 
