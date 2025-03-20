@@ -1,0 +1,5 @@
+# 3.4 Transitive Closure
+
+[?x, :dependsOn, ?z] :-
+    [?x, :dependsOn, ?y],
+    [?y, :dependsOn, ?z] .

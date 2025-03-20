@@ -4,7 +4,10 @@ Recursive rules can be incredible powerful, able to be taken even further than t
 
 Rules like these can be used to solve traditionally challenging data problems such as the bill of materials, where an aggregated cost must be calculated for hierarchical parts.
 
-## Example
+<br>
+<br>
+
+## 🔬 &nbsp; Example
 
 Critically for this example, we want to calculate the aggregated cost at each point in the tree, not just the highest level
 
@@ -27,11 +30,19 @@ First lets look at some example data of compound parts with associated prices:
 :part4 :hasCost 1 .
 ```
 
-## Run the script
+<br>
+<br>
+
+## ✅ &nbsp; Visualise the data
 
 It can help to visualise this problem, so run the command `3_5-ComplexRecursion/example/exScript.rdfox` to import the data...
 
 then click here to [explore the data](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FS%20%3FP%20%3FO%0AWHERE%20%7B%0A%20%20%20%20%3FS%20%3FP%20%3FO%0A%7D) and change the layout to **Breadth First**.
+
+<br>
+<br>
+
+## 🔍 &nbsp; Why is this a problem?
 
 The challenge here is that we wish to calculate the aggregate cost at each compound point - both for the collections of parts, and for the collection of sub-compounds.
 
@@ -49,6 +60,11 @@ To demonstrate that, below is a rule that might naively be written to solve this
     ).
 ```
 
+<br>
+<br>
+
+## 🚫 &nbsp; Check the error
+
 When trying to import this rule with `import 3_5-ComplexRecursion/example/exRules.dlog`, RDFox will throw a stratification error.
 
 ### You should see...
@@ -60,14 +76,14 @@ An error occurred while executing the command:
         <https://rdfox.com/example#hasCost>[?compound, ?totalCost] :- AGGREGATE(<https://rdfox.com/example#contains>[?compound, ?thing], <https://rdfox.com/example#hasCost>[?thing, ?cost] ON ?compound BIND SUM(?cost) AS ?totalCost) .
     ========================================================================================================================
 
-## Solving the Bill of Materials
+## 🔥 &nbsp; Solving the Bill of Materials
 
 To get around this, we must perform the aggregates in a deterministic, stratified way - we must state the order in which it will occur.
 
 One way to do this is to create an order for the parts and components, and use `BIND` to sum the running total from one part to the next. This way no recursive rules incorporate an aggregate.
 
 
-## Ordering entities for an arbitrary compound node
+## 🔬 &nbsp; Ordering entities for an arbitrary compound node
 
 To order arbitrary nodes, we first have to find each node's relative position to one another (whether it is before or after), then give them a specific position within the list by putting node next to one another where there is no other node in between:
 
@@ -85,7 +101,10 @@ To order arbitrary nodes, we first have to find each node's relative position to
     ).
 ```
 
-## Import the rules
+<br>
+<br>
+
+## ✅ &nbsp; Check the results
 
 Run `import 3_5-ComplexRecursion/example/exRules2.dlog` to see the results of these rules.
 
@@ -95,7 +114,7 @@ Run `import 3_5-ComplexRecursion/example/exRules2.dlog` to see the results of th
 
 **Use the bulb to highlight the facts that have been inferred.**
 
-## Finding the first and last members of the chain
+## 🔬 &nbsp; Finding the first and last members of the chain
 
 Next we need to identify the first and last members of the chains we've created:
 
@@ -111,17 +130,18 @@ Next we need to identify the first and last members of the chains we've created:
 
 It may not be immediately clear why we do this, but they will both be helpful in the final step.
 
-## Import the rules
+<br>
+<br>
+
+## ✅ &nbsp; Check the results
 
 Run `import 3_5-ComplexRecursion/example/exRules3.dlog` to see the results of these rules.
-
-### Progress so far...
 
 [View the results of these rules here](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FS%20%3FP%20%3FO%0AWHERE%20%7B%0A%20%20%20%20%3FS%20%3FP%20%3FO%0A%7D) and **change the layout to Breadth first**.
 
 Use the bulb to highlight the facts that have been inferred.
 
-## Calculating a running total
+## 🔬 &nbsp; Calculating a running total
 
 Now that all the pieces are in place, we can recursively calculate a running total.
 
@@ -143,33 +163,25 @@ Now that all the pieces are in place, we can recursively calculate a running tot
 
 The running count begins at the first thing in the compound and is passed up to the compound node once it has reached the last thing.
 
-## Import the rules
+<br>
+<br>
+
+## ✅ &nbsp; Check the results
 
 Run `import 3_5-ComplexRecursion/example/exRules4.dlog` to see the results of these rules.
-
-### Check the results!
 
 [View the results of these rules here](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FS%20%3FP%20%3FO%0AWHERE%20%7B%0A%20%20%20%20%3FS%20%3FP%20%3FO%0A%7D) and **change the layout to Breadth first**.
 
 Use the bulb to highlight the facts that have been inferred.
 
-## Congratulations!
+## 👏 &nbsp; Congratulations!
 
 You've solved the bill of materials - not a simple task!
 
-## Explainability
+## 🚀 &nbsp; Bonus: Explainability
 
 As complex as the emerging results may be, rules simply offer a series of logical inferences, and this means that every result is explainable.
 
 We saw simple example of this in 3.1, but this proof tree is significantly more intricate.
 
-## Exercise
-
-After the hardest concept to cover, your final exercise is a simple one.
-
-Use the [Explore](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3FS%20%3FP%20%3FO%0AWHERE%20%7B%0A%20%20%20%20%3FS%20%3FP%20%3FO%0A%7D) and **Explain** tools to show why the cost of `compoundA` is what is it.
-
-### Check the results
-
-[Click here](http://localhost:12110/console/datastores/explain?datastore=default&fact=%3AhasCost%5B%3AcompoundA%2C%2013%5D) see the explanation.
-
+[Click here](http://localhost:12110/console/datastores/explain?datastore=default&fact=%3AhasCost%5B%3AcompoundA%2C%2013%5D) see the explanation of the cost of `compoundA`.

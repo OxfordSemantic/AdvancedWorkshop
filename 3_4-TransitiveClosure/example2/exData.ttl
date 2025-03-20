@@ -1,0 +1,29 @@
+# 3.4 Transitive Closure
+
+ @prefix : <https://rdfox.com/example/> .
+
+:a :dependsOn :b .
+:b :dependsOn :c .
+:c :dependsOn :d .
+:d :dependsOn :e .
+:e :dependsOn :f .
+:f :dependsOn :g .
+:g :dependsOn :h .
+:h :dependsOn :i .
+:i :dependsOn :j .
+:j :dependsOn :k .
+:k :dependsOn :l .
+:l :dependsOn :m .
+:m :dependsOn :n .
+:n :dependsOn :o .
+:o :dependsOn :p .
+:p :dependsOn :q .
+:q :dependsOn :r .
+:r :dependsOn :s .
+:s :dependsOn :t .
+:t :dependsOn :u .
+:u :dependsOn :v .
+:v :dependsOn :w .
+:w :dependsOn :x .
+:x :dependsOn :y .
+:y :dependsOn :z .

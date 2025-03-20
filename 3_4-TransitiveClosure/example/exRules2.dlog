@@ -1,4 +1,0 @@
-# 3.4 Transitive Closure
-[?asset1, a, :TopLevelAsset] :-
-    [?asset1, :hasTransitiveDependency, ?asset2] ,
-    NOT EXISTS ?asset0 IN ( [?asset0, :hasTransitiveDependency, ?asset1] ) .

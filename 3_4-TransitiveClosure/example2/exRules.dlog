@@ -1,0 +1,8 @@
+# 3.4 Transitive Closure
+
+[?x, :hasTransitiveDependency, ?y] :-
+    [?x, :dependsOn, ?y] .
+
+[?x, :hasTransitiveDependency, ?z] :-
+    [?x, :hasTransitiveDependency, ?y] ,
+    [?y, :dependsOn, ?z] .

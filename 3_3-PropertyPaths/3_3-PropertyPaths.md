@@ -19,7 +19,7 @@ They can be very helpful in practice as they enable queries for paths of arbitra
 
 Rules can do this vastly more efficiently and are able to encode more complex patterns that constrain the hops between chain links.
 
-To do this, we need to apply a technique called recursion.
+To do this, we need to apply a technique called Recursion.
 
 <br>
 <br>

@@ -47,7 +47,7 @@ To model dependencies and availability, to test failure modes and plan maintenan
 
 ## 🔬 &nbsp; Example
 
-![Transitive Closure](../images/transitiveClosure.png)
+![Transitive Closure](../images/transitiveClosureA.png)
 
 The following rules recursively traverse a network of IT assets to determine each of their direct and indirect dependencies.
 
@@ -100,78 +100,90 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 
 ## 🔍 &nbsp; Efficient transitivity rules
 
-There is more than one way to write recursive rules that achieve the same result.
+You might be wondering why we introduce the new `:hasTransitiveDependency` relationship, why not just make `:dependsOn` a transitive property with a single rule?
 
-As we have above, we can either anchor the recursive rule with an existing relationship:
+Here are two rule sets that, from a practical perspective, achieve the same end result - closing the transitive dependencies in this system.
+
+One uses an anchor:
 
 ```
-   [?x, :dependsTransitively, ?y] :-
+   [?x, :hasTransitiveDependency, ?y] :-
       [?x, :dependsOn, ?y] .
    
-   [?x, :dependsTransitively, ?z] :-
-      [?x, :dependsTransitively, ?y] ,
+   [?x, :hasTransitiveDependency, ?z] :-
+      [?x, :hasTransitiveDependency, ?y] ,
       [?y, :dependsOn, ?z] .
 ```
 
-Or, as is often instinctive, just create a purely transitive property that relies only on itself:
+The other uses the existing relationship
 
 ```
-[?x, :dependsTransitively, ?y] :-
-    [?x, :dependsOn, ?y] .
-
-[?x, :dependsTransitively, ?z] :-
-    [?x, :dependsTransitively, ?y],
-    [?y, :dependsTransitively, ?z] .
+[?x, :dependsOn, ?z] :-
+    [?x, :dependsOn, ?y],
+    [?y, :dependsOn, ?z] .
 ```
 
-These rule will end up considering many more facts than the previous one, making it significantly less efficient.
+This rule will end up considering many more facts than the previous one, making it significantly less efficient.
 
-We'll use this simple data to show how the rule sets perform differently:
+The inefficiency of this form of rule scales with data size, so we'll use this larger but simplified dataset to show the differences:
 
 ```
 :a :dependsOn :b .
 :b :dependsOn :c .
-:c :dependsOn :d .
-:d :dependsOn :e .
-:e :dependsOn :f .
-:f :dependsOn :g .
-:g :dependsOn :h .
-:h :dependsOn :i .
-:i :dependsOn :j .
-:j :dependsOn :k .
+...
+:x :dependsOn :y .
+:y :dependsOn :z .
 ```
 
 ## 👀 &nbsp; Run the profiler
 
-Run `3_4-TransitiveClosure/example/exScript4.rdfox` to see the performance of the anchored rule set...
+Run `3_4-TransitiveClosure/example2/exScript.rdfox` to see the performance of the **anchored** rule set...
 
 ### You should see...
 
 Rule Info
 |   #  |    Reasoning Phase   |   Sample Count  |  Rule Body Match Attempts |   Iterator Operations  |  Rule Body Matches  |    Fresh Facts Produced    |Rule of Head Atom|                               
 |------|----------------------|-----------------|---------------------------|------------------------|---------------------|-------------------|------------------------------|
-|   1|    Addition|      0|             55|             310|           45|            45|          (0) :dependsTransitively[?x, ?z] :- :dependsTransitively[?x, ?y], :dependsOn[?y, ?z] .|
-|   2|    RuleAdd|      0|             1|             11|           10|            10|          (0) :dependsTransitively[?x, ?y] :- :dependsOn[?x, ?y] .|
-|   3|    RuleAdd|      0|             1|             2|           0|            0|          (0) :dependsTransitively[?x, ?z] :- :dependsTransitively[?x, ?y], :dependsOn[?y, ?z] .|
+|   1|    Addition|      0|             325|             1.9k|           300|            300|          (0) :hasTransitiveDependency[?x, ?z] :- :hasTransitiveDependency[?x, ?y], :dependsOn[?y, ?z] .|
+|   2|    RuleAdd|      0|             1|             26|           25|            25|          (0) :hasTransitiveDependency[?x, ?y] :- :dependsOn[?x, ?y] .|
+|   3|    RuleAdd|      0|             1|             2|           0|            0|          (0) :hasTransitiveDependency[?x, ?z] :- :hasTransitiveDependency[?x, ?y], :dependsOn[?y, ?z] .|
 
-Notice that the reasoning profiles undergoes 310 iterator operations to import 45 fresh facts in the **Addition** phase (the only significantly different phase).
+Notice that the reasoning profiles undergoes 1.9k iterator operations to import 300 fresh facts.
+
+The 25 fresh facts introduced by the ruleAdd phase are the simple proxy relationships `:hasTransitiveDependency` in place of the existing `:dependsOn` relationship.
 
 ## 👀 &nbsp; Run the profiler
 
-Run `3_4-TransitiveClosure/example/exScript5.rdfox` to see the performance of the anchored rule set...
+Now run `3_4-TransitiveClosure/example3/exScript.rdfox` to see the performance of the **un-anchored** rule set...
 
 ### You should see...
 
 Rule Info
 |   #  |    Reasoning Phase   |   Sample Count  |  Rule Body Match Attempts |   Iterator Operations  |  Rule Body Matches  |    Fresh Facts Produced    |Rule of Head Atom|                               
 |------|----------------------|-----------------|---------------------------|------------------------|---------------------|-------------------|------------------------------|
-|   1|    Addition|      0|             90|             672|           156|            36|          (0) :dependsOn[?x, ?z] :- :dependsOn[?x, ?y], :dependsOn[?y, ?z] .|
-|   1|    RuleAdd|      0|             1|             40|           9|            9|          (0) :dependsOn[?x, ?z] :- :dependsOn[?x, ?y], :dependsOn[?y, ?z] .|
+|   1|    Addition|      0|             600|             7.8k|           2.5k|            276|          (0) :dependsOn[?x, ?z] :- :dependsOn[?x, ?y], :dependsOn[?y, ?z] .|
+|   2|    RuleAdd|      0|             1|             100|           24|            24|          (0) :dependsOn[?x, ?z] :- :dependsOn[?x, ?y], :dependsOn[?y, ?z] .|
 
+During both phases, these rules import 276 + 24 fresh facts (totaling the same 300 as before), without creating the 25 proxy relationships.
 
-This time, notice that even though fewer facts were introduced (36 as the previous rule created some additional connections with the new relationship), the iterator when though more than double the operations at 672!
+Despite inferring 25 fewer total facts, notice that the iterator when though more than 4 times the operations at 7.8k!
 
-We can see why if we consider all of the ways to create infer the same facts - with the second rule set there will be large amounts of repetition.
+### Why do these rule sets perform differently?
+
+The un-anchored set derives the same facts in many different ways.
+
+![Transitive Closure](../images/transitiveClosureB.png)
+
+If we take a small sample as an example, by the time this recursive rule set is inferring `:a :dependsOn :d`, there are two supporting patters that must be considered:
+1. `:a :dependsOn :b . :b :dependsOn :d .`
+2. `:a :dependsOn :c . :c :dependsOn :d .`
+
+This inefficiency scales with the size of the dataset and the complexity of the recursive conditions and quickly becomes impractical.
+
+Compare this the the anchored reasoning where there us only one way to derive `:a :hasTransitiveDependency :d`:
+1. `:a :hasTransitiveDependency :c . :c :dependsOn :d .`
+
+![Transitive Closure](../images/transitiveClosureC.png)
 
 <br>
 <br>
@@ -182,16 +194,25 @@ Recursion can create cyclic relationships, either intentionally or otherwise - i
 
 Cyclic relationships that have been created through recursion are very simple to detect - we can simply look for an entity that belongs to its own chain.
 
-The following rule identifies assets that belong to a cycle.
+In addition to original recursive rule set, the following rule identifies assets that belong to a cycle.
 
 ```
 [?asset, a, :CyclicAsset] :-
     [?asset, :hasTransitiveDependency, ?asset].
 ```
 
-To create a cycle, we must also add the following data.
+To create a cycle, we must also add the following data to our existing dataset.
 
 ```
+# Existing data
+
+:webServer :dependsOn :machine .
+
+:machine :dependsOn :network ,
+                    :powerSupply .
+
+# New data
+
 :network :dependsOn :webServer .
 ```
 
@@ -200,9 +221,7 @@ To create a cycle, we must also add the following data.
 
 ## ✅ &nbsp; Check the results
 
-Ensuring you have run the first script...
-
-now run `3_4-TransitiveClosure/example/exScript3.rdfox` to see the results of this rule.
+Now run `3_4-TransitiveClosure/example4/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -296,6 +315,4 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 
 ## 👏 &nbsp; Bonus exercise
 
-Write a set of recursive rules that 
-
-Write a query [in the console](http://localhost:12110/console/datastores/sparql?datastore=default) to validate you work.
+Work through chapter **3.5 Complex Recursion** as it highlights an even more advanced recursive reasoning technique involving calculations that carefully replicate **Aggregates** in recursive situations.

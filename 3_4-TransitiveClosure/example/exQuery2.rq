@@ -1,6 +1,0 @@
-# 3.4 Transitive Closure
-
-SELECT ?topLevelAsset
-WHERE {
-    ?topLevelAsset a :TopLevelAsset
-}
