@@ -8,22 +8,22 @@ To run RDFox:
 
 `<rdfox_filepath> sandbox . start`
 
-If you're not sure how, [follow the video guide here.](https://youtu.be/g3WdA8AE0OI?si=rPNgn8uR4IeyCWLJ)
+If you're not sure how, [follow the video guide here.](https://youtu.be/g3WdA8AE0OI?si=U1C0Z6TLE32HnVSS)
 
 ### MacOS & Linux
 
 E.g.
-`./Users/Thomas/Desktop/RDFox/RDFox-macOS-arm64-7.2b/RDFox sandbox . start`
+`./Users/Thomas/Desktop/RDFox/RDFox-macOS-arm64-7.3c/RDFox sandbox . start`
 
 ### Windows (PowerShell)
 
 E.g.
-`& /Users/Thomas/Desktop/RDFox/RDFox-macOS-arm64-7.2b/RDFox sandbox . start`
+`& /Users/Thomas/Desktop/RDFox/RDFox-win64-x86_64-7.3c/RDFox sandbox . start`
 
 ### Windows (CMD)
 
 E.g.
-`Users/Thomas/Desktop/RDFox/RDFox-macOS-arm64-7.2b/RDFox.exe sandbox . start`
+`Users/Thomas/Desktop/RDFox/RDFox-win64-x86_64-7.3c/RDFox.exe sandbox . start`
 
 ## Sanity check
 
@@ -50,3 +50,4 @@ WARNING: The RDFox endpoint is running with no transport layer security (TLS). T
 A new data store 'default' was created and initialized.
 
 ----------------------------------------
+

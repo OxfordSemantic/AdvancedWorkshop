@@ -32,9 +32,9 @@ Contained within each notebook is:
 
 3. Copy and past the commands given in the exercises into the active RDFox terminal.
 
-4. Some files called `incompleteRules.dlog` are missing parts and require you to complete them to continue - they are clearly marked along the way.
+4. Some files called `incompleteRules.dlog` contain missing parts (using `___` as a placeholder) and require you to complete them to continue - they are clearly marked along the way.
 
-5. If you get stuck, take a look at the `solution.dlog` file in the corresponding`exercise` folder.
+5. If you get stuck, take a look at the `solution.dlog` file in the corresponding `exercise` folder.
 
 ## Useful tips & tricks
 
@@ -49,3 +49,5 @@ Contained within each notebook is:
 2. [Request a free trial here](https://www.oxfordsemantic.tech/free-trial)
 
 3. [See the RDFox Docs here](https://docs.oxfordsemantic.tech)
+
+4. [Join the RDFox Community](https://www.oxfordsemantic.tech/community) to ask questions and discuss your project with RDFox experts

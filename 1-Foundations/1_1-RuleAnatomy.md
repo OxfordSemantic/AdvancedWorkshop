@@ -10,15 +10,13 @@ Rules are comprised of two main parts, the head and the body, separate by the in
 
 Both the head and body can both be made up of several **atoms** - triple (or quad) patterns that the rule is looking to match.
 
-These patterns are described by variables `?x` and data `:myProperty`.
+These patterns are described by variables `?x` and data `:myData`.
 
 ```
-example_rule = """
-    [?node, a, :NewClass] ,
-    [?node, :newRelationship, :newNode] :-
-        [?node, a, :Class] ,
-        [?node, :hasProp, ?property] .
-"""
+[?node, a, :NewClass] ,
+[?node, :newRelationship, :newNode] :-
+    [?node, a, :Class] ,
+    [?node, :hasProp, ?property] .
 ```
 
 ### Syntax requirements

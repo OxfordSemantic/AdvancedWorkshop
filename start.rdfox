@@ -4,5 +4,5 @@ set output out
 # Start the endpoint (to enable API calls).
 endpoint start
 
-# Create a data store called 'default' - this will be the default graph.
+# Create a data store called 'default'.
 dstore create default
