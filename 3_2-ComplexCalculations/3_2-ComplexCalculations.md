@@ -194,7 +194,7 @@ We'll use this simple data to show how the rule sets perform differently:
 
 ## 👀 &nbsp; Run the profiler
 
-Firstly, run `3_2-ComplexCalculations/example/exScript2.rdfox` to see the performance of the combined rule...
+Firstly, run `3_2-ComplexCalculations/example2/exScript.rdfox` to see the performance of the combined rule...
 
 <br>
 
@@ -213,24 +213,16 @@ Notice that the reasoning profiles undergoes 6 iterator operations. This is beca
 
 ## 👀 &nbsp; Run the profiler
 
-Secondly, run `3_2-ComplexCalculations/example/exScript3.rdfox` to see the performance of the two separate rules.
+Secondly, run `3_2-ComplexCalculations/example3/exScript.rdfox` to see the performance of the two separate rules.
 
 <br>
 
 ### You should see...
 
-1
-
 Rule Info
 |   #  |    Reasoning Phase   |   Sample Count  |  Rule Body Match Attempts |   Iterator Operations  |  Rule Body Matches  |    Fresh Facts Produced    |Rule of Head Atom|                               
 |------|----------------------|-----------------|---------------------------|------------------------|---------------------|-------------------|------------------------------|
 |   1|    RuleAdd|      0|             1|             2|           1|            1|          (0) :newClass[?x] :- :Class[?x] .|
-
-2
-
-Rule Info
-|   #  |    Reasoning Phase   |   Sample Count  |  Rule Body Match Attempts |   Iterator Operations  |  Rule Body Matches  |    Fresh Facts Produced    |Rule of Head Atom|                               
-|------|----------------------|-----------------|---------------------------|------------------------|---------------------|-------------------|------------------------------|
 |   1|    RuleAdd|      0|             1|             2|           1|            1|          (0) :hasNewProp[?a, "new prop"] :- :hasProp[?a, "prop"] .|
 
 This time, notice that even though there are more rules imported, the rules only require 2 iterator operations each, for a total of 4.
@@ -276,13 +268,13 @@ Run `3_2-ComplexCalculations/exercise/script.rdfox` to see the results of this r
 === Percentage of articles mentioning tags ===
 |?percentage|?tag|
 |-----------|-------------|
-|16.0|	:SemanticReasoning|
-|14.0|	:Technology|
-|12.0|	:KnowledgeRepresentation|
-|10.0|	:RDFox|
-|8.0|	:Datalog|
-|7.0|	:LLMs|
-|7.0|	:AI|
+|75.0|	:SemanticReasoning|
+|63.0|	:Technology|
+|56.0|	:KnowledgeRepresentation|
+|44.0|	:RDFox|
+|38.0|	:Datalog|
+|30.0|	:LLMs|
+|30.0|	:AI|
 
 <br>
 <br>

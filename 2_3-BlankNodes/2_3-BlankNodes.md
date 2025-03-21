@@ -157,7 +157,7 @@ now run `2_3-BlankNodes/example2/exScript.rdfox` to see the results of this rule
 
 ### You should see...
 
-================= Average Bath Temperature Estimate Over Time =================
+========================= SKOLEM reversed =========================
 |?SKOLEMNode|	?originalComponent|
 |----------------------------------------------|----|
 |_:_.05QmF0aCBTdW1tYXJ5AA.16FAAAAAAAAAAAAAAAAAAAAA|	20.0|
@@ -221,6 +221,10 @@ Here is a representative sample of the data in `2_3-BlankNodes/exercise/data.ttl
 <br>
 
 ## ✅ &nbsp; Check your answers
+
+Run the script below to verify the results.
+
+`2_3-BlankNodes/exercise/script.rdfox`
 
 <br>
 

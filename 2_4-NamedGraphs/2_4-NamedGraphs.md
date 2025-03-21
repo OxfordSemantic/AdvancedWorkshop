@@ -15,7 +15,7 @@ Named Graphs are the solution!
 
 Named Graphs offer a way to partition your data and are commonly used to group semantically similar data.
 
-Data in named graphs is stored as quads, with the fourth entry representing the named graph.
+Data in named graphs are stored as quads, with the fourth entry representing the named graph.
 
 As such, we don't need to 'create' named graphs, they exist by being referenced in a quad.
 
@@ -119,8 +119,6 @@ A slightly different syntax is used when writing queries, declaring the Named Gr
 
 Rules and queries can reference several named graphs in both the head and body simultaneously.
 
-NB. Using a variable graph will not include the default graph as data stored there are triples, not quads, although this behavior can be changed by setting the [default-graph-name](https://docs.oxfordsemantic.tech/data-stores.html#default-graph-name-parameter) parameter on data store creation.
-
 <br>
 <br>
 
@@ -171,7 +169,7 @@ Run `2_4-NamedGraphs/exercise/script.rdfox` to see the results of this rule.
 
 ### Visualise the results
 
-Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3Fpersonnel%20%3Flimit%20%3Ftrade%20%3FtradeValue%0AWHERE%20%7B%0A%20%20%20%20GRAPH%20%3APersonnelInfo%20%7B%0A%20%20%20%20%20%20%20%20%3Fpersonnel%20%3AinBreachOfRegulation%20true%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3AhasMaxTradeRestriction%20%3Flimit.%0A%20%20%20%20%7D%20.%0A%0A%20%20%20%20%3Ftrade%20%3AexecutedBy%20%3Fpersonnel%20%3B%0A%20%20%20%20%20%20%20%20%3AhasValue%20%3FtradeValue%20%3B%0A%20%20%20%20%20%20%20%20a%20%3ABeachOfRegulation%20.%0A%7D).
+Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3Fpersonnel%20%3Flimit%20%3Ftrade%20%3FtradeValue%0AWHERE%20%7B%0A%20%20%20%20GRAPH%20%3APersonnelInfo%20%7B%0A%20%20%20%20%20%20%20%20%3Fpersonnel%20%3AinBreachOfRegulation%20true%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3AhasMaxTradeRestriction%20%3Flimit.%0A%20%20%20%20%7D%20.%0A%0A%20%20%20%20%3Ftrade%20%3AexecutedBy%20%3Fpersonnel%20%3B%0A%20%20%20%20%20%20%20%20%3AhasValue%20%3FtradeValue%20%3B%0A%20%20%20%20%20%20%20%20a%20%3ABreachOfRegulation%20.%0A%7D).
 
 <br>
 <br>

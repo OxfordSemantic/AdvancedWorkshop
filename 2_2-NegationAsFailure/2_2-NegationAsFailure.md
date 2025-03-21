@@ -168,7 +168,7 @@ Negation remains consistent even when new data means old facts are no longer tru
 
 For example, if vehicle3 detects a hazard, the fact `:vehicle3 :mustStop false` will be retracted.
 
-Add the following data to show this in action.
+In the following script we'll add this data to show Incremental Retraction in action:
 
 ```
 :vehicle3 :detectsHazard :stoppedCar .
@@ -196,7 +196,7 @@ This is because `:vehicle3 :mustStop false` has now been retracted - it no longe
 <br>
 <br>
 
-## 🔍 &nbsp; Stratification and reasoning cycles
+## 🔍 &nbsp; Reasoning cycles
 
 With Negation and Aggregation, it is possible to create infinite reasoning cycles.
 
@@ -223,7 +223,7 @@ RDFox will reject any rule that behaves like this.
 
 ## 🚫 &nbsp; Check the error
 
-Run `2_2-NegationAsFailure/example4/exScript.rdfox` to see the stratification error created by this rule.
+Run `2_2-NegationAsFailure/example4/exScript.rdfox` to see the error created by this rule.
 
 <br>
 
@@ -237,7 +237,7 @@ An error occurred while executing the command:
     ========================================================================================================================
 ```
 
-## ℹ️ &nbsp; Stratification Conditions
+## ℹ️ &nbsp; Stratification Errors and conditions
 
 This is known as a **stratification error**.
 
@@ -267,19 +267,19 @@ When cycles don't change facts, like the examples below, they **can** be stratif
         BIND (?count + 1 AS ?newCount) .
     ```
     ![Stratification](../images/stratificationB.png)
-    \* This is a fabricated view representing the steps taken by the reasoning engine but cannot actually be visualised as the reasoning must first terminal, which an infinite rule would not do.
+    \* This is a fabricated view representing the steps taken by the reasoning engine but cannot actually be visualised as the reasoning must first terminate, which an infinite rule would not do.
 
 <br>
 
 ### What to do when encountering a stratification error?
 
-RDFox will tell you which rule caused a stratification error to occur.
+RDFox will tell you which rule set caused a stratification error to occur.
 
-This rule will include either:
+This rule set will include either:
 
-1. A negation atom in the body
+1. A rule with a negation atom in the body
 
-2. An aggregate atom in the body
+2. A rule with an aggregate atom in the body
 
 One of these 'special relationships' will be creating a cycle that you must remove.
 

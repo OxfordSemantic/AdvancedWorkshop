@@ -98,7 +98,7 @@ Run `3_3-PropertyPaths/example/exScript.rdfox` to see the results of this rule.
 
 ### You should see...
 
-=== Members of Alice's wider Network ===
+=== Members of Alices wider Network ===
 |?person|	?networkMember|
 |---|---|
 |:Diana|	:MemberOfAlicesNetwork|
@@ -174,6 +174,8 @@ Here is a representative sample of the data in `3_3-PropertyPaths/exercise/data.
 
 Remember, as we are using cyclic logic (by the nature of recursive rules), we cannot use aggregates - we must make our recursive calculations with BIND.
 
+Be careful when writing rules like this, as if the data is cyclic, RDFox will end up in an infinite loop, forever adding one more!
+
 <br>
 <br>
 
@@ -185,7 +187,7 @@ Run `3_3-PropertyPaths/exercise/script.rdfox` to see the results of this rule.
 
 ### You should see...
 
-=== How to Reach Alice's Network Members ===
+=== How to Reach Alices Network Members ===
 |?hopsAwayFromAlice|?person|
 |-------------|-------------|
 |1| :Melissa| 

@@ -4,4 +4,4 @@ SELECT ?percentage ?tag
 WHERE {
     ?tag :mentionedInPercentageOfArticles ?percentage .
     FILTER (?percentage > 1)
-} ORDER BY DESC (?percentage)
+} ORDER BY DESC (?percentage) LIMIT 7

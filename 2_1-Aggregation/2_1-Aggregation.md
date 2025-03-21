@@ -19,11 +19,11 @@ Aggregates calculate sums, averages and other functions over a set of results.
 
 Aggregate functions such as SUM and COUNT take a sample of data and use it to perform a calculation.
 
-The aggregate can be (and often are) performed for each member of a group, resulting in the SUM or COUNT per member.
+The aggregate are often performed for each member of a group, resulting in the total SUM or COUNT calculated per member.
 
 As well as these widely applicable aggregates, RDFox also offers more specialized functions like COUNT_MAX(V) and MAX_ARGMIN(A,V).
 
-See the [full list shown here](https://docs.oxfordsemantic.tech/querying.html#aggregate-functions).
+See the more about [the available Datalog aggregates here](https://docs.oxfordsemantic.tech/reasoning.html#aggregate-syntax).
 
 <br>
 <br>

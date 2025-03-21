@@ -11,7 +11,7 @@ Rules like these can be used to solve traditionally challenging data problems su
 
 Critically for this example, we want to calculate the aggregated cost at each point in the tree, not just the highest level
 
-This is the most conceptually complex exercise in this workshop, so it's important to work up one layer at a time.
+This is the most conceptually complex example in this workshop, so it's important to work up one layer at a time.
 
 First lets look at some example data of compound parts with associated prices:
 

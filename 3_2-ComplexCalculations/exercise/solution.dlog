@@ -2,8 +2,7 @@
 
 [?blog, :hasArticleCount, ?totalArticles] :-
     AGGREGATE(
-        [?blog, :containsArticle, ?article],
-        [?article, :hasTag, ?tag]
+        [?blog, :containsArticle, ?article]
         ON ?blog
         BIND COUNT(?article) AS ?totalArticles
     ).
