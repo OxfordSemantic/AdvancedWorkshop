@@ -202,3 +202,5 @@ As complex as the emerging results may be, rules simply offer a series of logica
 We saw simple example of this in 3.1, but this proof tree is significantly more intricate.
 
 [Click here](http://localhost:12110/console/datastores/explain?datastore=default&fact=%3AhasCost%5B%3AcompoundA%2C%2013%5D) see the explanation of the cost of `compoundA`.
+
+Continue the discussion with others in the `RDFox-Workshop` channel of our [Slack Community](https://join.slack.com/t/rdfox/shared_invite/zt-1z7dnm2ad-WoKRf~~3CynB_KTi5X0RHg)!

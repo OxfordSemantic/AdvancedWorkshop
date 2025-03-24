@@ -318,3 +318,5 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 ## 👏 &nbsp; Bonus exercise
 
 Work through chapter **3.5 Complex Recursion** as it highlights an even more advanced recursive reasoning technique involving calculations that carefully replicate **Aggregates** in recursive situations.
+
+Discuss your solutions with others in the `RDFox-Workshop` channel of our [Slack Community](https://join.slack.com/t/rdfox/shared_invite/zt-1z7dnm2ad-WoKRf~~3CynB_KTi5X0RHg)!

@@ -229,3 +229,5 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 Add to this rule set to find the route to each end point in Alice's network by using SKOLEM to create a node to represent the entire path - eg. who do we have to contact to get from Alice to Clifford and in what order?
 
 Write a query [in the console](http://localhost:12110/console/datastores/sparql?datastore=default) to validate you work.
+
+Discuss your solutions with others in the `RDFox-Workshop` channel of our [Slack Community](https://join.slack.com/t/rdfox/shared_invite/zt-1z7dnm2ad-WoKRf~~3CynB_KTi5X0RHg)!
