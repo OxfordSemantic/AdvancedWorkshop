@@ -48,7 +48,7 @@ To sum transactional amounts, isolate extreme values and outliers, validate comp
 
 ### Construction & Manufacturing
 
-To surface and compare high-level compound properties, create a bill of materials, etc.
+To surface and compare high-level compound properties, formulate a cost sheet, etc.
 
 <br>
 <br>

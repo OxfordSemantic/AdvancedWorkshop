@@ -1,0 +1,4 @@
+[?node, a, :NewClass] ,
+[?node, :newRelationship, :newNode] :-
+    ___ , # Complete the body atom to match the rule in 1.1. This is just an example, you don't have to do this one!
+    [?node, :hasProp, "property"] .

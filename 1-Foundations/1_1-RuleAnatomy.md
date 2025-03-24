@@ -16,7 +16,7 @@ These patterns are described by variables `?x` and data `:myData`.
 [?node, a, :NewClass] ,
 [?node, :newRelationship, :newNode] :-
     [?node, a, :Class] ,
-    [?node, :hasProp, ?property] .
+    [?node, :hasProp, "property"] .
 ```
 
 ### Syntax requirements
