@@ -4,7 +4,7 @@ To run RDFox:
 
 1. Open a terminal in VS Code and navigate to the **Advanced Reasoning Workshop** working directory.
 
-2. Use the following command go start RDFox using the **start.rdfox** script (see 1.2 for details). The command you need will vary slightly depending on your system OS and CLI.
+2. Use the following command go start RDFox using the **start.rdfox** script (see 1.2 for details). The command you need will vary slightly depending on your **system OS**, **CLI** and **RDFox version**.
 
 `<rdfox_filepath> sandbox . start`
 
