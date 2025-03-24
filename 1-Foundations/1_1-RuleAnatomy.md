@@ -19,7 +19,10 @@ These patterns are described by variables `?x` and data `:myData`.
     [?node, :hasProp, "property"] .
 ```
 
-### Syntax requirements
+<br>
+<br>
+
+## ℹ️ &nbsp; Syntax requirements
 
 1. Each atom must be separated by a comma.
 

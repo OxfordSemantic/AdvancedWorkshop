@@ -2,25 +2,22 @@
 
 <br>
 
-## 🔥 &nbsp; Why is participation useful?
+## 🔥 &nbsp; Interactive examples and exercises
 
-There are several core components to each chapter that will help you participate.
+Throughout the workshop there are several examples and exercises, each with an accompanying script to make your life easier!
 
-Active participation helps to improve understanding and the long-term retention of information so we highly encourage it!
-
-<br>
-<br>
-
-## 📖 &nbsp; What is participation?
-
-We also share more detailed definitions that will help you write the rules itself.
+In some cases, you will have to write your own Datalog before running the script to get the desired result.
 
 <br>
 <br>
 
-## ⚡ &nbsp; Real world applications
+## 🔍 &nbsp; Note Taking
 
-Then we share real world examples of where this could be relevant.
+These files are markdown `.md` files and can be edited by double clicking anywhere on the page.
+
+Feel free to take nodes in-line!
+
+You can return to the normal view by clicking on the file in the explorer window to the left again, or by clicking `preview` in the top right hand corner.
 
 <br>
 <br>
@@ -29,13 +26,14 @@ Then we share real world examples of where this could be relevant.
 
 The first challenge comes with the example - this shows the simplest version of the rule stripped down to its core components.
 
-As an active example, there is a script for you to run to see the impact of the rule.
+<br>
+<br>
 
 ## ✅ &nbsp; Check the results
 
 Whenever you see a green check mark, there is a script ready to run!
 
-Copy the `script.rdfox` into the terminal to see this in action.
+Copy `1-Foundations/script.rdfox` into the terminal to see this in action.
 
 The scripts in the chapters import the relevant data and rules to show their impact.
 
@@ -43,8 +41,6 @@ The scripts in the chapters import the relevant data and rules to show their imp
 <br>
 
 ## 🚀 &nbsp; Exercise
-
-Finally comes an exercise - here you will have to write some Datalog of your own, using what you have learned so far.
 
 Each chapter contains a file called incompleteRules.dlog like `1-Foundations/incompleteRules.dlog`.
 
@@ -59,7 +55,7 @@ Once you've done that, there will always be a script below to validate your work
 
 Run the script below to verify the results.
 
-`script.rdfox`
+`1-Foundations/script.rdfox`
 
 <br>
 

@@ -6,13 +6,16 @@ RDFox recognizes files of the type `.rdfox` as shell scripts, meaning these scri
 
 Commands will be executed in line order.
 
-## Running scripts
+<br>
+<br>
 
-When running, RDFox will execute a script when it's file name is entering as a command. The file extension is not strictly necessary.
+## ✅ &nbsp; Running scripts
 
-`file-name.rdfox`
+When running, RDFox will execute a script when it's relative file-path and file-name is entering as a command. The file extension is not strictly necessary.
 
-or simply `file-name` will be accepted.
+`1-Foundations/script.rdfox`
+
+<br>
 
 ### Running commands (and scripts) on startup
 
