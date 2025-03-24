@@ -8,6 +8,8 @@ Ever wanted to use part of a query again and again or optimise a taxing calculat
 
 Views are the answer!
 
+For example I'm creating a product dashboard to highlight important sales figures. 
+
 <br>
 <br>
 

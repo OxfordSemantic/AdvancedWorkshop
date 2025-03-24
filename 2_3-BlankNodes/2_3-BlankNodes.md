@@ -8,6 +8,8 @@ Need to represent an abstract object where it's properties are important but it'
 
 Blank Nodes are the answer!
 
+For example, I have several sensors measuring the temperature of an industrial bath. The sensors are too detailed, I need to know about the bath as a whole.
+
 <br>
 <br>
 

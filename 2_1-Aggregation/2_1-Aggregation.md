@@ -6,9 +6,9 @@
 
 Want to calculate the sum total of a property or count the number of objects in a class?
 
-For example, you may use an aggregation statement to count all people who work for a each company in your data.
-
 Aggregation is the key!
+
+For example, how many reviews does each of my products have? What is their average star rating?
 
 <br>
 <br>

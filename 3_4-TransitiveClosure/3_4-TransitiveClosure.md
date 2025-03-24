@@ -8,6 +8,8 @@ Ever needed to find all nodes that are connected by an arbitrarily long repeatin
 
 Transitive Closure is what you need!
 
+For example, what are all of the dependencies of my IT assets, both direct and indirect?
+
 <br>
 <br>
 

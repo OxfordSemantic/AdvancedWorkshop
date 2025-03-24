@@ -8,6 +8,8 @@ Need to perform calculations or any complexity in your application?
 
 RDFox has you covered!
 
+For example, my application requires complex mathematical algorithms to compute specific metrics, such as recommendations.
+
 <br>
 <br>
 

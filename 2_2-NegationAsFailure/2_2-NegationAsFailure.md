@@ -6,7 +6,7 @@ Have you ever needed to act on information that was false or missing?
 
 Negation is the solution!
 
-For example, you may want your rule to apply only to people who don’t have children.
+For example, does this autonomous-vehicle see any hazards? If not, it's safe to proceed.
 
 <br>
 <br>

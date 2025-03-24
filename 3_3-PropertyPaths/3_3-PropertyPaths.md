@@ -8,6 +8,8 @@ Ever needed find a connection between two points of arbitrary length or with com
 
 Recursive Property Paths are the answer!
 
+For example, who are all of the people in my wider social network - the people who I don't just know directly, but who knows someone who knows someone who I know?
+
 <br>
 <br>
 

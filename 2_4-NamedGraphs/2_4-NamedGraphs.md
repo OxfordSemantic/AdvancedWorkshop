@@ -8,6 +8,8 @@ Need to partition or control access to data but want to silo all your data in on
 
 Named Graphs are the solution!
 
+For example, I have private employee information and data about their day-to-day work. I need to keep them separate and restrict access but cross reference them easily.
+
 <br>
 <br>
 
