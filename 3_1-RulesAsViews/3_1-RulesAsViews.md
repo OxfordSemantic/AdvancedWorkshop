@@ -132,26 +132,6 @@ now run `3_1-RulesAsViews/example2/exScript.rdfox` to add this new product data 
 |<https://rdfox.com/example#productA>|	500000|	500000|
 
 <br>
-
-### Transactions
-
-A transaction is the window in which RDFox performs one or several read and/or write operations, ending when the operations are totally complete and the data store is self-consistent.
-
-Without specifying otherwise, a transaction will be created when any command is executed and will automatically close when its function has been achieved.
-
-However, transactions can be manually opened with `begin` and closed with `commit` or `rollback` depending on whether the results of the transaction should be committed or discarded.
-
-Multiple files can be imported or removed in one transaction which can be vastly more efficient than performing these steps separately if the rules relate to some of the same data as RDFox is able to compute just the difference, rather than the entire thing.
-
-Eg.
-```
-begin
-import - old-rule.dlog
-import new-rule.dlog
-commit
-```
-
-<br>
 <br>
 
 ## 🔍 &nbsp; Explainable results

@@ -1,4 +1,4 @@
-# 2.4 Debugging Rules with the Reasoning Profiler
+# 2.5 Debugging Rules with the Reasoning Profiler
 
 <br>
 
