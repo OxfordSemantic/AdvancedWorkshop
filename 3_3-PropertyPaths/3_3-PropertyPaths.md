@@ -73,8 +73,8 @@ The following rules recursively detect members of Alice's network - including pe
     [:Alice, :knows, ?person].
 
 [?person2, a, :MemberOfAlicesNetwork] :-
-    [?person1, :knows, ?person2],
-    [?person1, a, :MemberOfAlicesNetwork].
+    [?person1, a, :MemberOfAlicesNetwork] ,
+    [?person1, :knows, ?person2] .
 ```
 
 Here is the data we'll be using to show this:

@@ -15,7 +15,7 @@ For example, my application requires complex mathematical algorithms to compute 
 
 ## 📖 &nbsp; What Complex Calculations?
 
-Binds calculate an expression and store result in a variable.
+BINDS calculate an expression and store result in a variable.
 
 This can be done with inbuilt RDFox functions or hand written mathematical expressions.
 
@@ -130,108 +130,6 @@ A node is created between two articles that share at least one tag, calculating 
 
 <br>
 <br>
-
-## 👀 &nbsp; info rulestats
-
-Run the command `info rulestats` in the RDFox shell to show information about the rules in your data store.
-
-So far, for this example you will see:
-
-=================== RULES STATISTICS =====================
-|Component|    Nonrecursive rules|    Recursive rules|    Total rules|
-|---------|----------------------|-------------------|---------------|
-|        1|                     1|                  0|              1|
-|        2|                     1|                  0|              1|
-|Total:|                        2|                  0|              2|
-
-We have imported two rules above, so the total rules is 2.
-
-Both are non-recursive (see 3.3 for recursion) which is also reflected in the table.
-
-Since one rule depends on the other, we end up with 2 components (also called layers, or strata)
-
-This can be a great launching point for debugging rules, particularly if the values shown are not what you expect.
-
-Find out more about the `info` command in the docs [here](https://docs.oxfordsemantic.tech/rdfox-shell.html#info).
-
-<br>
-<br>
-
-## 🔍 &nbsp; Unnecessarily complex rules
-
-It can be tempting to write huge rules that match sprawling patterns and infer many heads at once, but this can be deeply inefficient.
-
-Rules should be streamlined, only considering the minimum number of body atoms required to infer the relevant head facts, otherwise computation will be spent matching irrelevant body patterns for some head atoms.
-
-This often means splitting large rules into several parts.
-
-Take these rules for examples:
-
-```
-[?a, :hasNewProp, "new prop"],
-[?x, a, :newClass] :-
-    [?a, :hasProp, "prop" ],
-    [?x, a, :Class ].
-```
-
-Although we can write this as one rule, there is no relation between the atoms involving ?a and ?x.
-
-```
-[?a, :hasNewProp, "new prop"]:-
-    [?a, :hasProp, "prop" ].
-
-[?x, a, :newClass] :-
-    [?x, a, :Class ].
-```
-Here, we're split that rule into two rules that results in the same facts inferred.
-
-We'll use this simple data to show how the rule sets perform differently:
-```
-:a :hasProp "prop" .
-
-:x a :Class .
-```
-
-<br>
-
-## 👀 &nbsp; Run the profiler
-
-Firstly, run `3_2-ComplexCalculations/example2/exScript.rdfox` to see the performance of the combined rule...
-
-<br>
-
-### You should see...
-
-Rule Info
-|   #  |    Reasoning Phase   |   Sample Count  |  Rule Body Match Attempts |   Iterator Operations  |  Rule Body Matches  |    Fresh Facts Produced    |Rule of Head Atom|                               
-|------|----------------------|-----------------|---------------------------|------------------------|---------------------|-------------------|------------------------------|
-|   1|    RuleAdd|      0|             1|             6|           1|            1|          (0) :hasNewProp[?a, "new prop"], :newClass[?x] :- :hasProp[?a, "prop"], :Class[?x] .|
-|   |    |      |             |             |           |            1|          (1) :hasNewProp[?a, "new prop"], :newClass[?x] :- :hasProp[?a, "prop"], :Class[?x] .|
-
-Notice that the reasoning profiles undergoes 6 iterator operations. This is because the combo rule creates a cross product of patterns that it must check to infer each head atom, despite being unrelated.
-
-<br>
-<br>
-
-## 👀 &nbsp; Run the profiler
-
-Secondly, run `3_2-ComplexCalculations/example3/exScript.rdfox` to see the performance of the two separate rules.
-
-<br>
-
-### You should see...
-
-Rule Info
-|   #  |    Reasoning Phase   |   Sample Count  |  Rule Body Match Attempts |   Iterator Operations  |  Rule Body Matches  |    Fresh Facts Produced    |Rule of Head Atom|                               
-|------|----------------------|-----------------|---------------------------|------------------------|---------------------|-------------------|------------------------------|
-|   1|    RuleAdd|      0|             1|             2|           1|            1|          (0) :newClass[?x] :- :Class[?x] .|
-|   1|    RuleAdd|      0|             1|             2|           1|            1|          (0) :hasNewProp[?a, "new prop"] :- :hasProp[?a, "prop"] .|
-
-This time, notice that even though there are more rules imported, the rules only require 2 iterator operations each, for a total of 4.
-
-### A problem of scale
-
-While 6 iterations instead of 4 is almost invisible, this problem scales dangerously with the number of triples and complexity of the rule, causing drastic slowdowns.
 
 ## 🚀 &nbsp; Exercise
 

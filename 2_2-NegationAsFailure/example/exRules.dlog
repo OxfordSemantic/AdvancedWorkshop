@@ -1,6 +1,6 @@
 # 2.2 Negation As Failure
 
-[?vehicle, :mustStop, false] :-
+[?vehicle, :safeToContinue, true] :-
     [?vehicle, a, :Vehicle] ,
     NOT ( 
         [?vehicle, :detectsLight, :red]

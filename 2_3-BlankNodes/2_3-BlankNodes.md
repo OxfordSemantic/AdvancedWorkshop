@@ -174,21 +174,6 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 <br>
 <br>
 
-## 🔍 &nbsp; MD5 Encoding
-
-As a practical alternative to SKOLEM, the MD5 hash generator function sometimes is instead to create an ID for a node.
-
-MD5 creates IDs more efficiently than SKOLEM but is non-reversible, meaning retraction of facts is vastly less efficient.
-
-Additionally, it is not strictly 1-1, so it is possible, albeit unlikely, to have two different inputs create the same output, 
-
-MD5 is a function not a tuple table, so the output must be bound to a new variable, and it's input must be strings.
-
-`BIND ( MD5("stringIn") AS ?stringOut )`
-
-<br>
-<br>
-
 ## 🚀 &nbsp; Exercise
 
 Complete the rule `2_3-BlankNodes/incompleteRules.dlog` to monitor the average temperature of several liquid baths as they change over time.
@@ -276,9 +261,21 @@ Run the script below to verify the results.
 <br>
 <br>
 
-## 👏 &nbsp; Bonus exercise
+## 👏 &nbsp; Bonus exercise - MD5 Encoding
+
+As a practical alternative to SKOLEM, the MD5 hash generator function sometimes is instead to create an ID for a node.
+
+MD5 creates IDs more efficiently than SKOLEM but is non-reversible, meaning retraction of facts is vastly less efficient.
+
+Additionally, it is not strictly 1-1, so it is possible, albeit unlikely, to have two different inputs create the same output, 
+
+MD5 is a function not a tuple table, so the output must be bound to a new variable, and it's input must be strings.
+
+<br>
 
 Write a rule that creates a similar node for each bath using the `MD5` function instead of `SKOLEM`.
+
+`BIND ( MD5("stringIn") AS ?stringOut )`
 
 Write a query [in the console](http://localhost:12110/console/datastores/sparql?datastore=default) to validate you work.
 

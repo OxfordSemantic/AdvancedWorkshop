@@ -3,5 +3,5 @@
 SELECT ?vehicle
 WHERE {
     ?vehicle a :Vehicle ;
-        :mustStop false .
+        :safeToContinue true .
 } ORDER BY ASC(?vehicle)

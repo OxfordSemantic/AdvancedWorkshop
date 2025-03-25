@@ -28,8 +28,6 @@ Negation as failure is a particularly powerful tool as the absence of data is a 
 
 ### On-device
 
-<br>
-
 To encode real-world decision-making rules, map dependencies, repair data, etc.
 
 <br>
@@ -54,7 +52,7 @@ To determine complex compatibilities, comply with schematics and regulations, si
 The following rule checks to see whether a vehicle's onboard sensors have detected a red light and, if not, allows the vehicle to continue moving.
 
 ```
-[?vehicle, :mustStop, false] :-
+[?vehicle, :safeToContinue, true] :-
     [?vehicle, a, :Vehicle] ,
     NOT ( 
         [?vehicle, :detectsLight, :red]
@@ -87,6 +85,7 @@ Run `2_2-NegationAsFailure/example/exScript.rdfox` to see the results of this ru
 === Vehicles that may continue to move ===
 
 :vehicle2
+<br>
 :vehicle3
 
 <br>
@@ -116,7 +115,7 @@ This opens up the possibility for more general negation patterns to be included.
 The following rule checks to see whether a vehicle's onboard sensors have detected **any hazard** and, if not, allows the vehicle to continue moving.
 
 ```
-[?vehicle, :mustStop, false] :-
+[?vehicle, :safeToContinue, true] :-
     [?vehicle, a, :Vehicle] ,
     NOT EXISTS ?hazard IN (
         [?vehicle, :detectsHazard, ?hazard ]
@@ -166,7 +165,7 @@ Therefore, the scope of these variables must be local to the negation atom. They
 
 Negation remains consistent even when new data means old facts are no longer true.
 
-For example, if vehicle3 detects a hazard, the fact `:vehicle3 :mustStop false` will be retracted.
+For example, if vehicle3 detects a hazard, the fact `:vehicle3 :safeToContinue true` will be retracted.
 
 In the following script we'll add this data to show Incremental Retraction in action:
 
@@ -191,7 +190,7 @@ now run `2_2-NegationAsFailure/example3/exScript.rdfox` to add the new data and 
 
 *0 results*
 
-This is because `:vehicle3 :mustStop false` has now been retracted - it no longer exists in our store.
+This is because `:vehicle3 :safeToContinue true` has now been retracted - it no longer exists in our store.
 
 <br>
 <br>
@@ -200,7 +199,7 @@ This is because `:vehicle3 :mustStop false` has now been retracted - it no longe
 
 With Negation and Aggregation, it is possible to create infinite reasoning cycles.
 
-While some types of cycles are allowed and are in fact incredibly useful (see 3.2), rules sets cannot be imported if the cycles they create involve Negation or Aggregation as they lead to inferred facts being updated with every iteration. 
+While some types of cycles are allowed and are in fact incredibly useful (see 3.3), rules sets cannot be imported if the cycles they create involve Negation or Aggregation as they lead to inferred facts being updated with every iteration. 
 
 Take the following rule as an example.
 
@@ -321,7 +320,7 @@ We do this by introducing a new proxy-relationship as follows:
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule set `2_2-NegationAsFailure/incompleteRules.dlog` to 
+Complete the rule set `2_2-NegationAsFailure/incompleteRules.dlog` to indicate whether the vehicle is safe to turn left or right, or stop at any given time.
 
 Here is a representative sample of the data in `2_2-NegationAsFailure/exercise/data.ttl`.
 
