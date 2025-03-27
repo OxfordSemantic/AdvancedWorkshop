@@ -5,4 +5,4 @@ WHERE {
     ?starProduct a :StarProduct ;
     :hasAverageStars ?averageStars ;
     :hasReviewCount ?reviewCount .
-} ORDER BY DESC(?averageStars)
+} ORDER BY DESC(?averageStars) DESC(?reviewCount)

@@ -1,4 +1,4 @@
-# 2.4 Blank Nodes
+# 2.3 Blank Nodes
 
 <br>
 
@@ -176,7 +176,7 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule `2_3-BlankNodes/incompleteRules.dlog` to monitor the average temperature of several liquid baths as they change over time.
+Complete the rule `2_3-BlankNodes/incompleteRules.dlog` to monitor the average temperature of several liquid baths as they change over time - creating a unique node to represent the bath at each given moment in time.
 
 Here is a representative sample of the data in `2_3-BlankNodes/exercise/data.ttl`. Both baths contain **exactly two sensors**.
 ```
