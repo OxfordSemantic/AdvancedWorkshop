@@ -47,7 +47,7 @@ Currently, 105.4 MB (1.3% of the amount allocated to RDFox) appear to be availab
 Since RDFox is a RAM-based system, its performance can suffer when other running processes use a lot of memory.
 
 Access control has been initialized by creating the first role with name "guest".
-This copy of RDFox is licensed for Developer use to Tom Vout (tom.vout@oxfordsemantic.tech) of OST until 13-Oct-2025 01:00:00.
+This copy of RDFox is licensed for Developer use to Tom Vout (tom.vout@oxfordsemantic.tech) of OST until 13-Oct-2025 00:00:00.
 
 A new server connection was opened as role 'guest' and stored with name 'sc1'.
 output = "out"
