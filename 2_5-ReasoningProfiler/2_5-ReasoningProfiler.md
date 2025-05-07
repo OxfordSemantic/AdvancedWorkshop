@@ -1,6 +1,7 @@
 # 2.5 Debugging Rules with the Reasoning Profiler
 
-![The Reasoning Profiler](../images/heroes/profiler.png)
+<img src="../images/heroes/profiler.png" alt="The Reasoning Profiler" style="max-height: 480px;">
+
 
 <br>
 

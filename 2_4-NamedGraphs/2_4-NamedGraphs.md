@@ -1,6 +1,7 @@
 # 2.4 Named Graphs
 
-![Named Graphs](../images/heroes/namedGraphs.png)
+<img src="../images/heroes/namedGraphs.png" alt="Named Graphs" style="max-height: 480px;">
+
 
 <br>
 
@@ -17,7 +18,10 @@ For example, I have private employee information and data about their day-to-day
 
 ## 📖 &nbsp; What are Named Graphs?
 
-![Named Graphs](../images/concepts/namedGraphs.png)
+<img src="../images/concepts/namedGraphs.png" alt="Named Graphs" style="max-height: 480px;">
+
+<br>
+<br>
 
 Named Graphs offer a way to partition your data and are commonly used to group semantically similar data.
 
@@ -63,9 +67,12 @@ Without specifying a named graph RDFox will reference the default graph.
 
 ## 🔬 &nbsp; Example
 
-![Named Graphs](../images/visualisation/namedGraphsA.png)
+<img src="../images/visualisation/namedGraphsB.png" alt="Named Graphs" style="max-width: 560px;">
 
-![Named Graphs](../images/visualisation/namedGraphsB.png)
+<br>
+<br>
+
+<img src="../images/visualisation/namedGraphsA.png" alt="Named Graphs" style="max-width: 560px;">
 
 The following rule shows how how to access data in the Default Graph and a Named Graph, pulling personal information from the `:personnelInfo` graph and transaction data from the `default` graph.
 

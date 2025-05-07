@@ -1,6 +1,7 @@
 # 3.4 Transitive Closure
 
-![Transitive Closure](../images/heroes/transitiveClosure.png)
+<img src="../images/heroes/transitiveClosure.png" alt="Transitive Closure" style="max-height: 480px;">
+
 
 <br>
 
@@ -17,7 +18,10 @@ For example, what are all of the dependencies of my IT assets, both direct and i
 
 ## 📖 &nbsp; What is Transitive Closure?
 
-![Transitive Closure](../images/concepts/transitiveClosure.png)
+<img src="../images/concepts/transitiveClosure.png" alt="Transitive Closure" style="max-height: 480px;">
+
+<br>
+<br>
 
 Another common application of Recursion, Transitive closure forms direct links with all nodes that are indirectly connected via a chain of the same relationship.
 
@@ -53,8 +57,9 @@ To model dependencies and availability, to test failure modes and plan maintenan
 
 ## 🔬 &nbsp; Example
 
-![Transitive Closure](../images/visualisation/transitiveClosureA.png)
-
+<img src="../images/visualisation/transitiveClosureA.png" alt="Transitive Closure" style="max-height: 480px;">
+<br>
+<br>
 The following rules recursively traverse a network of IT assets to determine each of their direct and indirect dependencies.
 
 ```
@@ -178,8 +183,9 @@ Despite inferring 25 fewer total facts, notice that the iterator when though mor
 
 The un-anchored set derives the same facts in many different ways.
 
-![Transitive Closure](../images/visualisation/transitiveClosureB.png)
-
+<img src="../images/visualisation/transitiveClosureB.png" alt="Transitive Closure" style="max-height: 480px;">
+<br>
+<br>
 If we take a small sample as an example, by the time this recursive rule set is inferring `:a :dependsOn :d`, there are two supporting patters that must be considered:
 1. `:a :dependsOn :b . :b :dependsOn :d .`
 2. `:a :dependsOn :c . :c :dependsOn :d .`
@@ -189,8 +195,9 @@ This inefficiency scales with the size of the dataset and the complexity of the 
 Compare this the the anchored reasoning where there us only one way to derive `:a :hasTransitiveDependency :d`:
 1. `:a :hasTransitiveDependency :c . :c :dependsOn :d .`
 
-![Transitive Closure](../images/visualisation/transitiveClosureC.png)
-
+<img src="../images/visualisation/transitiveClosureC.png" alt="Transitive Closure" style="max-height: 480px;">
+<br>
+<br>
 <br>
 <br>
 

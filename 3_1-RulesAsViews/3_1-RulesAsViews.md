@@ -1,6 +1,7 @@
 # 3.1 Rules as Views
 
-![Rules As Views](../images/heroes/rulesAsViews.png)
+<img src="../images/heroes/rulesAsViews.png" alt="Rules As Views" style="max-height: 480px;">
+
 
 <br>
 
@@ -17,7 +18,10 @@ For example I'm creating a product dashboard to highlight important sales figure
 
 ## 📖 &nbsp; What are Views?
 
-![Rules As Views](../images/concepts/rulesAsViews.png)
+<img src="../images/concepts/rulesAsViews.png" alt="Rules As Views" style="max-height: 480px;">
+
+<br>
+<br>
 
 Views transform existing data into simpler or more accessible information, often turning important complex patterns into a single relationship or applying filters to narrow down the result set based on a condition.
 
@@ -53,8 +57,9 @@ To surface critical information about clients and transactions, to flag security
 
 ## 🔬 &nbsp; Example
 
-![Rules As Views](../images/visualisation/rulesAsViews.png)
-
+<img src="../images/visualisation/rulesAsViews.png" alt="Rules As Views" style="max-height: 480px;">
+<br>
+<br>
 The following rule provides information for a view of the profit from our best selling products - that is, the products that have sold over 10,000 units.
 
 ```

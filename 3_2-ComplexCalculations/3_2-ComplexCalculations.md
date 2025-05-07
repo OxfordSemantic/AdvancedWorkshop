@@ -1,6 +1,7 @@
 # 3.2 Complex Calculations
 
-![Complex Calculations](../images/heroes/complexCalculations.png)
+<img src="../images/heroes/complexCalculations.png" alt="Complex Calculations" style="max-height: 480px;">
+
 
 <br>
 
@@ -17,7 +18,10 @@ For example, my application requires complex mathematical algorithms to compute 
 
 ## 📖 &nbsp; What are Complex Calculations?
 
-![Complex Calculations](../images/concepts/complexCalculations.png)
+<img src="../images/concepts/complexCalculations.png" alt="Complex Calculations" style="max-height: 480px;">
+
+<br>
+<br>
 
 BINDS calculate an expression and store result in a variable.
 
@@ -57,8 +61,9 @@ To calculate complex product compatibility, to model configuration viability, to
 
 ## 🔬 &nbsp; Example
 
-![Complex Calculations](../images/visualisation/complexCalculations.png)
-
+<img src="../images/visualisation/complexCalculations.png" alt="Complex Calculations" style="max-height: 480px;">
+<br>
+<br>
 The following rules perform Term Frequency Analysis for articles tagged by their content types, in order to recommend similar articles.
 
 ```

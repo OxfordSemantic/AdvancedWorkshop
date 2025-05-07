@@ -1,6 +1,7 @@
 # 2.2 Negation as Failure
 
-![Negation as Failure](../images/heroes/negationAsFailure.png)
+<img src="../images/heroes/negationAsFailure.png" alt="Negation as Failure" style="max-height: 480px;">
+
 
 ## 🔥 &nbsp; Why is Negation as Failure helpful?
 
@@ -15,7 +16,10 @@ For example, does this autonomous-vehicle see any hazards? If not, it's safe to 
 
 ## 📖 &nbsp; What is Negation as Failure?
 
-![Negation as Failure](../images/concepts/negationAsFailure.png)
+<img src="../images/concepts/negationAsFailure.png" alt="Negation as Failure" style="max-height: 480px;">
+
+<br>
+<br>
 
 Negation as Failure (NAF) filters results based on the absence of some particular information from the data - inferring new facts where a pattern is false or missing.
 
@@ -51,8 +55,9 @@ To determine complex compatibilities, comply with schematics and regulations, si
 
 ## 🔬 &nbsp; Example
 
-![Negation as Failure](../images/visualisation/negationAsFailureA.png)
-
+<img src="../images/visualisation/negationAsFailureA.png" alt="Negation as Failure" style="max-height: 480px;">
+<br>
+<br>
 The following rule checks to see whether a vehicle's onboard sensors have detected a red light and, if not, allows the vehicle to continue moving.
 
 ```
@@ -114,8 +119,9 @@ This opens up the possibility for more general negation patterns to be included.
 
 ## 🔬 &nbsp; Example
 
-![Negation as Failure](../images/visualisation/negationAsFailureB.png)
-
+<img src="../images/visualisation/negationAsFailureB.png" alt="Negation as Failure" style="max-height: 480px;">
+<br>
+<br>
 The following rule checks to see whether a vehicle's onboard sensors have detected **any hazard** and, if not, allows the vehicle to continue moving.
 
 ```
@@ -260,8 +266,9 @@ When cycles don't change facts, like the examples below, they **can** be stratif
     [?y, :hasRelative, ?x] :-
         [?x, :hasRelative, ?y] .
     ```
-    ![Stratification](../images/visualisation/stratificationA.png)
-
+    <img src="../images/visualisation/stratificationA.png" alt="Stratification" style="max-height: 480px;">
+<br>
+<br>
 2. While this rule creates an infinite loop, it doesn't update facts as it goes, instead it adds a new fact each iteration with a progressively higher count, leaving a trail of all the counts up until that point.
 
     ```
@@ -269,7 +276,9 @@ When cycles don't change facts, like the examples below, they **can** be stratif
         [?x, :hasCount, ?count],
         BIND (?count + 1 AS ?newCount) .
     ```
-    ![Stratification](../images/visualisation/stratificationB.png)
+    <img src="../images/visualisation/stratificationB.png" alt="Stratification" style="max-height: 480px;">
+<br>
+<br>
     \* This is a fabricated view representing the steps taken by the reasoning engine but cannot actually be visualised as the reasoning must first terminate, which an infinite rule would not do.
 
 <br>

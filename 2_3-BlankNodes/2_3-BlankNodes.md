@@ -1,6 +1,7 @@
 # 2.3 Blank Nodes
 
-![Blank Nodes](../images/heroes/blankNodes.png)
+<img src="../images/heroes/blankNodes.png" alt="Blank Nodes" style="max-height: 480px;">
+
 
 <br>
 
@@ -17,7 +18,10 @@ For example, I have several sensors measuring the temperature of an industrial b
 
 ## 📖 &nbsp; What are Blank Nodes?
 
-![Blank Nodes](../images/concepts/blankNodes.png)
+<img src="../images/concepts/blankNodes.png" alt="Blank Nodes" style="max-height: 480px;">
+
+<br>
+<br>
 
 Blank nodes enable us to represent entities that themselves have properties or relate to other nodes, without giving the node itself an IRI.
 
@@ -68,8 +72,9 @@ This means the new node retains a referenceable, reversible, meaningful IRI that
 
 ## 🔬 &nbsp; Example - SKOLEMizing a node
 
-![Blank Nodes](../images/visualisation/blankNodes.png)
-
+<img src="../images/visualisation/blankNodes.png" alt="Blank Nodes" style="max-height: 480px;">
+<br>
+<br>
 The following rule creates a node from two sensor readings, representing the bath that they are measuring.
 
 ```
