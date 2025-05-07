@@ -1,5 +1,7 @@
 # 2.5 Debugging Rules with the Reasoning Profiler
 
+![The Reasoning Profiler](../images/heroes/profiler.png)
+
 <br>
 
 ## 🔥 &nbsp; Why is the Reasoning Profiler helpful?

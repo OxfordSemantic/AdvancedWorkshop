@@ -1,5 +1,7 @@
 # 2.4 Named Graphs
 
+![Named Graphs](../images/heroes/namedGraphs.png)
+
 <br>
 
 ## 🔥 &nbsp; Why are Named Graphs helpful?
@@ -14,6 +16,8 @@ For example, I have private employee information and data about their day-to-day
 <br>
 
 ## 📖 &nbsp; What are Named Graphs?
+
+![Named Graphs](../images/concepts/namedGraphs.png)
 
 Named Graphs offer a way to partition your data and are commonly used to group semantically similar data.
 
@@ -59,9 +63,9 @@ Without specifying a named graph RDFox will reference the default graph.
 
 ## 🔬 &nbsp; Example
 
-![Named Graphs](../images/namedGraphsA.png)
+![Named Graphs](../images/visualisation/namedGraphsA.png)
 
-![Named Graphs](../images/namedGraphsB.png)
+![Named Graphs](../images/visualisation/namedGraphsB.png)
 
 The following rule shows how how to access data in the Default Graph and a Named Graph, pulling personal information from the `:personnelInfo` graph and transaction data from the `default` graph.
 

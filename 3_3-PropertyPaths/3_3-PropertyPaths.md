@@ -1,5 +1,7 @@
 # 3.3 Property Paths
 
+![Property Paths](../images/heroes/propertyPaths.png)
+
 <br>
 
 ## 🔥 &nbsp; Why are Property Paths helpful?
@@ -14,6 +16,8 @@ For example, who are all of the people in my wider social network - the people w
 <br>
 
 ## 📖 &nbsp; What are Property Paths
+
+![Property Paths](../images/concepts/propertyPaths.png)
 
 Property paths in SPARQL represent chains of the same relationship.
 
@@ -64,7 +68,7 @@ To monitor and stress-test supply chains, to analyse customer buying patterns an
 
 ## 🔬 &nbsp; Example
 
-![Property Paths](../images/propertyPaths.png)
+![Property Paths](../images/visualisation/propertyPaths.png)
 
 The following rules recursively detect members of Alice's network - including people she both directly and indirectly knows.
 

@@ -1,5 +1,7 @@
 # 2.2 Negation as Failure
 
+![Negation as Failure](../images/heroes/negationAsFailure.png)
+
 ## 🔥 &nbsp; Why is Negation as Failure helpful?
 
 Have you ever needed to act on information that was false or missing?
@@ -12,6 +14,8 @@ For example, does this autonomous-vehicle see any hazards? If not, it's safe to 
 <br>
 
 ## 📖 &nbsp; What is Negation as Failure?
+
+![Negation as Failure](../images/concepts/negationAsFailure.png)
 
 Negation as Failure (NAF) filters results based on the absence of some particular information from the data - inferring new facts where a pattern is false or missing.
 
@@ -47,7 +51,7 @@ To determine complex compatibilities, comply with schematics and regulations, si
 
 ## 🔬 &nbsp; Example
 
-![Negation as Failure](../images/negationAsFailureA.png)
+![Negation as Failure](../images/visualisation/negationAsFailureA.png)
 
 The following rule checks to see whether a vehicle's onboard sensors have detected a red light and, if not, allows the vehicle to continue moving.
 
@@ -110,7 +114,7 @@ This opens up the possibility for more general negation patterns to be included.
 
 ## 🔬 &nbsp; Example
 
-![Negation as Failure](../images/negationAsFailureB.png)
+![Negation as Failure](../images/visualisation/negationAsFailureB.png)
 
 The following rule checks to see whether a vehicle's onboard sensors have detected **any hazard** and, if not, allows the vehicle to continue moving.
 
@@ -256,7 +260,7 @@ When cycles don't change facts, like the examples below, they **can** be stratif
     [?y, :hasRelative, ?x] :-
         [?x, :hasRelative, ?y] .
     ```
-    ![Stratification](../images/stratificationA.png)
+    ![Stratification](../images/visualisation/stratificationA.png)
 
 2. While this rule creates an infinite loop, it doesn't update facts as it goes, instead it adds a new fact each iteration with a progressively higher count, leaving a trail of all the counts up until that point.
 
@@ -265,7 +269,7 @@ When cycles don't change facts, like the examples below, they **can** be stratif
         [?x, :hasCount, ?count],
         BIND (?count + 1 AS ?newCount) .
     ```
-    ![Stratification](../images/stratificationB.png)
+    ![Stratification](../images/visualisation/stratificationB.png)
     \* This is a fabricated view representing the steps taken by the reasoning engine but cannot actually be visualised as the reasoning must first terminate, which an infinite rule would not do.
 
 <br>

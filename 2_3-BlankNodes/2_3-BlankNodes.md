@@ -1,5 +1,7 @@
 # 2.3 Blank Nodes
 
+![Blank Nodes](../images/heroes/blankNodes.png)
+
 <br>
 
 ## 🔥 &nbsp; Why are Blank Nodes helpful?
@@ -14,6 +16,8 @@ For example, I have several sensors measuring the temperature of an industrial b
 <br>
 
 ## 📖 &nbsp; What are Blank Nodes?
+
+![Blank Nodes](../images/concepts/blankNodes.png)
 
 Blank nodes enable us to represent entities that themselves have properties or relate to other nodes, without giving the node itself an IRI.
 
@@ -64,7 +68,7 @@ This means the new node retains a referenceable, reversible, meaningful IRI that
 
 ## 🔬 &nbsp; Example - SKOLEMizing a node
 
-![Blank Nodes](../images/blankNodes.png)
+![Blank Nodes](../images/visualisation/blankNodes.png)
 
 The following rule creates a node from two sensor readings, representing the bath that they are measuring.
 

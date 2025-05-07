@@ -1,5 +1,7 @@
 # 2.1 Aggregation
 
+![Aggregation](../images/heroes/aggregation.png)
+
 <br>
 
 ## 🔥 &nbsp; Why is Aggregation helpful?
@@ -14,6 +16,8 @@ For example, how many reviews does each of my products have? What is their avera
 <br>
 
 ## 📖 &nbsp; What is Aggregation?
+
+![Aggregation](../images/concepts/aggregation.png)
 
 Aggregates calculate sums, averages and other functions over a set of results. 
 
@@ -55,7 +59,7 @@ To surface and compare high-level compound properties, formulate a cost sheet, e
 
 ## 🔬 &nbsp; Example
 
-![Aggregation](../images/aggregation.png)
+![Aggregation](../images/visualisation/aggregation.png)
 
 The following rule performs a count of reviews per product, adding the result to the graph.
 

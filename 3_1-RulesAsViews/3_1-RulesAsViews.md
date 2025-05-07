@@ -1,5 +1,7 @@
 # 3.1 Rules as Views
 
+![Rules As Views](../images/heroes/rulesAsViews.png)
+
 <br>
 
 ## 🔥 &nbsp; Why are Views helpful?
@@ -14,6 +16,8 @@ For example I'm creating a product dashboard to highlight important sales figure
 <br>
 
 ## 📖 &nbsp; What are Views?
+
+![Rules As Views](../images/concepts/rulesAsViews.png)
 
 Views transform existing data into simpler or more accessible information, often turning important complex patterns into a single relationship or applying filters to narrow down the result set based on a condition.
 
@@ -49,7 +53,7 @@ To surface critical information about clients and transactions, to flag security
 
 ## 🔬 &nbsp; Example
 
-![Rules As Views](../images/rulesAsViews.png)
+![Rules As Views](../images/visualisation/rulesAsViews.png)
 
 The following rule provides information for a view of the profit from our best selling products - that is, the products that have sold over 10,000 units.
 

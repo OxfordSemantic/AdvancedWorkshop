@@ -1,5 +1,7 @@
 # 3.2 Complex Calculations
 
+![Complex Calculations](../images/heroes/complexCalculations.png)
+
 <br>
 
 ## 🔥 &nbsp; Why are Complex Calculations helpful?
@@ -13,7 +15,9 @@ For example, my application requires complex mathematical algorithms to compute 
 <br>
 <br>
 
-## 📖 &nbsp; What Complex Calculations?
+## 📖 &nbsp; What are Complex Calculations?
+
+![Complex Calculations](../images/concepts/complexCalculations.png)
 
 BINDS calculate an expression and store result in a variable.
 
@@ -53,7 +57,7 @@ To calculate complex product compatibility, to model configuration viability, to
 
 ## 🔬 &nbsp; Example
 
-![Complex Calculations](../images/complexCalculations.png)
+![Complex Calculations](../images/visualisation/complexCalculations.png)
 
 The following rules perform Term Frequency Analysis for articles tagged by their content types, in order to recommend similar articles.
 
