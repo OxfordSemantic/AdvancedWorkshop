@@ -1,0 +1,23 @@
+# 2.3 Blank Nodes
+
+@prefix : <https://rdfox.com/example#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+_:someBlankNode a :SensorReading ;
+    :hasTemperature 25 ;
+    :hasSensor :sensorA ;
+    :hasTimeStamp "2025-05-21T10:01:00"^^xsd:dateTime .
+
+[ a :SensorReading ;
+    :hasTemperature 24 ;
+    :hasSensor :sensorB ;
+    :hasTimeStamp "2025-05-21T12:35:00"^^xsd:dateTime
+] .
+
+:bathAlpha a :Bath;
+    :hasSensorList (
+        :sensorA
+        :sensorB
+        :sensorC
+    ) .

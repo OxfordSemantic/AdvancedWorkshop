@@ -25,9 +25,9 @@ For example, who are all of the people in my wider social network - the people w
 
 Property paths in SPARQL represent chains of the same relationship.
 
-They can be very helpful in practice as they enable queries for paths of arbitrary length but they are computationally taxing meaning performance is often slow.
+They can be very helpful in practice as they enable queries for paths of arbitrary length, but they are computationally taxing meaning performance is often slow.
 
-Rules can do this vastly more efficiently and are able to encode more complex patterns that constrain the hops between chain links.
+Rules can do this vastly more efficiently and are able to encode more complex patterns that constrain the hops between chain links and process information from intermediate nodes.
 
 To do this, we need to apply a technique called Recursion.
 

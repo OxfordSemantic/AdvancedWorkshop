@@ -7,7 +7,7 @@
 
 ## 🔥 &nbsp; Why are Named Graphs helpful?
 
-Need to partition or control access to data but want to silo all your data in one place or allow some sharing of information between the groups?
+Need to partition or control access to data but want to keep all your data in one place or allow some sharing of information between the groups?
 
 Named Graphs are the solution!
 
@@ -25,7 +25,7 @@ For example, I have private employee information and data about their day-to-day
 
 Named Graphs offer a way to partition your data and are commonly used to group semantically similar data.
 
-Data in named graphs are stored as quads, with the fourth entry representing the named graph.
+Data in named graphs are internally stored as quads, with the fourth entry representing the named graph.
 
 As such, we don't need to 'create' named graphs, they exist by being referenced in a quad.
 
@@ -58,9 +58,9 @@ To chunk data packets by timestamp, to group devices by location, to group devic
 
 ## 📖 &nbsp; What is the Default Graph?
 
-The default graph is unlike named graphs in that it has no name and stores triples rather than quads.
+The default graph is unlike named graphs in that it has no name and is internally stored as triples rather than quads.
 
-Without specifying a named graph RDFox will reference the default graph.
+Without specifying a named graph, RDFox will reference the default graph (unless the [default-graph-name parameter](https://docs.oxfordsemantic.tech/data-stores.html#default-graph-name-parameter) is specified).
 
 <br>
 <br>
@@ -74,7 +74,7 @@ Without specifying a named graph RDFox will reference the default graph.
 
 <img src="../images/visualisation/namedGraphsA.png" alt="Named Graphs" style="max-width: 560px;">
 
-The following rule shows how how to access data in the Default Graph and a Named Graph, pulling personal information from the `:personnelInfo` graph and transaction data from the `default` graph.
+The following rule shows how to access data in the Default Graph and a Named Graph, pulling personal information from the `:personnelInfo` graph and transaction data from the default graph.
 
 This allows us to classify any of our staff members who have executed a transaction as a `:Trader`.
 
@@ -105,8 +105,8 @@ Run `2_4-NamedGraphs/example/exScript.rdfox` to see the results of this rule.
 
 <br>
 
-========= Personnel Rolls =========
-|?personnel	|?roll|
+========= Personnel Roles =========
+|?personnel	|?role|
 |----|----|
 |:p-001 |:Trader |
 |:p-002 |:StaffMember |
@@ -115,18 +115,18 @@ Run `2_4-NamedGraphs/example/exScript.rdfox` to see the results of this rule.
 
 ### Visualise the results
 
-Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3Fpersonnel%20%3Froll%0AWHERE%20%7B%0A%20%20%20%20GRAPH%20%3APersonnelInfo%20%7B%3Fpersonnel%20a%20%3AStaffMember%7D%20.%0A%20%20%20%20OPTIONAL%20%7B%20SELECT%20%3Fpersonnel%20%3FactiveTrader%0A%20%20%20%20%20%20%20%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20VALUES%20%3FactiveTrader%20%7B%3ATrader%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20GRAPH%20%3APersonnelInfo%20%7B%3Fpersonnel%20a%20%3FactiveTrader%7D%20.%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20BIND%28COALESCE%28%3FactiveTrader%2C%20%3AStaffMember%29%20AS%20%3Froll%29%0A%7D%0A).
+Open this query in the [RDFox Explorer](http://localhost:12110/console/datastores/explore?datastore=default&query=SELECT%20%3Fpersonnel%20%3Frole%0AWHERE%20%7B%0A%20%20%20%20GRAPH%20%3APersonnelInfo%20%7B%3Fpersonnel%20a%20%3AStaffMember%7D%20.%0A%20%20%20%20OPTIONAL%20%7B%20SELECT%20%3Fpersonnel%20%3FactiveTrader%0A%20%20%20%20%20%20%20%20WHERE%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20VALUES%20%3FactiveTrader%20%7B%3ATrader%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20GRAPH%20%3APersonnelInfo%20%7B%3Fpersonnel%20a%20%3FactiveTrader%7D%20.%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20BIND%28COALESCE%28%3FactiveTrader%2C%20%3AStaffMember%29%20AS%20%3Frole%29%0A%7D%0A).
 
 <br>
 <br>
 
 ## ℹ️ &nbsp; Syntax helper
 
-Named graphs can be accessed by including its name (or stating a variable) after the desired triple pattern within the graph.
+A named graph can be accessed by including its name (or stating a variable) after the desired triple pattern within the graph.
 
 When writing rules, `[?S, ?O, ?O] :myNamedGraph` is used to access a specific graph and `[?S, ?O, ?O] ?G` will access all named graphs.
 
-A slightly different syntax is used when writing queries, declaring the Named Graph before the triple pattern with the `GRAPH` keyword.
+A slightly different syntax is used when writing queries - we declare the Named Graph before the triple pattern with the `GRAPH` keyword.
 
 `GRAPH :myNamedGraph {?S ?P ?O}` or `GRAPH ?G {?S ?P ?O}`.
 

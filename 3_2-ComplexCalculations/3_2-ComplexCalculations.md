@@ -23,9 +23,9 @@ For example, my application requires complex mathematical algorithms to compute 
 <br>
 <br>
 
-BINDS calculate an expression and store result in a variable.
+BINDS calculate the value of an expression and store result in a variable.
 
-This can be done with inbuilt RDFox functions or hand written mathematical expressions.
+This can be done with built-in RDFox functions or hand-written mathematical expressions.
 
 In practice it's very common to construct complex results using several rules - breaking the problem down into bite sized chunks.
 

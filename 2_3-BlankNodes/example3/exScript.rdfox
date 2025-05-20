@@ -1,21 +1,18 @@
-# 2.4 Named Graphs
+# 2.3 Blank Nodes
 
 # Clear the datastore to ensure we start with a blank slate
 clear force
 
 # Import our data
-import +p 2_4-NamedGraphs/example/exData.ttl
-
-# Import our rules
-import 2_4-NamedGraphs/example/exRules.dlog
+import +p 2_3-BlankNodes/example3/exData.ttl
 
 # Add some visual padding
 echo 
-echo ========= Personnel Roles =========
+echo ========= All triples in the datastore =========
 echo
 
 # Run our query
-evaluate 2_4-NamedGraphs/example/exQuery.rq
+evaluate 2_3-BlankNodes/example3/exQuery.rq
 
 # Add some visual padding
 echo 

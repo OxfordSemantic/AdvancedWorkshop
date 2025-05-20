@@ -7,7 +7,7 @@
 
 ## 🔥 &nbsp; Why are Blank Nodes helpful?
 
-Need to represent an abstract object where it's properties are important but it's identity isn't?
+Need to represent an abstract object where its properties are important but its identity isn't?
 
 Blank Nodes are the answer!
 
@@ -27,7 +27,7 @@ Blank nodes enable us to represent entities that themselves have properties or r
 
 This is particularly relevant if the node itself is uninteresting or unknown but its relationships to the rest of the graph are, in which case a composite object that provides several details is more helpful.
 
-Blank nodes are created without specifying an IRI - each time on startup, RDFox will generate a random identifier for this node in order to keep track of it.
+Blank nodes are created without specifying an IRI - instead they have what's called a "label".
 
 <br>
 <br>
@@ -65,7 +65,7 @@ While blank nodes can be incredible useful, they can be difficult to work with d
 
 SKOLEM generates a blank node with a deterministic label from a series of input parameters of both variables and literals.
 
-This means the new node retains a referenceable, reversible, meaningful IRI that can be based solely on selected properties.
+This means the new node retains a referenceable, reversible, meaningful identifier that can be based solely on selected properties.
 
 <br>
 <br>
@@ -133,7 +133,7 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 
 ## 🔬 &nbsp; Example - reversing SKOLEM
 
-SKOLEM is a reversible process. Given a SKOLEMized node IRI, we can determine the resources that were used to create it.
+SKOLEM is a reversible process. Given a SKOLEMized node, we can determine the resources that were used to create it.
 
 Here is a rule that unpicks the SKOLEM node we just created:
 
@@ -272,13 +272,13 @@ Run the script below to verify the results.
 
 ## 👏 &nbsp; Bonus exercise - MD5 Encoding
 
-As a practical alternative to SKOLEM, the MD5 hash generator function sometimes is instead to create an ID for a node.
+As a practical alternative to SKOLEM for creating an ID for a node, the MD5 hash generator function is sometimes used instead.
 
 MD5 creates IDs more efficiently than SKOLEM but is non-reversible, meaning retraction of facts is vastly less efficient.
 
-Additionally, it is not strictly 1-1, so it is possible, albeit unlikely, to have two different inputs create the same output, 
+Additionally, it is not strictly 1-1, so it is possible, albeit unlikely, to have two different inputs create the same output. 
 
-MD5 is a function not a tuple table, so the output must be bound to a new variable, and it's input must be strings.
+MD5 is a function, not a tuple table, so the output must be bound to a new variable and its input must be a single string.
 
 <br>
 
@@ -289,3 +289,7 @@ Write a rule that creates a similar node for each bath using the `MD5` function 
 Write a query [in the console](http://localhost:12110/console/datastores/sparql?datastore=default) to validate you work.
 
 Discuss your solutions with others in the `RDFox-Workshop` channel of our [Slack Community](https://join.slack.com/t/rdfox/shared_invite/zt-1z7dnm2ad-WoKRf~~3CynB_KTi5X0RHg)!
+
+## 👏 &nbsp; Another bonus - Turtle and SPARQL syntax for blank nodes
+
+You can run the script in the folder `example3` to examine how RDFox handles blank node imports and what syntax is supported in Turtle and SPARQL. RDFox's behaviour for blank nodes with specified labels is governed by the value of the datastore property [user-blank-node-import-policy](https://docs.oxfordsemantic.tech/data-stores.html#user-blank-node-import-policy).

@@ -4,7 +4,7 @@ To run RDFox:
 
 1. Open a terminal in VS Code and navigate to the **Advanced Reasoning Workshop** working directory.
 
-2. Use the following command go start RDFox using the **start.rdfox** script (see 1.2 for details). The command you need will vary slightly depending on your **system OS**, **CLI** and **RDFox version**.
+2. Use the following command to start RDFox using the **start.rdfox** script (see 1.2 for details). The command you need will vary slightly depending on your **OS**, **CLI** and **RDFox version**.
 
 `<rdfox_filepath> sandbox . start`
 
@@ -40,6 +40,7 @@ If everything has gone smoothly, you will see a message like this:
 
 
 ----------------------------------------
+```
 Source code for RDFox v1.0 Copyright 2013 Oxford University Innovation Limited and subsequent improvements Copyright 2017-2024 by Oxford Semantic Technologies Limited.
 
 This system is equipped with 8.5 GB of RAM, and RDFox is configured to use at most 7.7 GB (89.9% of the total).
@@ -57,6 +58,6 @@ WARNING: The RDFox endpoint is running with no transport layer security (TLS). T
          variables in the description of the RDFox endpoint for details of how to set up TLS.
 
 A new data store 'default' was created and initialized.
-
+```
 ----------------------------------------
 

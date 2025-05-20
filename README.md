@@ -30,7 +30,7 @@ Contained within each notebook is:
 
 - Instructions can be found in `0-StartRDFox`.`
 
-3. Copy and past the commands given in the exercises into the active RDFox terminal.
+3. Copy and paste the commands given in the exercises into the active RDFox terminal.
 
 4. Some files called `incompleteRules.dlog` contain missing parts (using `___` as a placeholder) and require you to complete them to continue - they are clearly marked along the way.
 
