@@ -276,7 +276,7 @@ When cycles don't change facts, like the examples below, they **can** be stratif
         [?x, :hasCount, ?count],
         BIND (?count + 1 AS ?newCount) .
     ```
-    <img src="../images/visualisation/stratificationB.png" alt="Stratification" style="max-height: 480px;">
+<img src="../images/visualisation/stratificationB.png" alt="Stratification" style="max-height: 480px;">
 <br>
 <br>
     \* This is a fabricated view representing the steps taken by the reasoning engine but cannot actually be visualised as the reasoning must first terminate, which an infinite rule would not do.
