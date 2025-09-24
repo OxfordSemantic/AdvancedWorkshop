@@ -367,7 +367,7 @@ See the [Negation](https://docs.oxfordsemantic.tech/reasoning.html#negation-synt
 
 Run the script below to verify the results.
 
-`2_2-NegationAsFailure/exercise/Script.rdfox`
+`2_2-NegationAsFailure/exercise/script.rdfox`
 
 <br>
 

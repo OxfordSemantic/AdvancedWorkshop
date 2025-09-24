@@ -15,21 +15,21 @@ If you're not sure how, [follow the video guide here.](https://youtu.be/g3WdA8AE
 ### MacOS & Linux
 
 E.g.
-`/Users/Thomas/Desktop/RDFox/RDFox-macOS-arm64-7.3c/RDFox sandbox . start`
+`/Users/Thomas/Desktop/RDFox/RDFox-macOS-arm64-7.4b/RDFox sandbox . start`
 
 <br>
 
 ### Windows (PowerShell)
 
 E.g.
-`& /Users/Thomas/Desktop/RDFox/RDFox-win64-x86_64-7.3c/RDFox sandbox . start`
+`& /Users/Thomas/Desktop/RDFox/RDFox-win64-x86_64-7.4b/RDFox sandbox . start`
 
 <br>
 
 ### Windows (CMD)
 
 E.g.
-`Users/Thomas/Desktop/RDFox/RDFox-win64-x86_64-7.3c/RDFox.exe sandbox . start`
+`Users/Thomas/Desktop/RDFox/RDFox-win64-x86_64-7.4b/RDFox.exe sandbox . start`
 
 <br>
 <br>
