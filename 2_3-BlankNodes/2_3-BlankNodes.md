@@ -61,7 +61,7 @@ To create useful structures from complex data, generate abstractions, etc.
 
 ## 📖 &nbsp; What is SKOLEM?
 
-While blank nodes can be incredible useful, they can be difficult to work with due to this inconsistent anonymized identity which is why, in practice, we highly encourage using them with SKOLEM.
+While blank nodes can be incredibly useful, they can be difficult to work with due to this inconsistent anonymized identity, which is why, in practice, we highly encourage using them with SKOLEM.
 
 SKOLEM generates a blank node with a deterministic label from a series of input parameters of both variables and literals.
 

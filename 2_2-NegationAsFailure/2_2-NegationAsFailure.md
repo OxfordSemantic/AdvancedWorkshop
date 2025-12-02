@@ -9,7 +9,7 @@ Have you ever needed to act on information that was false or missing?
 
 Negation is the solution!
 
-For example, does this autonomous-vehicle see any hazards? If not, it's safe to proceed.
+For example, does this autonomous vehicle see any hazards? If not, it's safe to proceed.
 
 <br>
 <br>
@@ -164,7 +164,7 @@ Run `2_2-NegationAsFailure/example2/exScript.rdfox` to see the results of this r
 
 ## 🔍 &nbsp; Variable scope
 
-Variables introduced by NOT EXISTS remain unbound when the rule-body infers new facts as the patterns don't exist.
+Variables introduced by NOT EXISTS remain unbound when the rule body infers new facts as the patterns don't exist.
 
 Therefore, the scope of these variables must be local to the negation atom. They can share the names of a variables in the wider body without sharing a binding.
 

@@ -159,7 +159,7 @@ Rule Info
 |   2|    RuleAdd|      0|             1|             26|           25|            25|          (0) :hasTransitiveDependency[?x, ?y] :- :dependsOn[?x, ?y] .|
 |   3|    RuleAdd|      0|             1|             2|           0|            0|          (0) :hasTransitiveDependency[?x, ?z] :- :hasTransitiveDependency[?x, ?y], :dependsOn[?y, ?z] .|
 
-Notice that the reasoniner undergoes 1.9k iterator operations to import 300 fresh facts.
+Notice that the reasoner undergoes 1.9k iterator operations to import 300 fresh facts.
 
 The 25 fresh facts introduced by the ruleAdd phase are the simple proxy relationships `:hasTransitiveDependency` in place of the existing `:dependsOn` relationship.
 

@@ -109,7 +109,7 @@ Run `3_3-PropertyPaths/example/exScript.rdfox` to see the results of this rule.
 
 ### You should see...
 
-=== Members of Alices wider Network ===
+=== Members of Alice's wider Network ===
 |?person|	?networkMember|
 |---|---|
 |:Diana|	:MemberOfAlicesNetwork|

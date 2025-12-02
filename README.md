@@ -28,7 +28,7 @@ Contained within each notebook is:
 
 2. Start RDFox using the `start.rdfox` script from the `AdvancedWorkshop` working directory.
 
-- Instructions can be found in `0-StartRDFox`.`
+- Instructions can be found in `0-StartingRDFox`.`
 
 3. Copy and paste the commands given in the exercises into the active RDFox terminal.
 
@@ -51,3 +51,5 @@ Contained within each notebook is:
 3. [See the RDFox Docs here](https://docs.oxfordsemantic.tech)
 
 4. [Join the RDFox Community](https://www.oxfordsemantic.tech/community) to ask questions and discuss your project with RDFox experts
+
+5. [Download the VS Code extension](https://marketplace.visualstudio.com/items?itemName=rdfox.rdfox-rdf)
