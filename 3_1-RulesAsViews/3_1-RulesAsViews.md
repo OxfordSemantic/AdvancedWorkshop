@@ -25,7 +25,7 @@ For example I'm creating a product dashboard to highlight important sales figure
 
 Views transform existing data into simpler or more accessible information, often turning important complex patterns into a single relationship or applying filters to narrow down the result set based on a condition.
 
-Views simplify SPARQL, reduce repetition in code, and accelerate query performance - they are incredible useful.
+Views simplify SPARQL, reduce repetition in code, and accelerate query performance - they are incredibly useful.
 
 <br>
 <br>
@@ -89,7 +89,7 @@ Here is the data we'll be using to show this:
 
 ## ✅ &nbsp; Check the results
 
-Run `3_1-RulesAsViews/example/exScript.rdfox` to see the results of this rule.
+Run `3_1-RulesAsViews/example1/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -128,7 +128,7 @@ To show this, we'll add a new product to our database:
 
 Ensuring that you have run the first script...
 
-now run `3_1-RulesAsViews/example2/exScript.rdfox` to add this new product data and re-run the query.
+now run `3_1-RulesAsViews/example1b-incremental/exScript.rdfox` to add this new product data and re-run the query.
 
 <br>
 
@@ -175,7 +175,7 @@ Fortunately, rules and reasoning can be used to supercharge this setup, enabling
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule `3_1-RulesAsViews/incompleteRules.dlog` to create a view of product categories and the **average** units sold over all products in that category.
+Complete the rule `3_1-RulesAsViews/exercise/incompleteRules.dlog` to create a view of product categories and the **average** units sold over all products in that category.
 
 Here is a representative sample of the data in `3_1-RulesAsViews/exercise/data.ttl`.
 

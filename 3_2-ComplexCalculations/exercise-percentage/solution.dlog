@@ -1,0 +1,21 @@
+# 3.2 Complex Calculations
+
+[?blog, :hasArticleCount, ?totalArticles] :-
+    AGGREGATE(
+        [?blog, :containsArticle, ?article]
+        ON ?blog
+        BIND COUNT(?article) AS ?totalArticles
+    ).
+
+[?tag, :hasMentionCount, ?tagArticles] ?blog :-
+    AGGREGATE(
+        [?blog, :containsArticle, ?article],
+        [?article, :hasTag, ?tag]
+        ON ?blog ?tag
+        BIND COUNT(?article) AS ?tagArticles
+    ).
+
+[?tag, :mentionedInPercentageOfArticles, ?percentage] :-
+    [?blog, :hasArticleCount, ?totalArticles],
+    [?tag, :hasMentionCount, ?tagArticles] ?blog,
+    BIND (ROUND((?tagArticles/?totalArticles)*100) AS ?percentage ).

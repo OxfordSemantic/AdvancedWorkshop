@@ -85,7 +85,7 @@ Here is the data we'll be using to show this:
 
 ## ✅ &nbsp; Check the results
 
-Run `2_2-NegationAsFailure/example/exScript.rdfox` to see the results of this rule.
+Run `2_2-NegationAsFailure/example1-not/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -102,18 +102,15 @@ Run `2_2-NegationAsFailure/example/exScript.rdfox` to see the results of this ru
 
 ## ℹ️ &nbsp; Syntax helper
 
-Notice that vehicle 3 is allows to continue due to the closed world assumption.
+Notice that vehicle 3 is allowed to continue due to the closed world assumption.
 
-Negation atoms must be accompanied by at least one non-negation atom directly in the rule body (excluding atoms within the negation atom itself), as is shown above.
-
-In the case that the pattern is matched, this ensures that at least one variable is bound.
 
 <br>
 <br>
 
 ## 🔍 &nbsp; NOT EXISTS
 
-**NOT** is often used in combination **EXISTS** as it allows us to introduce a new variable, or variables, that are not bound in the wider rule body.
+**NOT EXISTS** is the negation syntax we can use to introduce a new variable, or variables, that are not bound in the wider rule body.
 
 This opens up the possibility for more general negation patterns to be included.
 
@@ -149,7 +146,7 @@ Here is the data we'll be using to show this:
 
 ## ✅ &nbsp; Check the results
 
-Run `2_2-NegationAsFailure/example2/exScript.rdfox` to see the results of this rule.
+Run `2_2-NegationAsFailure/example2-not-exists/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -190,7 +187,7 @@ In the following script we'll add this data to show Incremental Retraction in ac
 
 Ensuring that you have run the scripts above...
 
-now run `2_2-NegationAsFailure/example3/exScript.rdfox` to add the new data and run the same query.
+now run `2_2-NegationAsFailure/example2b-retraction/exScript.rdfox` to add the new data and run the same query.
 
 <br>
 
@@ -232,7 +229,7 @@ RDFox will reject any rule that behaves like this.
 
 ## 🚫 &nbsp; Check the error
 
-Run `2_2-NegationAsFailure/example4/exScript.rdfox` to see the error created by this rule.
+Run `2_2-NegationAsFailure/example3-stratification/exScript.rdfox` to see the error created by this rule.
 
 <br>
 
@@ -333,9 +330,9 @@ We do this by introducing a new proxy-relationship as follows:
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule set `2_2-NegationAsFailure/incompleteRules.dlog` to indicate whether the vehicle is safe to turn left or right, or stop at any given time.
+Complete the rule set `2_2-NegationAsFailure/exercise-combined/incompleteRules.dlog` to indicate whether the vehicle is safe to turn left or right, or stop at any given time.
 
-Here is a representative sample of the data in `2_2-NegationAsFailure/exercise/data.ttl`.
+Here is a representative sample of the data in `2_2-NegationAsFailure/exercise-combined/data.ttl`.
 
 ```
 :sensorF a :PrimaryCamera ;
@@ -367,7 +364,7 @@ See the [Negation](https://docs.oxfordsemantic.tech/reasoning.html#negation-synt
 
 Run the script below to verify the results.
 
-`2_2-NegationAsFailure/exercise/script.rdfox`
+`2_2-NegationAsFailure/exercise-combined/script.rdfox`
 
 <br>
 

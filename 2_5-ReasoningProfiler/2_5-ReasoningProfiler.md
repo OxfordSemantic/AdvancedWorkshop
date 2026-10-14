@@ -174,9 +174,9 @@ And here are the rules that we'll use. Using the profiler, try to identify the p
 
 ## 👀 &nbsp; Check the results
 
-Run `2_5-ReasoningProfiler/exercise2/script.rdfox` to see how RDFox computes these rules.
+Run `2_5-ReasoningProfiler/exercise2-multiple-rules/script.rdfox` to see how RDFox computes these rules.
 
-Copy the output into `2_5-ReasoningProfiler/exercise2/reasoningProfilerOutput.dlog` for a cleaner view.
+Copy the output into `2_5-ReasoningProfiler/exercise2-multiple-rules/reasoningProfilerOutput.dlog` for a cleaner view.
 
 <br>
 

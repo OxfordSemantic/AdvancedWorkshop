@@ -1,0 +1,23 @@
+# 3.2 Complex Calculations
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 3_2-ComplexCalculations/example1-similarity/exData.ttl
+
+# Import our rules
+import 3_2-ComplexCalculations/example1-similarity/exRules.dlog
+
+# Add some visual padding
+echo 
+echo ========= Similar Articles =========
+echo
+
+# Run our query
+evaluate 3_2-ComplexCalculations/example1-similarity/exQuery.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo

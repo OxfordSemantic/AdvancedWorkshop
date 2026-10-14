@@ -85,7 +85,7 @@ Here is the data we'll be using to show this:
 
 ## ✅ &nbsp; Check the results
 
-Run `3_4-TransitiveClosure/example/exScript.rdfox` to see the results of these rules.
+Run `3_4-TransitiveClosure/example1/exScript.rdfox` to see the results of these rules.
 
 <br>
 

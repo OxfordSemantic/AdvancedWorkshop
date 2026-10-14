@@ -101,7 +101,7 @@ Here is the data we'll use to show this:
 
 ## ✅ &nbsp; Check the results
 
-Run `2_4-NamedGraphs/example/exScript.rdfox` to see the results of this rule.
+Run `2_4-NamedGraphs/example1/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -137,7 +137,7 @@ Rules and queries can reference several named graphs in both the head and body s
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule `2_4-NamedGraphs/incompleteRules.dlog` in order to directly find traders who have breached their personal trade-value limits.
+Complete the rule `2_4-NamedGraphs/exercise/incompleteRules.dlog` in order to directly find traders who have breached their personal trade-value limits.
 
 Here is a representative sample of the data in `2_4-NamedGraphs/exercise/data.ttl`.
 ```

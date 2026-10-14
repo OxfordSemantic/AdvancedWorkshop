@@ -1,7 +1,0 @@
-# 3.2 Complex Calculations
-
-[?a, :hasNewProp, "new prop"]:-
-    [?a, :hasProp, "prop" ].
-
-[?x, a, :newClass] :-
-    [?x, a, :Class ].

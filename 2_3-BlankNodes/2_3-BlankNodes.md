@@ -111,7 +111,7 @@ Arguments can be either a variable or literal.
 
 ## ✅ &nbsp; Check the results
 
-Run `2_3-BlankNodes/example/exScript.rdfox` to see the results of this rule.
+Run `2_3-BlankNodes/example1-skolem/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -162,7 +162,7 @@ This time, a SKOLEMized node can be given as the final parameter and the proceed
 
 Ensuring you have already run the first script...
 
-now run `2_3-BlankNodes/example2/exScript.rdfox` to see the results of this rule.
+now run `2_3-BlankNodes/example2-reverse/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -185,7 +185,7 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule `2_3-BlankNodes/incompleteRules.dlog` to monitor the average temperature of several liquid baths as they change over time - creating a unique node to represent the bath at each given moment in time.
+Complete the rule `2_3-BlankNodes/exercise/incompleteRules.dlog` to monitor the average temperature of several liquid baths as they change over time - creating a unique node to represent the bath at each given moment in time.
 
 Here is a representative sample of the data in `2_3-BlankNodes/exercise/data.ttl`. Both baths contain **exactly two sensors**.
 ```

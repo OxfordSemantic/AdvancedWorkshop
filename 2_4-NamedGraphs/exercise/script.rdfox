@@ -7,7 +7,7 @@ clear force
 import +p 2_4-NamedGraphs/exercise/data.trig
 
 # Import our rules
-import 2_4-NamedGraphs/incompleteRules.dlog
+import 2_4-NamedGraphs/exercise/incompleteRules.dlog
 
 # Add some visual padding
 echo 

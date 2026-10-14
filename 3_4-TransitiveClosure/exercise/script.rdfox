@@ -7,7 +7,7 @@ clear force
 import +p 3_4-TransitiveClosure/exercise/data.ttl
 
 # Import our rules
-import 3_4-TransitiveClosure/incompleteRules.dlog
+import 3_4-TransitiveClosure/exercise/incompleteRules.dlog
 
 # Add some visual padding
 echo 

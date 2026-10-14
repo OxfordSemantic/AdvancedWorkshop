@@ -1,8 +1,0 @@
-# 3.2 Complex Calculations
-
-@prefix : <https://rdfox.com/example/> .
-
-:a :hasProp "prop" .
-
-:x a :Class .
-    

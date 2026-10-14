@@ -103,7 +103,7 @@ Here is the data we'll be using to show this:
 
 ## ✅ &nbsp; Check the results
 
-Run `3_3-PropertyPaths/example/exScript.rdfox` to see the results of this rule.
+Run `3_3-PropertyPaths/example1-network/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -146,7 +146,7 @@ The following rule identifies the web server as a top level asset.
 
 Ensuring you have run the first script...
 
-now run `3_3-PropertyPaths/example2/exScript.rdfox` to see the results of this rule.
+now run `3_3-PropertyPaths/example1b-endpoint/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -168,9 +168,9 @@ Open this query in the [RDFox Explorer](http://localhost:12110/console/datastore
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule `3_3-PropertyPaths/incompleteRules.dlog` to find the number of hops away from Alice each member of her network is.
+Complete the rule `3_3-PropertyPaths/exercise-count-hops/incompleteRules.dlog` to find the number of hops away from Alice each member of her network is.
 
-Here is a representative sample of the data in `3_3-PropertyPaths/exercise/data.ttl`.
+Here is a representative sample of the data in `3_3-PropertyPaths/exercise-count-hops/data.ttl`.
 ```
 :Alice a :Person ;
     :knows :Jacqueline,
@@ -192,7 +192,7 @@ Be careful when writing rules like this, as if the data is cyclic, RDFox will en
 
 ## ✅ &nbsp; Check your answers
 
-Run `3_3-PropertyPaths/exercise/script.rdfox` to see the results of this rule.
+Run `3_3-PropertyPaths/exercise-count-hops/script.rdfox` to see the results of this rule.
 
 <br>
 

@@ -108,7 +108,7 @@ Here is the data we'll be using to show this:
 
 ## ✅ &nbsp; Check the results
 
-Run `3_2-ComplexCalculations/example/exScript.rdfox` to see the results of this rule.
+Run `3_2-ComplexCalculations/example1-similarity/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -142,9 +142,9 @@ A node is created between two articles that share at least one tag, calculating 
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule `3_2-ComplexCalculations/incompleteRules.dlog` to calculate the percentage of articles that each tag appears in, rounded to the nearest percentage point:
+Complete the rule `3_2-ComplexCalculations/exercise-percentage/incompleteRules.dlog` to calculate the percentage of articles that each tag appears in, rounded to the nearest percentage point:
 
-Here is a representative sample of the data in `3_2-ComplexCalculations/exercise/data.ttl`.
+Here is a representative sample of the data in `3_2-ComplexCalculations/exercise-percentage/data.ttl`.
 
 ```
 :blog :containsArticle :article001 ,
@@ -168,7 +168,7 @@ Here is a representative sample of the data in `3_2-ComplexCalculations/exercise
 
 ## ✅ &nbsp; Check your answers
 
-Run `3_2-ComplexCalculations/exercise/script.rdfox` to see the results of this rule.
+Run `3_2-ComplexCalculations/exercise-percentage/script.rdfox` to see the results of this rule.
 
 <br>
 

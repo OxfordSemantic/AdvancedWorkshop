@@ -1,0 +1,23 @@
+# 3.3 Property Paths
+
+# Clear the datastore to ensure we start with a blank slate
+clear force
+
+# Import our data
+import +p 3_3-PropertyPaths/example1-network/exData.ttl
+
+# Import our rules
+import 3_3-PropertyPaths/example1-network/exRules.dlog
+
+# Add some visual padding
+echo 
+echo === Members of Alice's wider Network ===
+echo
+
+# Run our query
+evaluate 3_3-PropertyPaths/example1-network/exQuery.rq
+
+# Add some visual padding
+echo 
+echo =====================================
+echo

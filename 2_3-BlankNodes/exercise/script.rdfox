@@ -7,7 +7,7 @@ clear force
 import +p 2_3-BlankNodes/exercise/data.ttl
 
 # Import our rules
-import 2_3-BlankNodes/incompleteRules.dlog
+import 2_3-BlankNodes/exercise/incompleteRules.dlog
 
 # Add some visual padding
 echo 

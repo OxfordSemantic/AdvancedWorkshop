@@ -101,7 +101,7 @@ When grouping the aggregate into sub-sets, you must also indicate which variable
 
 ## ✅ &nbsp; Check the results
 
-Run `2_1-Aggregation/example/exScript.rdfox` to see the results of this rule.
+Run `2_1-Aggregation/example1-count/exScript.rdfox` to see the results of this rule.
 
 <br>
 
@@ -126,9 +126,9 @@ Therefore, two aggregates can use a variable with the same name so long as it is
 
 ## 🚀 &nbsp; Exercise
 
-Complete the rule `2_1-Aggregation/incompleteRules.dlog` to create 'Star Products' - that is, products with a **higher than 4 star average** rating AND **more than 5 total reviews**.
+Complete the rule `2_1-Aggregation/exercise-average/incompleteRules.dlog` to create 'Star Products' - that is, products with a **higher than 4 star average** rating AND **more than 5 total reviews**.
 
-Here is a representative sample of the data in `2_1-Aggregation/exercise/data.ttl`.
+Here is a representative sample of the data in `2_1-Aggregation/exercise-average/data.ttl`.
 
 ```
 :product0001 a :Sofa ;
@@ -151,7 +151,7 @@ Here is a representative sample of the data in `2_1-Aggregation/exercise/data.tt
 
 Run the script below to verify the results.
 
-`2_1-Aggregation/exercise/script.rdfox`
+`2_1-Aggregation/exercise-average/script.rdfox`
 
 <br>
 

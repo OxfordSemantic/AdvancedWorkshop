@@ -1,4 +1,0 @@
-# 2.2 Negation As Failure
-
-# Import our unstratifiable rules
-import 2_2-NegationAsFailure/example4/exRules.dlog
